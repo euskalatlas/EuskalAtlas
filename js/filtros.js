@@ -361,9 +361,9 @@ lista.appendChild(fila);
 
     });
 
-    const numenesVisibles = new Set();
+const numenesVisibles = new Set();
 
-aplicarFiltrosSinNumenes(mitologia).forEach(registro => {
+aplicarFiltros(mitologia).forEach(registro => {
 
     if(registro.numen && registro.numen.trim() !== ""){
         numenesVisibles.add(registro.numen.trim());
