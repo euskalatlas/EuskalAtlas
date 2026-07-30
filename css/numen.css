@@ -348,3 +348,69 @@ footer{
     margin-top:60px;
 
 }
+
+@media (max-width:768px){
+
+    header{
+        padding:18px;
+    }
+
+    .cabecera{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+
+    .izquierda{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .logo{
+        width:65px;
+        height:65px;
+    }
+
+    .titulo h1{
+        font-size:1.8rem;
+        line-height:1.2;
+        word-break:break-word;
+    }
+
+    .titulo p{
+        font-size:1rem;
+    }
+
+    .volver{
+        position:static;
+        transform:none;
+        margin-top:8px;
+    }
+
+    .contenido{
+        padding:0 15px;
+    }
+
+    .resumen{
+        gap:12px;
+    }
+
+    .tarjeta{
+        width:100px;
+        padding:12px 8px;
+    }
+
+    .numero{
+        font-size:2.2rem;
+    }
+
+    .bloque h3{
+        font-size:24px;
+    }
+
+    .bibliografia li,
+    .lista-municipios li{
+        font-size:16px;
+    }
+
+}

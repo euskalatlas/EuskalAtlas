@@ -1,6 +1,6 @@
 [
     {
-        "nombre": "Aatxe (Ahatxe, Aatxegorri)",
+        "nombre": "Aatxe, Ahatxe, Aatxegorri",
         "descripcion": "Toro sobrenatural asociado a cuevas, montañas y lugares sagrados de la tradición vasca. Considerado un espíritu protector, suele manifestarse durante la noche para defender determinados parajes o castigar a quienes actúan de forma injusta o irrespetuosa. Sus nombres y algunos detalles de su apariencia varían según la localidad."
     },
     {
@@ -56,7 +56,7 @@
         "descripcion": "Gigantes que, según la tradición, habitaron el País Vasco antes de la llegada del cristianismo. Se les atribuye la construcción de dólmenes, cromlechs y otros monumentos megalíticos, además de una fuerza extraordinaria y un profundo vínculo con las montañas."
     },
     {
-        "nombre": "Kurri-kurri (Mairu, Jentil)",
+        "nombre": "Kurri-kurri, Mairu, Jentil",
         "descripcion": "Personaje legendario relacionado con los mairus y los jentiles. Según la tradición local, pertenece al antiguo mundo de gigantes y constructores, conservando rasgos de fuerza excepcional y una estrecha relación con los monumentos megalíticos."
     },
     {
@@ -125,7 +125,7 @@
         "descripcion": "Ser mencionado en algunas tradiciones locales cuyo significado y características varían según la comarca. Se relaciona con antiguos relatos populares y con el mundo sobrenatural."
     },
     {
-        "nombre": "Ames (Amets)",
+        "nombre": "Ames, Amets",
         "descripcion": "Representación sobrenatural de los sueños. En la tradición vasca, los sueños podían interpretarse como mensajes, advertencias o presagios procedentes del mundo invisible."
     },
     {
@@ -145,11 +145,11 @@
         "descripcion": "Ser o aparición rodeada de una intensa luminosidad. Su presencia suele interpretarse como un fenómeno extraordinario relacionado con el mundo sobrenatural."
     },
     {
-        "nombre": "Atxular (Axular)",
+        "nombre": "Atxular, Axular",
         "descripcion": "Personaje legendario cuyo nombre aparece en diversas tradiciones populares. Dependiendo del relato, se relaciona con conocimientos extraordinarios o con seres sobrenaturales."
     },
     {
-        "nombre": "Axular (Sugoi, Mikelats)",
+        "nombre": "Axular, Sugoi, Mikelats",
         "descripcion": "Figura legendaria vinculada en algunas tradiciones a Sugoi y Mikelats. Su imagen varía según la localidad y forma parte del conjunto de relatos sobre personajes sobrenaturales."
     },
     {
