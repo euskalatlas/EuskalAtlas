@@ -1195,7 +1195,9 @@ footer{
 
     line-height:24px;
     font-size:14px;
-    margin-bottom:70px;   /* Súbela 40 px */
+    .leaflet-bottom{
+    bottom: 70px;
+}
 
 
 }
