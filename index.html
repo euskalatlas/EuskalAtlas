@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuskalAtlas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="cabecera">
+
+        <div class="cabeceraIzquierda">
+
+            <a href="index.html">
+                <img src="imagenes/logo.png"
+                     alt="Logotipo de Euskal Atlas"
+                     class="logo">
+            </a>
+
+            <div class="titulo">
+
+                <h1>Euskal Atlas</h1>
+
+                <p>Atlas digital del patrimonio cultural vasco</p>
+
+            </div>
+
+        </div>
+
+        <div id="selectorIdioma">
+
+            <button class="idioma activo">ES</button>
+
+            <span>|</span>
+
+            <button class="idioma">EU</button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<div class="panel">
+
+    <div class="filtro">
+
+    <label><b>Provincias</b></label>
+
+    <button id="abrirProvincias" type="button">
+        Seleccionar provincias
+    </button>
+
+</div>
+
+
+    <div class="filtro">
+
+    <label><b>Categorías</b></label>
+
+    <button id="abrirCategorias" type="button">
+        Seleccionar categorías
+    </button>
+
+</div>
+
+
+<div class="filtro">
+
+    <label><b>Númenes</b></label>
+
+    <button id="abrirNumenes" type="button">
+        Seleccionar númenes
+    </button>
+
+</div>
+
+
+
+   <div class="filtro">
+
+    <label><b>Bibliografía</b></label>
+
+    <button id="abrirBibliografia" type="button">
+        Seleccionar bibliografía
+    </button>
+
+</div>
+
+
+</div>
+
+<div id="contenedorMapa">
+
+    <div id="mapa"></div>
+
+    <aside id="panelResultados">
+
+        <div class="resumen">
+
+            <div class="tarjeta">
+                <span id="totalRegistros">0</span>
+                <small>Registros</small>
+            </div>
+
+            <div class="tarjeta">
+                <span id="totalMunicipios">0</span>
+                <small>Municipios</small>
+            </div>
+
+            <div class="tarjeta">
+                <span id="totalNumenes">0</span>
+                <small>Númenes</small>
+            </div>
+
+        </div>
+
+        <h3>Municipios</h3>
+
+        <div id="listaMunicipios"></div>
+        <div id="sinResultados" class="oculto">
+
+            <h3>⚠ Sin resultados</h3>
+
+            <p>
+                No se han encontrado registros con los filtros seleccionados.
+            </p>
+
+            <p>
+                Prueba a ampliar los filtros o pulsa
+                <strong>Restablecer filtros</strong>.
+            </p>
+
+        </div>
+
+        <button id="restablecerFiltros">
+            Restablecer filtros
+        </button>
+
+    </aside>
+
+</div>
+
+<div id="modalNumenes" class="modal oculto">
+
+    <div class="modalContenido">
+
+        <h3>Seleccionar númenes</h3>
+
+        <input
+            type="text"
+            id="buscarNumen"
+            placeholder="Buscar númen..."
+        >
+
+        <div id="listaNumenes"></div>
+
+        <div class="modalBotones">
+
+            <button id="seleccionarTodos">
+    Seleccionar todos
+</button>
+
+
+            <button id="limpiarNumenes">
+                Limpiar
+            </button>
+
+            <button id="cerrarNumenes">
+                Aceptar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="modalProvincias" class="modal oculto">
+
+    <div class="modalContenido">
+
+        <h3>Seleccionar provincias</h3>
+        <input
+            type="text"
+            id="buscarprovincia"
+            placeholder="Buscar provincia..."
+        >
+        
+
+        <div id="listaProvincias"></div>
+
+        <div class="modalBotones">
+
+            <button id="seleccionarTodasProvincias">
+                Seleccionar todas
+            </button>
+
+            <button id="limpiarProvincias">
+                Limpiar
+            </button>
+
+            <button id="cerrarProvincias">
+                Aceptar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="modalCategorias" class="modal oculto">
+
+    <div class="modalContenido">
+
+        <h3>Seleccionar categorías</h3>
+
+        <input
+            type="text"
+            id="buscarCategoria"
+            placeholder="Buscar categoría..."
+        >
+
+        <div id="listaCategorias"></div>
+
+        <div class="modalBotones">
+
+            <button id="seleccionarTodasCategorias">
+                Seleccionar todas
+            </button>
+
+            <button id="limpiarCategorias">
+                Limpiar
+            </button>
+
+            <button id="cerrarCategorias">
+                Aceptar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="modalBibliografia" class="modal oculto">
+
+    <div class="modalContenido">
+
+        <h3>Seleccionar bibliografía</h3>
+
+        <input
+            type="text"
+            id="buscarBibliografia"
+            placeholder="Buscar bibliografía..."
+        >
+
+        <div id="listaBibliografias"></div>
+
+        <div class="modalBotones">
+
+            <button id="seleccionarTodasBibliografias">
+                Seleccionar todas
+            </button>
+
+            <button id="limpiarBibliografias">
+                Limpiar
+            </button>
+
+            <button id="cerrarBibliografia">
+                Aceptar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script src="js/datos.js"></script>
+<script src="js/filtros.js"></script>
+<script src="js/mapa.js"></script>
+<script src="js/numenes.js"></script>
+<script src="js/provincias.js"></script>
+<script src="js/categorias.js"></script>
+<script src="js/bibliografia.js"></script>
+
+<footer>
+
+    <p>
+        © 2026 Euskal Atlas. Todos los derechos reservados.
+    </p>
+
+</footer>
+
+</body>
+</html>

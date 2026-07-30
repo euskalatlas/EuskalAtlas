@@ -1,0 +1,315 @@
+[
+    {
+        "nombre": "Aatxe (Ahatxe, Aatxegorri)",
+        "descripcion": "Toro sobrenatural asociado a cuevas, montañas y lugares sagrados de la tradición vasca. Considerado un espíritu protector, suele manifestarse durante la noche para defender determinados parajes o castigar a quienes actúan de forma injusta o irrespetuosa. Sus nombres y algunos detalles de su apariencia varían según la localidad."
+    },
+    {
+        "nombre": "Zakur",
+        "descripcion": "Perro sobrenatural presente en diversas tradiciones vascas. Dependiendo del relato, actúa como guardián, guía o compañero de otros seres mitológicos, y su aparición suele estar relacionada con la protección de lugares especiales o con la advertencia de sucesos extraordinarios."
+    },
+    {
+        "nombre": "Amilamia",
+        "descripcion": "Ser femenino sobrenatural vinculado a barrancos, simas y cursos de agua. Se la describe como una criatura esquiva que habita lugares abruptos y poco transitados, donde protege su territorio y forma parte del imaginario de los espacios naturales más salvajes."
+    },
+    {
+        "nombre": "Eilalamia",
+        "descripcion": "Variante local de las lamias documentada en algunas tradiciones vascas. Comparte con ellas su naturaleza sobrenatural y su relación con ríos, fuentes y parajes húmedos, aunque las leyendas le atribuyen rasgos y comportamientos propios según la localidad."
+    },
+    {
+        "nombre": "Lamia",
+        "descripcion": "Ser femenino de gran belleza ligado a ríos, fuentes y puentes. Tradicionalmente se representa con pies de ave o de cabra y un largo cabello que peina con un peine de oro. Protagoniza numerosas leyendas sobre construcciones, tesoros ocultos y encuentros con seres humanos."
+    },
+    {
+        "nombre": "Mairi",
+        "descripcion": "Personaje femenino de la tradición vasca asociado en algunas leyendas a los antiguos constructores y a los seres sobrenaturales. Según la zona, aparece como una mujer de gran fuerza o como integrante del mundo mítico anterior a la llegada del cristianismo."
+    },
+    {
+        "nombre": "Mari",
+        "descripcion": "Principal figura de la mitología vasca y señora de las fuerzas de la naturaleza. Habita en cuevas y montañas, desplazándose entre distintos santuarios. Se relaciona con los fenómenos atmosféricos, la fertilidad y el mantenimiento del equilibrio entre las personas y el mundo natural."
+    },
+    {
+        "nombre": "Sorgin",
+        "descripcion": "Ser femenino dotado de poderes sobrenaturales, conocido popularmente como bruja. En la tradición vasca se asocia al conocimiento de la naturaleza, la medicina popular, los rituales y la magia. Su imagen varía entre benefactora y temida, según la época y la leyenda."
+    },
+    {
+        "nombre": "Alarabi",
+        "descripcion": "Ser sobrenatural presente en algunas tradiciones vascas, relacionado con relatos de carácter legendario. Su figura varía según la localidad, donde aparece como un personaje misterioso asociado a sucesos extraordinarios y al mundo invisible."
+    },
+    {
+        "nombre": "Atarrabi",
+        "descripcion": "Héroe legendario de la tradición vasca, conocido por su ingenio y por enfrentarse a fuerzas sobrenaturales. En los relatos representa la astucia y la capacidad humana para superar pruebas mediante la inteligencia y la perseverancia."
+    },
+    {
+        "nombre": "Basajaun",
+        "descripcion": "Gigante cubierto de abundante pelo que habita en bosques y montañas. Protector del ganado y de la naturaleza, la tradición le atribuye profundos conocimientos sobre la agricultura, la ganadería y otros saberes que posteriormente aprendieron los seres humanos."
+    },
+    {
+        "nombre": "Donibane",
+        "descripcion": "Personaje de carácter legendario vinculado a tradiciones populares relacionadas con San Juan. En algunos relatos aparece asociado a acontecimientos extraordinarios y a lugares donde el mundo cotidiano se encuentra con el sobrenatural."
+    },
+    {
+        "nombre": "Eiztaria",
+        "descripcion": "El cazador sobrenatural que aparece en diversas leyendas vascas. Su figura suele estar ligada a bosques y montañas, donde protagoniza encuentros con seres míticos o sucesos que ponen a prueba el respeto hacia la naturaleza."
+    },
+    {
+        "nombre": "Jentil",
+        "descripcion": "Gigantes que, según la tradición, habitaron el País Vasco antes de la llegada del cristianismo. Se les atribuye la construcción de dólmenes, cromlechs y otros monumentos megalíticos, además de una fuerza extraordinaria y un profundo vínculo con las montañas."
+    },
+    {
+        "nombre": "Kurri-kurri (Mairu, Jentil)",
+        "descripcion": "Personaje legendario relacionado con los mairus y los jentiles. Según la tradición local, pertenece al antiguo mundo de gigantes y constructores, conservando rasgos de fuerza excepcional y una estrecha relación con los monumentos megalíticos."
+    },
+    {
+        "nombre": "Mairu",
+        "descripcion": "Ser legendario perteneciente a un antiguo pueblo anterior al ser humano actual. La tradición le atribuye la construcción de dólmenes, túmulos y otros monumentos megalíticos, asociándolo a grandes conocimientos y una fuerza fuera de lo común."
+    },
+    {
+        "nombre": "Mamur",
+        "descripcion": "Ser sobrenatural mencionado en algunas tradiciones locales como habitante del mundo invisible. Su imagen cambia según la zona, aunque suele aparecer vinculada a relatos sobre encuentros misteriosos y lugares apartados."
+    },
+    {
+        "nombre": "Mateo-txistu",
+        "descripcion": "Personaje legendario conocido por su relación con la música y el txistu. En la tradición popular protagoniza relatos donde el sonido de su instrumento se vincula a sucesos extraordinarios o a la presencia de seres sobrenaturales."
+    },
+    {
+        "nombre": "Mikolas",
+        "descripcion": "Figura legendaria presente en algunas tradiciones vascas. Dependiendo del relato, aparece como un personaje singular relacionado con acontecimientos extraordinarios y con el mundo de las creencias populares."
+    },
+    {
+        "nombre": "Olentzero",
+        "descripcion": "Personaje tradicional de origen mitológico representado como un carbonero que desciende de las montañas durante el solsticio de invierno. En la actualidad es el encargado de repartir regalos en la Navidad vasca, aunque sus raíces se remontan a antiguas tradiciones populares."
+    },
+    {
+        "nombre": "Samartintxiki",
+        "descripcion": "Héroe popular conocido por vencer a gigantes y otros seres mediante el ingenio. Sus aventuras simbolizan la inteligencia frente a la fuerza bruta y forman parte de numerosos relatos tradicionales vascos."
+    },
+    {
+        "nombre": "Samiel",
+        "descripcion": "Ser sobrenatural presente en algunas leyendas como representación de una fuerza oscura o peligrosa. Su figura varía según la tradición, apareciendo vinculada a pruebas, tentaciones o acontecimientos extraordinarios."
+    },
+    {
+        "nombre": "San Martinico",
+        "descripcion": "Versión legendaria de San Martín caracterizada por su astucia. En numerosos relatos consigue engañar a gigantes y otros seres sobrenaturales, obteniendo para la humanidad conocimientos o recursos que antes permanecían ocultos."
+    },
+    {
+        "nombre": "Sugaar",
+        "descripcion": "Ser sobrenatural asociado a la serpiente y al fuego, considerado una de las principales figuras de la mitología vasca. Habita cuevas y montañas y, según muchas tradiciones, es compañero de Mari y símbolo de la fuerza creadora de la naturaleza."
+    },
+    {
+        "nombre": "Sugoi",
+        "descripcion": "Gran serpiente o dragón de carácter sobrenatural presente en distintas leyendas vascas. Se relaciona con cuevas, ríos y parajes salvajes, representando el poder y el misterio de las fuerzas naturales."
+    },
+    {
+        "nombre": "Tartalo",
+        "descripcion": "Gigante de un solo ojo que vive en cuevas y montañas. Temido por su enorme fuerza, protagoniza numerosas leyendas en las que los seres humanos logran escapar de él gracias a la inteligencia y el ingenio."
+    },
+    {
+        "nombre": "Torto",
+        "descripcion": "Nombre con el que se conoce en algunas comarcas al gigante cíclope equivalente al Tartalo. Comparte su aspecto de un solo ojo y su papel como poderoso habitante de cuevas y lugares apartados."
+    },
+    {
+        "nombre": "Traganarru",
+        "descripcion": "Criatura monstruosa descrita como un ser de enorme apetito capaz de devorar personas o animales. En la tradición popular simboliza el peligro de adentrarse en lugares desconocidos y aparece como antagonista en diversos relatos."
+    }
+    ,
+    {
+        "nombre": "Aide (Aideko, Aidetikako)",
+        "descripcion": "Espíritu relacionado con el viento y el aire en la tradición vasca. Se manifiesta como una fuerza invisible capaz de influir en el entorno y cuyo comportamiento varía según las creencias de cada localidad."
+    },
+    {
+        "nombre": "Aidegaxto",
+        "descripcion": "Manifestación malévola del viento o del aire, asociada a fenómenos atmosféricos adversos y a presencias sobrenaturales que alteran la tranquilidad de personas y animales."
+    },
+    {
+        "nombre": "Aari",
+        "descripcion": "Ser mencionado en algunas tradiciones locales cuyo significado y características varían según la comarca. Se relaciona con antiguos relatos populares y con el mundo sobrenatural."
+    },
+    {
+        "nombre": "Ames (Amets)",
+        "descripcion": "Representación sobrenatural de los sueños. En la tradición vasca, los sueños podían interpretarse como mensajes, advertencias o presagios procedentes del mundo invisible."
+    },
+    {
+        "nombre": "Andabide",
+        "descripcion": "Camino o senda vinculada a seres sobrenaturales y a antiguas creencias populares. Su recorrido se considera especial y aparece asociado a relatos de carácter mítico."
+    },
+    {
+        "nombre": "Ardi",
+        "descripcion": "La oveja aparece en algunas leyendas vascas con un carácter simbólico o sobrenatural, especialmente en relatos relacionados con pastores y seres de la montaña."
+    },
+    {
+        "nombre": "Argi",
+        "descripcion": "Luz de origen sobrenatural que aparece en diversos relatos populares. Puede servir como guía, advertencia o manifestación de la presencia de fuerzas invisibles."
+    },
+    {
+        "nombre": "Argiduna",
+        "descripcion": "Ser o aparición rodeada de una intensa luminosidad. Su presencia suele interpretarse como un fenómeno extraordinario relacionado con el mundo sobrenatural."
+    },
+    {
+        "nombre": "Atxular (Axular)",
+        "descripcion": "Personaje legendario cuyo nombre aparece en diversas tradiciones populares. Dependiendo del relato, se relaciona con conocimientos extraordinarios o con seres sobrenaturales."
+    },
+    {
+        "nombre": "Axular (Sugoi, Mikelats)",
+        "descripcion": "Figura legendaria vinculada en algunas tradiciones a Sugoi y Mikelats. Su imagen varía según la localidad y forma parte del conjunto de relatos sobre personajes sobrenaturales."
+    },
+    {
+        "nombre": "Azti",
+        "descripcion": "Persona dotada de conocimientos sobrenaturales o capacidad de adivinación. En la tradición vasca se le atribuye la facultad de interpretar señales y realizar prácticas mágicas."
+    },
+    {
+        "nombre": "Beigorri",
+        "descripcion": "Animal sobrenatural de color rojo que aparece en distintas leyendas. Su presencia suele anunciar acontecimientos extraordinarios o simbolizar una fuerza sobrenatural."
+    },
+    {
+        "nombre": "Camino de la Iglesia",
+        "descripcion": "Sendero tradicional asociado a antiguas creencias y procesiones. En algunas leyendas se considera un lugar de tránsito entre el mundo humano y el sobrenatural."
+    },
+    {
+        "nombre": "Eate",
+        "descripcion": "Ser relacionado con las tormentas y los fenómenos atmosféricos. Según la tradición, su presencia se manifiesta mediante el viento, la lluvia y otros cambios bruscos del tiempo."
+    },
+    {
+        "nombre": "Edeinsuge",
+        "descripcion": "Serpiente o dragón sobrenatural mencionado en algunas tradiciones vascas. Se relaciona con cuevas, montañas y lugares apartados, donde representa el poder de la naturaleza."
+    },
+    {
+        "nombre": "Egoi",
+        "descripcion": "Entidad sobrenatural presente en determinadas leyendas populares. Sus características cambian según la tradición oral de cada comarca."
+    },
+    {
+        "nombre": "Eguberri",
+        "descripcion": "Personificación mítica del periodo navideño en algunas tradiciones vascas. Se relaciona con antiguos ritos del solsticio de invierno y con el ciclo anual."
+    },
+    {
+        "nombre": "Erribide",
+        "descripcion": "Camino tradicional mencionado en relatos populares y asociado al paso de seres sobrenaturales o de procesiones legendarias."
+    },
+    {
+        "nombre": "Errolan",
+        "descripcion": "Versión vasca del héroe Roldán. La tradición le atribuye una fuerza extraordinaria y explica mediante sus hazañas el origen legendario de montañas, peñas y megalitos."
+    },
+    {
+        "nombre": "Gaizkiñ",
+        "descripcion": "Ser o espíritu de carácter perjudicial presente en algunas creencias populares. Se le atribuye la capacidad de causar infortunios o alterar la vida cotidiana."
+    },
+    {
+        "nombre": "Gauargi",
+        "descripcion": "Luz sobrenatural que aparece durante la noche. En las leyendas puede guiar, desorientar o anunciar la presencia de otros seres del mundo invisible."
+    },
+    {
+        "nombre": "Gaueko",
+        "descripcion": "Espíritu de la noche asociado a la oscuridad y a los peligros nocturnos. La tradición aconseja respetar sus dominios y evitar determinados lugares tras la puesta del sol."
+    },
+    {
+        "nombre": "Gizotso",
+        "descripcion": "Hombre lobo de la tradición vasca. Se trata de una persona capaz de transformarse en lobo, protagonizando relatos relacionados con el miedo y la vida salvaje."
+    },
+    {
+        "nombre": "Gorputzbide",
+        "descripcion": "Camino funerario utilizado tradicionalmente para trasladar a los difuntos. Las creencias populares lo consideran un recorrido cargado de simbolismo y presencia sobrenatural."
+    },
+    {
+        "nombre": "Gorri txiki",
+        "descripcion": "Pequeño ser sobrenatural asociado por su nombre al color rojo. Según la tradición local, puede aparecer como una criatura traviesa o misteriosa."
+    },
+    {
+        "nombre": "Herensuge",
+        "descripcion": "Gran dragón de varias cabezas presente en numerosas leyendas vascas. Representa una fuerza destructiva que suele ser derrotada por héroes o santos."
+    },
+    {
+        "nombre": "Idinarru",
+        "descripcion": "Criatura legendaria relacionada con la piel de un buey. Su figura aparece en relatos tradicionales vinculados al mundo rural y a acontecimientos extraordinarios."
+    },
+    {
+        "nombre": "Igoin o Igone",
+        "descripcion": "Personaje mencionado en algunas tradiciones locales. Sus características cambian según la comarca y forma parte del patrimonio oral vasco."
+    },
+    {
+        "nombre": "Ihizi",
+        "descripcion": "Espíritu o presencia relacionada con la caza y los animales salvajes. Se asocia a los bosques y a la actividad cinegética tradicional."
+    },
+    {
+        "nombre": "Ilbide o Hilbide",
+        "descripcion": "Camino funerario utilizado para conducir a los difuntos hasta el lugar de enterramiento. La tradición le atribuye un carácter sagrado y un fuerte simbolismo."
+    },
+    {
+        "nombre": "Inguma",
+        "descripcion": "Espíritu nocturno que visita a las personas mientras duermen. Se le atribuye la capacidad de provocar pesadillas, sensación de ahogo e inquietud durante la noche."
+    },
+    {
+        "nombre": "Inkoa",
+        "descripcion": "Antigua divinidad o ídolo mencionado en algunas fuentes relacionadas con las creencias precristianas del País Vasco."
+    },
+    {
+        "nombre": "Intxixu",
+        "descripcion": "Genio o duende que habita en cuevas y simas. En muchas leyendas protege tesoros ocultos y evita que los curiosos se adentren en determinados lugares."
+    },
+    {
+        "nombre": "Ipistekoarri",
+        "descripcion": "Piedra legendaria asociada a antiguas creencias populares y a relatos sobre acontecimientos extraordinarios."
+    },
+    {
+        "nombre": "Iraunsuge",
+        "descripcion": "Serpiente sobrenatural vinculada a cuevas y parajes montañosos. Forma parte del conjunto de dragones y grandes ofidios de la mitología vasca."
+    },
+    {
+        "nombre": "Kixmi",
+        "descripcion": "Nombre con el que algunas tradiciones identifican al mono o al diablo, utilizado para representar la llegada de una nueva religión frente a las antiguas creencias."
+    },
+    {
+        "nombre": "Korputzbide",
+        "descripcion": "Variante del nombre Gorputzbide, el camino funerario utilizado tradicionalmente para el traslado de los difuntos."
+    },
+    {
+        "nombre": "Kurtzeko-bide",
+        "descripcion": "Camino tradicional relacionado con cruces o lugares de carácter religioso, al que la tradición popular atribuye un significado simbólico."
+    },
+    {
+        "nombre": "Lañaide",
+        "descripcion": "Sendero legendario mencionado en algunas tradiciones vascas y asociado a antiguas creencias sobre el tránsito de seres sobrenaturales."
+    },
+    {
+        "nombre": "Laño",
+        "descripcion": "Personificación sobrenatural de la niebla. Se relaciona con fenómenos atmosféricos que ocultan el paisaje y envuelven determinados lugares en un ambiente misterioso."
+    },
+    {
+        "nombre": "Latsari",
+        "descripcion": "Ser sobrenatural vinculado a arroyos y cursos de agua. Habita parajes húmedos y aparece en leyendas relacionadas con la naturaleza."
+    },
+    {
+        "nombre": "Maide",
+        "descripcion": "Ser legendario relacionado con los mairus y con la construcción de monumentos megalíticos. En algunas tradiciones se considera un antiguo habitante del País Vasco."
+    },
+    {
+        "nombre": "Maju",
+        "descripcion": "Nombre alternativo con el que algunas tradiciones identifican a Sugaar, la gran serpiente sobrenatural asociada a Mari y a las fuerzas de la naturaleza."
+    },
+    {
+        "nombre": "Maru",
+        "descripcion": "Ser legendario mencionado en diferentes relatos populares. Su figura cambia según la comarca y suele relacionarse con antiguas tradiciones míticas."
+    },
+    {
+        "nombre": "Mikelats",
+        "descripcion": "Hijo de Mari y Sugaar según algunas tradiciones. Se le asocia a las tormentas y a las fuerzas descontroladas de la naturaleza, en contraste con su hermano Atarrabi."
+    },
+    {
+        "nombre": "Odeiaixe",
+        "descripcion": "Entidad relacionada con las tormentas y el mal tiempo. Su presencia se manifiesta mediante fuertes vientos, lluvia y fenómenos atmosféricos intensos."
+    },
+    {
+        "nombre": "Oiarzun",
+        "descripcion": "Nombre presente en algunas tradiciones legendarias asociado a relatos populares y acontecimientos de carácter sobrenatural."
+    },
+    {
+        "nombre": "Saindi-Maindi",
+        "descripcion": "Personaje legendario documentado en algunas tradiciones locales. Su figura forma parte del conjunto de seres y héroes del imaginario popular vasco."
+    },
+    {
+        "nombre": "Sanson",
+        "descripcion": "Versión legendaria del héroe bíblico Sansón, incorporada a la tradición popular vasca como personaje de fuerza extraordinaria."
+    },
+    {
+        "nombre": "Txaalgorri",
+        "descripcion": "Toro sobrenatural de color rojo mencionado en algunas leyendas. Comparte rasgos con otras criaturas bovinas míticas y simboliza la fuerza y el poder de la naturaleza."
+    }
+]
