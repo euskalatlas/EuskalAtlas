@@ -175,7 +175,7 @@ Promise.all([
                     layer.bindPopup(texto, {
     autoPan: true,
     autoPanPaddingTopLeft: [20, 20],
-    autoPanPaddingBottomRight: [20, 20]
+    autoPanPaddingBottomRight: [20, 10]
 }).openPopup();
 
                 }
