@@ -201,6 +201,9 @@ Promise.all([
 
     actualizarMapa();
 
+    console.log(categoriasSeleccionadas);
+    console.log(categoriasSeleccionadas.length);
+
     mapa.on("popupclose", function () {
 
         console.log("popupclose", moviendoDesdeLista);
