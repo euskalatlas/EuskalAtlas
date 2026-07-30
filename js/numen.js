@@ -86,8 +86,8 @@ function cargarNumen() {
 
    const provinciasOrden = [
     "Alava",
-    "Vizcaya",
-    "Guipuzcoa",
+    "BIZKAIA",
+    "GIPUZKOA",
     "Lapurdi",
     "Navarra",
     "Baja Navarra",
