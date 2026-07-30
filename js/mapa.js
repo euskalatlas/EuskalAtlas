@@ -284,9 +284,9 @@ switch(categoria){
         break;
 
     case "Otras entidades y motivos mitológicos":
-        color1 = "#f0c92d";
-        color2 = "#af8c18";
-        color3 = "#75540b";
+        color1 = "#f0ed53";
+        color2 = "#e9db15";
+        color3 = "#abad0d";
         break;
 }
 
