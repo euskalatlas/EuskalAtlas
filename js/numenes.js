@@ -143,8 +143,15 @@ document
 .getElementById("abrirNumenes")
 .addEventListener("click", function(){
 
-    actualizarListaNumenes(categoriaSeleccionada);
+if(categoriasSeleccionadas.length === 1){
 
+    actualizarListaNumenes(categoriasSeleccionadas[0]);
+
+}else{
+
+    actualizarListaNumenes("Todas las Categorias");
+
+}
     modalNumenes.classList.remove("oculto");
 
 });
