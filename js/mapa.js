@@ -255,12 +255,49 @@ function actualizarLeyenda(categoria){
 
     }else{
 
-        html = `
-        <h4>${categoria}</h4>
+let color1, color2, color3;
 
-        <div><span style="background:#e8e8e8"></span>Sin registros</div>
-        <div><span style="background:#6a040f"></span>Con registros</div>
-        `;
+switch(categoria){
+
+    case "Figuras mitológicas femeninas":
+        color1 = "#f38b94";
+        color2 = "#b23a48";
+        color3 = "#6a040f";
+        break;
+
+    case "Figuras mitológicas masculinas":
+        color1 = "#f19710";
+        color2 = "#a3660a";
+        color3 = "#6e4d04";
+        break;
+
+    case "Seres zoomorfos":
+        color1 = "#1432da";
+        color2 = "#09288f";
+        color3 = "#11035e";
+        break;
+
+    case "Fenómenos y manifestaciones naturales":
+        color1 = "#9417ce";
+        color2 = "#660f7c";
+        color3 = "#330346";
+        break;
+
+    case "Otras entidades y motivos mitológicos":
+        color1 = "#f0c92d";
+        color2 = "#af8c18";
+        color3 = "#75540b";
+        break;
+}
+
+html = `
+<h4>${categoria}</h4>
+
+<div><span style="background:#e8e8e8"></span>0</div>
+<div><span style="background:${color1}"></span>1</div>
+<div><span style="background:${color2}"></span>2–3</div>
+<div><span style="background:${color3}"></span>4+</div>
+`;
 
     }
 
