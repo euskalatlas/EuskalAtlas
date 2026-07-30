@@ -209,3 +209,11 @@ mapa.on("zoomstart", function () {
     mapa.closePopup();
 
 });
+
+window.addEventListener("resize", function () {
+
+    setTimeout(function () {
+        mapa.invalidateSize();
+    }, 100);
+
+});
