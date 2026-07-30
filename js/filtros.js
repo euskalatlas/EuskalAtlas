@@ -375,6 +375,8 @@ lista.innerHTML = "";
 
 });
 
+//
+
 const numenesVisibles = new Set();
 
 aplicarFiltros(mitologia).forEach(registro => {
