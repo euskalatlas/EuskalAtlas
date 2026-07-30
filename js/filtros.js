@@ -319,47 +319,61 @@ if(municipios.length === 0){
 
 lista.innerHTML = "";
 
-    municipios.forEach(m=>{
-const fila = document.createElement("div");
+   municipios.forEach(m => {
 
-fila.textContent = `${m.nombre} (${m.registros})`;
+    const fila = document.createElement("div");
 
-fila.style.cursor = "pointer";
+    // Enlace visible (igual que ahora)
+    const enlaceMapa = document.createElement("span");
+    enlaceMapa.textContent = `${m.nombre} (${m.registros})`;
+    enlaceMapa.style.cursor = "pointer";
 
-fila.addEventListener("click", function(){
+    enlaceMapa.addEventListener("click", function(){
 
-    // Si había un popup abierto, no volver a la vista inicial
-    moviendoDesdeLista = false;
-    mapa.closePopup();
+        moviendoDesdeLista = false;
+        mapa.closePopup();
 
-    capaMunicipios.eachLayer(function(layer){
+        capaMunicipios.eachLayer(function(layer){
 
-        if(layer.feature.properties.iz_ofizial === m.nombre){
+            if(layer.feature.properties.iz_ofizial === m.nombre){
 
-            moviendoDesdeLista = true;
+                moviendoDesdeLista = true;
 
-            const centro = layer.getBounds().getCenter();
+                const centro = layer.getBounds().getCenter();
 
-// Desplazar un poco el mapa hacia la izquierda
-const punto = mapa.project(centro, 11);
-punto.y -= 180;
+                const punto = mapa.project(centro,11);
+                punto.y -= 180;
 
-const nuevoCentro = mapa.unproject(punto, 11);
+                const nuevoCentro = mapa.unproject(punto,11);
 
-mapa.setView(nuevoCentro, 11);
+                mapa.setView(nuevoCentro,11);
 
-            layer.fire("click");
+                layer.fire("click");
 
-        }
+            }
+
+        });
 
     });
+
+    fila.appendChild(enlaceMapa);
+
+    // Enlace SOLO para lectores de pantalla
+    const enlaceFicha = document.createElement("a");
+
+    enlaceFicha.href =
+        `municipio.html?municipio=${encodeURIComponent(m.nombre)}`;
+
+    enlaceFicha.className = "sr-only";
+
+    enlaceFicha.textContent =
+        `Abrir la ficha completa del municipio ${m.nombre}`;
+
+    fila.appendChild(enlaceFicha);
+
+    lista.appendChild(fila);
 
 });
-
-lista.appendChild(fila);
-
-
-    });
 
 const numenesVisibles = new Set();
 
