@@ -96,7 +96,7 @@ function aplicarFiltrosSinNumenes(registros){
 
 }
 function colorearCategoria(categoria){
-
+    actualizarLeyenda(categoria);
     if(!capaMunicipios) return;
 
     capaMunicipios.eachLayer(function(layer){

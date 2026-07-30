@@ -1155,3 +1155,54 @@ footer{
     }
 
 }
+
+.leyendaMapa{
+
+    position:absolute;
+    bottom:20px;
+    left:20px;
+
+    background:white;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+
+    font-size:14px;
+
+    z-index:900;
+
+    min-width:170px;
+
+}
+
+.leyendaMapa h4{
+
+    margin:0 0 8px 0;
+    font-size:15px;
+
+}
+
+.leyendaItem{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin:5px 0;
+
+}
+
+.colorLeyenda{
+
+    width:18px;
+
+    height:18px;
+
+    border:1px solid #666;
+
+}
