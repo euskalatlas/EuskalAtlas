@@ -1224,3 +1224,11 @@ footer{
     vertical-align:middle;
 
 }
+
+h3 small{
+    display:block;
+    margin-top:6px;
+    font-size:14px;
+    font-weight:400;
+    color:#666;
+}
