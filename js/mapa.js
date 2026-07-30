@@ -204,9 +204,13 @@ Promise.all([
     });
 
 });
-mapa.on("zoomstart", function () {
+mapa.on("zoomend", function () {
 
-    mapa.closePopup();
+    const popup = mapa._popup;
+
+    if (popup) {
+        popup.update();
+    }
 
 });
 
