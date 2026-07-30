@@ -4,6 +4,18 @@
 
 var mapa = L.map("mapa").setView([42.6, -2.25], 8);
 
+const leyenda = L.control({ position: "bottomright" });
+
+leyenda.onAdd = function () {
+
+    this._div = L.DomUtil.create("div", "info legend");
+
+    return this._div;
+
+};
+
+leyenda.addTo(mapa);
+
 const vistaInicial = {
     center: mapa.getCenter(),
     zoom: mapa.getZoom()
@@ -224,55 +236,32 @@ window.addEventListener("resize", function () {
 
 function actualizarLeyenda(categoria){
 
-    const leyenda = document.getElementById("leyendaMapa");
+    let html = "";
 
     if(categoria === "Todas las Categorias"){
 
-        leyenda.innerHTML = `
-            <h4>Númenes</h4>
+        html = `
+        <h4>Númenes</h4>
 
-            <div class="leyendaItem">
-                <span class="colorLeyenda" style="background:#efefef"></span>
-                0
-            </div>
-
-            <div class="leyendaItem">
-                <span class="colorLeyenda" style="background:#ec0d8f"></span>
-                1
-            </div>
-
-            <div class="leyendaItem">
-                <span class="colorLeyenda" style="background:#af0663"></span>
-                2–3
-            </div>
-
-            <div class="leyendaItem">
-                <span class="colorLeyenda" style="background:#6e073b"></span>
-                4–6
-            </div>
-
-            <div class="leyendaItem">
-                <span class="colorLeyenda" style="background:#3b0219"></span>
-                7+
-            </div>
+        <div><span style="background:#efefef"></span>0</div>
+        <div><span style="background:#f169b9"></span>1</div>
+        <div><span style="background:#c52e81"></span>2–3</div>
+        <div><span style="background:#6e073b"></span>4–6</div>
+        <div><span style="background:#3b0219"></span>7+</div>
         `;
 
     }else{
 
-        leyenda.innerHTML = `
-            <h4>${categoria}</h4>
+        html = `
+        <h4>${categoria}</h4>
 
-            <div class="leyendaItem">
-                <span class="colorLeyenda" style="background:#efefef"></span>
-                Sin referencias
-            </div>
-
-            <div class="leyendaItem">
-                <span class="colorLeyenda" style="background:#ec0d8f"></span>
-                Con referencias
-            </div>
+        <div><span style="background:#e8e8e8"></span>Sin registros</div>
+        <div><span style="background:#6a040f"></span>Con registros</div>
         `;
 
     }
 
+    leyenda.getContainer().innerHTML = html;
+
 }
+

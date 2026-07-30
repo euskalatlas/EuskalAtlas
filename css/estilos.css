@@ -1156,27 +1156,6 @@ footer{
 
 }
 
-.leyendaMapa{
-
-    position:absolute;
-    bottom:20px;
-    left:20px;
-
-    background:white;
-
-    padding:12px;
-
-    border-radius:8px;
-
-    box-shadow:0 2px 8px rgba(0,0,0,.2);
-
-    font-size:14px;
-
-    z-index:900;
-
-    min-width:170px;
-
-}
 
 .leyendaMapa h4{
 
@@ -1204,5 +1183,32 @@ footer{
     height:18px;
 
     border:1px solid #666;
+
+}
+
+.info.legend{
+
+    background:white;
+    padding:12px;
+    border-radius:8px;
+    box-shadow:0 0 12px rgba(0,0,0,.25);
+
+    line-height:24px;
+    font-size:14px;
+
+}
+
+.info.legend span{
+
+    display:inline-block;
+
+    width:18px;
+    height:18px;
+
+    margin-right:8px;
+
+    border:1px solid #666;
+
+    vertical-align:middle;
 
 }
