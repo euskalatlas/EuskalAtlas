@@ -380,7 +380,15 @@ document.getElementById("totalNumenes").textContent =
 
 function actualizarMapa(){
 
-    colorearCategoria("Todas las Categorias");
+    if(categoriasSeleccionadas.length === 1){
+
+        colorearCategoria(categoriasSeleccionadas[0]);
+
+    }else{
+
+        colorearCategoria("Todas las Categorias");
+
+    }
 
     actualizarResultados();
 
