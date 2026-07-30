@@ -1206,8 +1206,8 @@ footer{
 
 }
 
-.leaflet-bottom{
-    bottom:70px;
+.leaflet-bottom.leaflet-right{
+    margin-bottom:80px;
 }
 
 .info.legend span{

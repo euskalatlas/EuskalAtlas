@@ -84,7 +84,7 @@ Promise.all([
 
                 mouseout: function () {
 
-                    colorearCategoria(categoriaSeleccionada);
+                        actualizarMapa();
 
                 },
 
@@ -197,7 +197,7 @@ Promise.all([
 
     }).addTo(mapa);
 
-    categoriaSeleccionada = "Todas las Categorias";
+    // categoriaSeleccionada = "Todas las Categorias";
 
     actualizarMapa();
 
