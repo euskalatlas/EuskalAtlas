@@ -173,8 +173,10 @@ Promise.all([
                     `;
 
                     layer.bindPopup(texto, {
-                        autoPan: false
-                    }).openPopup();
+    autoPan: true,
+    autoPanPaddingTopLeft: [20, 20],
+    autoPanPaddingBottomRight: [20, 20]
+}).openPopup();
 
                 }
             });
