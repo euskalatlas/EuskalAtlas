@@ -181,8 +181,8 @@ const registros = aplicarFiltros(
 function obtenerColorGeneral(cantidad){
 
     if(cantidad === 0) return "#efefef";
-    if(cantidad === 1) return "#f169b9";
-    if(cantidad <= 3) return "#c52e81";
+    if(cantidad === 1) return "#ee76bc";
+    if(cantidad <= 3) return "#d814a7";
     if(cantidad <= 6) return "#6e073b";
     return "#3b0219";
 
