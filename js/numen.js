@@ -190,13 +190,6 @@ volver.onclick = function (e) {
         </div>
 
         <div class="tarjeta">
-            <div class="numero">${categorias.length}</div>
-            <div class="texto">
-                ${categorias.length === 1 ? "Categoría" : "Categorías"}
-            </div>
-        </div>
-
-        <div class="tarjeta">
             <div class="numero">${fuentes.length}</div>
             <div class="texto">
                 ${fuentes.length === 1 ? "Fuente" : "Fuentes"}
