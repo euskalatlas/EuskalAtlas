@@ -204,12 +204,8 @@ Promise.all([
     });
 
 });
-mapa.on("zoomend", function () {
+mapa.on("zoomstart", function () {
 
-    const popup = mapa._popup;
-
-    if (popup) {
-        popup.update();
-    }
+    mapa.closePopup();
 
 });
