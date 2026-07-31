@@ -140,7 +140,7 @@ Promise.all([
 
                         texto += `
                             <div class="popup-dato">
-                                Númenes documentados: <strong>${numenes.length}</strong>
+                                Seres mitológicos documentados: <strong>${numenes.length}</strong>
                             </div>
 
                             <div class="popup-dato">
@@ -243,17 +243,31 @@ function actualizarLeyenda(categoria){
 
     if(categoria === "Todas las Categorias"){
 
-        html = `
-        <h4>Númenes</h4>
+    html = `
+    <h4>Escala</h4>
 
-        <div><span style="background:#efefef"></span>0</div>
-        <div><span style="background:#f169b9"></span>1</div>
-        <div><span style="background:#c52e81"></span>2–3</div>
-        <div><span style="background:#6e073b"></span>4–6</div>
-        <div><span style="background:#3b0219"></span>7+</div>
-        `;
+    <div aria-label="Sin registros">
+        <span style="background:#efefef"></span>0
+    </div>
 
-    }else{
+    <div aria-label="Un ser mitológico">
+        <span style="background:#f169b9"></span>1
+    </div>
+
+    <div aria-label="Entre dos y tres seres mitológicos">
+        <span style="background:#c52e81"></span>2–3
+    </div>
+
+    <div aria-label="Entre cuatro y seis seres mitológicos">
+        <span style="background:#6e073b"></span>4–6
+    </div>
+
+    <div aria-label="Siete o más seres mitológicos">
+        <span style="background:#3b0219"></span>7+
+    </div>
+    `;
+
+}else{
 
 let color1, color2, color3;
 
@@ -291,17 +305,36 @@ switch(categoria){
 }
 
 html = `
-<h4>${categoria}</h4>
+<h4>Escala</h4>
 
-<div><span style="background:#e8e8e8"></span>0</div>
-<div><span style="background:${color1}"></span>1</div>
-<div><span style="background:${color2}"></span>2–3</div>
-<div><span style="background:${color3}"></span>4+</div>
+<div aria-label="Sin registros">
+    <span style="background:#e8e8e8"></span>0
+</div>
+
+<div aria-label="Un ser mitológico">
+    <span style="background:${color1}"></span>1
+</div>
+
+<div aria-label="Entre dos y tres seres mitológicos">
+    <span style="background:${color2}"></span>2–3
+</div>
+
+<div aria-label="Cuatro o más seres mitológicos">
+    <span style="background:${color3}"></span>4+
+</div>
 `;
 
     }
 
     leyenda.getContainer().innerHTML = html;
+    const leyendaMapa = leyenda.getContainer();
+
+    leyendaMapa.setAttribute("role", "img");
+
+    leyendaMapa.setAttribute(
+        "aria-label",
+        "Escala de colores del mapa. Cuanto más oscuro es el color, mayor es el número de seres mitológicos registrados en cada municipio."
+    );
 
 }
 
