@@ -84,15 +84,66 @@ volver.onclick = function (e) {
 };
 contenido.innerHTML = "<div class='contenido'></div>";
     
-    const listaNumenes = numenes.map(numen => `
-        <a class="numen"
-        href="numen.html?numen=${encodeURIComponent(numen)}"
-        >
+    const categoriasOrden = [
+    "Figuras mitológicas femeninas",
+    "Figuras mitológicas masculinas",
+    "Seres zoomorfos",
+    "Fenómenos y manifestaciones naturales",
+    "Otras entidades y motivos mitológicos"
+];
 
-            ${numen}
+const numenesPorCategoria = {};
 
-        </a>
-    `).join("");
+resultados.forEach(r => {
+
+    if(!r.Categoria || !r.numen) return;
+
+    const categoria = r.Categoria.trim();
+    const numen = r.numen.trim();
+
+    if(!numenesPorCategoria[categoria]){
+        numenesPorCategoria[categoria] = new Set();
+    }
+
+    numenesPorCategoria[categoria].add(numen);
+
+});
+
+let listaNumenes = "";
+
+categoriasOrden.forEach(categoria => {
+
+    if(!numenesPorCategoria[categoria]) return;
+
+    const lista = [...numenesPorCategoria[categoria]]
+        .sort((a,b)=>a.localeCompare(b,"es"));
+
+    listaNumenes += `
+
+<div class="categoria-numenes">
+
+    <h4>${categoria}</h4>
+
+    <div class="lista-numenes">
+
+        ${lista.map(numen=>`
+
+            <a class="numen"
+               href="numen.html?numen=${encodeURIComponent(numen)}">
+
+                ${numen}
+
+            </a>
+
+        `).join("")}
+
+    </div>
+
+</div>
+
+`;
+
+});
     const listaFuentes = fuentes.map(fuente => `
         <li>${fuente}</li>
     `).join("");
@@ -109,13 +160,9 @@ contenido.innerHTML = "<div class='contenido'></div>";
 
         <div class="tarjeta">
             <div class="numero">${numenes.length}</div>
-            <div class="texto">Númenes</div>
+            <div class="texto">Seres mitológicos</div>
         </div>
 
-        <div class="tarjeta">
-            <div class="numero">${categorias.length}</div>
-            <div class="texto">Categorías</div>
-        </div>
 
         <div class="tarjeta">
             <div class="numero">${fuentes.length}</div>
@@ -126,13 +173,13 @@ contenido.innerHTML = "<div class='contenido'></div>";
 
     <section class="bloque">
 
-        <h3>Númenes documentados</h3>
+<h3>Seres mitológicos documentados</h3>
 
-        <div class="lista-numenes">
+<p>
+    Pulsa sobre cualquier ser mitológico para acceder a su ficha completa.
+</p>
 
-            ${listaNumenes}
-
-        </div>
+${listaNumenes}
 
     </section>
 

@@ -372,3 +372,44 @@ footer{
     }
 
 }
+.lista-numenes{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:22px;
+
+}
+
+.lista-numenes h4{
+
+    width:100%;
+
+}
+
+.categoria-numenes{
+
+    margin-top:25px;
+
+}
+
+.categoria-numenes h4{
+
+    margin:0 0 12px 0;
+
+    padding-bottom:6px;
+
+    border-bottom:2px solid #e8e8e8;
+
+    font-size:16px;
+
+    color:#1b4332;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+}
