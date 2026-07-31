@@ -67,7 +67,7 @@ contenido.innerHTML = "<div class='contenido'></div>";
     document.getElementById("tituloCabecera").textContent = municipio;
 document.getElementById("subtituloCabecera").textContent = provincia;
 
-const volver = document.querySelector(".volver");
+const volver = document.querySelector(".volver-atras");
 
 volver.textContent = "← Volver";
 

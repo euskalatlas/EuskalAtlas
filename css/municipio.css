@@ -78,6 +78,16 @@ header{
 
     transform:translateY(-50%);
 
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.volver a{
+
     color:white;
 
     text-decoration:none;
@@ -88,12 +98,17 @@ header{
 
 }
 
-.volver:hover{
+.volver a:hover{
 
     text-decoration:underline;
 
 }
 
+.volver span{
+
+    color:rgba(255,255,255,.7);
+
+}
 .titulo{
 
     display:flex;
@@ -341,9 +356,13 @@ footer{
     }
 
     .volver{
-        position:static;
-        transform:none;
-        margin-top:8px;
+    position:static;
+    transform:none;
+
+    justify-content:center;
+    flex-wrap:wrap;
+
+    margin-top:8px;
     }
 
     .contenido{
@@ -427,34 +446,5 @@ footer{
     gap:40px;
 
     align-items:start;
-
-}
-.volver-mapa{
-
-    display:inline-block;
-
-    margin:20px auto 10px;
-
-    color:#444;
-
-    text-decoration:none;
-
-    font-weight:600;
-
-    transition:0.2s;
-
-}
-
-.volver-mapa:hover{
-
-    color:#000;
-    text-decoration:underline;
-
-}
-
-.volver-mapa:focus{
-
-    outline:2px solid #000;
-    outline-offset:3px;
 
 }

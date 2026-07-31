@@ -160,7 +160,7 @@ document.getElementById("tituloCabecera").textContent = nombreNumen;
 document.getElementById("subtituloCabecera").textContent =
     categorias[0] ?? "";
 
-const volver = document.querySelector(".volver");
+const volver = document.querySelector(".volver-atras");
 
 volver.textContent = "← Volver";
 
