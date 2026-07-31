@@ -186,8 +186,8 @@ volver.onclick = function (e) {
 
         <div class="tarjeta">
             <div class="numero">${municipios.length}</div>
-            <div class="texto">Municipios</div>
-                ${fuentes.length === 1 ? "Municipio" : "Municipios"}
+            <div class="texto">
+                ${municipios.length === 1 ? "Municipio" : "Municipios"}
             </div>
         </div>
 
@@ -213,6 +213,9 @@ volver.onclick = function (e) {
     <section class="bloque">
 
         <h3>Presencia geográfica</h3>
+        <p>
+            Selecciona cualquier municipio para acceder a su ficha completa.
+        </p>
 
         ${htmlMunicipios}
 

@@ -147,6 +147,35 @@ categoriasOrden.forEach(categoria => {
     const listaFuentes = fuentes.map(fuente => `
         <li>${fuente}</li>
     `).join("");
+    let mensajeSinDatos = "";
+
+    if (numenes.length === 0) {
+
+    contenido.innerHTML = `
+        <div class="contenido">
+
+            <div class="sin-datos">
+
+                <h3>ℹ️ Sin referencias documentadas</h3>
+
+                <p>
+                    Actualmente no se han documentado referencias mitológicas
+                    para este municipio en Euskal Atlas.
+                </p>
+
+                <p>
+                    Esta ficha podrá ampliarse en futuras actualizaciones a medida
+                    que se incorporen nuevas investigaciones y fuentes.
+                </p>
+
+            </div>
+
+        </div>
+    `;
+
+    return;
+
+}
     // ==========================
     // HTML
     // ==========================
@@ -159,11 +188,11 @@ categoriasOrden.forEach(categoria => {
     <div class="resumen">
 
         <div class="tarjeta">
-            <div class="numero">${fuentes.length}</div>
-            <div class="texto">
-                ${fuentes.length === 1 ? "Fuente" : "Fuentes"}
-            </div>
+        <div class="numero">${numenes.length}</div>
+        <div class="texto">
+            ${numenes.length === 1 ? "Ser mitológico" : "Seres mitológicos"}
         </div>
+    </div>  
 
         <div class="tarjeta">
             <div class="numero">${fuentes.length}</div>
@@ -175,6 +204,7 @@ categoriasOrden.forEach(categoria => {
     </div>
 
     <div class="informacion">
+    ${mensajeSinDatos}
 
     <section class="bloque">
 

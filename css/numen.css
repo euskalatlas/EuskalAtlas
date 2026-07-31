@@ -1,4 +1,13 @@
+html{
+    height:100%;
+}
+
 body{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
     background:#f5f5f5;
@@ -6,9 +15,15 @@ body{
 
 .contenido{
 
+    flex:1;
+
     max-width:1100px;
+    width:100%;
+
     margin:20px auto 50px auto;
     padding:0 25px;
+
+    box-sizing:border-box;
 
 }
 
@@ -174,32 +189,28 @@ body{
 }
 
 .lista-municipios ul{
-
+    list-style:none;
+    padding-left:0;
     margin:0;
-
-    padding-left:20px;
-
 }
 
 .lista-municipios li{
-
     margin:6px 0;
-
-    font-size:17px;
-
 }
 
 .municipio-link{
 
     color:#1b4332;
 
-    text-decoration:none;
+    text-decoration:underline;
+
+    font-weight:500;
 
 }
 
 .municipio-link:hover{
 
-    text-decoration:underline;
+    color:#2d6a4f;
 
 }
 
@@ -226,7 +237,6 @@ body{
 
     gap:40px;
 
-    margin-top:35px;
 
     align-items:start;
 
@@ -415,14 +425,21 @@ footer{
         gap:12px;
     }
 
-    .tarjeta{
-        width:100px;
-        padding:12px 8px;
+        .tarjeta{
+        width:85px;
+        padding:10px 6px;
     }
 
     .numero{
-        font-size:2.2rem;
+        font-size:1.8rem;
     }
+    .texto{
+
+    font-size:13px;
+
+    line-height:1.2;
+
+}
 
     .bloque h3{
         font-size:24px;
@@ -435,3 +452,8 @@ footer{
 
 }
 
+#contenido{
+
+    flex:1;
+
+}

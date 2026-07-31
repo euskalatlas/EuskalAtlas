@@ -876,6 +876,20 @@ a:focus{
     width:auto;
 
 }
+
+#abrirMunicipios{
+
+    width:220px;
+    padding:8px;
+
+    border:1px solid #bbb;
+    border-radius:5px;
+
+    background:white;
+
+    cursor:pointer;
+
+}
 /* ===========================
    SIN RESULTADOS
 =========================== */
@@ -1098,30 +1112,37 @@ footer{
 
     /* FILTROS */
 
-    .panel{
+.panel{
 
-        flex-direction:column;
-        align-items:stretch;
-        padding:15px;
+    display:grid;
 
-    }
+    grid-template-columns:1fr 1fr;
 
-    .filtro{
+    gap:15px;
 
-        width:100%;
+    padding:15px;
 
-    }
+}
+
+.filtro{
+
+    width:100%;
+
+}
 
     .filtro select,
     .filtro input,
     #abrirProvincias,
     #abrirCategorias,
     #abrirNumenes,
-    #abrirBibliografia{
+    #abrirBibliografia,
+    #abrirMunicipios,
+    #abrirFichaNumenes{
 
         width:100%;
 
     }
+
 
     /* MAPA */
 
@@ -1243,4 +1264,56 @@ h3 small{
     clip:rect(0,0,0,0);
     white-space:nowrap;
     border:0;
+}
+.municipio-item{
+
+    padding:10px 14px;
+
+    cursor:pointer;
+
+    border-bottom:1px solid #ececec;
+
+    transition:.2s;
+
+}
+
+.municipio-item:hover{
+
+    background:#edf7f1;
+
+    color:#1b4332;
+
+    font-weight:600;
+
+}
+#listaMunicipiosModal{
+
+    max-height:400px;
+
+    overflow-y:auto;
+
+}
+
+.municipio-item{
+
+    display:block;
+
+    padding:10px 14px;
+
+    color:#1b4332;
+
+    text-decoration:none;
+
+    border-bottom:1px solid #ececec;
+
+    transition:.2s;
+
+}
+
+.municipio-item:hover{
+
+    background:#edf7f1;
+
+    font-weight:600;
+
 }

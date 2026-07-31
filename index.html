@@ -95,6 +95,27 @@
 
 </div>
 
+<div class="filtro">
+
+    <label><b>Explorar municipio</b></label>
+
+    <button id="abrirMunicipios" type="button">
+        📄 Abrir ficha
+    </button>
+
+</div>
+
+
+<div class="filtro">
+
+    <label><b>Explorar ser mitológico</b></label>
+
+    <button id="abrirFichaNumenes" type="button">
+        📄 Abrir ficha
+    </button>
+
+</div>
+
 
 </div>
 
@@ -278,7 +299,7 @@
             </button>
 
             <button id="limpiarBibliografias">
-                Limpiar
+                Deseleccionar todas
             </button>
 
             <button id="cerrarBibliografia">
@@ -290,8 +311,57 @@
     </div>
 
 </div>
+<div id="modalMunicipios" class="modal oculto">
 
+    <div class="modalContenido">
 
+        <h3>Abrir ficha de municipio</h3>
+
+        <input
+            type="text"
+            id="buscarMunicipio"
+            placeholder="Buscar municipio..."
+        >
+
+        <div id="listaMunicipiosModal"></div>
+
+        <div class="modalBotones">
+
+            <button id="cerrarMunicipios">
+                Cerrar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="modalFichaNumenes" class="modal oculto">
+
+    <div class="modalContenido">
+
+        <h3>Seleccionar ser mitológico</h3>
+
+        <input
+            type="text"
+            id="buscarFichaNumen"
+            placeholder="Buscar ser mitológico..."
+        >
+
+        <div id="listaFichaNumenes"></div>
+
+        <div class="modalBotones">
+
+            <button id="cerrarFichaNumenes">
+                Cerrar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
 
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -303,6 +373,9 @@
 <script src="js/provincias.js"></script>
 <script src="js/categorias.js"></script>
 <script src="js/bibliografia.js"></script>
+<script src="js/municipios.js"></script>
+<script src="js/ficha-numenes.js"></script>
+
 
 <footer>
 
