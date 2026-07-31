@@ -1328,11 +1328,12 @@ footer{
 
     line-height:24px;
     font-size:14px;
+    margin-bottom: 150px !important;
 
 }
 
 .leaflet-bottom{
-    margin-bottom:80px !important;
+    margin-bottom:10px !important;
 }
 
 .info.legend span{
