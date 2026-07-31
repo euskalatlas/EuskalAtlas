@@ -187,6 +187,8 @@ volver.onclick = function (e) {
         <div class="tarjeta">
             <div class="numero">${municipios.length}</div>
             <div class="texto">Municipios</div>
+                ${fuentes.length === 1 ? "Municipio" : "Municipios"}
+            </div>
         </div>
 
         <div class="tarjeta">

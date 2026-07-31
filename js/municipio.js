@@ -159,27 +159,32 @@ categoriasOrden.forEach(categoria => {
     <div class="resumen">
 
         <div class="tarjeta">
-            <div class="numero">${numenes.length}</div>
-            <div class="texto">Seres mitológicos</div>
+            <div class="numero">${municipios.length}</div>
+            <div class="texto">Municipios</div>
+                ${fuentes.length === 1 ? "Municipio" : "Municipios"}
+            </div>
         </div>
-
 
         <div class="tarjeta">
             <div class="numero">${fuentes.length}</div>
-            <div class="texto">Fuentes</div>
+            <div class="texto">
+                ${fuentes.length === 1 ? "Fuente" : "Fuentes"}
+            </div>
         </div>
 
     </div>
 
+    <div class="informacion">
+
     <section class="bloque">
 
-<h3>Seres mitológicos documentados</h3>
+        <h3>Seres mitológicos documentados</h3>
 
-<p>
-    Pulsa sobre cualquier ser mitológico para acceder a su ficha completa.
-</p>
+        <p>
+            Selecciona cualquier ser mitológico para acceder a su ficha completa.
+        </p>
 
-${listaNumenes}
+        ${listaNumenes}
 
     </section>
 
@@ -194,6 +199,8 @@ ${listaNumenes}
         </ul>
 
     </section>
+
+</div>
 
 </div>
 
