@@ -159,9 +159,9 @@ categoriasOrden.forEach(categoria => {
     <div class="resumen">
 
         <div class="tarjeta">
-            <div class="numero">${municipios.length}</div>
-            <div class="texto">Municipios</div>
-                ${fuentes.length === 1 ? "Municipio" : "Municipios"}
+            <div class="numero">${fuentes.length}</div>
+            <div class="texto">
+                ${fuentes.length === 1 ? "Fuente" : "Fuentes"}
             </div>
         </div>
 
