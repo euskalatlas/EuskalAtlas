@@ -49,14 +49,25 @@ header p{
     align-items:flex-start;
     gap:15px;
 
-    padding:10px;
-
+    padding:10px 10px 4px;
     background:white;
 
     flex-wrap:wrap;
 
 }
+.panelExplorar{
 
+    display:flex;
+
+    justify-content:center;
+
+    background:white;
+
+    padding:8px 0 12px;
+
+    margin:0;
+
+}
 
 .filtro{
 
@@ -238,6 +249,48 @@ header p{
 
 }
 
+.modalCabecera{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:10px;
+
+}
+
+.modalCabecera h3{
+
+    margin:0;
+
+}
+
+.cerrarModal{
+
+    background:none;
+
+    border:none;
+
+    font-size:28px;
+
+    color:#777;
+
+    cursor:pointer;
+
+    line-height:1;
+
+    padding:0;
+
+}
+
+.cerrarModal:hover{
+
+    color:#1b4332;
+
+}
+
 #listaNumenes{
 
     height:300px;
@@ -294,7 +347,7 @@ header p{
 
     gap:24px;
 
-    padding:20px;
+    padding:10px 20px 20px;
 
     align-items:flex-start;
 
@@ -571,6 +624,13 @@ a:focus{
 
 }
 
+.explorarBotones{
+
+    display:flex;
+
+    gap:20px;
+
+}
 /* ===========================
    CABECERA
 =========================== */
@@ -890,6 +950,21 @@ a:focus{
     cursor:pointer;
 
 }
+
+#abrirFichaNumenes{
+
+    width:220px;
+    padding:8px;
+
+    border:1px solid #bbb;
+    border-radius:5px;
+
+    background:white;
+
+    cursor:pointer;
+
+}
+
 /* ===========================
    SIN RESULTADOS
 =========================== */
@@ -1063,7 +1138,23 @@ footer{
 ========================================== */
 
 @media (max-width:768px){
+    .explorarBotones{
 
+        display:grid;
+
+        grid-template-columns:1fr 1fr;
+
+        gap:15px;
+
+        width:100%;
+
+    }
+
+    .explorarBotones button{
+
+        width:100%;
+
+    }
     /* CABECERA */
 
     .cabecera{
@@ -1121,6 +1212,19 @@ footer{
     gap:15px;
 
     padding:15px;
+
+}
+.panelExplorar{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:0;
+
+    padding:8px 0 10px;
+
+    background:white;
 
 }
 
@@ -1286,7 +1390,8 @@ h3 small{
     font-weight:600;
 
 }
-#listaMunicipiosModal{
+#listaMunicipiosModal,
+#listaFichaNumenes{
 
     max-height:400px;
 
@@ -1315,5 +1420,17 @@ h3 small{
     background:#edf7f1;
 
     font-weight:600;
+
+}
+
+.infoFiltros{
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:14px;
+
+    margin:8px 0 12px;
 
 }

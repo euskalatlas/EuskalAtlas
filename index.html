@@ -94,30 +94,31 @@
     </button>
 
 </div>
+</div>
 
-<div class="filtro">
 
-    <label><b>Explorar municipio</b></label>
+<div class="panelExplorar">
 
-    <button id="abrirMunicipios" type="button">
-        📄 Abrir ficha
-    </button>
+    <div class="explorarBotones">
+
+        <button id="abrirMunicipios" type="button">
+            📄 Abrir ficha de municipio
+        </button>
+
+        <button id="abrirFichaNumenes" type="button">
+            ✨ Abrir ficha de ser mitológico
+        </button>
+
+    </div>
 
 </div>
 
 
-<div class="filtro">
-
-    <label><b>Explorar ser mitológico</b></label>
-
-    <button id="abrirFichaNumenes" type="button">
-        📄 Abrir ficha
-    </button>
 
 </div>
-
-
-</div>
+<p class="infoFiltros">
+    El mapa y el panel de resultados se actualizan automáticamente según los filtros seleccionados.
+</p>
 
 <div id="contenedorMapa">
     <p class="sr-only">
@@ -315,7 +316,18 @@
 
     <div class="modalContenido">
 
-        <h3>Abrir ficha de municipio</h3>
+        <div class="modalCabecera">
+
+            <h3>Abrir ficha de municipio</h3>
+
+            <button
+                id="cerrarMunicipios"
+                class="cerrarModal"
+                aria-label="Cerrar">
+                ×
+            </button>
+
+        </div>
 
         <input
             type="text"
@@ -325,14 +337,6 @@
 
         <div id="listaMunicipiosModal"></div>
 
-        <div class="modalBotones">
-
-            <button id="cerrarMunicipios">
-                Cerrar
-            </button>
-
-        </div>
-
     </div>
 
 </div>
@@ -341,7 +345,18 @@
 
     <div class="modalContenido">
 
-        <h3>Seleccionar ser mitológico</h3>
+        <div class="modalCabecera">
+
+            <h3>Seleccionar ser mitológico</h3>
+
+            <button
+                id="cerrarFichaNumenes"
+                class="cerrarModal"
+                aria-label="Cerrar">
+                ×
+            </button>
+
+        </div>
 
         <input
             type="text"
@@ -350,14 +365,6 @@
         >
 
         <div id="listaFichaNumenes"></div>
-
-        <div class="modalBotones">
-
-            <button id="cerrarFichaNumenes">
-                Cerrar
-            </button>
-
-        </div>
 
     </div>
 
