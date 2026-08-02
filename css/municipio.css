@@ -526,9 +526,17 @@ footer{
     .bibliografia li{
         font-size:16px;
     }
-        .informacion{
+    .informacion{
 
-        grid-template-columns:1fr;
+    display:flex;
+    flex-direction:column;
+
+    }
+
+    .bloque{
+
+        width:100%;
+        min-width:0;
 
     }
     
@@ -650,5 +658,17 @@ footer{
     object-fit:contain;
 
     flex-shrink:0;
+
+}
+
+@media (max-width:768px){
+
+    .informacion{
+
+        display:flex !important;
+        flex-direction:column !important;
+        gap:24px;
+
+    }
 
 }
