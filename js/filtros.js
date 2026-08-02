@@ -1,13 +1,13 @@
 /// ===============================
 // FILTROS DEL MAPA
 // ===============================
-
 // Categoria seleccionada actualmente
 let categoriasSeleccionadas = [];
 
 // ===============================
 // APLICAR TODOS LOS FILTROS
 // ===============================
+const TODAS = "__TODAS__";
 
 function aplicarFiltros(registros){
 
@@ -111,7 +111,7 @@ const registros = aplicarFiltros(
         // TODAS LAS CATEGORÍAS (VISIÓN GENERAL)
         // ==========================================
 
-        if(categoria === "Todas las Categorias"){
+        if(categoria === TODAS){
 
             // Contar númenes distintos del municipio
             let numenesTotales = new Set();
@@ -201,6 +201,7 @@ function obtenerColor(categoria,cantidad){
     switch(categoria){
 
         // Granate
+        
         case "Figuras mitológicas femeninas":
 
             if(cantidad===1) return "#f38b94";
@@ -363,7 +364,7 @@ lista.innerHTML = "";
 
     enlaceFicha.href =
         `municipio.html?municipio=${encodeURIComponent(m.nombre)}`;
-
+    
     enlaceFicha.className = "sr-only";
 
     enlaceFicha.textContent =
@@ -374,8 +375,6 @@ lista.innerHTML = "";
     lista.appendChild(fila);
 
 });
-
-//
 
 const numenesVisibles = new Set();
 
@@ -395,14 +394,14 @@ document.getElementById("totalNumenes").textContent =
 
 
 function actualizarMapa(){
-
+console.count("ACTUALIZAR MAPA");
     if(categoriasSeleccionadas.length === 1){
 
         colorearCategoria(categoriasSeleccionadas[0]);
 
     }else{
 
-        colorearCategoria("Todas las Categorias");
+        colorearCategoria(TODAS);
 
     }
 
@@ -427,7 +426,7 @@ function restablecerFiltros(){
     actualizarListaProvincias();
     actualizarListaCategorias();
     actualizarListaBibliografias();
-    actualizarListaNumenes("Todas las Categorias");
+    actualizarListaNumenes(TODAS);
 
     // Actualizar los textos de los botones
     actualizarResumenProvincias();

@@ -1,315 +1,1562 @@
 [
-    {
-        "nombre": "Aatxe, Ahatxe, Aatxegorri",
-        "descripcion": "Toro sobrenatural asociado a cuevas, montañas y lugares sagrados de la tradición vasca. Considerado un espíritu protector, suele manifestarse durante la noche para defender determinados parajes o castigar a quienes actúan de forma injusta o irrespetuosa. Sus nombres y algunos detalles de su apariencia varían según la localidad."
-    },
-    {
-        "nombre": "Zakur",
-        "descripcion": "Perro sobrenatural presente en diversas tradiciones vascas. Dependiendo del relato, actúa como guardián, guía o compañero de otros seres mitológicos, y su aparición suele estar relacionada con la protección de lugares especiales o con la advertencia de sucesos extraordinarios."
-    },
-    {
-        "nombre": "Amilamia",
-        "descripcion": "Ser femenino sobrenatural vinculado a barrancos, simas y cursos de agua. Se la describe como una criatura esquiva que habita lugares abruptos y poco transitados, donde protege su territorio y forma parte del imaginario de los espacios naturales más salvajes."
-    },
-    {
-        "nombre": "Eilalamia",
-        "descripcion": "Variante local de las lamias documentada en algunas tradiciones vascas. Comparte con ellas su naturaleza sobrenatural y su relación con ríos, fuentes y parajes húmedos, aunque las leyendas le atribuyen rasgos y comportamientos propios según la localidad."
-    },
-    {
-        "nombre": "Lamia",
-        "descripcion": "Ser femenino de gran belleza ligado a ríos, fuentes y puentes. Tradicionalmente se representa con pies de ave o de cabra y un largo cabello que peina con un peine de oro. Protagoniza numerosas leyendas sobre construcciones, tesoros ocultos y encuentros con seres humanos."
-    },
-    {
-        "nombre": "Mairi",
-        "descripcion": "Personaje femenino de la tradición vasca asociado en algunas leyendas a los antiguos constructores y a los seres sobrenaturales. Según la zona, aparece como una mujer de gran fuerza o como integrante del mundo mítico anterior a la llegada del cristianismo."
-    },
-    {
-        "nombre": "Mari",
-        "descripcion": "Principal figura de la mitología vasca y señora de las fuerzas de la naturaleza. Habita en cuevas y montañas, desplazándose entre distintos santuarios. Se relaciona con los fenómenos atmosféricos, la fertilidad y el mantenimiento del equilibrio entre las personas y el mundo natural."
-    },
-    {
-        "nombre": "Sorgin",
-        "descripcion": "Ser femenino dotado de poderes sobrenaturales, conocido popularmente como bruja. En la tradición vasca se asocia al conocimiento de la naturaleza, la medicina popular, los rituales y la magia. Su imagen varía entre benefactora y temida, según la época y la leyenda."
-    },
-    {
-        "nombre": "Alarabi",
-        "descripcion": "Ser sobrenatural presente en algunas tradiciones vascas, relacionado con relatos de carácter legendario. Su figura varía según la localidad, donde aparece como un personaje misterioso asociado a sucesos extraordinarios y al mundo invisible."
-    },
-    {
-        "nombre": "Atarrabi",
-        "descripcion": "Héroe legendario de la tradición vasca, conocido por su ingenio y por enfrentarse a fuerzas sobrenaturales. En los relatos representa la astucia y la capacidad humana para superar pruebas mediante la inteligencia y la perseverancia."
-    },
-    {
-        "nombre": "Basajaun",
-        "descripcion": "Gigante cubierto de abundante pelo que habita en bosques y montañas. Protector del ganado y de la naturaleza, la tradición le atribuye profundos conocimientos sobre la agricultura, la ganadería y otros saberes que posteriormente aprendieron los seres humanos."
-    },
-    {
-        "nombre": "Donibane",
-        "descripcion": "Personaje de carácter legendario vinculado a tradiciones populares relacionadas con San Juan. En algunos relatos aparece asociado a acontecimientos extraordinarios y a lugares donde el mundo cotidiano se encuentra con el sobrenatural."
-    },
-    {
-        "nombre": "Eiztaria",
-        "descripcion": "El cazador sobrenatural que aparece en diversas leyendas vascas. Su figura suele estar ligada a bosques y montañas, donde protagoniza encuentros con seres míticos o sucesos que ponen a prueba el respeto hacia la naturaleza."
-    },
-    {
-        "nombre": "Jentil",
-        "descripcion": "Gigantes que, según la tradición, habitaron el País Vasco antes de la llegada del cristianismo. Se les atribuye la construcción de dólmenes, cromlechs y otros monumentos megalíticos, además de una fuerza extraordinaria y un profundo vínculo con las montañas."
-    },
-    {
-        "nombre": "Kurri-kurri, Mairu, Jentil",
-        "descripcion": "Personaje legendario relacionado con los mairus y los jentiles. Según la tradición local, pertenece al antiguo mundo de gigantes y constructores, conservando rasgos de fuerza excepcional y una estrecha relación con los monumentos megalíticos."
-    },
-    {
-        "nombre": "Mairu",
-        "descripcion": "Ser legendario perteneciente a un antiguo pueblo anterior al ser humano actual. La tradición le atribuye la construcción de dólmenes, túmulos y otros monumentos megalíticos, asociándolo a grandes conocimientos y una fuerza fuera de lo común."
-    },
-    {
-        "nombre": "Mamur",
-        "descripcion": "Ser sobrenatural mencionado en algunas tradiciones locales como habitante del mundo invisible. Su imagen cambia según la zona, aunque suele aparecer vinculada a relatos sobre encuentros misteriosos y lugares apartados."
-    },
-    {
-        "nombre": "Mateo-txistu",
-        "descripcion": "Personaje legendario conocido por su relación con la música y el txistu. En la tradición popular protagoniza relatos donde el sonido de su instrumento se vincula a sucesos extraordinarios o a la presencia de seres sobrenaturales."
-    },
-    {
-        "nombre": "Mikolas",
-        "descripcion": "Figura legendaria presente en algunas tradiciones vascas. Dependiendo del relato, aparece como un personaje singular relacionado con acontecimientos extraordinarios y con el mundo de las creencias populares."
-    },
-    {
-        "nombre": "Olentzero",
-        "descripcion": "Personaje tradicional de origen mitológico representado como un carbonero que desciende de las montañas durante el solsticio de invierno. En la actualidad es el encargado de repartir regalos en la Navidad vasca, aunque sus raíces se remontan a antiguas tradiciones populares."
-    },
-    {
-        "nombre": "Samartintxiki",
-        "descripcion": "Héroe popular conocido por vencer a gigantes y otros seres mediante el ingenio. Sus aventuras simbolizan la inteligencia frente a la fuerza bruta y forman parte de numerosos relatos tradicionales vascos."
-    },
-    {
-        "nombre": "Samiel",
-        "descripcion": "Ser sobrenatural presente en algunas leyendas como representación de una fuerza oscura o peligrosa. Su figura varía según la tradición, apareciendo vinculada a pruebas, tentaciones o acontecimientos extraordinarios."
-    },
-    {
-        "nombre": "San Martinico",
-        "descripcion": "Versión legendaria de San Martín caracterizada por su astucia. En numerosos relatos consigue engañar a gigantes y otros seres sobrenaturales, obteniendo para la humanidad conocimientos o recursos que antes permanecían ocultos."
-    },
-    {
-        "nombre": "Sugaar",
-        "descripcion": "Ser sobrenatural asociado a la serpiente y al fuego, considerado una de las principales figuras de la mitología vasca. Habita cuevas y montañas y, según muchas tradiciones, es compañero de Mari y símbolo de la fuerza creadora de la naturaleza."
-    },
-    {
-        "nombre": "Sugoi",
-        "descripcion": "Gran serpiente o dragón de carácter sobrenatural presente en distintas leyendas vascas. Se relaciona con cuevas, ríos y parajes salvajes, representando el poder y el misterio de las fuerzas naturales."
-    },
-    {
-        "nombre": "Tartalo",
-        "descripcion": "Gigante de un solo ojo que vive en cuevas y montañas. Temido por su enorme fuerza, protagoniza numerosas leyendas en las que los seres humanos logran escapar de él gracias a la inteligencia y el ingenio."
-    },
-    {
-        "nombre": "Torto",
-        "descripcion": "Nombre con el que se conoce en algunas comarcas al gigante cíclope equivalente al Tartalo. Comparte su aspecto de un solo ojo y su papel como poderoso habitante de cuevas y lugares apartados."
-    },
-    {
-        "nombre": "Traganarru",
-        "descripcion": "Criatura monstruosa descrita como un ser de enorme apetito capaz de devorar personas o animales. En la tradición popular simboliza el peligro de adentrarse en lugares desconocidos y aparece como antagonista en diversos relatos."
-    }
-    ,
-    {
-        "nombre": "Aide (Aideko, Aidetikako)",
-        "descripcion": "Espíritu relacionado con el viento y el aire en la tradición vasca. Se manifiesta como una fuerza invisible capaz de influir en el entorno y cuyo comportamiento varía según las creencias de cada localidad."
-    },
-    {
-        "nombre": "Aidegaxto",
-        "descripcion": "Manifestación malévola del viento o del aire, asociada a fenómenos atmosféricos adversos y a presencias sobrenaturales que alteran la tranquilidad de personas y animales."
-    },
-    {
-        "nombre": "Aari",
-        "descripcion": "Ser mencionado en algunas tradiciones locales cuyo significado y características varían según la comarca. Se relaciona con antiguos relatos populares y con el mundo sobrenatural."
-    },
-    {
-        "nombre": "Ames, Amets",
-        "descripcion": "Representación sobrenatural de los sueños. En la tradición vasca, los sueños podían interpretarse como mensajes, advertencias o presagios procedentes del mundo invisible."
-    },
-    {
-        "nombre": "Andabide",
-        "descripcion": "Camino o senda vinculada a seres sobrenaturales y a antiguas creencias populares. Su recorrido se considera especial y aparece asociado a relatos de carácter mítico."
-    },
-    {
-        "nombre": "Ardi",
-        "descripcion": "La oveja aparece en algunas leyendas vascas con un carácter simbólico o sobrenatural, especialmente en relatos relacionados con pastores y seres de la montaña."
-    },
-    {
-        "nombre": "Argi",
-        "descripcion": "Luz de origen sobrenatural que aparece en diversos relatos populares. Puede servir como guía, advertencia o manifestación de la presencia de fuerzas invisibles."
-    },
-    {
-        "nombre": "Argiduna",
-        "descripcion": "Ser o aparición rodeada de una intensa luminosidad. Su presencia suele interpretarse como un fenómeno extraordinario relacionado con el mundo sobrenatural."
-    },
-    {
-        "nombre": "Atxular, Axular",
-        "descripcion": "Personaje legendario cuyo nombre aparece en diversas tradiciones populares. Dependiendo del relato, se relaciona con conocimientos extraordinarios o con seres sobrenaturales."
-    },
-    {
-        "nombre": "Axular, Sugoi, Mikelats",
-        "descripcion": "Figura legendaria vinculada en algunas tradiciones a Sugoi y Mikelats. Su imagen varía según la localidad y forma parte del conjunto de relatos sobre personajes sobrenaturales."
-    },
-    {
-        "nombre": "Azti",
-        "descripcion": "Persona dotada de conocimientos sobrenaturales o capacidad de adivinación. En la tradición vasca se le atribuye la facultad de interpretar señales y realizar prácticas mágicas."
-    },
-    {
-        "nombre": "Beigorri",
-        "descripcion": "Animal sobrenatural de color rojo que aparece en distintas leyendas. Su presencia suele anunciar acontecimientos extraordinarios o simbolizar una fuerza sobrenatural."
-    },
-    {
-        "nombre": "Camino de la Iglesia",
-        "descripcion": "Sendero tradicional asociado a antiguas creencias y procesiones. En algunas leyendas se considera un lugar de tránsito entre el mundo humano y el sobrenatural."
-    },
-    {
-        "nombre": "Eate",
-        "descripcion": "Ser relacionado con las tormentas y los fenómenos atmosféricos. Según la tradición, su presencia se manifiesta mediante el viento, la lluvia y otros cambios bruscos del tiempo."
-    },
-    {
-        "nombre": "Edeinsuge",
-        "descripcion": "Serpiente o dragón sobrenatural mencionado en algunas tradiciones vascas. Se relaciona con cuevas, montañas y lugares apartados, donde representa el poder de la naturaleza."
-    },
-    {
-        "nombre": "Egoi",
-        "descripcion": "Entidad sobrenatural presente en determinadas leyendas populares. Sus características cambian según la tradición oral de cada comarca."
-    },
-    {
-        "nombre": "Eguberri",
-        "descripcion": "Personificación mítica del periodo navideño en algunas tradiciones vascas. Se relaciona con antiguos ritos del solsticio de invierno y con el ciclo anual."
-    },
-    {
-        "nombre": "Erribide",
-        "descripcion": "Camino tradicional mencionado en relatos populares y asociado al paso de seres sobrenaturales o de procesiones legendarias."
-    },
-    {
-        "nombre": "Errolan",
-        "descripcion": "Versión vasca del héroe Roldán. La tradición le atribuye una fuerza extraordinaria y explica mediante sus hazañas el origen legendario de montañas, peñas y megalitos."
-    },
-    {
-        "nombre": "Gaizkiñ",
-        "descripcion": "Ser o espíritu de carácter perjudicial presente en algunas creencias populares. Se le atribuye la capacidad de causar infortunios o alterar la vida cotidiana."
-    },
-    {
-        "nombre": "Gauargi",
-        "descripcion": "Luz sobrenatural que aparece durante la noche. En las leyendas puede guiar, desorientar o anunciar la presencia de otros seres del mundo invisible."
-    },
-    {
-        "nombre": "Gaueko",
-        "descripcion": "Espíritu de la noche asociado a la oscuridad y a los peligros nocturnos. La tradición aconseja respetar sus dominios y evitar determinados lugares tras la puesta del sol."
-    },
-    {
-        "nombre": "Gizotso",
-        "descripcion": "Hombre lobo de la tradición vasca. Se trata de una persona capaz de transformarse en lobo, protagonizando relatos relacionados con el miedo y la vida salvaje."
-    },
-    {
-        "nombre": "Gorputzbide",
-        "descripcion": "Camino funerario utilizado tradicionalmente para trasladar a los difuntos. Las creencias populares lo consideran un recorrido cargado de simbolismo y presencia sobrenatural."
-    },
-    {
-        "nombre": "Gorri txiki",
-        "descripcion": "Pequeño ser sobrenatural asociado por su nombre al color rojo. Según la tradición local, puede aparecer como una criatura traviesa o misteriosa."
-    },
-    {
-        "nombre": "Herensuge",
-        "descripcion": "Gran dragón de varias cabezas presente en numerosas leyendas vascas. Representa una fuerza destructiva que suele ser derrotada por héroes o santos."
-    },
-    {
-        "nombre": "Idinarru",
-        "descripcion": "Criatura legendaria relacionada con la piel de un buey. Su figura aparece en relatos tradicionales vinculados al mundo rural y a acontecimientos extraordinarios."
-    },
-    {
-        "nombre": "Igoin o Igone",
-        "descripcion": "Personaje mencionado en algunas tradiciones locales. Sus características cambian según la comarca y forma parte del patrimonio oral vasco."
-    },
-    {
-        "nombre": "Ihizi",
-        "descripcion": "Espíritu o presencia relacionada con la caza y los animales salvajes. Se asocia a los bosques y a la actividad cinegética tradicional."
-    },
-    {
-        "nombre": "Ilbide o Hilbide",
-        "descripcion": "Camino funerario utilizado para conducir a los difuntos hasta el lugar de enterramiento. La tradición le atribuye un carácter sagrado y un fuerte simbolismo."
-    },
-    {
-        "nombre": "Inguma",
-        "descripcion": "Espíritu nocturno que visita a las personas mientras duermen. Se le atribuye la capacidad de provocar pesadillas, sensación de ahogo e inquietud durante la noche."
-    },
-    {
-        "nombre": "Inkoa",
-        "descripcion": "Antigua divinidad o ídolo mencionado en algunas fuentes relacionadas con las creencias precristianas del País Vasco."
-    },
-    {
-        "nombre": "Intxixu",
-        "descripcion": "Genio o duende que habita en cuevas y simas. En muchas leyendas protege tesoros ocultos y evita que los curiosos se adentren en determinados lugares."
-    },
-    {
-        "nombre": "Ipistekoarri",
-        "descripcion": "Piedra legendaria asociada a antiguas creencias populares y a relatos sobre acontecimientos extraordinarios."
-    },
-    {
-        "nombre": "Iraunsuge",
-        "descripcion": "Serpiente sobrenatural vinculada a cuevas y parajes montañosos. Forma parte del conjunto de dragones y grandes ofidios de la mitología vasca."
-    },
-    {
-        "nombre": "Kixmi",
-        "descripcion": "Nombre con el que algunas tradiciones identifican al mono o al diablo, utilizado para representar la llegada de una nueva religión frente a las antiguas creencias."
-    },
-    {
-        "nombre": "Korputzbide",
-        "descripcion": "Variante del nombre Gorputzbide, el camino funerario utilizado tradicionalmente para el traslado de los difuntos."
-    },
-    {
-        "nombre": "Kurtzeko-bide",
-        "descripcion": "Camino tradicional relacionado con cruces o lugares de carácter religioso, al que la tradición popular atribuye un significado simbólico."
-    },
-    {
-        "nombre": "Lañaide",
-        "descripcion": "Sendero legendario mencionado en algunas tradiciones vascas y asociado a antiguas creencias sobre el tránsito de seres sobrenaturales."
-    },
-    {
-        "nombre": "Laño",
-        "descripcion": "Personificación sobrenatural de la niebla. Se relaciona con fenómenos atmosféricos que ocultan el paisaje y envuelven determinados lugares en un ambiente misterioso."
-    },
-    {
-        "nombre": "Latsari",
-        "descripcion": "Ser sobrenatural vinculado a arroyos y cursos de agua. Habita parajes húmedos y aparece en leyendas relacionadas con la naturaleza."
-    },
-    {
-        "nombre": "Maide",
-        "descripcion": "Ser legendario relacionado con los mairus y con la construcción de monumentos megalíticos. En algunas tradiciones se considera un antiguo habitante del País Vasco."
-    },
-    {
-        "nombre": "Maju",
-        "descripcion": "Nombre alternativo con el que algunas tradiciones identifican a Sugaar, la gran serpiente sobrenatural asociada a Mari y a las fuerzas de la naturaleza."
-    },
-    {
-        "nombre": "Maru",
-        "descripcion": "Ser legendario mencionado en diferentes relatos populares. Su figura cambia según la comarca y suele relacionarse con antiguas tradiciones míticas."
-    },
-    {
-        "nombre": "Mikelats",
-        "descripcion": "Hijo de Mari y Sugaar según algunas tradiciones. Se le asocia a las tormentas y a las fuerzas descontroladas de la naturaleza, en contraste con su hermano Atarrabi."
-    },
-    {
-        "nombre": "Odeiaixe",
-        "descripcion": "Entidad relacionada con las tormentas y el mal tiempo. Su presencia se manifiesta mediante fuertes vientos, lluvia y fenómenos atmosféricos intensos."
-    },
-    {
-        "nombre": "Oiarzun",
-        "descripcion": "Nombre presente en algunas tradiciones legendarias asociado a relatos populares y acontecimientos de carácter sobrenatural."
-    },
-    {
-        "nombre": "Saindi-Maindi",
-        "descripcion": "Personaje legendario documentado en algunas tradiciones locales. Su figura forma parte del conjunto de seres y héroes del imaginario popular vasco."
-    },
-    {
-        "nombre": "Sanson",
-        "descripcion": "Versión legendaria del héroe bíblico Sansón, incorporada a la tradición popular vasca como personaje de fuerza extraordinaria."
-    },
-    {
-        "nombre": "Txaalgorri",
-        "descripcion": "Toro sobrenatural de color rojo mencionado en algunas leyendas. Comparte rasgos con otras criaturas bovinas míticas y simboliza la fuerza y el poder de la naturaleza."
-    }
+  {
+  "nombre": {
+    "es": "Aatxe, Ahatxe, Aatxegorri",
+    "eu": "Aatxe, Ahatxe, Aatxegorri",
+    "en": "Aatxe, Ahatxe, Aatxegorri",
+    "fr": "Aatxe, Ahatxe, Aatxegorri"
+  },
+  "descripcion": {
+    "es": "Toro sobrenatural asociado a cuevas, montañas y lugares sagrados de la tradición vasca. Considerado un espíritu protector, suele manifestarse durante la noche para defender determinados parajes o castigar a quienes actúan de forma injusta o irrespetuosa. Sus nombres y algunos detalles de su apariencia varían según la localidad.",
+    "eu": "Euskal tradizioko haitzulo, mendi eta leku sakratuei lotutako zezen naturaz gaindikoa da. Izpiritu babesletzat hartzen da, eta gauez agertu ohi da leku jakin batzuk babesteko edo bidegabeki nahiz errespeturik gabe jokatzen dutenak zigortzeko. Bere izena eta itxuraren xehetasun batzuk herriaren arabera aldatzen dira.",
+    "en": "A supernatural bull associated with caves, mountains and sacred places in Basque tradition. Regarded as a protective spirit, it usually appears at night to defend certain places or punish those who behave unfairly or disrespectfully. Its names and some details of its appearance vary depending on the locality.",
+    "fr": "Taureau surnaturel associé aux grottes, aux montagnes et aux lieux sacrés de la tradition basque. Considéré comme un esprit protecteur, il apparaît généralement la nuit pour défendre certains lieux ou punir ceux qui agissent de manière injuste ou irrespectueuse. Son nom et certains détails de son apparence varient selon les localités."
+  },
+  "categoria": {
+    "es": "Seres zoomorfos",
+    "eu": "Izaki zoomorfoak",
+    "en": "Zoomorphic beings",
+    "fr": "Êtres zoomorphes"
+  }
+},
+{
+  "nombre": {
+    "es": "Zakur",
+    "eu": "Zakur",
+    "en": "Zakur",
+    "fr": "Zakur"
+  },
+  "descripcion": {
+    "es": "Perro sobrenatural presente en diversas tradiciones vascas. Dependiendo del relato, actúa como guardián, guía o compañero de otros seres mitológicos, y su aparición suele estar relacionada con la protección de lugares especiales o con la advertencia de sucesos extraordinarios.",
+    "eu": "Euskal tradizio askotan agertzen den txakur naturaz gaindikoa da. Kondairaren arabera, zaindari, gidari edo beste izaki mitologiko batzuen lagun gisa jarduten du, eta bere agerpena leku berezien babesarekin edo ezohiko gertakarien iragarpenarekin lotzen da.",
+    "en": "A supernatural dog found in several Basque traditions. Depending on the story, it acts as a guardian, guide or companion to other mythological beings, and its appearance is often linked to the protection of special places or the warning of extraordinary events.",
+    "fr": "Chien surnaturel présent dans plusieurs traditions basques. Selon les récits, il agit comme gardien, guide ou compagnon d'autres êtres mythologiques, et son apparition est souvent liée à la protection de lieux particuliers ou à l'annonce d'événements extraordinaires."
+  },
+  "categoria": {
+    "es": "Seres zoomorfos",
+    "eu": "Izaki zoomorfoak",
+    "en": "Zoomorphic beings",
+    "fr": "Êtres zoomorphes"
+  }
+},
+{
+  "nombre": {
+    "es": "Amilamia",
+    "eu": "Amilamia",
+    "en": "Amilamia",
+    "fr": "Amilamia"
+  },
+  "descripcion": {
+    "es": "Ser femenino sobrenatural vinculado a barrancos, simas y cursos de agua. Se la describe como una criatura esquiva que habita lugares abruptos y poco transitados, donde protege su territorio y forma parte del imaginario de los espacios naturales más salvajes.",
+    "eu": "Amildegi, leize eta ur-ibilguei lotutako emakumezko izaki naturaz gaindikoa da. Leku malkartsu eta bakartuetan bizi den izaki iheskor gisa deskribatzen da; bere lurraldea babesten du eta natura basatienaren iruditerian parte hartzen du.",
+    "en": "A supernatural female being associated with ravines, chasms and waterways. She is described as an elusive creature inhabiting rugged and secluded places, where she protects her territory and forms part of the mythology surrounding the wildest natural landscapes.",
+    "fr": "Être féminin surnaturel associé aux ravins, aux gouffres et aux cours d'eau. Décrite comme une créature insaisissable vivant dans des lieux escarpés et isolés, elle protège son territoire et fait partie de l'imaginaire des espaces naturels les plus sauvages."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas femeninas",
+    "eu": "Emakumezkoen irudi mitologikoak",
+    "en": "Female mythological figures",
+    "fr": "Figures mythologiques féminines"
+  }
+},
+{
+  "nombre": {
+    "es": "Eilalamia",
+    "eu": "Eilalamia",
+    "en": "Eilalamia",
+    "fr": "Eilalamia"
+  },
+  "descripcion": {
+    "es": "Variante local de las lamias documentada en algunas tradiciones vascas. Comparte con ellas su naturaleza sobrenatural y su relación con ríos, fuentes y parajes húmedos, aunque las leyendas le atribuyen rasgos y comportamientos propios según la localidad.",
+    "eu": "Euskal tradizio batzuetan dokumentatutako lamien tokiko aldaera da. Haien izaera naturaz gaindikoa eta ibai, iturri eta leku hezeekin duen lotura partekatzen ditu, nahiz eta kondairek herri bakoitzean berezko ezaugarri eta jokabideak eman.",
+    "en": "A local variant of the lamias recorded in some Basque traditions. It shares their supernatural nature and their connection with rivers, springs and damp places, although each locality attributes its own characteristics and behaviour to this being.",
+    "fr": "Variante locale des lamias attestée dans certaines traditions basques. Elle partage leur nature surnaturelle ainsi que leur lien avec les rivières, les sources et les lieux humides, même si chaque localité lui attribue des caractéristiques et des comportements particuliers."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas femeninas",
+    "eu": "Emakumezkoen irudi mitologikoak",
+    "en": "Female mythological figures",
+    "fr": "Figures mythologiques féminines"
+  }
+},
+  {
+  "nombre": {
+    "es": "Lamia",
+    "eu": "Lamia",
+    "en": "Lamia",
+    "fr": "Lamia"
+  },
+  "descripcion": {
+    "es": "Ser femenino de gran belleza ligado a ríos, fuentes y puentes. Tradicionalmente se representa con pies de ave o de cabra y un largo cabello que peina con un peine de oro. Protagoniza numerosas leyendas sobre construcciones, tesoros ocultos y encuentros con seres humanos.",
+    "eu": "Ibai, iturri eta zubiei lotutako emakumezko izaki ederra da. Tradizioz, hegazti edo ahuntz-hankekin eta urrezko orrazi batekin orrazten duen ile luzearekin irudikatzen da. Zubi eta eraikuntzen jatorriari, ezkutuko altxorrei eta gizakiekin izandako topaketei buruzko kondaira ugariren protagonista da.",
+    "en": "A beautiful female supernatural being associated with rivers, springs and bridges. She is traditionally depicted with bird's or goat's feet and long hair that she combs with a golden comb. She features prominently in numerous legends involving the construction of bridges, hidden treasures and encounters with humans.",
+    "fr": "Être féminin d'une grande beauté, associé aux rivières, aux sources et aux ponts. Elle est traditionnellement représentée avec des pieds d'oiseau ou de chèvre et une longue chevelure qu'elle peigne avec un peigne d'or. Elle est la protagoniste de nombreuses légendes liées à la construction de ponts, aux trésors cachés et aux rencontres avec les êtres humains."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas femeninas",
+    "eu": "Emakumezkoen irudi mitologikoak",
+    "en": "Female mythological figures",
+    "fr": "Figures mythologiques féminines"
+  }
+},
+{
+  "nombre": {
+    "es": "Mairi",
+    "eu": "Mairi",
+    "en": "Mairi",
+    "fr": "Mairi"
+  },
+  "descripcion": {
+    "es": "Personaje femenino de la tradición vasca asociado en algunas leyendas a los antiguos constructores y a los seres sobrenaturales. Según la zona, aparece como una mujer de gran fuerza o como integrante del mundo mítico anterior a la llegada del cristianismo.",
+    "eu": "Euskal tradizioko emakumezko pertsonaia da, kondaira batzuetan antzinako eraikitzaileekin eta naturaz gaindiko izakiekin lotua. Eskualdearen arabera, indar handiko emakume gisa edo kristautasuna iritsi aurreko mundu mitikoko kide gisa agertzen da.",
+    "en": "A female figure from Basque tradition associated in some legends with the ancient builders and supernatural beings. Depending on the region, she appears either as a woman of extraordinary strength or as a member of the mythical world that existed before the arrival of Christianity.",
+    "fr": "Personnage féminin de la tradition basque, associé dans certaines légendes aux anciens bâtisseurs et aux êtres surnaturels. Selon les régions, elle apparaît comme une femme d'une force exceptionnelle ou comme une représentante du monde mythique antérieur à l'arrivée du christianisme."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas femeninas",
+    "eu": "Emakumezkoen irudi mitologikoak",
+    "en": "Female mythological figures",
+    "fr": "Figures mythologiques féminines"
+  }
+},
+  {
+  "nombre": {
+    "es": "Mari",
+    "eu": "Mari",
+    "en": "Mari",
+    "fr": "Mari"
+  },
+  "descripcion": {
+    "es": "Principal figura de la mitología vasca y señora de las fuerzas de la naturaleza. Habita en cuevas y montañas, desplazándose entre distintos santuarios. Se relaciona con los fenómenos atmosféricos, la fertilidad y el mantenimiento del equilibrio entre las personas y el mundo natural.",
+    "eu": "Euskal mitologiako pertsonaia nagusia eta naturaren indarren anderea da. Haitzulo eta mendietan bizi da, santutegi batetik bestera mugituz. Fenomeno atmosferikoekin, emankortasunarekin eta gizakien eta naturaren arteko orekarekin lotzen da.",
+    "en": "The principal figure of Basque mythology and the lady of the forces of nature. She dwells in caves and mountains, moving between different sacred places. She is associated with atmospheric phenomena, fertility, and maintaining the balance between people and the natural world.",
+    "fr": "Figure principale de la mythologie basque et dame des forces de la nature. Elle habite dans les grottes et les montagnes, se déplaçant entre différents sanctuaires. Elle est associée aux phénomènes atmosphériques, à la fertilité et au maintien de l'équilibre entre les êtres humains et le monde naturel."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas femeninas",
+    "eu": "Emakumezkoen irudi mitologikoak",
+    "en": "Female mythological figures",
+    "fr": "Figures mythologiques féminines"
+  }
+},
+ {
+  "nombre": {
+    "es": "Sorgin",
+    "eu": "Sorgin",
+    "en": "Sorgin",
+    "fr": "Sorgin"
+  },
+  "descripcion": {
+    "es": "Ser femenino dotado de poderes sobrenaturales, conocido popularmente como bruja. En la tradición vasca se asocia al conocimiento de la naturaleza, la medicina popular, los rituales y la magia. Su imagen varía entre benefactora y temida, según la época y la leyenda.",
+    "eu": "Naturaz gaindiko ahalmenak dituen emakumezko izakia da, sorgin izenez ezaguna. Euskal tradizioan naturaren ezagutza, herri-medikuntza, errituak eta magiarekin lotzen da. Garaiaren eta kondairaren arabera, batzuetan laguntzaile eta beste batzuetan beldurgarri gisa irudikatzen da.",
+    "en": "A female supernatural being, popularly known as a witch. In Basque tradition she is associated with knowledge of nature, folk medicine, rituals and magic. Depending on the period and the legend, she is portrayed either as a benevolent figure or as one to be feared.",
+    "fr": "Être féminin doté de pouvoirs surnaturels, communément appelé sorcière. Dans la tradition basque, elle est associée à la connaissance de la nature, à la médecine populaire, aux rituels et à la magie. Selon l'époque et les légendes, elle est représentée comme une bienfaitrice ou comme une figure redoutée."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas femeninas",
+    "eu": "Emakumezkoen irudi mitologikoak",
+    "en": "Female mythological figures",
+    "fr": "Figures mythologiques féminines"
+  }
+},
+{
+  "nombre": {
+    "es": "Alarabi",
+    "eu": "Alarabi",
+    "en": "Alarabi",
+    "fr": "Alarabi"
+  },
+  "descripcion": {
+    "es": "Ser sobrenatural presente en algunas tradiciones vascas, relacionado con relatos de carácter legendario. Su figura varía según la localidad, donde aparece como un personaje misterioso asociado a sucesos extraordinarios y al mundo invisible.",
+    "eu": "Euskal tradizio batzuetan agertzen den naturaz gaindiko izakia da, kondaira askorekin lotua. Herriaren arabera, ezaugarri desberdinak hartzen ditu, eta aparteko gertakariekin nahiz mundu ikusezinarekin lotutako pertsonaia misteriotsu gisa azaltzen da.",
+    "en": "A supernatural being found in some Basque traditions and associated with legendary tales. Its characteristics vary from one locality to another, where it appears as a mysterious figure linked to extraordinary events and the invisible world.",
+    "fr": "Être surnaturel présent dans certaines traditions basques et associé à des récits légendaires. Son apparence varie selon les localités, où il est présenté comme un personnage mystérieux lié aux événements extraordinaires et au monde invisible."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Atarrabi",
+    "eu": "Atarrabi",
+    "en": "Atarrabi",
+    "fr": "Atarrabi"
+  },
+  "descripcion": {
+    "es": "Héroe legendario de la tradición vasca, conocido por su ingenio y por enfrentarse a fuerzas sobrenaturales. En los relatos representa la astucia y la capacidad humana para superar pruebas mediante la inteligencia y la perseverancia.",
+    "eu": "Euskal tradizioko heroi mitikoa da, bere azkartasunagatik eta naturaz gaindiko indarrei aurre egiteagatik ezaguna. Kondairetan, adimenaren eta iraunkortasunaren bidez zailtasunak gainditzeko gizakiaren gaitasuna irudikatzen du.",
+    "en": "A legendary hero of Basque tradition, renowned for his wit and for confronting supernatural forces. In the stories, he symbolizes human ingenuity and the ability to overcome challenges through intelligence and perseverance.",
+    "fr": "Héros légendaire de la tradition basque, connu pour son intelligence et pour avoir affronté des forces surnaturelles. Dans les récits, il symbolise l'ingéniosité humaine et la capacité à surmonter les épreuves grâce à l'intelligence et à la persévérance."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Basajaun",
+    "eu": "Basajaun",
+    "en": "Basajaun",
+    "fr": "Basajaun"
+  },
+  "descripcion": {
+    "es": "Gigante cubierto de abundante pelo que habita en bosques y montañas. Protector del ganado y de la naturaleza, la tradición le atribuye profundos conocimientos sobre la agricultura, la ganadería y otros saberes que posteriormente aprendieron los seres humanos.",
+    "eu": "Baso eta mendietan bizi den ile ugariz estalitako erraldoia da. Abereen eta naturaren zaindaria da, eta tradizioaren arabera nekazaritza, abeltzaintza eta gizakiek geroago ikasi zituzten beste hainbat jakintzaren jabe zen.",
+    "en": "A giant covered in thick hair who lives in forests and mountains. Protector of livestock and nature, Basque tradition credits him with profound knowledge of agriculture, animal husbandry and other skills later learned by humankind.",
+    "fr": "Géant couvert d'une abondante chevelure vivant dans les forêts et les montagnes. Protecteur du bétail et de la nature, la tradition basque lui attribue une connaissance approfondie de l'agriculture, de l'élevage et d'autres savoirs transmis plus tard aux êtres humains."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Donibane",
+    "eu": "Donibane",
+    "en": "Donibane",
+    "fr": "Donibane"
+  },
+  "descripcion": {
+    "es": "Personaje de carácter legendario vinculado a tradiciones populares relacionadas con San Juan. En algunos relatos aparece asociado a acontecimientos extraordinarios y a lugares donde el mundo cotidiano se encuentra con el sobrenatural.",
+    "eu": "San Joanekin lotutako herri-tradizioetan agertzen den pertsonaia mitikoa da. Kondaira batzuetan aparteko gertakariekin eta eguneroko mundua naturaz gaindikoarekin bat egiten duen lekuekin lotzen da.",
+    "en": "A legendary figure connected with Basque folk traditions surrounding Saint John. In some stories, he is associated with extraordinary events and places where the everyday world meets the supernatural.",
+    "fr": "Personnage légendaire lié aux traditions populaires basques de la Saint-Jean. Dans certains récits, il est associé à des événements extraordinaires et à des lieux où le monde quotidien rencontre le surnaturel."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+  {
+  "nombre": {
+    "es": "Eiztaria",
+    "eu": "Eiztaria",
+    "en": "Eiztaria",
+    "fr": "Eiztaria"
+  },
+  "descripcion": {
+    "es": "El cazador sobrenatural que aparece en diversas leyendas vascas. Su figura suele estar ligada a bosques y montañas, donde protagoniza encuentros con seres míticos o sucesos que ponen a prueba el respeto hacia la naturaleza.",
+    "eu": "Euskal kondaira askotan agertzen den ehiztari naturaz gaindikoa da. Bere irudia baso eta mendiekin lotzen da, eta bertan izaki mitikoekin topo egiten du edo naturarekiko errespetua proban jartzen duten gertakarien protagonista bihurtzen da.",
+    "en": "A supernatural hunter who appears in various Basque legends. He is commonly associated with forests and mountains, where he encounters mythical beings or experiences events that test respect for the natural world.",
+    "fr": "Chasseur surnaturel apparaissant dans plusieurs légendes basques. Sa figure est généralement liée aux forêts et aux montagnes, où il rencontre des êtres mythiques ou vit des événements mettant à l'épreuve le respect de la nature."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Jentil",
+    "eu": "Jentil",
+    "en": "Jentil",
+    "fr": "Jentil"
+  },
+  "descripcion": {
+    "es": "Gigantes que, según la tradición, habitaron el País Vasco antes de la llegada del cristianismo. Se les atribuye la construcción de dólmenes, cromlechs y otros monumentos megalíticos, además de una fuerza extraordinaria y un profundo vínculo con las montañas.",
+    "eu": "Tradizioaren arabera, kristautasuna iritsi aurretik Euskal Herrian bizi izan ziren erraldoiak dira. Haiei egozten zaie trikuharriak, harrespilak eta beste monumentu megalitiko batzuk eraikitzea, baita aparteko indarra eta mendiekin lotura estua izatea ere.",
+    "en": "Giants who, according to Basque tradition, inhabited the Basque Country before the arrival of Christianity. They are credited with building dolmens, stone circles and other megalithic monuments, as well as possessing extraordinary strength and a close connection with the mountains.",
+    "fr": "Géants qui, selon la tradition basque, habitaient le Pays basque avant l'arrivée du christianisme. On leur attribue la construction de dolmens, de cromlechs et d'autres monuments mégalithiques, ainsi qu'une force exceptionnelle et un lien profond avec les montagnes."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Kurri-kurri, Mairu, Jentil",
+    "eu": "Kurri-kurri, Mairu, Jentil",
+    "en": "Kurri-kurri, Mairu, Jentil",
+    "fr": "Kurri-kurri, Mairu, Jentil"
+  },
+  "descripcion": {
+    "es": "Personaje legendario relacionado con los mairus y los jentiles. Según la tradición local, pertenece al antiguo mundo de gigantes y constructores, conservando rasgos de fuerza excepcional y una estrecha relación con los monumentos megalíticos.",
+    "eu": "Mairu eta jentilekin lotutako pertsonaia mitikoa da. Tokian tokiko tradizioaren arabera, erraldoi eta eraikitzaileen antzinako mundukoa da, aparteko indarra eta monumentu megalitikoekin lotura estua mantenduz.",
+    "en": "A legendary figure associated with the Mairu and the Jentil. According to local tradition, this character belongs to the ancient world of giants and builders, retaining extraordinary strength and a close relationship with megalithic monuments.",
+    "fr": "Personnage légendaire lié aux Mairu et aux Jentil. Selon la tradition locale, il appartient à l'ancien monde des géants et des bâtisseurs, conservant une force exceptionnelle et un lien étroit avec les monuments mégalithiques."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Mairu",
+    "eu": "Mairu",
+    "en": "Mairu",
+    "fr": "Mairu"
+  },
+  "descripcion": {
+    "es": "Ser legendario perteneciente a un antiguo pueblo anterior al ser humano actual. La tradición le atribuye la construcción de dólmenes, túmulos y otros monumentos megalíticos, asociándolo a grandes conocimientos y una fuerza fuera de lo común.",
+    "eu": "Gaur egungo gizakia baino lehenagoko herri zahar bateko izaki mitikoa da. Tradizioak trikuharriak, tumuluak eta beste monumentu megalitiko batzuk eraikitzea egozten dio, jakinduria handia eta ohiz kanpoko indarra izatearekin batera.",
+    "en": "A legendary being belonging to an ancient people who lived before present-day humans. Basque tradition credits the Mairu with building dolmens, burial mounds and other megalithic monuments, as well as possessing remarkable knowledge and extraordinary strength.",
+    "fr": "Être légendaire appartenant à un ancien peuple antérieur aux êtres humains actuels. La tradition basque lui attribue la construction de dolmens, de tumulus et d'autres monuments mégalithiques, ainsi qu'un grand savoir et une force hors du commun."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Mamur",
+    "eu": "Mamur",
+    "en": "Mamur",
+    "fr": "Mamur"
+  },
+  "descripcion": {
+    "es": "Ser sobrenatural mencionado en algunas tradiciones locales como habitante del mundo invisible. Su imagen cambia según la zona, aunque suele aparecer vinculada a relatos sobre encuentros misteriosos y lugares apartados.",
+    "eu": "Tokiko tradizio batzuetan mundu ikusezinaren biztanletzat aipatzen den naturaz gaindiko izakia da. Bere irudia eskualdearen arabera aldatzen bada ere, normalean topaketa misteriotsuei eta leku bakartiei buruzko kondairetan agertzen da.",
+    "en": "A supernatural being mentioned in some local traditions as an inhabitant of the invisible world. Although its appearance varies from one region to another, it is commonly associated with mysterious encounters and remote places.",
+    "fr": "Être surnaturel mentionné dans certaines traditions locales comme habitant du monde invisible. Son apparence varie selon les régions, mais il est généralement associé aux rencontres mystérieuses et aux lieux isolés."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+  {
+  "nombre": {
+    "es": "Mateo-txistu",
+    "eu": "Mateo-txistu",
+    "en": "Mateo-txistu",
+    "fr": "Mateo-txistu"
+  },
+  "descripcion": {
+    "es": "Personaje legendario conocido por su relación con la música y el txistu. En la tradición popular protagoniza relatos donde el sonido de su instrumento se vincula a sucesos extraordinarios o a la presencia de seres sobrenaturales.",
+    "eu": "Musikarekin eta txistuarekin lotutako pertsonaia mitikoa da. Herri-tradizioan, bere txistuaren doinua gertakari aparten edo naturaz gaindiko izakien presentziarekin lotzen duten kondairen protagonista da.",
+    "en": "A legendary figure known for his connection with music and the *txistu*, the traditional Basque flute. In Basque folklore, the sound of his instrument is linked to extraordinary events and the presence of supernatural beings.",
+    "fr": "Personnage légendaire connu pour son lien avec la musique et le *txistu*, la flûte traditionnelle basque. Dans la tradition populaire, le son de son instrument est associé à des événements extraordinaires et à la présence d'êtres surnaturels."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Mikolas",
+    "eu": "Mikolas",
+    "en": "Mikolas",
+    "fr": "Mikolas"
+  },
+  "descripcion": {
+    "es": "Figura legendaria presente en algunas tradiciones vascas. Dependiendo del relato, aparece como un personaje singular relacionado con acontecimientos extraordinarios y con el mundo de las creencias populares.",
+    "eu": "Euskal tradizio batzuetan agertzen den pertsonaia mitikoa da. Kondairaren arabera, aparteko gertakariekin eta herri-sinesmenen munduarekin lotutako pertsonaia berezi gisa azaltzen da.",
+    "en": "A legendary figure found in some Basque traditions. Depending on the story, Mikolas appears as a remarkable character associated with extraordinary events and the world of popular beliefs.",
+    "fr": "Figure légendaire présente dans certaines traditions basques. Selon les récits, Mikolas apparaît comme un personnage singulier lié aux événements extraordinaires et à l'univers des croyances populaires."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Olentzero",
+    "eu": "Olentzero",
+    "en": "Olentzero",
+    "fr": "Olentzero"
+  },
+  "descripcion": {
+    "es": "Personaje tradicional de origen mitológico representado como un carbonero que desciende de las montañas durante el solsticio de invierno. En la actualidad es el encargado de repartir regalos en la Navidad vasca, aunque sus raíces se remontan a antiguas tradiciones populares.",
+    "eu": "Jatorri mitologikoa duen pertsonaia tradizionala da, neguko solstizioan mendietatik jaisten den ikazkin gisa irudikatua. Gaur egun Euskal Herriko Gabonetan opariak banatzen ditu, nahiz eta bere jatorria antzinako herri-tradizioetan egon.",
+    "en": "A traditional figure of mythological origin portrayed as a charcoal burner who descends from the mountains during the winter solstice. Today, he is responsible for delivering gifts during the Basque Christmas celebrations, although his origins lie in ancient folk traditions.",
+    "fr": "Personnage traditionnel d'origine mythologique représenté comme un charbonnier descendant des montagnes au moment du solstice d'hiver. Aujourd'hui, il distribue les cadeaux de Noël au Pays basque, bien que ses origines remontent aux anciennes traditions populaires."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Samartintxiki",
+    "eu": "Samartintxiki",
+    "en": "Samartintxiki",
+    "fr": "Samartintxiki"
+  },
+  "descripcion": {
+    "es": "Héroe popular conocido por vencer a gigantes y otros seres mediante el ingenio. Sus aventuras simbolizan la inteligencia frente a la fuerza bruta y forman parte de numerosos relatos tradicionales vascos.",
+    "eu": "Erraldoiak eta beste izaki batzuk adimenari esker garaitzen dituen herri-heroia da. Bere abenturek adimenaren nagusitasuna irudikatzen dute indar gordinaren aurrean, eta euskal kondaira askoren parte dira.",
+    "en": "A folk hero renowned for defeating giants and other beings through cleverness rather than strength. His adventures symbolize the triumph of intelligence over brute force and are featured in many traditional Basque tales.",
+    "fr": "Héros populaire connu pour vaincre les géants et d'autres créatures grâce à son intelligence plutôt qu'à sa force. Ses aventures symbolisent la victoire de l'esprit sur la force brute et font partie de nombreuses légendes basques."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Samiel",
+    "eu": "Samiel",
+    "en": "Samiel",
+    "fr": "Samiel"
+  },
+  "descripcion": {
+    "es": "Ser sobrenatural presente en algunas leyendas como representación de una fuerza oscura o peligrosa. Su figura varía según la tradición, apareciendo vinculada a pruebas, tentaciones o acontecimientos extraordinarios.",
+    "eu": "Kondaira batzuetan indar ilun edo arriskutsu baten irudikapen gisa agertzen den naturaz gaindiko izakia da. Tradizioaren arabera, probekin, tentazioekin edo aparteko gertakariekin lotuta azaltzen da.",
+    "en": "A supernatural being appearing in some legends as the embodiment of a dark or dangerous force. Depending on the tradition, Samiel is associated with trials, temptations or extraordinary events.",
+    "fr": "Être surnaturel apparaissant dans certaines légendes comme l'incarnation d'une force obscure ou dangereuse. Selon les traditions, Samiel est associé aux épreuves, aux tentations ou aux événements extraordinaires."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "San Martinico",
+    "eu": "San Martinico",
+    "en": "San Martinico",
+    "fr": "San Martinico"
+  },
+  "descripcion": {
+    "es": "Versión legendaria de San Martín caracterizada por su astucia. En numerosos relatos consigue engañar a gigantes y otros seres sobrenaturales, obteniendo para la humanidad conocimientos o recursos que antes permanecían ocultos.",
+    "eu": "Bere azkartasunagatik ezaguna den San Martinen kondaira-bertsioa da. Kondaira askotan erraldoiak eta naturaz gaindiko beste izaki batzuk engainatzen ditu, eta horrela gizakientzat ordura arte ezkutuan zeuden ezagutzak edo baliabideak lortzen ditu.",
+    "en": "A legendary version of Saint Martin distinguished by his cleverness. In many tales, he outwits giants and other supernatural beings, obtaining knowledge or resources for humankind that had previously remained hidden.",
+    "fr": "Version légendaire de saint Martin, célèbre pour sa ruse. Dans de nombreux récits, il trompe des géants et d'autres êtres surnaturels, permettant à l'humanité d'obtenir des connaissances ou des ressources jusque-là cachées."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+  {
+  "nombre": {
+    "es": "Sugaar",
+    "eu": "Sugaar",
+    "en": "Sugaar",
+    "fr": "Sugaar"
+  },
+  "descripcion": {
+    "es": "Ser sobrenatural asociado a la serpiente y al fuego, considerado una de las principales figuras de la mitología vasca. Habita cuevas y montañas y, según muchas tradiciones, es compañero de Mari y símbolo de la fuerza creadora de la naturaleza.",
+    "eu": "Sugearekin eta suarekin lotutako naturaz gaindiko izakia da, euskal mitologiako pertsonaia nagusietako bat. Haitzulo eta mendietan bizi da, eta tradizio askoren arabera, Mariren laguna eta naturaren indar sortzailearen sinboloa da.",
+    "en": "A supernatural being associated with serpents and fire, regarded as one of the principal figures of Basque mythology. He dwells in caves and mountains and, according to many traditions, is Mari's companion and a symbol of the creative power of nature.",
+    "fr": "Être surnaturel associé au serpent et au feu, considéré comme l'une des principales figures de la mythologie basque. Il habite les grottes et les montagnes et, selon de nombreuses traditions, il est le compagnon de Mari et le symbole de la force créatrice de la nature."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Sugoi",
+    "eu": "Sugoi",
+    "en": "Sugoi",
+    "fr": "Sugoi"
+  },
+  "descripcion": {
+    "es": "Gran serpiente o dragón de carácter sobrenatural presente en distintas leyendas vascas. Se relaciona con cuevas, ríos y parajes salvajes, representando el poder y el misterio de las fuerzas naturales.",
+    "eu": "Kondaira askotan agertzen den suge edo herensuge naturaz gaindiko handia da. Haitzulo, ibai eta leku basatiekin lotzen da, naturaren indarren boterea eta misterioa irudikatuz.",
+    "en": "A great supernatural serpent or dragon appearing in various Basque legends. It is associated with caves, rivers and wild landscapes, representing the power and mystery of the forces of nature.",
+    "fr": "Grand serpent ou dragon surnaturel présent dans plusieurs légendes basques. Il est associé aux grottes, aux rivières et aux paysages sauvages, représentant la puissance et le mystère des forces de la nature."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Tartalo",
+    "eu": "Tartalo",
+    "en": "Tartalo",
+    "fr": "Tartalo"
+  },
+  "descripcion": {
+    "es": "Gigante de un solo ojo que vive en cuevas y montañas. Temido por su enorme fuerza, protagoniza numerosas leyendas en las que los seres humanos logran escapar de él gracias a la inteligencia y el ingenio.",
+    "eu": "Begi bakarreko erraldoia da, haitzulo eta mendietan bizi dena. Bere indar ikaragarriagatik beldurgarria bada ere, kondaira askotan gizakiek adimenari eta azkartasunari esker lortzen dute harengandik ihes egitea.",
+    "en": "A one-eyed giant who lives in caves and mountains. Feared for his immense strength, he appears in numerous legends in which humans manage to escape him through intelligence and ingenuity.",
+    "fr": "Géant à un seul œil vivant dans les grottes et les montagnes. Redouté pour sa force immense, il apparaît dans de nombreuses légendes où les êtres humains parviennent à lui échapper grâce à leur intelligence et à leur ingéniosité."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Torto",
+    "eu": "Torto",
+    "en": "Torto",
+    "fr": "Torto"
+  },
+  "descripcion": {
+    "es": "Nombre con el que se conoce en algunas comarcas al gigante cíclope equivalente al Tartalo. Comparte su aspecto de un solo ojo y su papel como poderoso habitante de cuevas y lugares apartados.",
+    "eu": "Eskualde batzuetan Tartaloren baliokide den begi bakarreko erraldoiari ematen zaion izena da. Begi bakarra izatea eta haitzulo zein leku bakartuetako biztanle ahaltsua izatea partekatzen ditu.",
+    "en": "The name given in some regions to the one-eyed giant equivalent to Tartalo. He shares the same single eye and the role of a powerful inhabitant of caves and remote places.",
+    "fr": "Nom donné dans certaines régions au géant cyclope équivalent à Tartalo. Il partage son unique œil ainsi que son rôle de puissant habitant des grottes et des lieux isolés."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Traganarru",
+    "eu": "Traganarru",
+    "en": "Traganarru",
+    "fr": "Traganarru"
+  },
+  "descripcion": {
+    "es": "Criatura monstruosa descrita como un ser de enorme apetito capaz de devorar personas o animales. En la tradición popular simboliza el peligro de adentrarse en lugares desconocidos y aparece como antagonista en diversos relatos.",
+    "eu": "Gose ikaragarria duen izaki munstrotsua da, pertsonak nahiz animaliak irensteko gai dena. Herri-tradizioan leku ezezagunetan sartzeak dakarren arriskua irudikatzen du, eta kondaira askotan aurkari nagusi gisa agertzen da.",
+    "en": "A monstrous creature described as having an insatiable appetite, capable of devouring people or animals. In Basque folklore, it symbolizes the dangers of venturing into unknown places and often appears as the antagonist in traditional tales.",
+    "fr": "Créature monstrueuse décrite comme un être doté d'un appétit insatiable, capable de dévorer des personnes ou des animaux. Dans la tradition populaire, elle symbolise le danger de s'aventurer dans des lieux inconnus et apparaît souvent comme l'antagoniste des récits."
+  },
+  "categoria": {
+    "es": "Figuras mitológicas masculinas",
+    "eu": "Gizonezkoen irudi mitologikoak",
+    "en": "Male mythological figures",
+    "fr": "Figures mythologiques masculines"
+  }
+},
+{
+  "nombre": {
+    "es": "Aide (Aideko, Aidetikako)",
+    "eu": "Aide (Aideko, Aidetikako)",
+    "en": "Aide (Aideko, Aidetikako)",
+    "fr": "Aide (Aideko, Aidetikako)"
+  },
+  "descripcion": {
+    "es": "Espíritu relacionado con el viento y el aire en la tradición vasca. Se manifiesta como una fuerza invisible capaz de influir en el entorno y cuyo comportamiento varía según las creencias de cada localidad.",
+    "eu": "Haizearekin eta airearekin lotutako izpiritua da euskal tradizioan. Ingurunean eragina izan dezakeen indar ikusezin gisa agertzen da, eta bere jokabidea herri bakoitzeko sinesmenen arabera aldatzen da.",
+    "en": "A spirit associated with the wind and the air in Basque tradition. It manifests itself as an invisible force capable of influencing its surroundings, and its behaviour varies according to local beliefs.",
+    "fr": "Esprit lié au vent et à l'air dans la tradition basque. Il se manifeste comme une force invisible capable d'influencer son environnement, et son comportement varie selon les croyances propres à chaque localité."
+  },
+  "categoria": {
+    "es": "Fenómenos y manifestaciones naturales",
+    "eu": "Fenomeno eta adierazpen naturalak",
+    "en": "Natural phenomena and manifestations",
+    "fr": "Phénomènes et manifestations naturelles"
+  }
+},
+{
+  "nombre": {
+    "es": "Aidegaxto",
+    "eu": "Aidegaxto",
+    "en": "Aidegaxto",
+    "fr": "Aidegaxto"
+  },
+  "descripcion": {
+    "es": "Manifestación malévola del viento o del aire, asociada a fenómenos atmosféricos adversos y a presencias sobrenaturales que alteran la tranquilidad de personas y animales.",
+    "eu": "Haizearen edo airearen adierazpen gaiztoa da, fenomeno atmosferiko kaltegarriekin eta pertsonen zein animalien lasaitasuna hausten duten naturaz gaindiko presentziekin lotua.",
+    "en": "A malevolent manifestation of the wind or air, associated with adverse weather phenomena and supernatural presences that disturb the peace of both people and animals.",
+    "fr": "Manifestation malveillante du vent ou de l'air, associée aux phénomènes météorologiques défavorables et aux présences surnaturelles troublant la tranquillité des personnes et des animaux."
+  },
+  "categoria": {
+    "es": "Fenómenos y manifestaciones naturales",
+    "eu": "Fenomeno eta adierazpen naturalak",
+    "en": "Natural phenomena and manifestations",
+    "fr": "Phénomènes et manifestations naturelles"
+  }
+},
+{
+  "nombre": {
+    "es": "Aari",
+    "eu": "Aari",
+    "en": "Aari",
+    "fr": "Aari"
+  },
+  "descripcion": {
+    "es": "Ser mencionado en algunas tradiciones locales cuyo significado y características varían según la comarca. Se relaciona con antiguos relatos populares y con el mundo sobrenatural.",
+    "eu": "Tokiko tradizio batzuetan aipatzen den izakia da, eta bere esanahia zein ezaugarriak eskualdearen arabera aldatzen dira. Herri-kondaira zaharrekin eta naturaz gaindiko munduarekin lotzen da.",
+    "en": "A being mentioned in some local traditions whose meaning and characteristics vary from one region to another. It is associated with ancient folk tales and the supernatural world.",
+    "fr": "Être mentionné dans certaines traditions locales, dont la signification et les caractéristiques varient selon les régions. Il est associé aux anciens récits populaires et au monde surnaturel."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+  {
+  "nombre": {
+    "es": "Ames, Amets",
+    "eu": "Ames, Amets",
+    "en": "Ames, Amets",
+    "fr": "Ames, Amets"
+  },
+  "descripcion": {
+    "es": "Representación sobrenatural de los sueños. En la tradición vasca, los sueños podían interpretarse como mensajes, advertencias o presagios procedentes del mundo invisible.",
+    "eu": "Ametsen irudikapen naturaz gaindikoa da. Euskal tradizioan, ametsak mundu ikusezinetik zetozen mezu, ohartarazpen edo iragarpen gisa interpreta zitezkeen.",
+    "en": "A supernatural representation of dreams. In Basque tradition, dreams could be interpreted as messages, warnings or omens coming from the invisible world.",
+    "fr": "Représentation surnaturelle des rêves. Dans la tradition basque, les rêves pouvaient être interprétés comme des messages, des avertissements ou des présages provenant du monde invisible."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Andabide",
+    "eu": "Andabide",
+    "en": "Andabide",
+    "fr": "Andabide"
+  },
+  "descripcion": {
+    "es": "Camino o senda vinculada a seres sobrenaturales y a antiguas creencias populares. Su recorrido se considera especial y aparece asociado a relatos de carácter mítico.",
+    "eu": "Naturaz gaindiko izakiekin eta antzinako herri-sinesmenekin lotutako bide edo bidezidorra da. Bere ibilbidea berezitzat jotzen da, eta izaera mitikoko kondairekin lotzen da.",
+    "en": "A path or trail associated with supernatural beings and ancient folk beliefs. Its route is regarded as special and is linked to mythical stories.",
+    "fr": "Chemin ou sentier associé aux êtres surnaturels et aux anciennes croyances populaires. Son parcours est considéré comme particulier et est lié à des récits mythiques."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Ardi",
+    "eu": "Ardi",
+    "en": "Ardi",
+    "fr": "Ardi"
+  },
+  "descripcion": {
+    "es": "La oveja aparece en algunas leyendas vascas con un carácter simbólico o sobrenatural, especialmente en relatos relacionados con pastores y seres de la montaña.",
+    "eu": "Ardia kondaira batzuetan izaera sinboliko edo naturaz gaindikoarekin agertzen da, batez ere artzainei eta mendiko izakiei buruzko kontakizunetan.",
+    "en": "The sheep appears in some Basque legends as a symbolic or supernatural figure, especially in stories involving shepherds and mountain beings.",
+    "fr": "La brebis apparaît dans certaines légendes basques avec un caractère symbolique ou surnaturel, notamment dans les récits liés aux bergers et aux êtres des montagnes."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Argi",
+    "eu": "Argi",
+    "en": "Argi",
+    "fr": "Argi"
+  },
+  "descripcion": {
+    "es": "Luz de origen sobrenatural que aparece en diversos relatos populares. Puede servir como guía, advertencia o manifestación de la presencia de fuerzas invisibles.",
+    "eu": "Jatorri naturaz gaindikoa duen argia da, herri-kondaira askotan agertzen dena. Gidari, ohartarazpen edo indar ikusezinen presentziaren adierazgarri izan daiteke.",
+    "en": "A supernatural light appearing in various folk tales. It may serve as a guide, a warning or a sign of the presence of invisible forces.",
+    "fr": "Lumière d'origine surnaturelle apparaissant dans divers récits populaires. Elle peut servir de guide, d'avertissement ou de manifestation de la présence de forces invisibles."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Argiduna",
+    "eu": "Argiduna",
+    "en": "Argiduna",
+    "fr": "Argiduna"
+  },
+  "descripcion": {
+    "es": "Ser o aparición rodeada de una intensa luminosidad. Su presencia suele interpretarse como un fenómeno extraordinario relacionado con el mundo sobrenatural.",
+    "eu": "Argitasun handiz inguratutako izakia edo agerpena da. Bere presentzia mundu naturaz gaindikoarekin lotutako fenomeno berezitzat hartzen da.",
+    "en": "A being or apparition surrounded by an intense light. Its presence is usually interpreted as an extraordinary phenomenon connected with the supernatural world.",
+    "fr": "Être ou apparition entouré d'une intense lumière. Sa présence est généralement interprétée comme un phénomène extraordinaire lié au monde surnaturel."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Atxular, Axular",
+    "eu": "Atxular, Axular",
+    "en": "Atxular, Axular",
+    "fr": "Atxular, Axular"
+  },
+  "descripcion": {
+    "es": "Personaje legendario cuyo nombre aparece en diversas tradiciones populares. Dependiendo del relato, se relaciona con conocimientos extraordinarios o con seres sobrenaturales.",
+    "eu": "Herri-tradizio askotan agertzen den pertsonaia mitikoa da. Kondairaren arabera, aparteko jakinduriarekin edo naturaz gaindiko izakiekin lotzen da.",
+    "en": "A legendary character whose name appears in various folk traditions. Depending on the story, he is associated with extraordinary knowledge or supernatural beings.",
+    "fr": "Personnage légendaire dont le nom apparaît dans plusieurs traditions populaires. Selon les récits, il est associé à des connaissances extraordinaires ou à des êtres surnaturels."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Axular, Sugoi, Mikelats",
+    "eu": "Axular, Sugoi, Mikelats",
+    "en": "Axular, Sugoi, Mikelats",
+    "fr": "Axular, Sugoi, Mikelats"
+  },
+  "descripcion": {
+    "es": "Figura legendaria vinculada en algunas tradiciones a Sugoi y Mikelats. Su imagen varía según la localidad y forma parte del conjunto de relatos sobre personajes sobrenaturales.",
+    "eu": "Tradizio batzuetan Sugoi eta Mikelatsekin lotzen den pertsonaia mitikoa da. Bere irudia herriaren arabera aldatzen da, eta naturaz gaindiko pertsonaiei buruzko kondairen parte da.",
+    "en": "A legendary figure linked in some traditions to Sugoi and Mikelats. Its portrayal varies from one locality to another and forms part of the body of stories about supernatural beings.",
+    "fr": "Figure légendaire liée dans certaines traditions à Sugoi et Mikelats. Son image varie selon les localités et fait partie des récits consacrés aux personnages surnaturels."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Azti",
+    "eu": "Azti",
+    "en": "Azti",
+    "fr": "Azti"
+  },
+  "descripcion": {
+    "es": "Persona dotada de conocimientos sobrenaturales o capacidad de adivinación. En la tradición vasca se le atribuye la facultad de interpretar señales y realizar prácticas mágicas.",
+    "eu": "Naturaz gaindiko ezagutzak edo igarpen-gaitasuna duen pertsona da. Euskal tradizioan seinaleak interpretatzeko eta praktika magikoak egiteko ahalmena egozten zaio.",
+    "en": "A person endowed with supernatural knowledge or the gift of divination. In Basque tradition, an Azti is believed to interpret signs and perform magical practices.",
+    "fr": "Personne dotée de connaissances surnaturelles ou du don de divination. Dans la tradition basque, l'Azti est capable d'interpréter les signes et de pratiquer la magie."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Beigorri",
+    "eu": "Beigorri",
+    "en": "Beigorri",
+    "fr": "Beigorri"
+  },
+  "descripcion": {
+    "es": "Animal sobrenatural de color rojo que aparece en distintas leyendas. Su presencia suele anunciar acontecimientos extraordinarios o simbolizar una fuerza sobrenatural.",
+    "eu": "Kolore gorriko animalia naturaz gaindikoa da, hainbat kondairatan agertzen dena. Bere presentziak ezohiko gertakariak iragarri edo naturaz gaindiko indarra sinbolizatzen du.",
+    "en": "A red supernatural animal appearing in different legends. Its presence often announces extraordinary events or symbolizes a supernatural force.",
+    "fr": "Animal surnaturel de couleur rouge apparaissant dans différentes légendes. Sa présence annonce souvent des événements extraordinaires ou symbolise une force surnaturelle."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Camino de la Iglesia",
+    "eu": "Elizarako bidea",
+    "en": "Church Path",
+    "fr": "Chemin de l'Église"
+  },
+  "descripcion": {
+    "es": "Sendero tradicional asociado a antiguas creencias y procesiones. En algunas leyendas se considera un lugar de tránsito entre el mundo humano y el sobrenatural.",
+    "eu": "Antzinako sinesmen eta prozesioekin lotutako bide tradizionala da. Kondaira batzuetan gizakien munduaren eta naturaz gaindikoaren arteko igarobidetzat hartzen da.",
+    "en": "A traditional path associated with ancient beliefs and religious processions. In some legends it is considered a passage between the human world and the supernatural.",
+    "fr": "Sentier traditionnel associé aux anciennes croyances et aux processions. Dans certaines légendes, il est considéré comme un passage entre le monde des humains et le monde surnaturel."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Eate",
+    "eu": "Eate",
+    "en": "Eate",
+    "fr": "Eate"
+  },
+  "descripcion": {
+    "es": "Ser relacionado con las tormentas y los fenómenos atmosféricos. Según la tradición, su presencia se manifiesta mediante el viento, la lluvia y otros cambios bruscos del tiempo.",
+    "eu": "Ekaitz eta fenomeno atmosferikoekin lotutako izakia da. Tradizioaren arabera, haizearen, euriaren eta eguraldiaren bat-bateko aldaketen bidez agertzen da.",
+    "en": "A being associated with storms and atmospheric phenomena. According to tradition, its presence is revealed through wind, rain and other sudden changes in the weather.",
+    "fr": "Être associé aux tempêtes et aux phénomènes atmosphériques. Selon la tradition, sa présence se manifeste par le vent, la pluie et les brusques changements de temps."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+  {
+  "nombre": {
+    "es": "Edeinsuge",
+    "eu": "Edeinsuge",
+    "en": "Edeinsuge",
+    "fr": "Edeinsuge"
+  },
+  "descripcion": {
+    "es": "Serpiente o dragón sobrenatural mencionado en algunas tradiciones vascas. Se relaciona con cuevas, montañas y lugares apartados, donde representa el poder de la naturaleza.",
+    "eu": "Euskal tradizio batzuetan aipatzen den suge edo herensuge naturaz gaindikoa da. Haitzulo, mendi eta leku bakartuekin lotzen da, naturaren indarra irudikatuz.",
+    "en": "A supernatural serpent or dragon mentioned in some Basque traditions. It is associated with caves, mountains and remote places, where it represents the power of nature.",
+    "fr": "Serpent ou dragon surnaturel mentionné dans certaines traditions basques. Il est associé aux grottes, aux montagnes et aux lieux isolés, où il représente la puissance de la nature."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Egoi",
+    "eu": "Egoi",
+    "en": "Egoi",
+    "fr": "Egoi"
+  },
+  "descripcion": {
+    "es": "Entidad sobrenatural presente en determinadas leyendas populares. Sus características cambian según la tradición oral de cada comarca.",
+    "eu": "Herri-kondaira batzuetan agertzen den naturaz gaindiko izakia da. Bere ezaugarriak eskualde bakoitzeko ahozko tradizioaren arabera aldatzen dira.",
+    "en": "A supernatural entity appearing in certain Basque folk legends. Its characteristics vary according to the oral tradition of each region.",
+    "fr": "Entité surnaturelle présente dans certaines légendes populaires basques. Ses caractéristiques varient selon la tradition orale de chaque région."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Eguberri",
+    "eu": "Eguberri",
+    "en": "Eguberri",
+    "fr": "Eguberri"
+  },
+  "descripcion": {
+    "es": "Personificación mítica del periodo navideño en algunas tradiciones vascas. Se relaciona con antiguos ritos del solsticio de invierno y con el ciclo anual.",
+    "eu": "Euskal tradizio batzuetan Gabon garaia irudikatzen duen pertsonaia mitikoa da. Neguko solstizioko erritu zaharrekin eta urteko zikloarekin lotzen da.",
+    "en": "A mythical personification of the Christmas season in some Basque traditions. It is associated with ancient winter solstice rites and the annual cycle.",
+    "fr": "Personnification mythique de la période de Noël dans certaines traditions basques. Elle est liée aux anciens rites du solstice d'hiver et au cycle annuel."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Erribide",
+    "eu": "Erribide",
+    "en": "Erribide",
+    "fr": "Erribide"
+  },
+  "descripcion": {
+    "es": "Camino tradicional mencionado en relatos populares y asociado al paso de seres sobrenaturales o de procesiones legendarias.",
+    "eu": "Herri-kondairetan aipatzen den bide tradizionala da, naturaz gaindiko izakien edo prozesio mitikoen igarobide gisa ezaguna.",
+    "en": "A traditional path mentioned in folk tales and associated with the passage of supernatural beings or legendary processions.",
+    "fr": "Chemin traditionnel mentionné dans les récits populaires et associé au passage d'êtres surnaturels ou de processions légendaires."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Errolan",
+    "eu": "Errolan",
+    "en": "Errolan",
+    "fr": "Errolan"
+  },
+  "descripcion": {
+    "es": "Versión vasca del héroe Roldán. La tradición le atribuye una fuerza extraordinaria y explica mediante sus hazañas el origen legendario de montañas, peñas y megalitos.",
+    "eu": "Roldanen euskal bertsioa da. Tradizioak aparteko indarra egozten dio, eta haren balentriak erabiliz mendi, haitz eta monumentu megalitiko askoren jatorria azaltzen du.",
+    "en": "The Basque version of the hero Roland. Tradition attributes extraordinary strength to him and explains through his exploits the legendary origin of mountains, rocks and megalithic monuments.",
+    "fr": "Version basque du héros Roland. La tradition lui attribue une force extraordinaire et explique, à travers ses exploits, l'origine légendaire de montagnes, de rochers et de monuments mégalithiques."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Gaizkiñ",
+    "eu": "Gaizkiñ",
+    "en": "Gaizkiñ",
+    "fr": "Gaizkiñ"
+  },
+  "descripcion": {
+    "es": "Ser o espíritu de carácter perjudicial presente en algunas creencias populares. Se le atribuye la capacidad de causar infortunios o alterar la vida cotidiana.",
+    "eu": "Herri-sinesmen batzuetan agertzen den izaki edo izpiritu kaltegarria da. Zoritxarrak eragiteko eta eguneroko bizitza nahasteko ahalmena egozten zaio.",
+    "en": "A harmful being or spirit found in certain folk beliefs. It is believed to bring misfortune and disturb everyday life.",
+    "fr": "Être ou esprit malveillant présent dans certaines croyances populaires. On lui attribue le pouvoir de provoquer des malheurs et de perturber la vie quotidienne."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Gauargi",
+    "eu": "Gauargi",
+    "en": "Gauargi",
+    "fr": "Gauargi"
+  },
+  "descripcion": {
+    "es": "Luz sobrenatural que aparece durante la noche. En las leyendas puede guiar, desorientar o anunciar la presencia de otros seres del mundo invisible.",
+    "eu": "Gauez agertzen den argi naturaz gaindikoa da. Kondairetan gidari izan daiteke, bidea nahasi edo mundu ikusezinaren beste izaki batzuen presentzia iragarri.",
+    "en": "A supernatural light that appears during the night. In legends it may guide, mislead or announce the presence of other beings from the invisible world.",
+    "fr": "Lumière surnaturelle apparaissant pendant la nuit. Dans les légendes, elle peut guider, égarer ou annoncer la présence d'autres êtres du monde invisible."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Gaueko",
+    "eu": "Gaueko",
+    "en": "Gaueko",
+    "fr": "Gaueko"
+  },
+  "descripcion": {
+    "es": "Espíritu de la noche asociado a la oscuridad y a los peligros nocturnos. La tradición aconseja respetar sus dominios y evitar determinados lugares tras la puesta del sol.",
+    "eu": "Gauarekin, iluntasunarekin eta gaueko arriskuekin lotutako izpiritua da. Tradizioak haren lurraldeak errespetatzea eta ilunabarretik aurrera zenbait leku saihestea gomendatzen du.",
+    "en": "A spirit of the night associated with darkness and nocturnal dangers. Tradition advises respecting its domain and avoiding certain places after sunset.",
+    "fr": "Esprit de la nuit associé à l'obscurité et aux dangers nocturnes. La tradition recommande de respecter son domaine et d'éviter certains lieux après le coucher du soleil."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Gizotso",
+    "eu": "Gizotso",
+    "en": "Gizotso",
+    "fr": "Gizotso"
+  },
+  "descripcion": {
+    "es": "Hombre lobo de la tradición vasca. Se trata de una persona capaz de transformarse en lobo, protagonizando relatos relacionados con el miedo y la vida salvaje.",
+    "eu": "Euskal tradizioko gizon-otsoa da. Otso bihurtzeko gai den pertsona da, beldurrarekin eta natura basatiarekin lotutako kondairen protagonista.",
+    "en": "The werewolf of Basque tradition. It is a person capable of transforming into a wolf, featuring in stories related to fear and the untamed wilderness.",
+    "fr": "Le loup-garou de la tradition basque. Il s'agit d'une personne capable de se transformer en loup, protagoniste de récits liés à la peur et à la nature sauvage."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Gorputzbide",
+    "eu": "Gorputzbide",
+    "en": "Gorputzbide",
+    "fr": "Gorputzbide"
+  },
+  "descripcion": {
+    "es": "Camino funerario utilizado tradicionalmente para trasladar a los difuntos. Las creencias populares lo consideran un recorrido cargado de simbolismo y presencia sobrenatural.",
+    "eu": "Hildakoak eramateko erabiltzen zen hileta-bide tradizionala da. Herri-sinesmenek sinbolismo handiko eta naturaz gaindiko presentziaz beteriko ibilbidetzat hartzen dute.",
+    "en": "A traditional funeral path used to carry the deceased. Folk beliefs regard it as a route filled with symbolism and supernatural presence.",
+    "fr": "Chemin funéraire traditionnel emprunté pour transporter les défunts. Les croyances populaires le considèrent comme un parcours chargé de symbolisme et de présence surnaturelle."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Gorri txiki",
+    "eu": "Gorri txiki",
+    "en": "Gorri txiki",
+    "fr": "Gorri txiki"
+  },
+  "descripcion": {
+    "es": "Pequeño ser sobrenatural asociado por su nombre al color rojo. Según la tradición local, puede aparecer como una criatura traviesa o misteriosa.",
+    "eu": "Bere izenagatik kolore gorriarekin lotutako izaki naturaz gaindiko txikia da. Tokiko tradizioaren arabera, izaki bihurri edo misteriotsu gisa ager daiteke.",
+    "en": "A small supernatural being whose name is associated with the colour red. According to local tradition, it may appear as a mischievous or mysterious creature.",
+    "fr": "Petit être surnaturel dont le nom est associé à la couleur rouge. Selon la tradition locale, il peut apparaître comme une créature espiègle ou mystérieuse."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Herensuge",
+    "eu": "Herensuge",
+    "en": "Herensuge",
+    "fr": "Herensuge"
+  },
+  "descripcion": {
+    "es": "Gran dragón de varias cabezas presente en numerosas leyendas vascas. Representa una fuerza destructiva que suele ser derrotada por héroes o santos.",
+    "eu": "Buru askoko herensuge handia da, euskal kondaira askotan agertzen dena. Indar suntsitzailea irudikatzen du, eta normalean heroi edo santuek garaitzen dute.",
+    "en": "A great multi-headed dragon appearing in numerous Basque legends. It represents a destructive force that is usually defeated by heroes or saints.",
+    "fr": "Grand dragon à plusieurs têtes présent dans de nombreuses légendes basques. Il représente une force destructrice généralement vaincue par des héros ou des saints."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Idinarru",
+    "eu": "Idinarru",
+    "en": "Idinarru",
+    "fr": "Idinarru"
+  },
+  "descripcion": {
+    "es": "Criatura legendaria relacionada con la piel de un buey. Su figura aparece en relatos tradicionales vinculados al mundo rural y a acontecimientos extraordinarios.",
+    "eu": "Idi-larruarekin lotutako izaki mitikoa da. Bere irudia landa-munduarekin eta ezohiko gertakariekin lotutako kondaira tradizionaletan agertzen da.",
+    "en": "A legendary creature associated with the hide of an ox. It appears in traditional stories connected with rural life and extraordinary events.",
+    "fr": "Créature légendaire liée à la peau d'un bœuf. Elle apparaît dans des récits traditionnels associés au monde rural et à des événements extraordinaires."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Igoin o Igone",
+    "eu": "Igoin edo Igone",
+    "en": "Igoin or Igone",
+    "fr": "Igoin ou Igone"
+  },
+  "descripcion": {
+    "es": "Personaje mencionado en algunas tradiciones locales. Sus características cambian según la comarca y forma parte del patrimonio oral vasco.",
+    "eu": "Tokiko tradizio batzuetan aipatzen den pertsonaia da. Bere ezaugarriak eskualdearen arabera aldatzen dira, eta euskal ahozko ondarearen parte da.",
+    "en": "A figure mentioned in some local traditions. Its characteristics vary from one region to another, and it forms part of the Basque oral heritage.",
+    "fr": "Personnage mentionné dans certaines traditions locales. Ses caractéristiques varient selon les régions et il fait partie du patrimoine oral basque."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+  {
+  "nombre": {
+    "es": "Ihizi",
+    "eu": "Ihizi",
+    "en": "Ihizi",
+    "fr": "Ihizi"
+  },
+  "descripcion": {
+    "es": "Espíritu o presencia relacionada con la caza y los animales salvajes. Se asocia a los bosques y a la actividad cinegética tradicional.",
+    "eu": "Ehizarekin eta basa-animaliekin lotutako izpiritua edo presentzia da. Basoekin eta ehiza tradizionalarekin lotzen da.",
+    "en": "A spirit or supernatural presence associated with hunting and wild animals. It is linked to forests and traditional hunting practices.",
+    "fr": "Esprit ou présence surnaturelle associé à la chasse et aux animaux sauvages. Il est lié aux forêts et aux pratiques traditionnelles de chasse."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Ilbide o Hilbide",
+    "eu": "Ilbide edo Hilbide",
+    "en": "Ilbide or Hilbide",
+    "fr": "Ilbide ou Hilbide"
+  },
+  "descripcion": {
+    "es": "Camino funerario utilizado para conducir a los difuntos hasta el lugar de enterramiento. La tradición le atribuye un carácter sagrado y un fuerte simbolismo.",
+    "eu": "Hildakoak hilerrira eramateko erabiltzen zen hileta-bidea da. Tradizioak izaera sakratua eta sinbolismo handia egozten dizkio.",
+    "en": "A funeral path traditionally used to carry the deceased to their burial place. Tradition considers it sacred and deeply symbolic.",
+    "fr": "Chemin funéraire utilisé traditionnellement pour conduire les défunts jusqu'à leur lieu d'inhumation. La tradition lui attribue un caractère sacré et une forte valeur symbolique."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Inguma",
+    "eu": "Inguma",
+    "en": "Inguma",
+    "fr": "Inguma"
+  },
+  "descripcion": {
+    "es": "Espíritu nocturno que visita a las personas mientras duermen. Se le atribuye la capacidad de provocar pesadillas, sensación de ahogo e inquietud durante la noche.",
+    "eu": "Lo dauden bitartean pertsonak bisitatzen dituen gaueko izpiritua da. Amesgaiztoak, itolarri-sentsazioa eta gaueko ezinegona eragiteko ahalmena egozten zaio.",
+    "en": "A nocturnal spirit that visits people while they sleep. It is believed to cause nightmares, a feeling of suffocation and uneasiness during the night.",
+    "fr": "Esprit nocturne qui rend visite aux personnes pendant leur sommeil. On lui attribue la capacité de provoquer des cauchemars, une sensation d'étouffement et de l'inquiétude pendant la nuit."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Inkoa",
+    "eu": "Inkoa",
+    "en": "Inkoa",
+    "fr": "Inkoa"
+  },
+  "descripcion": {
+    "es": "Antigua divinidad o ídolo mencionado en algunas fuentes relacionadas con las creencias precristianas del País Vasco.",
+    "eu": "Euskal Herriko kristautasunaren aurreko sinesmenekin lotutako iturri batzuetan aipatzen den antzinako jainkoa edo idoloa da.",
+    "en": "An ancient deity or idol mentioned in some sources concerning the pre-Christian beliefs of the Basque Country.",
+    "fr": "Ancienne divinité ou idole mentionnée dans certaines sources relatives aux croyances préchrétiennes du Pays basque."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Intxixu",
+    "eu": "Intxixu",
+    "en": "Intxixu",
+    "fr": "Intxixu"
+  },
+  "descripcion": {
+    "es": "Genio o duende que habita en cuevas y simas. En muchas leyendas protege tesoros ocultos y evita que los curiosos se adentren en determinados lugares.",
+    "eu": "Haitzulo eta leizeetan bizi den jeinu edo iratxoa da. Kondaira askotan ezkutuko altxorrak zaintzen ditu eta jakin-minak bultzatutako pertsonak leku jakin batzuetan sartzea eragozten du.",
+    "en": "A goblin or spirit that inhabits caves and chasms. In many legends it guards hidden treasures and prevents curious people from venturing into certain places.",
+    "fr": "Génie ou lutin vivant dans les grottes et les gouffres. Dans de nombreuses légendes, il protège des trésors cachés et empêche les curieux de s'aventurer dans certains lieux."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Ipistekoarri",
+    "eu": "Ipistekoarri",
+    "en": "Ipistekoarri",
+    "fr": "Ipistekoarri"
+  },
+  "descripcion": {
+    "es": "Piedra legendaria asociada a antiguas creencias populares y a relatos sobre acontecimientos extraordinarios.",
+    "eu": "Antzinako herri-sinesmenekin eta ezohiko gertakariei buruzko kondairekin lotutako harri mitikoa da.",
+    "en": "A legendary stone associated with ancient folk beliefs and stories about extraordinary events.",
+    "fr": "Pierre légendaire associée aux anciennes croyances populaires et aux récits d'événements extraordinaires."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Iraunsuge",
+    "eu": "Iraunsuge",
+    "en": "Iraunsuge",
+    "fr": "Iraunsuge"
+  },
+  "descripcion": {
+    "es": "Serpiente sobrenatural vinculada a cuevas y parajes montañosos. Forma parte del conjunto de dragones y grandes ofidios de la mitología vasca.",
+    "eu": "Haitzulo eta mendialdeekin lotutako suge naturaz gaindikoa da. Euskal mitologiako herensuge eta suge erraldoien multzoko kidea da.",
+    "en": "A supernatural serpent associated with caves and mountainous landscapes. It belongs to the group of dragons and giant serpents in Basque mythology.",
+    "fr": "Serpent surnaturel lié aux grottes et aux paysages montagneux. Il fait partie des dragons et des grands serpents de la mythologie basque."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Kixmi",
+    "eu": "Kixmi",
+    "en": "Kixmi",
+    "fr": "Kixmi"
+  },
+  "descripcion": {
+    "es": "Nombre con el que algunas tradiciones identifican al mono o al diablo, utilizado para representar la llegada de una nueva religión frente a las antiguas creencias.",
+    "eu": "Tradizio batzuetan tximinoa edo deabrua izendatzeko erabiltzen den izena da. Antzinako sinesmenen aurrean erlijio berri baten etorrera irudikatzeko erabiltzen da.",
+    "en": "A name used in some traditions to refer to the monkey or the devil, symbolising the arrival of a new religion in contrast to the ancient beliefs.",
+    "fr": "Nom employé dans certaines traditions pour désigner le singe ou le diable, utilisé pour symboliser l'arrivée d'une nouvelle religion face aux anciennes croyances."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Korputzbide",
+    "eu": "Korputzbide",
+    "en": "Korputzbide",
+    "fr": "Korputzbide"
+  },
+  "descripcion": {
+    "es": "Variante del nombre Gorputzbide, el camino funerario utilizado tradicionalmente para el traslado de los difuntos.",
+    "eu": "Gorputzbide izenaren aldaera da, hildakoak eramateko erabiltzen zen hileta-bide tradizionalarena.",
+    "en": "A variant of the name Gorputzbide, the traditional funeral path used to carry the deceased.",
+    "fr": "Variante du nom Gorputzbide, le chemin funéraire traditionnel utilisé pour transporter les défunts."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Kurtzeko-bide",
+    "eu": "Kurtzeko-bide",
+    "en": "Kurtzeko-bide",
+    "fr": "Kurtzeko-bide"
+  },
+  "descripcion": {
+    "es": "Camino tradicional relacionado con cruces o lugares de carácter religioso, al que la tradición popular atribuye un significado simbólico.",
+    "eu": "Gurutze edo erlijio izaerako lekuekin lotutako bide tradizionala da. Herri-tradizioak esanahi sinboliko berezia ematen dio.",
+    "en": "A traditional path associated with crosses or religious places, to which folk tradition attributes symbolic significance.",
+    "fr": "Chemin traditionnel lié aux croix ou aux lieux à caractère religieux, auquel la tradition populaire attribue une forte valeur symbolique."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Lañaide",
+    "eu": "Lañaide",
+    "en": "Lañaide",
+    "fr": "Lañaide"
+  },
+  "descripcion": {
+    "es": "Sendero legendario mencionado en algunas tradiciones vascas y asociado a antiguas creencias sobre el tránsito de seres sobrenaturales.",
+    "eu": "Euskal tradizio batzuetan aipatzen den bidezidor mitikoa da, naturaz gaindiko izakien joan-etorriari buruzko antzinako sinesmenekin lotua.",
+    "en": "A legendary path mentioned in some Basque traditions, associated with ancient beliefs about the passage of supernatural beings.",
+    "fr": "Sentier légendaire mentionné dans certaines traditions basques, associé aux anciennes croyances concernant le passage des êtres surnaturels."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Laño",
+    "eu": "Laño",
+    "en": "Laño",
+    "fr": "Laño"
+  },
+  "descripcion": {
+    "es": "Personificación sobrenatural de la niebla. Se relaciona con fenómenos atmosféricos que ocultan el paisaje y envuelven determinados lugares en un ambiente misterioso.",
+    "eu": "Lainoaren pertsonifikazio naturaz gaindikoa da. Paisaia estali eta leku jakin batzuk giro misteriotsuz inguratzen dituzten fenomeno atmosferikoekin lotzen da.",
+    "en": "A supernatural personification of the mist. It is associated with atmospheric phenomena that conceal the landscape and envelop certain places in a mysterious atmosphere.",
+    "fr": "Personnification surnaturelle du brouillard. Elle est associée aux phénomènes atmosphériques qui dissimulent le paysage et plongent certains lieux dans une atmosphère mystérieuse."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Latsari",
+    "eu": "Latsari",
+    "en": "Latsari",
+    "fr": "Latsari"
+  },
+  "descripcion": {
+    "es": "Ser sobrenatural vinculado a arroyos y cursos de agua. Habita parajes húmedos y aparece en leyendas relacionadas con la naturaleza.",
+    "eu": "Erreka eta ur-ibilguekin lotutako izaki naturaz gaindikoa da. Leku hezeetan bizi da eta naturari buruzko kondairetan agertzen da.",
+    "en": "A supernatural being associated with streams and watercourses. It inhabits damp places and appears in legends connected with nature.",
+    "fr": "Être surnaturel lié aux ruisseaux et aux cours d'eau. Il habite les lieux humides et apparaît dans les légendes liées à la nature."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Maide",
+    "eu": "Maide",
+    "en": "Maide",
+    "fr": "Maide"
+  },
+  "descripcion": {
+    "es": "Ser legendario relacionado con los mairus y con la construcción de monumentos megalíticos. En algunas tradiciones se considera un antiguo habitante del País Vasco.",
+    "eu": "Mairuekin eta monumentu megalitikoen eraikuntzarekin lotutako izaki mitikoa da. Tradizio batzuetan Euskal Herriko antzinako biztanletzat hartzen da.",
+    "en": "A legendary being associated with the Mairu and the construction of megalithic monuments. In some traditions, it is considered one of the ancient inhabitants of the Basque Country.",
+    "fr": "Être légendaire lié aux Mairu et à la construction de monuments mégalithiques. Dans certaines traditions, il est considéré comme un ancien habitant du Pays basque."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Maju",
+    "eu": "Maju",
+    "en": "Maju",
+    "fr": "Maju"
+  },
+  "descripcion": {
+    "es": "Nombre alternativo con el que algunas tradiciones identifican a Sugaar, la gran serpiente sobrenatural asociada a Mari y a las fuerzas de la naturaleza.",
+    "eu": "Tradizio batzuetan Sugaar izendatzeko erabiltzen den beste izenetako bat da, Mari eta naturaren indarrekin lotutako suge naturaz gaindiko handiarena.",
+    "en": "An alternative name used in some traditions for Sugaar, the great supernatural serpent associated with Mari and the forces of nature.",
+    "fr": "Nom alternatif utilisé dans certaines traditions pour désigner Sugaar, le grand serpent surnaturel associé à Mari et aux forces de la nature."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+  {
+  "nombre": {
+    "es": "Maru",
+    "eu": "Maru",
+    "en": "Maru",
+    "fr": "Maru"
+  },
+  "descripcion": {
+    "es": "Ser legendario mencionado en diferentes relatos populares. Su figura cambia según la comarca y suele relacionarse con antiguas tradiciones míticas.",
+    "eu": "Herri-kondaira askotan aipatzen den izaki mitikoa da. Bere irudia eskualdearen arabera aldatzen da, eta antzinako tradizio mitikoekin lotu ohi da.",
+    "en": "A legendary being mentioned in various folk tales. Its portrayal varies from one region to another and is usually associated with ancient mythical traditions.",
+    "fr": "Être légendaire mentionné dans différents récits populaires. Son image varie selon les régions et est généralement associée aux anciennes traditions mythiques."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Mikelats",
+    "eu": "Mikelats",
+    "en": "Mikelats",
+    "fr": "Mikelats"
+  },
+  "descripcion": {
+    "es": "Hijo de Mari y Sugaar según algunas tradiciones. Se le asocia a las tormentas y a las fuerzas descontroladas de la naturaleza, en contraste con su hermano Atarrabi.",
+    "eu": "Tradizio batzuen arabera, Mari eta Sugaaren semea da. Ekaitzekin eta naturaren indar kontrolaezinekin lotzen da, bere anaia Atarrabiren kontrara.",
+    "en": "According to some traditions, he is the son of Mari and Sugaar. He is associated with storms and the untamed forces of nature, in contrast to his brother Atarrabi.",
+    "fr": "Selon certaines traditions, il est le fils de Mari et de Sugaar. Il est associé aux tempêtes et aux forces incontrôlées de la nature, contrairement à son frère Atarrabi."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Odeiaixe",
+    "eu": "Odeiaixe",
+    "en": "Odeiaixe",
+    "fr": "Odeiaixe"
+  },
+  "descripcion": {
+    "es": "Entidad relacionada con las tormentas y el mal tiempo. Su presencia se manifiesta mediante fuertes vientos, lluvia y fenómenos atmosféricos intensos.",
+    "eu": "Ekaitzekin eta eguraldi txarrarekin lotutako izakia da. Bere presentzia haize zakarren, euriaren eta fenomeno atmosferiko bortitzen bidez adierazten da.",
+    "en": "An entity associated with storms and severe weather. Its presence is manifested through strong winds, heavy rain and intense atmospheric phenomena.",
+    "fr": "Entité associée aux tempêtes et au mauvais temps. Sa présence se manifeste par de violents vents, de fortes pluies et des phénomènes atmosphériques intenses."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Oiarzun",
+    "eu": "Oiarzun",
+    "en": "Oiarzun",
+    "fr": "Oiarzun"
+  },
+  "descripcion": {
+    "es": "Nombre presente en algunas tradiciones legendarias asociado a relatos populares y acontecimientos de carácter sobrenatural.",
+    "eu": "Kondaira batzuetan agertzen den izena da, herri-kontakizunekin eta naturaz gaindiko gertakariekin lotua.",
+    "en": "A name that appears in certain legendary traditions, associated with folk tales and supernatural events.",
+    "fr": "Nom présent dans certaines traditions légendaires, associé aux récits populaires et aux événements surnaturels."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Saindi-Maindi",
+    "eu": "Saindi-Maindi",
+    "en": "Saindi-Maindi",
+    "fr": "Saindi-Maindi"
+  },
+  "descripcion": {
+    "es": "Personaje legendario documentado en algunas tradiciones locales. Su figura forma parte del conjunto de seres y héroes del imaginario popular vasco.",
+    "eu": "Tokiko tradizio batzuetan dokumentatutako pertsonaia mitikoa da. Euskal herri-iruditeriko izaki eta heroien multzoaren parte da.",
+    "en": "A legendary figure documented in some local traditions. It forms part of the collection of beings and heroes that make up the Basque popular imagination.",
+    "fr": "Personnage légendaire attesté dans certaines traditions locales. Il fait partie de l'ensemble des êtres et des héros de l'imaginaire populaire basque."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Sanson",
+    "eu": "Sanson",
+    "en": "Sanson",
+    "fr": "Sanson"
+  },
+  "descripcion": {
+    "es": "Versión legendaria del héroe bíblico Sansón, incorporada a la tradición popular vasca como personaje de fuerza extraordinaria.",
+    "eu": "Bibliako Sansonen bertsio mitikoa da, euskal herri-tradizioan aparteko indarra duen pertsonaia gisa txertatua.",
+    "en": "A legendary version of the biblical hero Samson, incorporated into Basque folklore as a figure of extraordinary strength.",
+    "fr": "Version légendaire du héros biblique Samson, intégrée à la tradition populaire basque comme un personnage doté d'une force exceptionnelle."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+},
+{
+  "nombre": {
+    "es": "Txaalgorri",
+    "eu": "Txaalgorri",
+    "en": "Txaalgorri",
+    "fr": "Txaalgorri"
+  },
+  "descripcion": {
+    "es": "Toro sobrenatural de color rojo mencionado en algunas leyendas. Comparte rasgos con otras criaturas bovinas míticas y simboliza la fuerza y el poder de la naturaleza.",
+    "eu": "Elezahar batzuetan aipatzen den zezen gorri naturaz gaindikoa da. Beste behi-izaki mitiko batzuekin ezaugarriak partekatzen ditu, eta naturaren indarra eta boterea sinbolizatzen ditu.",
+    "en": "A red supernatural bull mentioned in some legends. It shares characteristics with other mythical bovine creatures and symbolizes the strength and power of nature.",
+    "fr": "Taureau surnaturel de couleur rouge mentionné dans certaines légendes. Il partage des caractéristiques avec d'autres créatures bovines mythiques et symbolise la force et la puissance de la nature."
+  },
+  "categoria": {
+    "es": "Otras entidades y motivos mitológicos",
+    "eu": "Beste erakunde eta arrazoi mitologiko batzuk",
+    "en": "Other mythological beings and motifs",
+    "fr": "Autres êtres et motifs mythologiques"
+  }
+}
 ]

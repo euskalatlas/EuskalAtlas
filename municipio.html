@@ -26,7 +26,7 @@
                  alt="Euskal Atlas">
 
             <div class="titulo">
-
+                
                 <h1 id="tituloCabecera"></h1>
 
                 <p id="subtituloCabecera"></p>
@@ -37,33 +37,81 @@
 
         <div class="volver">
 
-            <a class="volver-atras" href="#">
+            <a class="volver-atras"
+            href="#"
+            data-i18n="volver">
+
                 ← Volver
+
             </a>
 
             <span>|</span>
 
-            <a class="volver-mapa" href="index.html">
+            <a class="volver-mapa"
+            href="index.html"
+            data-i18n="volverMapa">
+
                 Volver al mapa
+
             </a>
 
         </div>
+        
 
     </div>
 
-</header>
+    </header>
 
-    <div id="contenido"></div>
+        <div id="contenido"></div>
 
-    <script src="js/datos.js"></script>
-    <script src="js/municipio.js"></script>
-<footer>
+        <script src="js/datos.js"></script>
+        <script src="js/municipio.js"></script>
+        <script src="js/idioma.js"></script>
 
-    <p>
-        © 2026 Euskal Atlas. Todos los derechos reservados.
-    </p>
+    <footer>
 
-</footer>
+        <div class="footerContenido">
+            <img src="imagenes/logo.png"
+            class="footerLogo"
+            alt="Euskal Atlas"> 
+            <h3>EUSKAL ATLAS</h3>
+
+            <p data-i18n="footerDescripcion">
+                Atlas interactivo del patrimonio mitológico vasco.
+            </p>
+
+            <p>
+                ✉
+                <a href="mailto:euskalatlas@gmail.com">
+                    euskalatlas@gmail.com
+                </a>
+            </p>
+
+            <nav class="footerLinks">
+
+                <a href="contacto.html" data-i18n="contacto">
+                    Contacto
+                </a>
+
+
+
+                <a href="aviso-legal.html" data-i18n="avisoLegal">
+                    Aviso legal
+                </a>
+
+                <a href="privacidad.html" data-i18n="privacidad">
+                    Privacidad
+                </a>
+
+            </nav>
+
+            <p class="copyright">
+                © 2026 Euskal Atlas
+            </p>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>

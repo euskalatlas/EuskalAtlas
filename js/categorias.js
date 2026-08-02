@@ -39,7 +39,7 @@ function actualizarListaCategorias(){
     value="${categoria}"
     ${categoriasSeleccionadas.includes(categoria) ? "checked" : ""}
 >
-${categoria}
+${traducirCategoria(categoria)}
 </label>
 `;
 
@@ -57,26 +57,27 @@ ${categoria}
 
 function actualizarResumenCategorias(){
 
-    const boton = document.getElementById("abrirCategorias");
+    const resumen = document.getElementById("textoCategorias");
 
-    const total = document.querySelectorAll("#listaCategorias input").length;
+    const total =
+        document.querySelectorAll("#listaCategorias input").length;
 
     if(categoriasSeleccionadas.length === total){
 
-        boton.textContent = "Todas las categorías";
+        resumen.textContent = textos[idioma].todasCategorias;
 
     }else if(categoriasSeleccionadas.length === 0){
 
-        boton.textContent = "Ninguna categoría";
+        resumen.textContent = textos[idioma].ningunaCategoria;
 
     }else if(categoriasSeleccionadas.length === 1){
 
-        boton.textContent = "1 categoría seleccionada";
+        resumen.textContent = textos[idioma].unaCategoria;
 
     }else{
 
-        boton.textContent =
-            `${categoriasSeleccionadas.length} categorías seleccionadas`;
+        resumen.textContent =
+            `${categoriasSeleccionadas.length} ${textos[idioma].variasCategorias}`;
 
     }
 
@@ -116,9 +117,14 @@ document.addEventListener("DOMContentLoaded", function(){
 // MODAL
 // ======================================
 
-const modalCategorias =
-    document.getElementById("modalCategorias");
+const modalCategorias = document.getElementById("modalCategorias");
+document
+.getElementById("cerrarCategoriasX")
+.addEventListener("click", function(){
 
+    modalCategorias.classList.add("oculto");
+
+});
 document
 .getElementById("abrirCategorias")
 .addEventListener("click", function(){

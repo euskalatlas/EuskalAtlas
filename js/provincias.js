@@ -54,25 +54,27 @@ ${provincia}
 }
 function actualizarResumenProvincias(){
 
-    const boton = document.getElementById("abrirProvincias");
+    const resumen = document.getElementById("textoProvincias");
 
-    const total = document.querySelectorAll("#listaProvincias input").length;
+    const total =
+        document.querySelectorAll("#listaProvincias input").length;
 
     if(provinciasSeleccionadas.length === total){
 
-        boton.textContent = "Todas las provincias";
+        resumen.textContent = textos[idioma].todasProvincias;
 
     }else if(provinciasSeleccionadas.length === 0){
 
-        boton.textContent = "Ninguna provincia";
+        resumen.textContent = textos[idioma].ningunaProvincia;
 
     }else if(provinciasSeleccionadas.length === 1){
 
-        boton.textContent = "1 provincia seleccionada";
+        resumen.textContent = textos[idioma].unaProvincia;
 
     }else{
 
-        boton.textContent = `${provinciasSeleccionadas.length} provincias seleccionadas`;
+        resumen.textContent =
+            `${provinciasSeleccionadas.length} ${textos[idioma].variasProvincias}`;
 
     }
 
@@ -120,7 +122,13 @@ document.addEventListener("DOMContentLoaded", function(){
 // ======================================
 
 const modalProvincias = document.getElementById("modalProvincias");
+document
+.getElementById("cerrarProvinciasX")
+.addEventListener("click", function(){
 
+    modalProvincias.classList.add("oculto");
+
+});
 document
 .getElementById("abrirProvincias")
 .addEventListener("click", function(){

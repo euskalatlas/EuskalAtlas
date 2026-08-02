@@ -2,7 +2,7 @@ body{
 
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
-    background:#f6f6f6;
+    background:white;
 
 }
 
@@ -15,6 +15,10 @@ header{
     text-align:center;
 
 
+}
+
+footer{
+    margin-top:0;
 }
 
 header h1{
@@ -103,51 +107,11 @@ header p{
 
 }
 
-
-#listaNumenes{
-
-    width:220px;
-
-    height:240px;
-
-    overflow-y:auto;
-
-    border:1px solid #bbb;
-
-    border-radius:5px;
-
-    background:white;
-
-    padding:8px;
-
-    box-sizing:border-box;
-
-}
-
-
-#listaNumenes label{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:8px;
-
-    margin-bottom:6px;
-
-    cursor:pointer;
-
-    font-size:14px;
-
-}
-
-
 #listaNumenes input{
 
     width:auto;
 
 }
-
 
 #mapa{
 
@@ -227,43 +191,161 @@ header p{
 
 .modalContenido{
 
-    width:360px;
-    max-height:80vh;
+    width:min(92vw,400px);
 
-    background:white;
+    overflow:visible;
 
-    border-radius:8px;
+    background:#fff;
 
-    padding:20px;
+    border-radius:22px;
+
+    padding:24px;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.18);
 
     display:flex;
     flex-direction:column;
 
-    gap:10px;
+    overflow:hidden;
 
 }
 
-.modalContenido h3{
+.modalDescripcion{
 
-    margin:0;
+    margin-top:14px;
+
+    margin-bottom:28px;
+
+    font-size:18px;
+
+    color:#666;
+
+    line-height:1.6;
 
 }
+
+/* ==========================
+   CABECERA MODALES
+========================== */
 
 .modalCabecera{
 
     display:flex;
-
     justify-content:space-between;
+    align-items:flex-start;
 
+    margin-bottom:14px;
+
+}
+
+.modalTitulo{
+
+    display:flex;
     align-items:center;
 
-    margin-bottom:10px;
+    gap:22px;
+
+}
+
+.modalIcono{
+
+    width:54px;
+    height:54px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+}
+
+.modalTitulo h3{
+
+    margin:0;
+
+    font-size:24px;
+
+    color:#173c2c;
+
+    font-weight:700;
+
+}
+
+.modalDescripcion{
+
+    margin-top:4px;
+    margin-bottom:0px;
+
+    font-size:16px;
+
+    color:#666;
+
+    line-height:1.5;
 
 }
 
 .modalCabecera h3{
 
     margin:0;
+
+}
+
+/* ==========================
+   CABECERA MODALES
+========================== */
+
+.modalCabecera{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+
+    margin-bottom:14px;
+
+
+}
+
+.modalTitulo{
+
+    display:flex;
+    align-items:center;
+
+    gap:22px;
+
+}
+
+.modalIcono{
+
+    width:64px;
+    height:64px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+}
+
+.modalTitulo h3{
+
+    margin:0;
+
+    font-size:34px;
+
+    color:#173c2c;
+
+    font-weight:700;
+
+}
+
+.modalDescripcion{
+
+    margin-top:8px;
+
+    font-size:18px;
+
+    color:#666;
+
+    line-height:1.5;
 
 }
 
@@ -291,6 +373,35 @@ header p{
 
 }
 
+.modalContenido input{
+
+    width:100%;
+
+    padding:18px 22px;
+
+    border:1px solid #ded7cc;
+
+    border-radius:18px;
+
+    font-size:18px;
+
+    margin-bottom:14px;
+
+    transition:.2s;
+    
+    box-sizing:border-box;
+
+}
+.modalContenido input:focus{
+
+    border-color:#1b4332;
+
+    box-shadow:0 0 0 4px rgba(27,67,50,.12);
+
+    outline:none;
+
+}
+
 #listaNumenes{
 
     height:300px;
@@ -308,11 +419,68 @@ header p{
 .modalBotones{
 
     display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
 
-    justify-content:space-between;
+    margin-top:26px;
+
+    flex-wrap:wrap;
 
 }
 
+.modalBotones button{
+
+    min-width:190px;
+    height:54px;
+
+    border-radius:16px;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.modalBotones button:last-child{
+
+    background:#1b4332;
+
+    color:white;
+
+    border:none;
+
+}
+
+.modalBotones button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.modalBotones button:last-child:hover{
+
+    background:#24553f;
+
+}
+.modalBotones button:not(:last-child){
+
+    background:white;
+
+    border:1px solid #d7d7d7;
+
+    color:#1b4332;
+
+}
+
+.modalBotones button:not(:last-child):hover{
+
+    background:#f6faf8;
+
+}
 
 #listaMunicipios{
 
@@ -343,15 +511,30 @@ header p{
 
 #contenedorMapa{
 
+    max-width:1400px;
     display:flex;
 
-    gap:24px;
-
-    padding:10px 20px 20px;
+    gap:20px;
 
     align-items:flex-start;
 
-    min-height:82vh;
+    margin:20px auto;
+
+}
+
+#listaMunicipios{
+
+    margin-top:10px;
+
+    height:220px;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    min-height:0;
+
+    contain: layout;
 
 }
 
@@ -361,7 +544,7 @@ header p{
 
 #panelResultados{
 
-    width:320px;
+    width:360px;
 
     flex-shrink:0;
 
@@ -374,6 +557,7 @@ header p{
     box-shadow:0 8px 20px rgba(0,0,0,.10);
 
     align-self:flex-start;
+    
 
 }
 
@@ -385,57 +569,59 @@ header p{
 
     display:grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(3,minmax(0,1fr));
 
     gap:8px;
 
     margin-bottom:20px;
+    
 
 }
-
 .tarjeta{
 
+    display:flex;
+    align-items:center;
+    gap:12px;
+
     background:white;
-
     border:1px solid #e8e8e8;
-
     border-radius:10px;
+    padding:14px;
 
-    padding:14px 10px;
-
-    text-align:center;
-
-    box-shadow:0 2px 8px rgba(0,0,0,.05);
-
-    transition:.2s;
-
+    font-size:12px;
+    line-height:1;
 }
 
-.tarjeta:hover{
+.tarjetaIcono{
 
-    transform:translateY(-2px);
+    width:35px;
+    height:35px;
 
-    box-shadow:0 6px 16px rgba(0,0,0,.10);
+    object-fit:contain;
 
+    flex-shrink:0;
+}
+
+.tarjeta div{
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
 }
 
 .tarjeta span{
 
-    display:block;
-
-    font-size:28px;
-
-    font-weight:bold;
-
-    color:#1b4332;
-
+    font-size:20px;
+    font-weight:700;
+    line-height:1;
 }
 
 .tarjeta small{
 
-    font-size:11px;
-
-    color:#666;
+    
+    font-size:9px;
+    margin-top:4px;
+    margin-right: 1px;
 
 }
 /* ===========================
@@ -445,7 +631,7 @@ header p{
 .popup-municipio{
 
     min-width:260px;
-    max-width:320px;
+    max-width:350px;
     
 
     font-family:Arial, Helvetica, sans-serif;
@@ -454,14 +640,17 @@ header p{
 
 .popup-titulo{
 
-    font-size:20px;
+    font-size:16px;
     font-weight:bold;
+    line-height: 1.1;
 
     text-transform:uppercase;
 
     color:#1b4332;
 
     margin-bottom:4px;
+    justify-content:center;
+    align-items:center;
 
 }
 
@@ -537,27 +726,30 @@ header p{
 
 .popup-ficha{
 
-    display:block;
+    display:flex;
 
-    width:100%;
+    justify-content:center;
+    align-items:center;
 
-    margin-top:16px;
+    width:220px;
 
-    padding:10px 0;
+    margin:18px auto;
 
-    text-align:center;
+    padding:14px 18px;
 
-    font-weight:bold;
+    background:#1b4332;
 
-    font-size:15px;
+    color:white !important;
 
-    color:#1b4332;
+    text-decoration:none;
 
-    cursor:pointer;
+    border-radius:12px;
 
-    border-radius:6px;
+    font-size:16px;
 
-    transition:.2s;
+    font-weight:600;
+
+    transition:.25s;
 
 }
 
@@ -570,6 +762,16 @@ header p{
     text-decoration:underline;
 
 }
+.popup-lista-contenedor{
+
+    margin-top:18px;
+
+    width:100%;
+
+    box-sizing:border-box;
+
+}
+
 /* ===========================
    ACCESIBILIDAD
 =========================== */
@@ -755,43 +957,6 @@ a:focus{
 }
 
 
-#listaProvincias{
-
-    width:220px;
-
-    height:240px;
-
-    overflow-y:auto;
-
-    border:1px solid #bbb;
-
-    border-radius:5px;
-
-    background:white;
-
-    padding:8px;
-
-    box-sizing:border-box;
-
-}
-
-
-#listaProvincias label{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:8px;
-
-    margin-bottom:6px;
-
-    cursor:pointer;
-
-    font-size:14px;
-
-}
-
 
 #listaProvincias input{
 
@@ -836,45 +1001,6 @@ a:focus{
 
 }
 
-
-#listaCategorias{
-
-    width:220px;
-
-    height:240px;
-
-    overflow-y:auto;
-
-    border:1px solid #bbb;
-
-    border-radius:5px;
-
-    background:white;
-
-    padding:8px;
-
-    box-sizing:border-box;
-
-}
-
-
-#listaCategorias label{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:8px;
-
-    margin-bottom:6px;
-
-    cursor:pointer;
-
-    font-size:14px;
-
-}
-
-
 #listaCategorias input{
 
     width:auto;
@@ -895,41 +1021,6 @@ a:focus{
 
 }
 
-#listaBibliografias{
-
-    width:220px;
-
-    height:240px;
-
-    overflow-y:auto;
-
-    border:1px solid #bbb;
-
-    border-radius:5px;
-
-    background:white;
-
-    padding:8px;
-
-    box-sizing:border-box;
-
-}
-
-#listaBibliografias label{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:8px;
-
-    margin-bottom:6px;
-
-    cursor:pointer;
-
-    font-size:14px;
-
-}
 
 #listaBibliografias input{
 
@@ -1048,15 +1139,11 @@ a:focus{
 
     background:none;
 
+    color:rgba(255,255,255,.45);
+
     border:none;
 
     cursor:pointer;
-
-    font-size:15px;
-
-    color:#d9d9d9;
-
-    font-weight:600;
 
     transition:.2s;
 
@@ -1072,7 +1159,9 @@ a:focus{
 
     color:white;
 
-    font-weight:bold;
+    border:2px solid #d4af37;
+
+    background:rgba(212,175,55,.15);
 
 }
 
@@ -1085,15 +1174,88 @@ a:focus{
 
 footer{
 
-    background:#163f2f;
+    margin-top:80px;
+
+    background:#1f4d37;
 
     color:white;
 
+    padding:45px 20px;
+
+}
+
+.footerContenido{
+
+    max-width:1100px;
+
+    margin:auto;
+
     text-align:center;
 
-    padding:20px;
+}
 
-    margin-top:60px;
+.footerContenido h3{
+
+    font-size:2.2rem;
+
+    margin-bottom:10px;
+
+    font-family:'Cinzel',serif;
+
+    margin-top:0;
+
+}
+
+.footerContenido p{
+
+    margin:10px 0;
+
+    line-height:1.6;
+
+}
+
+.footerContenido a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.footerContenido a:hover{
+
+    color:#d8c17a;
+
+}
+
+.footerLinks{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:28px;
+
+    flex-wrap:wrap;
+
+    margin:35px 0 25px;
+
+}
+
+.copyright{
+
+    opacity:.6;
+
+    font-size:.85rem;
+
+}
+.footerLogo{
+
+    width:80px;
+
+    margin-bottom:8px;
 
 }
 
@@ -1150,6 +1312,32 @@ footer{
 
     }
 
+    .modalContenido{
+
+        width:78vw;
+
+        height:78vh;
+
+        max-height:78vh;
+
+        padding:18px;
+
+    }
+
+
+    .popup-municipio{
+
+        width:260px;
+        
+
+    }
+
+    .popup-lista{
+
+        max-height:110px;
+
+    }
+
     .explorarBotones button{
 
         width:100%;
@@ -1162,6 +1350,19 @@ footer{
         flex-direction:column;
         text-align:center;
         padding:15px;
+
+    }
+    .explorarBotones{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+
+    }
+    .tarjetaAccion{
+
+        width:min(100%, 340px);
 
     }
 
@@ -1203,36 +1404,36 @@ footer{
 
     /* FILTROS */
 
-.panel{
+    .panel{
 
-    display:grid;
+        display:grid;
 
-    grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr 1fr;
 
-    gap:15px;
+        gap:15px;
 
-    padding:15px;
+        padding:15px;
 
-}
-.panelExplorar{
+    }
+    .panelExplorar{
 
-    display:flex;
+        display:flex;
 
-    justify-content:center;
+        justify-content:center;
 
-    margin:0;
+        margin:0;
 
-    padding:8px 0 10px;
+        padding:8px 0 10px;
 
-    background:white;
+        background:white;
 
-}
+    }
 
-.filtro{
+    .filtro{
 
-    width:100%;
+        width:100%;
 
-}
+    }
 
     .filtro select,
     .filtro input,
@@ -1253,8 +1454,8 @@ footer{
        #contenedorMapa{
 
         flex-direction:column;
-        padding:10px;
-        gap:15px;
+        padding:0 10px 10px;
+        gap:10px;
 
         min-height:auto;
 
@@ -1263,10 +1464,12 @@ footer{
     #mapa{
 
         width:100%;
-        height:400px;
-        min-height:400px;
+        height:430px;
+        min-height:430px;
 
         flex:none;
+
+        margin-top:10px;
 
     }
 
@@ -1284,6 +1487,33 @@ footer{
     .resumen{
 
         grid-template-columns:repeat(3,1fr);
+
+    }
+
+
+    .selectorCard{
+
+        min-height:58px;
+        padding:10px 14px;
+
+    }
+
+    .selectorIcono img{
+
+        width:35px;
+        height:35px;
+
+    }
+
+    .selectorTitulo{
+
+        font-size:10px;
+
+    }
+
+    .selectorResumen{
+
+        font-size:14px;
 
     }
 
@@ -1433,5 +1663,641 @@ h3 small{
     font-size:14px;
 
     margin:8px 0 12px;
+
+}
+
+/* ===============================
+   TARJETAS DE FILTROS
+================================ */
+.selectorCard{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    background:#ffffff;
+
+    border:1px solid #e6e6e6;
+    border-radius:22px;
+
+    padding:14px 18px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+    min-height:72px;
+
+}
+
+.selectorCard:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 24px rgba(0,0,0,.10);
+
+}
+
+.selectorTexto{
+
+    flex:1;
+
+    text-align:center;
+
+}
+.selectorTitulo{
+
+    font-size:11px;
+
+    letter-spacing:1.5px;
+
+    color:#7b736b;
+
+}
+.selectorResumen{
+
+    font-size:16px;
+
+    font-weight:500;
+
+    color:#173c2c;
+
+}
+.selectorIcono{
+
+    width:58px;
+    height:58px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-shrink:0;
+
+}
+
+.selectorIcono img{
+
+    width:64px;
+    height:64px;
+    object-fit:contain;
+    display:block;
+
+}
+.selectorFlecha{
+
+    font-size:28px;
+
+    color:#7a7a7a;
+
+    font-weight:300;
+
+}
+.selectorIcono img{
+
+    width:54px;
+    height:54px;
+
+    object-fit:contain;
+
+}
+
+.tarjetaAccion{
+
+    display:flex;
+    align-items:center;
+    gap:16px;
+
+    width:100%;
+    MAX-WIDTH:320px;
+    padding:12px 16px; 
+
+    background:#fff;
+
+    border:1px solid #d8d8d8;
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.tarjetaAccion:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    border-color:#1b4332;
+
+}
+
+.accionIcono{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-shrink:0;
+
+}
+
+.accionIcono img{
+
+    width:30px;
+    height:30px;
+
+    object-fit:contain;
+
+}
+
+.accionTexto{
+
+    flex:1;
+
+    text-align:left;
+
+}
+
+.accionTitulo{
+
+    display:block;
+
+    font-size:12px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+
+    color:#7d6d56;
+
+    margin-bottom:4px;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.accionSubtitulo{
+
+    display:block;
+    justify-content:center;
+    align-items:center;
+
+    font-size:11px;
+    letter-spacing:1.4px;
+
+    font-weight:600;
+
+    color:#173c2c;
+    
+
+}
+
+.accionFlecha{
+
+    font-size:30px;
+
+    color:#8a7459;
+
+}
+
+#listaProvincias,
+#listaCategorias,
+#listaBibliografias,
+#listaNumenes{
+
+    width:100%;
+    
+    height:100%;
+
+    min-height:170px;
+
+    max-height:300px;
+
+    overflow-y:auto;
+
+    border:1px solid #ece6dc;
+    border-radius:18px;
+
+    padding:0;
+
+    background:#fafaf8;
+
+    flex:1;
+
+}
+
+#listaProvincias label,
+#listaCategorias label,
+#listaBibliografias label,
+#listaNumenes label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    padding:12px 18px;
+
+    margin:3px 8px;
+
+    border-radius:14px;
+
+    border:1px solid transparent;
+
+    background:white;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-size:17px;
+
+    color:#173c2c;
+
+    font-weight:500;
+
+
+}
+
+#listaProvincias label:hover,
+#listaCategorias label:hover,
+#listaBibliografias label:hover,
+#listaNumenes label:hover{
+    background:#f7fbf8;
+
+    border-color:#dfe8e2;
+
+    transform:translateX(3px);
+
+}
+
+#listaProvincias label:last-child,
+#listaCategorias label:last-child,
+#listaBibliografias label:last-child,
+#listaNumenes label:last-child{
+
+    border-bottom:none;
+
+}
+
+#listaProvincias input,
+#listaCategorias input,
+#listaBibliografias input,
+#listaNumenes input{
+
+    width:18px;
+    height:18px;
+
+    accent-color:#1b4332;
+
+}
+
+.infoFiltros{
+
+    max-width:900px;
+
+    margin:12px auto 10px;
+
+    padding:10px 16px;
+
+    background:white;
+
+    border:1px solid #e6e2da;
+
+    border-radius:14px;
+
+    color:#1b4332;
+
+    font-size:14px;
+
+    text-align:center;
+
+    line-height:1.5;
+
+}
+/* ======================================
+   POPUP MUNICIPIOS
+====================================== */
+
+.popup-municipio{
+
+    width:240px;
+
+    color:#173c2c;
+
+}
+
+/* ---------- Cabecera ---------- */
+
+.popup-header{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-bottom:8px;
+
+}
+
+.popup-icono{
+
+    width:46px;
+    height:46px;
+
+    flex-shrink:0;
+
+}
+
+.popup-info{
+
+    flex:1;
+
+}
+
+.popup-titulo{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#173c2c;
+
+    line-height:1;
+
+}
+
+.popup-provincia{
+
+    margin-top:4px;
+
+    color:#6f6f6f;
+
+    font-size:13px;
+
+}
+
+/* ---------- Separador ---------- */
+
+.popup-separador{
+
+    height:1px;
+
+    background:#ece6dc;
+
+    margin:16px 0;
+
+}
+
+/* ---------- Tarjetas ---------- */
+
+.popup-estadisticas{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:6px;
+
+    margin-bottom:8px;
+
+}
+
+.popup-card{
+
+    background:#fafaf8;
+
+    border:1px solid #ece6dc;
+
+    border-radius:14px;
+
+    padding:8px;
+
+    text-align:center;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+
+}
+.popup-card-icono{
+
+    width:36px;
+    height:36px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+}
+
+.popup-card div{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.popup-numero{
+
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#173c2c;
+
+    line-height:1;
+
+}
+
+.popup-card small{
+
+    display:block;
+
+    margin-top:3px;
+
+    color:#7d746d;
+
+    font-size:10px;
+    line-height:1.2;
+
+}
+
+/* ---------- Botón ---------- */
+
+.popup-ficha{
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    width:90%;
+
+    margin:10px auto;
+
+    padding:10px;
+
+    text-decoration:none;
+
+    background:#1b4332;
+
+    color:white !important;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.popup-ficha:hover{
+
+    background:#285943;
+
+}
+
+/* ---------- Subtítulo ---------- */
+
+.popup-subtitulo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:8px 0 8px;
+
+    font-size:10px;
+
+    text-align:center;
+    letter-spacing:1.5px;
+
+    font-weight:700;
+
+    color:#7d6d56;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    width:100%;
+    margin-top:16px;
+    margin-bottom:10px;
+
+}
+
+/* ---------- Lista ---------- */
+
+.popup-lista{
+
+    max-height:95px;
+
+    overflow-y:auto;
+
+    border:1px solid #ece6dc;
+
+    border-radius:14px;
+
+    background:#fafaf8;
+
+    width:100%;
+
+    box-sizing:border-box;
+
+}
+
+.popup-numen{
+
+    display:block;
+
+    padding:10px 14px;
+
+    text-decoration:none;
+
+    color:#173c2c;
+
+    border-bottom:1px solid #ece6dc;
+
+    transition:.2s;
+
+}
+
+.popup-numen:last-child{
+
+    border-bottom:none;
+
+}
+
+.popup-numen:hover{
+
+    background:#eef5f0;
+
+    padding-left:18px;
+
+}
+.leaflet-popup-content-wrapper{
+
+    border-radius:22px;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.18);
+
+    padding:6px;
+
+}
+
+.leaflet-popup-content{
+
+    margin:10px;
+
+}
+
+.leaflet-popup-tip{
+
+    box-shadow:none;
+
+}
+
+.tooltipMunicipio{
+
+    background:#1b4332 !important;
+
+    color:white !important;
+
+    border:none !important;
+
+    border-radius:10px;
+
+    padding:6px 12px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    box-shadow:0 6px 16px rgba(0,0,0,.18);
+
+}
+
+.tooltipMunicipio::before{
+
+    display:none;
 
 }

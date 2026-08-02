@@ -69,7 +69,21 @@ document.getElementById("subtituloCabecera").textContent = provincia;
 
 const volver = document.querySelector(".volver-atras");
 
-volver.textContent = "← Volver";
+volver.textContent = interfaz[idioma].volver;
+
+volver.onclick = function (e) {
+
+    e.preventDefault();
+
+    if (history.length > 1) {
+        history.back();
+    } else {
+        location.window.href = "index.html";
+    }
+
+};
+
+volver.textContent = interfaz[idioma].volver;
 
 volver.onclick = function (e) {
 
@@ -117,12 +131,19 @@ categoriasOrden.forEach(categoria => {
 
     const lista = [...numenesPorCategoria[categoria]]
         .sort((a,b)=>a.localeCompare(b,"es"));
+    const ficha = fichasNumenes.find(n =>
+    n.nombre.es === lista[0]
+);
 
+    const nombreCategoria = ficha
+        ? ficha.categoria[idioma]
+        : categoria;
     listaNumenes += `
 
 <div class="categoria-numenes">
 
-    <h4>${categoria}</h4>
+<h4>${nombreCategoria}</h4>
+
 
     <div class="lista-numenes">
 
@@ -188,17 +209,45 @@ categoriasOrden.forEach(categoria => {
     <div class="resumen">
 
         <div class="tarjeta">
-        <div class="numero">${numenes.length}</div>
-        <div class="texto">
-            ${numenes.length === 1 ? "Ser mitológico" : "Seres mitológicos"}
+
+            <img
+                src="imagenes/iconos/ser-mitologico.png"
+                class="icono-tarjeta"
+                alt="">
+
+            <div>
+
+                <div class="numero">${numenes.length}</div>
+
+                <div class="texto">
+                    ${numenes.length === 1
+                        ? interfaz[idioma].serMitologico
+                        : interfaz[idioma].seresMitologicos}
+                </div>
+
+            </div>
+
         </div>
-    </div>  
 
         <div class="tarjeta">
-            <div class="numero">${fuentes.length}</div>
-            <div class="texto">
-                ${fuentes.length === 1 ? "Fuente" : "Fuentes"}
+
+            <img
+                src="imagenes/iconos/bibliografia.png"
+                class="icono-tarjeta"
+                alt="">
+
+            <div>
+
+                <div class="numero">${fuentes.length}</div>
+
+                <div class="texto">
+                    ${fuentes.length === 1
+                        ? interfaz[idioma].fuente
+                        : interfaz[idioma].fuentes}
+                </div>
+
             </div>
+
         </div>
 
     </div>
@@ -208,10 +257,9 @@ categoriasOrden.forEach(categoria => {
 
     <section class="bloque">
 
-        <h3>Seres mitológicos documentados</h3>
-
+    <h3>${interfaz[idioma].seresDocumentados}</h3>
         <p>
-            Selecciona cualquier ser mitológico para acceder a su ficha completa.
+            ${interfaz[idioma].seleccionarSer}
         </p>
 
         ${listaNumenes}
@@ -220,7 +268,7 @@ categoriasOrden.forEach(categoria => {
 
     <section class="bloque">
 
-        <h3>Bibliografía</h3>
+        <h3>${interfaz[idioma].bibliografia}</h3>
 
         <ul class="bibliografia">
 
@@ -237,5 +285,6 @@ categoriasOrden.forEach(categoria => {
 `;
 
 }
+
 
 cargarMunicipio();

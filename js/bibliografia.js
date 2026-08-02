@@ -57,27 +57,27 @@ ${bibliografia}
 
 function actualizarResumenBibliografias(){
 
-    const boton = document.getElementById("abrirBibliografia");
+    const resumen = document.getElementById("textoBibliografia");
 
     const total =
         document.querySelectorAll("#listaBibliografias input").length;
 
     if(bibliografiasSeleccionadas.length === total){
 
-        boton.textContent = "Toda la bibliografía";
+        resumen.textContent = textos[idioma].todaBibliografia;
 
     }else if(bibliografiasSeleccionadas.length === 0){
 
-        boton.textContent = "Ninguna bibliografía";
+        resumen.textContent = textos[idioma].ningunaBibliografia;
 
     }else if(bibliografiasSeleccionadas.length === 1){
 
-        boton.textContent = "1 bibliografía seleccionada";
+        resumen.textContent = textos[idioma].unaBibliografia;
 
     }else{
 
-        boton.textContent =
-            `${bibliografiasSeleccionadas.length} bibliografías seleccionadas`;
+        resumen.textContent =
+            `${bibliografiasSeleccionadas.length} ${textos[idioma].variasBibliografias}`;
 
     }
 
@@ -118,8 +118,15 @@ document.addEventListener("DOMContentLoaded", function(){
 // MODAL
 // ======================================
 
-const modalBibliografia =
-    document.getElementById("modalBibliografia");
+const modalBibliografia = document.getElementById("modalBibliografia");
+
+document
+.getElementById("cerrarBibliografiaX")
+.addEventListener("click", function(){
+
+    modalBibliografia.classList.add("oculto");
+
+});
 
 document
 .getElementById("abrirBibliografia")

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EuskalAtlas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
@@ -29,20 +29,20 @@
 
                 <h1>Euskal Atlas</h1>
 
-                <p>Atlas digital del patrimonio cultural vasco</p>
-
+                <p data-i18n="subtitulo">
+                    Atlas digital del patrimonio cultural vasco
+                </p>
             </div>
 
         </div>
 
         <div id="selectorIdioma">
 
-            <button class="idioma activo">ES</button>
+            <button id="btnES" class="idioma activo">ES</button>
 
             <span>|</span>
 
-            <button class="idioma">EU</button>
-
+            <button id="btnEU" class="idioma">EU</button>
         </div>
 
     </div>
@@ -51,49 +51,118 @@
 
 <div class="panel">
 
-    <div class="filtro">
+    <div class="selectorCard" id="abrirProvincias">
 
-    <label><b>Provincias</b></label>
+        <div class="selectorIcono">
+            <img src="imagenes/iconos/provincias.png" alt="">
+        </div>
 
-    <button id="abrirProvincias" type="button">
-        Seleccionar provincias
-    </button>
+        <div class="selectorTexto">
 
-</div>
+            <div class="selectorTitulo"
+                data-i18n="provincias">
+                Provincias
+            </div>
 
+            <div class="selectorResumen"
+                id="textoProvincias"
+                data-i18n="btnProvincias">
+                Seleccionar provincias
+            </div>
 
-    <div class="filtro">
+        </div>
 
-    <label><b>Categorías</b></label>
+        <div class="selectorFlecha">
+            ›
+        </div>
 
-    <button id="abrirCategorias" type="button">
-        Seleccionar categorías
-    </button>
-
-</div>
-
-
-<div class="filtro">
-
-    <label><b>Seres mitológicos</b></label>
-
-    <button id="abrirNumenes" type="button">
-        Seleccionar seres mitológicos
-    </button>
-
-</div>
+    </div>
 
 
+    <div class="selectorCard" id="abrirCategorias">
 
-   <div class="filtro">
+        <div class="selectorIcono">
+            <img src="imagenes/iconos/categorias.png" alt="">
+        </div>
 
-    <label><b>Bibliografía</b></label>
+        <div class="selectorTexto">
 
-    <button id="abrirBibliografia" type="button">
-        Seleccionar bibliografía
-    </button>
+            <div class="selectorTitulo"
+                data-i18n="categorias">
+                Categorías
+            </div>
 
-</div>
+            <div class="selectorResumen"
+                id="textoCategorias"
+                data-i18n="btnCategorias">
+                Seleccionar categorías
+            </div>
+
+        </div>
+
+        <div class="selectorFlecha">
+            ›
+        </div>
+
+    </div>
+
+
+
+    <div class="selectorCard" id="abrirNumenes">
+
+        <div class="selectorIcono">
+            <img src="imagenes/iconos/ser-mitologico.png" alt="">
+        </div>
+
+        <div class="selectorTexto">
+
+            <div class="selectorTitulo"
+                data-i18n="seres">
+                Seres mitológicos
+            </div>
+
+            <div class="selectorResumen"
+                id="textoNumenes"
+                data-i18n="btnSeres">
+                Seleccionar seres mitológicos
+            </div>
+
+        </div>
+
+        <div class="selectorFlecha">
+            ›
+        </div>
+
+    </div>
+
+
+
+   <div class="selectorCard" id="abrirBibliografia">
+
+        <div class="selectorIcono">
+            <img src="imagenes/iconos/bibliografia.png" alt="">
+        </div>
+
+        <div class="selectorTexto">
+
+            <div class="selectorTitulo"
+                data-i18n="bibliografia">
+                Bibliografía
+            </div>
+
+            <div class="selectorResumen"
+                id="textoBibliografia"
+                data-i18n="btnBibliografia">
+                Seleccionar bibliografía
+            </div>
+
+        </div>
+
+        <div class="selectorFlecha">
+            ›
+        </div>
+
+    </div>
 </div>
 
 
@@ -101,29 +170,67 @@
 
     <div class="explorarBotones">
 
-        <button id="abrirMunicipios" type="button">
-            📄 Abrir ficha de municipio
-        </button>
+    <button
+        id="abrirMunicipios"
+        type="button"
+        class="tarjetaAccion">
 
-        <button id="abrirFichaNumenes" type="button">
-            ✨ Abrir ficha de ser mitológico
-        </button>
+        <div class="accionIcono">
+            <img src="imagenes/iconos/ficha-tecnica-municipio.png" alt="">
+        </div>
 
-    </div>
+        <div class="accionTexto">
+
+            <span class="accionTitulo" data-i18n="fichaMunicipio">
+                Ficha de municipio
+            </span>
+
+            <span class="accionSubtitulo" data-i18n="abrirMunicipio">
+                Abrir ficha
+            </span>
+
+        </div>
+
+        <span class="accionFlecha">›</span>
+
+    </button>
+
+    <button
+        id="abrirFichaNumenes"
+        type="button"
+        class="tarjetaAccion">
+
+        <div class="accionIcono">
+            <img src="imagenes/iconos/ficha-tecnica-ser-mitologico.png" alt="">
+        </div>
+
+        <div class="accionTexto">
+
+            <span class="accionTitulo" data-i18n="fichaSer">
+                Ficha de ser mitológico
+            </span>
+
+            <span class="accionSubtitulo" data-i18n="abrirSer">
+                Abrir ficha
+            </span>
+
+        </div>
+
+        <span class="accionFlecha">›</span>
+
+    </button>
 
 </div>
 
-
-
 </div>
-<p class="infoFiltros">
+<p class="infoFiltros" data-i18n="infoFiltros">
     El mapa y el panel de resultados se actualizan automáticamente según los filtros seleccionados.
 </p>
 
 <div id="contenedorMapa">
     <p class="sr-only">
-    Este mapa es interactivo. Si utilizas un lector de pantalla o no puedes navegar por el mapa, puedes acceder a las fichas completas desde la lista de municipios situada debajo.
-</p>
+        Este mapa es interactivo. Si utilizas un lector de pantalla o no puedes navegar por el mapa, puedes acceder a las fichas completas desde la lista de municipios situada debajo.
+    </p>
     <div id="mapa"></div>
 
     <aside id="panelResultados">
@@ -131,45 +238,81 @@
         <div class="resumen">
 
             <div class="tarjeta">
-                <span id="totalRegistros">0</span>
-                <small>Registros</small>
+
+                <img
+                    src="imagenes/iconos/registros.png"
+                    class="tarjetaIcono"
+                    alt="">
+
+                <div>
+
+                    <span id="totalRegistros">0</span>
+
+                    <small data-i18n="registros">
+                        Registros
+                    </small>
+
+                </div>
+
             </div>
 
             <div class="tarjeta">
-                <span id="totalMunicipios">0</span>
-                <small>Municipios</small>
+                <img
+                    src="imagenes/iconos/municipio.png"
+                    class="tarjetaIcono"
+                    alt="">
+                <div>
+                    <span id="totalMunicipios">0</span>
+                    <small data-i18n="municipios">Municipios</small>
+                </div>
             </div>
 
             <div class="tarjeta">
-                <span id="totalNumenes">0</span>
-                <small>Seres mitológicos</small>
+                <img
+                    src="imagenes/iconos/ser-mitologico.png"
+                    class="tarjetaIcono"
+                    alt="">
+                <div>
+                    <span id="totalNumenes">0</span>
+                    <small data-i18n="seres">Seres mitológicos</small>
+                </div>
             </div>
 
         </div>
         
         <h3>
-            Municipios
+
+            <span data-i18n="municipios">
+                Municipios
+            </span>
+
             <br>
-            <small>Haz clic en un municipio para verlo en detalle.</small>
+
+            <small data-i18n="ayudaMunicipios">
+                Haz clic en un municipio para verlo en detalle.
+            </small>
+
         </h3>
 
         <div id="listaMunicipios"></div>
         <div id="sinResultados" class="oculto">
 
-            <h3>⚠ Sin resultados</h3>
+            <h3 data-i18n="sinResultados">
+                ⚠ Sin resultados
+            </h3>
 
-            <p>
+            <p data-i18n="sinResultadosTexto">
                 No se han encontrado registros con los filtros seleccionados.
             </p>
 
-            <p>
+            <p data-i18n="sinResultadosAyuda">
                 Prueba a ampliar los filtros o pulsa
                 <strong>Restablecer filtros</strong>.
             </p>
 
         </div>
 
-        <button id="restablecerFiltros">
+        <button id="restablecerFiltros" data-i18n="restablecer">
             Restablecer filtros
         </button>
 
@@ -181,11 +324,46 @@
 
     <div class="modalContenido">
 
-        <h3>Seleccionar mitológicos</h3>
+        <div class="modalCabecera">
+
+            <div class="modalTitulo">
+
+                <img
+                    src="imagenes/iconos/ser-mitologico.png"
+                    class="modalIcono"
+                    alt="">
+
+                <div>
+
+                    <h3 data-i18n="modalSeres">
+                        Seleccionar seres mitológicos
+                    </h3>
+
+                    <p
+                        class="modalDescripcion"
+                        data-i18n="descripcionNumenes">
+                        Selecciona uno o varios seres mitológicos.
+                    </p>
+
+                </div>
+
+            </div>
+            <button
+                id="cerrarNumenesX"
+                class="cerrarModal"
+                aria-label="Cerrar">
+
+                ✕
+
+            </button>
+
+
+        </div>
 
         <input
             type="text"
             id="buscarNumen"
+            data-placeholder="buscarSer"
             placeholder="Buscar seres mitológicos..."
         >
 
@@ -193,17 +371,28 @@
 
         <div class="modalBotones">
 
-            <button id="seleccionarTodos">
-    Seleccionar todos
-</button>
+            <button
+                id="seleccionarTodos"
+                data-i18n="seleccionarTodas">
 
+                Seleccionar todos
 
-            <button id="limpiarNumenes">
-                Deseleccionar todos
             </button>
 
-            <button id="cerrarNumenes">
+            <button
+                id="limpiarNumenes"
+                data-i18n="deseleccionarTodas">
+
+                Deseleccionar todas
+
+            </button>
+
+            <button
+                id="cerrarNumenes"
+                data-i18n="aceptar">
+
                 Aceptar
+
             </button>
 
         </div>
@@ -216,28 +405,74 @@
 
     <div class="modalContenido">
 
-        <h3>Seleccionar provincias</h3>
+        <div class="modalCabecera">
+
+            <div class="modalTitulo">
+
+                <img
+                    src="imagenes/iconos/provincias.png"
+                    class="modalIcono"
+                    alt="">
+
+                <div>
+
+                    <h3 data-i18n="modalProvincias">
+                        Seleccionar provincias
+                    </h3>
+
+                    <p
+                        class="modalDescripcion"
+                        data-i18n="descripcionProvincias">
+                        Elige una o varias provincias para filtrar el mapa.
+                    </p>
+
+                </div>
+
+            </div>
+            <button
+                id="cerrarProvinciasX"
+                class="cerrarModal"
+                aria-label="Cerrar">
+
+                ✕
+
+            </button>
+
+        </div>
+
         <input
             type="text"
             id="buscarprovincia"
+            data-placeholder="buscarProvincia"
             placeholder="Buscar provincia..."
         >
-        
 
         <div id="listaProvincias"></div>
 
         <div class="modalBotones">
 
-            <button id="seleccionarTodasProvincias">
+            <button
+                id="seleccionarTodasProvincias"
+                data-i18n="seleccionarTodas">
+
                 Seleccionar todas
+
             </button>
 
-            <button id="limpiarProvincias">
+            <button
+                id="limpiarProvincias"
+                data-i18n="deseleccionarTodas">
+
                 Deseleccionar todas
+
             </button>
 
-            <button id="cerrarProvincias">
+            <button
+                id="cerrarProvincias"
+                data-i18n="aceptar">
+
                 Aceptar
+
             </button>
 
         </div>
@@ -250,11 +485,45 @@
 
     <div class="modalContenido">
 
-        <h3>Seleccionar categorías</h3>
+        <div class="modalCabecera">
+
+            <div class="modalTitulo">
+
+                <img
+                    src="imagenes/iconos/categorias.png"
+                    class="modalIcono"
+                    alt="">
+
+                <div>
+
+                    <h3 data-i18n="modalCategorias">
+                        Seleccionar categorías
+                    </h3>
+
+                    <p
+                        class="modalDescripcion"
+                        data-i18n="descripcionCategorias">
+                        Selecciona una o varias categorías.
+                    </p>
+
+                </div>
+
+            </div>
+            <button
+                id="cerrarCategoriasX"
+                class="cerrarModal"
+                aria-label="Cerrar">
+
+                ✕
+
+            </button>
+
+        </div>
 
         <input
             type="text"
             id="buscarCategoria"
+            data-placeholder="buscarCategoria"
             placeholder="Buscar categoría..."
         >
 
@@ -262,16 +531,28 @@
 
         <div class="modalBotones">
 
-            <button id="seleccionarTodasCategorias">
+            <button
+                id="seleccionarTodasCategorias"
+                data-i18n="seleccionarTodas">
+
                 Seleccionar todas
+
             </button>
 
-            <button id="limpiarCategorias">
+            <button
+                id="limpiarCategorias"
+                data-i18n="deseleccionarTodas">
+
                 Deseleccionar todas
+
             </button>
 
-            <button id="cerrarCategorias">
+            <button
+                id="cerrarCategorias"
+                data-i18n="aceptar">
+
                 Aceptar
+
             </button>
 
         </div>
@@ -279,15 +560,50 @@
     </div>
 
 </div>
+
 <div id="modalBibliografia" class="modal oculto">
 
     <div class="modalContenido">
 
-        <h3>Seleccionar bibliografía</h3>
+        <div class="modalCabecera">
+
+            <div class="modalTitulo">
+
+                <img
+                    src="imagenes/iconos/bibliografia.png"
+                    class="modalIcono"
+                    alt="">
+
+                <div>
+
+                    <h3 data-i18n="modalBibliografia">
+                        Seleccionar bibliografía
+                    </h3>
+
+                    <p
+                        class="modalDescripcion"
+                        data-i18n="descripcionBibliografia">
+                        Selecciona una o varias referencias bibliográficas.
+                    </p>
+
+                </div>
+
+            </div>
+            <button
+                id="cerrarBibliografiaX"
+                class="cerrarModal"
+                aria-label="Cerrar">
+
+                ✕
+
+            </button>
+
+        </div>
 
         <input
             type="text"
             id="buscarBibliografia"
+            data-placeholder="buscarBibliografia"
             placeholder="Buscar bibliografía..."
         >
 
@@ -295,16 +611,28 @@
 
         <div class="modalBotones">
 
-            <button id="seleccionarTodasBibliografias">
+            <button
+                id="seleccionarTodasBibliografias"
+                data-i18n="seleccionarTodas">
+
                 Seleccionar todas
+
             </button>
 
-            <button id="limpiarBibliografias">
+            <button
+                id="limpiarBibliografias"
+                data-i18n="deseleccionarTodas">
+
                 Deseleccionar todas
+
             </button>
 
-            <button id="cerrarBibliografia">
+            <button
+                id="cerrarBibliografia"
+                data-i18n="aceptar">
+
                 Aceptar
+
             </button>
 
         </div>
@@ -312,26 +640,51 @@
     </div>
 
 </div>
+
 <div id="modalMunicipios" class="modal oculto">
 
     <div class="modalContenido">
 
         <div class="modalCabecera">
 
-            <h3>Abrir ficha de municipio</h3>
+    <div class="modalTitulo">
 
-            <button
-                id="cerrarMunicipios"
-                class="cerrarModal"
-                aria-label="Cerrar">
-                ×
-            </button>
+        <img
+            src="imagenes/iconos/ficha-tecnica-municipio.png"
+            class="modalIcono"
+            alt="">
+
+        <div>
+
+            <h3 data-i18n="modalMunicipios">
+                Abrir ficha de municipio
+            </h3>
+
+            <p
+                class="modalDescripcion"
+                data-i18n="descripcionMunicipios">
+                Busca un municipio para abrir su ficha completa.
+            </p>
 
         </div>
+
+    </div>
+
+    <button
+        id="cerrarMunicipios"
+        class="cerrarModal"
+        aria-label="Cerrar">
+
+        ✕
+
+    </button>
+
+</div>
 
         <input
             type="text"
             id="buscarMunicipio"
+            data-placeholder="buscarMunicipio"
             placeholder="Buscar municipio..."
         >
 
@@ -345,31 +698,49 @@
 
     <div class="modalContenido">
 
-        <div class="modalCabecera">
+    <div class="modalCabecera">
 
-            <h3>Seleccionar ser mitológico</h3>
+    <div class="modalTitulo">
 
-            <button
-                id="cerrarFichaNumenes"
-                class="cerrarModal"
-                aria-label="Cerrar">
-                ×
-            </button>
+        <img
+            src="imagenes/iconos/ficha-tecnica-ser-mitologico.png"
+            class="modalIcono"
+            alt="">
+
+        <div>
+
+            <h3 data-i18n="modalFichaNumenes">
+                Seleccionar seres mitológicos
+            </h3>
+
+            <p
+                class="modalDescripcion"
+                data-i18n="descripcionNumenes">
+                Selecciona uno o varios seres mitológicos.
+            </p>
 
         </div>
 
+    </div>
+
+    <button
+        id="cerrarFichaNumenes"
+        class="cerrarModal"
+        aria-label="Cerrar">
+        ✕
+    </button>
+
+</div>
         <input
             type="text"
             id="buscarFichaNumen"
-            placeholder="Buscar ser mitológico..."
-        >
-
+            data-placeholder="buscarFichaNumen"
+            placeholder="Buscar ser mitológico...">
         <div id="listaFichaNumenes"></div>
 
     </div>
 
 </div>
-
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
@@ -382,13 +753,48 @@
 <script src="js/bibliografia.js"></script>
 <script src="js/municipios.js"></script>
 <script src="js/ficha-numenes.js"></script>
-
+<script src="js/idioma.js"></script>
 
 <footer>
 
-    <p>
-        © 2026 Euskal Atlas. Todos los derechos reservados.
-    </p>
+    <div class="footerContenido">
+        <img src="imagenes/logo.png"
+            class="footerLogo"
+            alt="Euskal Atlas">                                        
+        <h3>EUSKAL ATLAS</h3>
+
+        <p data-i18n="footerDescripcion">
+            Atlas interactivo del patrimonio mitológico vasco.
+        </p>
+
+        <p>
+            ✉
+            <a href="mailto:euskalatlas@gmail.com">
+                euskalatlas@gmail.com
+            </a>
+        </p>
+
+        <nav class="footerLinks">
+
+            <a href="contacto.html" data-i18n="contacto">
+                Contacto
+            </a>
+
+            <a href="aviso-legal.html" data-i18n="avisoLegal">
+                Aviso legal
+            </a>
+
+            <a href="privacidad.html" data-i18n="privacidad">
+                Privacidad
+            </a>
+
+        </nav>
+
+        <p class="copyright">
+            © 2026 Euskal Atlas
+        </p>
+
+    </div>
 
 </footer>
 

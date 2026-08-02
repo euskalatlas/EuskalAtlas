@@ -38,23 +38,48 @@ body{
 
 .tarjeta{
 
-    width:160px;
+    display:flex;
 
-    padding:14px 10px;
+    align-items:center;
+
+    justify-content:center;
+
+    gap:16px;
+
+    width:220px;
+
+    padding:18px;
 
     background:white;
 
     border-radius:14px;
 
-    text-align:center;
-
     box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+}
+
+.icono-tarjeta{
+
+    width:46px;
+
+    height:46px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+}
+
+.tarjeta img{
+
+    width:60px;
+    height:60px;
 
 }
 
 .numero{
 
-    font-size:2.8rem;
+    font-size:1.5rem;
 
     line-height:1;
 
@@ -66,11 +91,14 @@ body{
 
 .texto{
 
-    margin-top:8px;
-    font-size:17px;
+    margin-top:5px;
+
+    font-size:1rem;
+
     color:#666;
 
 }
+
 .bloque{
 
     margin-top:25px;
@@ -363,17 +391,91 @@ header{
 }
 footer{
 
-    background:#163f2f;
+    margin-top:80px;
+
+    background:#1f4d37;
 
     color:white;
 
-    text-align:center;
-
-    padding:20px;
-
-    margin-top:60px;
+    padding:45px 20px;
 
 }
+
+.footerContenido{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.footerContenido h3{
+
+    font-size:2.2rem;
+
+    margin-bottom:10px;
+
+    font-family:'Cinzel',serif;
+
+    margin-top:0;
+
+}
+
+.footerContenido p{
+
+    margin:10px 0;
+
+    line-height:1.6;
+
+}
+
+.footerContenido a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.footerContenido a:hover{
+
+    color:#d8c17a;
+
+}
+
+.footerLinks{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:28px;
+
+    flex-wrap:wrap;
+
+    margin:35px 0 25px;
+
+}
+
+.copyright{
+
+    opacity:.6;
+
+    font-size:.85rem;
+
+}
+.footerLogo{
+
+    width:80px;
+
+    margin-bottom:8px;
+
+}
+
 
 @media (max-width:768px){
 
@@ -425,21 +527,44 @@ footer{
         gap:12px;
     }
 
-        .tarjeta{
-        width:85px;
-        padding:10px 6px;
+    .tarjeta{
+
+    width:160px;
+
+    padding:12px;
+
+    gap:10px;
+
+    }
+
+    .icono-tarjeta{
+
+        width:34px;
+
+        height:34px;
+
+        padding:6px;
+
+    }
+
+    .tarjeta img{
+
+        width:60px;
+        height:60px;
+
     }
 
     .numero{
-        font-size:1.8rem;
+
+        font-size:2rem;
+
     }
+
     .texto{
 
-    font-size:13px;
+        font-size:12px;
 
-    line-height:1.2;
-
-}
+    }
 
     .bloque h3{
         font-size:24px;
@@ -455,5 +580,27 @@ footer{
 #contenido{
 
     flex:1;
+
+}
+
+.imagen-numen{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    text-align:center;
+
+}
+
+.imagen-numen img{
+
+    width:100%;
+
+    border-radius:14px;
 
 }

@@ -2,7 +2,27 @@
 // CREAR MAPA
 // ======================================
 
-var mapa = L.map("mapa").setView([42.6, -2.25], 8);
+const limites = L.latLngBounds(
+
+    [41.9, -2.75],   // esquina suroeste
+
+    [43.65, -0.70]    // esquina noreste
+
+);
+
+var mapa = L.map("mapa",{
+
+    minZoom:8,
+    maxZoom:15,
+
+    maxBounds:limites,
+    maxBoundsViscosity:1.0,
+
+    zoomAnimation:false,
+    fadeAnimation:false,
+    markerZoomAnimation:false
+
+}).setView([42.6,-2.25],8);
 
 const leyenda = L.control({ position: "bottomright" });
 
@@ -70,11 +90,29 @@ Promise.all([
 
                     e.target.setStyle({
 
-                        weight: 3,
-                        color: "#000",
-                        fillOpacity: 0.9
+                        weight:3,
+                        color:"#1b4332",
+                        fillOpacity:0.9
 
                     });
+
+                    layer.bindTooltip(
+
+                        feature.properties.iz_ofizial,
+
+                        {
+
+                            direction:"top",
+
+                            sticky:true,
+
+                            opacity:1,
+
+                            className:"tooltipMunicipio"
+
+                        }
+
+                    ).openTooltip();
 
                 },
 
@@ -84,7 +122,8 @@ Promise.all([
 
                 mouseout: function () {
 
-                        actualizarMapa();
+                    layer.closeTooltip();   
+                    actualizarMapa();
 
                 },
 
@@ -115,80 +154,148 @@ Promise.all([
                     let texto = `
                         <div class="popup-municipio">
 
-                            <div class="popup-titulo">${municipio}</div>
+                            <div class="popup-header">
 
-                            <div class="popup-provincia">${provincia}</div>
+                                <img
+                                    src="imagenes/iconos/municipio.png"
+                                    class="popup-icono"
+                                    alt="">
+
+                                <div class="popup-info">
+
+                                    <div class="popup-titulo">
+                                        ${municipio}
+                                    </div>
+
+                                    <div class="popup-provincia">
+                                        ${provincia}
+                                    </div>
+
+                                </div>
+
+                            </div>
 
                             <div class="popup-separador"></div>
-                    `;
-
-                    if (resultados.length === 0) {
-
-                        texto += `
-                            <p><i>No hay información para esta categoría.</i></p>
                         `;
 
-                    } else {
+                        if (resultados.length === 0) {
 
-                        const numenes = [...new Set(
-                            resultados
-                                .filter(r => r.numen && r.numen.trim() !== "")
-                                .map(r => r.numen.trim())
-                        )].sort((a, b) =>
-                            a.localeCompare(b, "es", { sensitivity: "base" })
-                        );
+                            texto += `
+                                ${interfaz[idioma].sinInformacionCategoria}
+                            `;
 
-                        texto += `
-                            <div class="popup-dato">
-                                Seres mitológicos documentados: <strong>${numenes.length}</strong>
+                        } else {
+
+                            const numenes = [...new Set(
+                                resultados
+                                    .filter(r => r.numen && r.numen.trim() !== "")
+                                    .map(r => r.numen.trim())
+                            )].sort((a, b) =>
+                                a.localeCompare(b, "es", { sensitivity: "base" })
+                            );
+
+                            texto += `
+
+                                <div class="popup-estadisticas">
+
+                                <div class="popup-card">
+
+                                    <img
+                                        src="imagenes/iconos/ser-mitologico.png"
+                                        class="popup-card-icono"
+                                        alt="">
+
+                                    <div>
+
+                                        <span class="popup-numero">
+                                            ${numenes.length}
+                                        </span>
+
+                                        <small>
+                                            ${interfaz[idioma].seresDocumentados}
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="popup-card">
+
+                                    <img
+                                        src="imagenes/iconos/bibliografia.png"
+                                        class="popup-card-icono"
+                                        alt="">
+
+                                    <div>
+
+                                        <span class="popup-numero">
+                                            ${fuentes.length}
+                                        </span>
+
+                                        <small>
+                                            ${interfaz[idioma].bibliografia}
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
                             </div>
 
-                            <div class="popup-dato">
-                                Fuentes bibliográficas: <strong>${fuentes.length}</strong>
-                            </div>
+                            <a
+                                class="popup-ficha"
+                                href="municipio.html?municipio=${encodeURIComponent(municipio)}">
 
-                            <div class="popup-separador"></div>
+                                ${interfaz[idioma].verFicha} →
 
-                            <a class="popup-ficha"
-                            href="municipio.html?municipio=${encodeURIComponent(municipio)}"
-                            >
-                                Ver ficha completa →
                             </a>
 
                             <div class="popup-separador"></div>
 
-                            <div class="popup-lista">
+                            <div class="popup-lista-contenedor">
+
+                                <div class="popup-subtitulo">
+
+                                    ${interfaz[idioma].seresDocumentados}
+
+                                </div>
+
+                                <div class="popup-lista">
                         `;
 
-                        numenes.forEach(numen => {
-
-    texto += `
-        <a class="popup-numen"
-           href="numen.html?numen=${encodeURIComponent(numen)}"
-           >
-
-            ${numen}
-
-        </a>
-    `;
-
-});
-
-                        texto += `
-                            </div>
-                        `;
-
-                    }
+               numenes.forEach(numen => {
 
                     texto += `
-                        </div>
+                        <a
+                            class="popup-numen"
+                            href="numen.html?numen=${encodeURIComponent(numen)}">
+
+                            ${numen}
+
+                        </a>
                     `;
 
+                });
+
+                texto += `
+
+                        </div>
+
+                    </div>
+
+                `;
+
+                                                }
+
+                                                texto += `
+                                                </div>
+                                                `;
+
                     layer.bindPopup(texto, {
-    autoPan: true,
-    autoPanPaddingTopLeft: [20, 20],
-    autoPanPaddingBottomRight: [20, 10]
-}).openPopup();
+                    autoPan: true,
+                    autoPanPaddingTopLeft: [20, 20],
+                    autoPanPaddingBottomRight: [20, 10]
+                }).openPopup();
 
                 }
             });
@@ -201,12 +308,9 @@ Promise.all([
 
     actualizarMapa();
 
-    console.log(categoriasSeleccionadas);
-    console.log(categoriasSeleccionadas.length);
-
     mapa.on("popupclose", function () {
 
-        console.log("popupclose", moviendoDesdeLista);
+
 
         if (moviendoDesdeLista) {
 
@@ -238,13 +342,15 @@ window.addEventListener("resize", function () {
 });
 
 function actualizarLeyenda(categoria){
-
+    //alert(categoria);
+console.log("Idioma:", idioma);
+console.log("Escala:", textos[idioma].escala);
     let html = "";
 
-    if(categoria === "Todas las Categorias"){
+    if(categoria === TODAS){
 
     html = `
-    <h4>Escala</h4>
+    <h4>${textos[idioma].escala}</h4>
 
     <div aria-label="Sin registros">
         <span style="background:#efefef"></span>0
@@ -274,6 +380,7 @@ let color1, color2, color3;
 switch(categoria){
 
     case "Figuras mitológicas femeninas":
+        //alert("ENTRA");
         color1 = "#f38b94";
         color2 = "#b23a48";
         color3 = "#6a040f";
@@ -305,7 +412,7 @@ switch(categoria){
 }
 
 html = `
-<h4>Escala</h4>
+<h4>${textos[idioma].escala}</h4>
 
 <div aria-label="Sin registros">
     <span style="background:#e8e8e8"></span>0
@@ -325,7 +432,7 @@ html = `
 `;
 
     }
-
+    
     leyenda.getContainer().innerHTML = html;
     const leyendaMapa = leyenda.getContainer();
 

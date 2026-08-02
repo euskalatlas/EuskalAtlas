@@ -29,8 +29,6 @@ fetch("datos/numenes.json")
 
         fichasNumenes = data;
 
-        console.log("Fichas de númenes:", fichasNumenes.length);
-
     })
     .catch(error => console.error(error));
     
@@ -60,7 +58,7 @@ bibliografiasSeleccionadas = [
     )
 ].sort();
 
-console.log("Datos cargados:", mitologia.length);
+
 
 if (typeof actualizarListaNumenes === "function") {
     actualizarListaNumenes("Todas las Categorias");
@@ -75,7 +73,6 @@ if (typeof actualizarListaNumenes === "function") {
 
 function buscarMunicipio(nombreMunicipio){
 
-    console.log("Municipio recibido:", nombreMunicipio);
 
     if(!nombreMunicipio) return [];
 

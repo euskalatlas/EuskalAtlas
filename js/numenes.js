@@ -15,7 +15,7 @@ function actualizarListaNumenes(categoria){
     aplicarFiltrosSinNumenes(mitologia).forEach(registro => {
 
         // Todas las categorías
-        if(categoria === "Todas las Categorias"){
+        if(categoria === TODAS){
 
             if(registro.numen && registro.numen.trim() !== ""){
                 numenes.add(registro.numen);
@@ -72,30 +72,31 @@ ${numen}
 }
 function actualizarResumenNumenes(){
 
-    const boton = document.getElementById("abrirNumenes");
+    const resumen = document.getElementById("textoNumenes");
 
-    const total = document.querySelectorAll("#listaNumenes input").length;
+    const total =
+        document.querySelectorAll("#listaNumenes input").length;
 
     if(numenesSeleccionados.length === total){
 
-        boton.textContent = "Todos los númenes";
+        resumen.textContent = textos[idioma].todosNumenes;
 
     }else if(numenesSeleccionados.length === 0){
 
-        boton.textContent = "Ningún númen";
+        resumen.textContent = textos[idioma].ningunNumen;
 
     }else if(numenesSeleccionados.length === 1){
 
-        boton.textContent = "1 númen seleccionado";
+        resumen.textContent = textos[idioma].unNumen;
 
     }else{
 
-        boton.textContent = `${numenesSeleccionados.length} númenes seleccionados`;
+        resumen.textContent =
+            `${numenesSeleccionados.length} ${textos[idioma].variosNumenes}`;
 
     }
 
 }
-
 
 // ======================================
 // BUSCADOR
@@ -138,7 +139,13 @@ document.addEventListener("DOMContentLoaded", function(){
 // ======================================
 
 const modalNumenes = document.getElementById("modalNumenes");
+document
+.getElementById("cerrarNumenesX")
+.addEventListener("click", function(){
 
+    modalNumenes.classList.add("oculto");
+
+});
 document
 .getElementById("abrirNumenes")
 .addEventListener("click", function(){
@@ -179,6 +186,7 @@ document
 
 document
 .getElementById("cerrarNumenes")
+
 .addEventListener("click", function(){
     numenesSeleccionados = [];
 
@@ -189,6 +197,15 @@ document
         numenesSeleccionados.push(c.value);
 
     });
+document
+.getElementById("cerrarFichaNumenesX")
+.addEventListener("click", function(){
+
+    document
+        .getElementById("modalFichaNumenes")
+        .classList.add("oculto");
+
+});
 
 actualizarResumenNumenes();
 

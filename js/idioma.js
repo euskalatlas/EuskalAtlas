@@ -1,0 +1,449 @@
+let idioma = localStorage.getItem("idioma") || "es";
+
+const textos = {
+    es: {
+        provincias: "Provincias",
+        categorias: "Categorías",
+        bibliografia: "Bibliografía",
+        escala: "Referencias",
+        registros: "Registros",
+        municipios: "Municipios",
+        seres: "Seres mitológicos",
+        restablecer: "Restablecer filtros",
+        subtitulo: "Atlas digital del patrimonio cultural vasco",
+
+        btnProvincias: "Seleccionar provincias",
+        btnCategorias: "Seleccionar categorías",
+        btnSeres: "Seleccionar seres mitológicos",
+        btnBibliografia: "Seleccionar bibliografía",
+
+        abrirMunicipio: "📄 Abrir ficha de municipio",
+        abrirSer: "✨ Abrir ficha de ser mitológico",
+
+        infoFiltros: "El mapa y el panel de resultados se actualizan automáticamente según los filtros seleccionados.",
+
+        ayudaMunicipios: "Haz clic en un municipio para verlo en detalle.",
+
+        sinResultados: "⚠ Sin resultados",
+        sinResultadosTexto: "No se han encontrado registros con los filtros seleccionados.",
+
+        modalProvincias: "Seleccionar provincias",
+        modalCategorias: "Seleccionar categorías",
+        modalSeres: "Seleccionar seres mitológicos",
+        modalBibliografia: "Seleccionar bibliografía",
+        modalMunicipios: "Abrir ficha de municipio",
+        modalFichaNumenes: "Seleccionar ser mitológico",
+
+        seleccionarTodas: "Seleccionar todas",
+        deseleccionarTodas: "Deseleccionar todas",
+        aceptar: "Aceptar",
+
+        copyright: "© 2026 Euskal Atlas. Todos los derechos reservados.",
+
+        buscarProvincia: "Buscar provincia...",
+        buscarCategoria: "Buscar categoría...",
+        buscarSer: "Buscar seres mitológicos...",
+        buscarBibliografia: "Buscar bibliografía...",
+        buscarMunicipio: "Buscar municipio...",
+        buscarFichaNumen: "Buscar ser mitológico...",
+        volver: "← Volver",
+        volverMapa: "Volver al mapa",
+        catFemeninas: "Figuras mitológicas femeninas",
+        catMasculinas: "Figuras mitológicas masculinas",
+        catZoomorfos: "Seres zoomorfos",
+        catFenomenos: "Fenómenos y manifestaciones naturales",
+        catOtras: "Otras entidades y motivos mitológicos",
+        todasProvincias: "Todas las provincias",
+        ningunaProvincia: "Ninguna provincia",
+        unaProvincia: "1 provincia",
+        variasProvincias: "provincias",
+
+        todasCategorias: "Todas las categorías",
+        ningunaCategoria: "Ninguna categoría",
+        unaCategoria: "1 categoría",
+        variasCategorias: "categorías",
+
+        todosNumenes: "Todos los seres",
+        ningunNumen: "Ningún ser",
+        unNumen: "1 ser",
+        variosNumenes: "seres",
+
+        todaBibliografia: "Toda la bibliografía",
+        ningunaBibliografia: "Ninguna bibliografía",
+        unaBibliografia: "1 fuente",
+        variasBibliografias: "fuentes",
+
+        fichaMunicipio: "FICHA DE MUNICIPIO",
+        fichaSer: "FICHA DE SER MITOLÓGICO",
+        abrirMunicipio: "Abrir una ficha",
+        abrirSer: "Abrir una ficha",
+
+        descripcionProvincias: "Elige una o varias provincias para filtrar el mapa.",
+        descripcionCategorias: "Selecciona una o varias categorías.",
+        descripcionBibliografia: "Selecciona una o varias referencias bibliográficas.",
+        descripcionNumenes: "Selecciona uno o varios seres mitológicos.",
+
+        footerDescripcion: "Atlas interactivo del patrimonio mitológico vasco.",
+
+        contacto: "Contacto",
+
+        metodologia: "Metodología",
+
+        avisoLegal: "Aviso legal",
+
+        privacidad: "Política de privacidad",
+        
+    },
+
+    eu: {
+        provincias: "Probintziak",
+        categorias: "Kategoriak",
+        bibliografia: "Bibliografia",
+        escala: "Referentziak",
+        registros: "Erregistroak",
+        municipios: "Udalerriak",
+        seres: "Izaki mitologikoak",
+        restablecer: "Filtroak berrezarri",
+        subtitulo: "Euskal kultur ondarearen atlas digitala",
+
+        btnProvincias: "Probintziak hautatu",
+        btnCategorias: "Kategoriak hautatu",
+        btnSeres: "Izaki mitologikoak hautatu",
+        btnBibliografia: "Bibliografia hautatu",
+
+        abrirMunicipio: "📄 Udalerriaren fitxa ireki",
+        abrirSer: "✨ Izaki mitologikoaren fitxa ireki",
+
+        infoFiltros: "Mapa eta emaitzen panela automatikoki eguneratzen dira hautatutako filtroen arabera.",
+
+        ayudaMunicipios: "Aukeratu edozein udalerri fitxa osora sartzeko.",
+
+        sinResultados: "⚠ Emaitzarik ez",
+        sinResultadosTexto: "Ez da erregistrorik aurkitu hautatutako filtroekin.",
+
+        modalProvincias: "Probintziak hautatu",
+        modalCategorias: "Kategoriak hautatu",
+        modalSeres: "Izaki mitologikoak hautatu",
+        modalBibliografia: "Bibliografia hautatu",
+        modalMunicipios: "Udalerriaren fitxa ireki",
+        modalFichaNumenes: "Izaki mitologikoa hautatu",
+
+        seleccionarTodas: "Denak hautatu",
+        deseleccionarTodas: "Hautapena kendu",
+        aceptar: "Onartu",
+
+        copyright: "© 2026 Euskal Atlas. Eskubide guztiak erreserbatuta.",
+
+        buscarProvincia: "Bilatu probintzia...",
+        buscarCategoria: "Bilatu kategoria...",
+        buscarSer: "Bilatu izaki mitologikoak...",
+        buscarBibliografia: "Bilatu bibliografia...",
+        buscarMunicipio: "Bilatu udalerria...",
+        buscarFichaNumen: "Bilatu izaki mitologikoa...",
+        volver: "← Itzuli",
+        volverMapa: "Mapara itzuli",
+        catFemeninas: "Irudi mitologiko femeninoak",
+        catMasculinas: "Irudi mitologiko maskulinoak",
+        catZoomorfos: "Izaki zoomorfoak",
+        catFenomenos: "Fenomeno eta agerpen naturalak",
+        catOtras: "Beste izaki eta motibo mitologikoak",
+        todasProvincias: "Probintzia guztiak",
+        ningunaProvincia: "Probintziarik ez",
+        unaProvincia: "Probintzia 1",
+        variasProvincias: "probintzia",
+
+        todasCategorias: "Kategoria guztiak",
+        ningunaCategoria: "Kategoriarik ez",
+        unaCategoria: "Kategoria 1",
+        variasCategorias: "kategoria",
+
+        todosNumenes: "Izaki guztiak",
+        ningunNumen: "Izakirik ez",
+        unNumen: "Izaki 1",
+        variosNumenes: "izaki",
+
+        todaBibliografia: "Bibliografia guztia",
+        ningunaBibliografia: "Bibliografiarik ez",
+        unaBibliografia: "Iturri bibliografiko 1",
+        variasBibliografias: "Iturri bibliografiko",
+
+        fichaMunicipio: "UDALERRIAREN FITXA",
+        fichaSer: "IZAKI MITOLOGIKOAREN FITXA",
+        abrirMunicipio: "Fitxa ireki",
+        abrirSer: "Fitxa ireki",
+
+        descripcionProvincias: "Hautatu mapa iragazteko probintzia bat edo gehiago.",
+        descripcionCategorias: "Hautatu kategoria bat edo gehiago.",
+        descripcionBibliografia: "Hautatu erreferentzia bibliografiko bat edo gehiago.",
+        descripcionNumenes: "Hautatu izaki mitologiko bat edo gehiago.",
+        
+        footerDescripcion: "Euskal ondare mitologikoaren atlas interaktiboa.",
+
+        contacto: "Kontaktua",
+
+        metodologia: "Metodologia",
+
+        avisoLegal: "Lege oharra",
+
+        privacidad: "Pribatutasun politika",
+    
+    }
+};
+const interfaz = {
+
+    es: {
+
+        // Númenes
+        descripcion: "Descripción",
+        presencia: "Presencia geográfica",
+        bibliografia: "Bibliografía",
+        escala: "Referencias",
+
+        // Tarjetas
+        municipio: "Municipio",
+        municipios: "Municipios",
+
+        serMitologico: "Ser mitológico",
+        seresMitologicos: "Seres mitológicos",
+
+        fuente: "Fuente",
+        fuentes: "Fuentes",
+
+        copyright: "© 2026 Euskal Atlas. Todos los derechos reservados.",
+
+        // Textos
+        seleccionarMunicipio:
+            "Selecciona cualquier municipio para acceder a su ficha completa.",
+
+        seleccionarSer:
+            "Selecciona cualquier ser mitológico para acceder a su ficha completa.",
+
+        seresDocumentados:
+            "Seres mitológicos documentados",
+
+        // Errores
+        numenNoEncontrado:
+            "Ser mitológico no encontrado",
+
+        sinReferencias:
+            "Sin referencias documentadas",
+
+        sinReferenciasTexto1:
+            "Actualmente no se han documentado referencias mitológicas para este municipio en Euskal Atlas.",
+
+        sinReferenciasTexto2:
+            "Esta ficha podrá ampliarse en futuras actualizaciones a medida que se incorporen nuevas investigaciones y fuentes.",
+
+        // Navegación
+        volver: "← Volver",
+        volverMapa: "Volver al mapa",
+        verFicha: "Ver ficha completa",
+        sinInformacionCategoria: "No hay información para esta categoría.",
+        catFemeninas: "Figuras mitológicas femeninas",
+        catMasculinas: "Figuras mitológicas masculinas",
+        catZoomorfos: "Seres zoomorfos",
+        catFenomenos: "Fenómenos y manifestaciones naturales",
+        catOtras: "Otras entidades y motivos mitológicos",
+        todasProvincias: "Todas las provincias",
+        ningunaProvincia: "Ninguna provincia",
+        unaProvincia: "1 provincia",
+        variasProvincias: "provincias",
+
+        todasCategorias: "Todas las categorías",
+        ningunaCategoria: "Ninguna categoría",
+        unaCategoria: "1 categoría",
+        variasCategorias: "categorías",
+
+        todosNumenes: "Todos los seres",
+        ningunNumen: "Ningún ser",
+        unNumen: "1 ser",
+        variosNumenes: "seres",
+
+        todaBibliografia: "Toda la bibliografía",
+        ningunaBibliografia: "Ninguna bibliografía",
+        unaBibliografia: "1 fuente",
+        variasBibliografias: "fuentes",
+
+        fichaMunicipio: "FICHA DE MUNICIPIO",
+        fichaSer: "FICHA DE SER MITOLÓGICO",
+        abrirMunicipio: "Abrir una ficha",
+        abrirSer: "Abrir una ficha",
+
+         modalProvincias: "Seleccionar provincias",
+        modalCategorias: "Seleccionar categorías",
+        modalSeres: "Seleccionar seres mitológicos",
+        modalBibliografia: "Seleccionar bibliografía",
+        modalMunicipios: "Abrir ficha de municipio",
+        modalFichaNumenes: "Seleccionar ser mitológico",
+
+    },
+
+    eu: {
+
+        // Númenes
+        descripcion: "Deskribapena",
+        presencia: "Presentzia geografikoa",
+        bibliografia: "Bibliografia",
+        escala: "Referentziak",   
+
+        // Tarjetas
+        municipio: "Udalerria",
+        municipios: "Udalerriak",
+
+        serMitologico: "Izaki mitologikoa",
+        seresMitologicos: "Izaki mitologikoak",
+
+        fuente: "Iturri bibliografikoa",
+        fuentes: "Iturri bibliografikoak",
+
+        copyright: "© 2026 Euskal Atlas. Eskubide guztiak erreserbatuta.",
+
+        // Textos
+        seleccionarMunicipio:
+            "Aukeratu edozein udalerri fitxa osora sartzeko.",
+
+        seleccionarSer:
+            "Aukeratu edozein izaki mitologikoren fitxa osora sartzeko.",
+
+        seresDocumentados:
+            "Dokumentatutako izaki mitologikoak",
+
+        // Errores
+        numenNoEncontrado:
+            "Ez da izaki mitologikoa aurkitu",
+
+        sinReferencias:
+            "Ez dago dokumentatutako erreferentziarik",
+
+        sinReferenciasTexto1:
+            "Une honetan ez dago udalerri honetarako dokumentatutako erreferentzia mitologikorik Euskal Atlasen.",
+
+        sinReferenciasTexto2:
+            "Fitxa hau etorkizuneko eguneraketetan osatuko da, ikerketa eta iturri berriak gehitu ahala.",
+
+        // Navegación
+        volver: "← Itzuli",
+        volverMapa: "Mapara itzuli",
+        verFicha: "Fitxa osoa ikusi",
+        sinInformacionCategoria: "Ez dago informaziorik kategoria honetarako.",
+        catFemeninas: "Figuras mitológicas femeninas",
+        catMasculinas: "Figuras mitológicas masculinas",
+        catZoomorfos: "Seres zoomorfos",
+        catFenomenos: "Fenómenos y manifestaciones naturales",
+        catOtras: "Otras entidades y motivos mitológicos",
+        todasProvincias: "Probintzia guztiak",
+        ningunaProvincia: "Probintziarik ez",
+        unaProvincia: "Probintzia 1",
+        variasProvincias: "probintzia",
+
+        todasCategorias: "Kategoria guztiak",
+        ningunaCategoria: "Kategoriarik ez",
+        unaCategoria: "Kategoria 1",
+        variasCategorias: "kategoria",
+
+        todosNumenes: "Izaki guztiak",
+        ningunNumen: "Izakirik ez",
+        unNumen: "Izaki 1",
+        variosNumenes: "izaki",
+
+        todaBibliografia: "Bibliografia guztia",
+        ningunaBibliografia: "Bibliografiarik ez",
+        unaBibliografia: "Iturri bibliografiko 1",
+        variasBibliografias: "Iturri bibliografiko",
+
+        fichaMunicipio: "UDALERRIAREN FITXA",
+        fichaSer: "IZAKI MITOLOGIKOAREN FITXA",
+        abrirMunicipio: "Fitxa ireki",
+        abrirSer: "Fitxa ireki",
+
+        modalProvincias: "Probintziak hautatu",
+        modalCategorias: "Kategoriak hautatu",
+        modalSeres: "Izaki mitologikoak hautatu",
+        modalBibliografia: "Bibliografia hautatu",
+        modalMunicipios: "Udalerriaren fitxa ireki",
+        modalFichaNumenes: "Izaki mitologikoa hautatu",
+    }
+
+};
+
+const btnES = document.getElementById("btnES");
+const btnEU = document.getElementById("btnEU");
+
+function traducirCategoria(categoria) {
+
+    const traducciones = {
+
+        "Figuras mitológicas femeninas": textos[idioma].catFemeninas,
+        "Figuras mitológicas masculinas": textos[idioma].catMasculinas,
+        "Seres zoomorfos": textos[idioma].catZoomorfos,
+        "Fenómenos y manifestaciones naturales": textos[idioma].catFenomenos,
+        "Otras entidades y motivos mitológicos": textos[idioma].catOtras
+
+    };
+
+    return traducciones[categoria] || categoria;
+
+}
+
+function aplicarIdioma() {
+
+    document.querySelectorAll("[data-i18n]").forEach(elemento => {
+
+        const clave = elemento.dataset.i18n;
+
+        if (textos[idioma][clave]) {
+            elemento.textContent = textos[idioma][clave];
+        }
+
+    });
+
+    document.querySelectorAll("[data-placeholder]").forEach(elemento => {
+
+        const clave = elemento.dataset.placeholder;
+
+        if (textos[idioma][clave]) {
+            elemento.placeholder = textos[idioma][clave];
+        }
+
+    });
+
+}
+
+if (btnES && btnEU) {
+
+    function actualizarBotones() {
+
+        btnES.classList.toggle("activo", idioma === "es");
+        btnEU.classList.toggle("activo", idioma === "eu");
+
+    }
+
+    btnES.addEventListener("click", () => {
+
+        idioma = "es";
+        localStorage.setItem("idioma", idioma);
+        console.log("Cambio a castellano");
+
+        actualizarBotones();
+        aplicarIdioma();
+        actualizarMapa();
+
+    });
+
+    btnEU.addEventListener("click", () => {
+
+        idioma = "eu";
+        localStorage.setItem("idioma", idioma);
+        console.log("Cambio a euskera");
+
+        actualizarBotones();
+        aplicarIdioma();
+        actualizarMapa();
+
+    });
+
+    actualizarBotones();
+
+}
+console.count("aplicarIdioma");
+aplicarIdioma();

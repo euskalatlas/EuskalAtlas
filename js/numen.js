@@ -24,14 +24,14 @@ function cargarNumen() {
                 <div class="cabecera">
 
                     <a class="volver" href="javascript:history.back()">
-                        ← Volver
+                        ${interfaz[idioma].volver}
                     </a>
 
                     <div class="cabecera-contenido">
 
                         <h1>${nombreNumen}</h1>
 
-                        <h2>Númen no encontrado</h2>
+                        <h2>${interfaz[idioma].numenNoEncontrado}</h2>
 
                     </div>
 
@@ -41,7 +41,7 @@ function cargarNumen() {
             return;
     }
     const ficha = fichasNumenes.find(n =>
-        n.nombre.trim().toLowerCase() === nombreNumen.trim().toLowerCase()
+    n.nombre.es.trim().toLowerCase() === nombreNumen.trim().toLowerCase()
     );
 
     // ==========================
@@ -56,17 +56,6 @@ function cargarNumen() {
 
     )].sort((a, b) => a.localeCompare(b, "es"));
 
-    // ==========================
-    // CATEGORÍAS
-    // ==========================
-
-    const categorias = [...new Set(
-
-        resultados
-            .filter(r => r.Categoria && r.Categoria.trim() !== "")
-            .map(r => r.Categoria.trim())
-
-    )].sort((a, b) => a.localeCompare(b, "es"));
 
     // ==========================
     // FUENTES
@@ -155,14 +144,29 @@ provinciasOrden.forEach(provincia => {
     // ==========================
     // HTML
     // ==========================
-document.getElementById("tituloCabecera").textContent = nombreNumen;
+document.getElementById("tituloCabecera").textContent =
+    ficha ? ficha.nombre.es : nombreNumen;
 
 document.getElementById("subtituloCabecera").textContent =
-    categorias[0] ?? "";
+    ficha ? ficha.categoria[idioma] : "";
 
 const volver = document.querySelector(".volver-atras");
 
-volver.textContent = "← Volver";
+volver.textContent = interfaz[idioma].volver;
+
+volver.onclick = function (e) {
+
+    e.preventDefault();
+
+    if (history.length > 1) {
+        history.back();
+    } else {
+        window.location.href = "index.html";
+    }
+
+};
+
+volver.textContent = interfaz[idioma].volver;
 
 volver.onclick = function (e) {
 
@@ -184,27 +188,59 @@ volver.onclick = function (e) {
 
     <div class="resumen">
 
-        <div class="tarjeta">
-            <div class="numero">${municipios.length}</div>
-            <div class="texto">
-                ${municipios.length === 1 ? "Municipio" : "Municipios"}
-            </div>
-        </div>
+    <div class="tarjeta">
 
-        <div class="tarjeta">
-            <div class="numero">${fuentes.length}</div>
-            <div class="texto">
-                ${fuentes.length === 1 ? "Fuente" : "Fuentes"}
+        <img
+            src="imagenes/iconos/municipio.png"
+            class="icono-tarjeta"
+            alt="">
+
+        <div>
+
+            <div class="numero">
+                ${municipios.length}
             </div>
+
+            <div class="texto">
+                ${municipios.length === 1
+                    ? interfaz[idioma].municipio
+                    : interfaz[idioma].municipios}
+            </div>
+
         </div>
 
     </div>
+
+    <div class="tarjeta">
+
+        <img
+            src="imagenes/iconos/bibliografia.png"
+            class="icono-tarjeta"
+            alt="">
+
+        <div>
+
+            <div class="numero">
+                ${fuentes.length}
+            </div>
+
+            <div class="texto">
+                ${fuentes.length === 1
+                    ? interfaz[idioma].fuente
+                    : interfaz[idioma].fuentes}
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
     ${ficha ? `
     <section class="bloque">
 
-        <h3>Descripción</h3>
+        <h3>${interfaz[idioma].descripcion}</h3>
 
-        <p>${ficha.descripcion}</p>
+        <p>${ficha.descripcion[idioma]}</p>
 
     </section>
     ` : ""}
@@ -212,9 +248,9 @@ volver.onclick = function (e) {
 
     <section class="bloque">
 
-        <h3>Presencia geográfica</h3>
+        <h3>${interfaz[idioma].presencia}</h3>
         <p>
-            Selecciona cualquier municipio para acceder a su ficha completa.
+            ${interfaz[idioma].seleccionarMunicipio}
         </p>
 
         ${htmlMunicipios}
@@ -223,7 +259,7 @@ volver.onclick = function (e) {
 
     <section class="bloque">
 
-        <h3>Bibliografía</h3>
+        <h3>${interfaz[idioma].bibliografia}</h3>
 
         <ul class="bibliografia">
 
