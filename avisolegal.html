@@ -6,14 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Municipio</title>
+    <title>Euskal Atlas | Aviso legal</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/municipio.css">
+    <link rel="stylesheet" href="css/avisolegal.css">
 
 </head>
-
+<script src="js/idioma.js"></script>
+<script src="js/avisolegal.js"></script>
 <body>
     <header>
 
@@ -27,9 +28,11 @@
 
             <div class="titulo">
                 
-                <h1 id="tituloCabecera"></h1>
+                <h1>EUSKAL ATLAS</h1>
 
-                <p id="subtituloCabecera"></p>
+                <p data-i18n="subtituloAtlas">
+                    Atlas digital del patrimonio cultural y mitológico vasco
+                </p>
 
             </div>
 
@@ -62,11 +65,81 @@
 
     </header>
 
-        <div id="contenido"></div>
+        <main class="contenido">
 
-        <script src="js/datos.js"></script>
-        <script src="js/municipio.js"></script>
-        <script src="js/idioma.js"></script>
+    <section class="bloque">
+
+        <h2 data-i18n="avisoLegal">
+            Aviso legal
+        </h2>
+
+        <p data-i18n="legalIntro"></p>
+
+    </section>
+
+    <section class="bloque">
+
+        <h3 data-i18n="titularWeb"></h3>
+
+        <p data-i18n="titularWebTexto"></p>
+
+    </section>
+
+    <section class="bloque">
+
+        <h3 data-i18n="finalidad"></h3>
+
+        <p data-i18n="finalidadTexto"></p>
+
+    </section>
+
+    <section class="bloque">
+
+        <h3 data-i18n="propiedadIntelectual"></h3>
+
+        <p data-i18n="propiedadTexto"></p>
+
+    </section>
+
+    <section class="bloque">
+
+        <h3 data-i18n="fuentes"></h3>
+
+        <p data-i18n="fuentesTexto"></p>
+
+    </section>
+
+    <section class="bloque">
+
+        <h3 data-i18n="responsabilidad"></h3>
+
+        <p data-i18n="responsabilidadTexto"></p>
+
+    </section>
+
+    <section class="bloque">
+
+        <h3 data-i18n="proteccionDatos"></h3>
+
+        <p data-i18n="proteccionDatosTexto"></p>
+
+    </section>
+
+    <section class="bloque">
+
+        <h3 data-i18n="contacto"></h3>
+
+        <p>
+
+            <a href="mailto:euskalatlas@gmail.com">
+                euskalatlas@gmail.com
+            </a>
+
+        </p>
+
+    </section>
+
+</main>
 
     <footer>
 
@@ -93,8 +166,7 @@
                     Aviso legal
                 </a>
 
-            
-
+               
             </nav>
 
             <p class="copyright">

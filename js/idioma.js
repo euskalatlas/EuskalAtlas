@@ -93,6 +93,42 @@ const textos = {
 
         privacidad: "Política de privacidad",
         
+        avisoLegal: "Aviso legal",
+
+        legalIntro:
+        "Información relativa a las condiciones de uso, propiedad intelectual y protección de datos de Euskal Atlas.",
+
+        titularWeb: "Titular del sitio web",
+
+        titularWebTexto:
+        "Euskal Atlas es un proyecto digital de investigación y divulgación dedicado al estudio, recopilación y difusión del patrimonio cultural y mitológico vasco mediante un atlas interactivo de acceso público.",
+
+        finalidad: "Finalidad del sitio web",
+
+        finalidadTexto:
+        "El objetivo de Euskal Atlas es facilitar el acceso a información geográfica, bibliográfica y documental relacionada con la mitología vasca con fines divulgativos, educativos y de investigación. Los contenidos podrán ampliarse, actualizarse o corregirse conforme avance el proyecto.",
+
+        propiedadIntelectual: "Propiedad intelectual",
+
+        propiedadTexto:
+        "Los textos, bases de datos, diseños, iconografía, mapas, desarrollos informáticos y demás contenidos originales de Euskal Atlas están protegidos por la legislación vigente sobre propiedad intelectual. Se permite su consulta y utilización con fines personales, educativos y de investigación, siempre que se cite adecuadamente la fuente. Queda prohibida su reproducción o utilización con fines comerciales sin autorización expresa.",
+
+        fuentes: "Fuentes de información",
+
+        fuentesTexto:
+        "La información publicada procede de obras bibliográficas, investigaciones y documentación especializada. Siempre que es posible, las fuentes utilizadas se indican en las fichas correspondientes para facilitar su consulta y verificación.",
+
+        responsabilidad: "Limitación de responsabilidad",
+
+        responsabilidadTexto:
+        "Euskal Atlas realiza un esfuerzo continuo para garantizar la calidad y exactitud de la información publicada. No obstante, no se garantiza la ausencia de errores u omisiones, por lo que los contenidos tienen carácter informativo y podrán modificarse o actualizarse sin previo aviso.",
+
+        proteccionDatos: "Protección de datos",
+
+        proteccionDatosTexto:
+        "En la actualidad Euskal Atlas no solicita ni almacena datos personales de los visitantes mediante formularios de registro o contacto. Si en el futuro se incorporasen servicios que impliquen el tratamiento de datos personales, estos se gestionarán conforme al Reglamento (UE) 2016/679 (Reglamento General de Protección de Datos - RGPD) y a la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).",
+
+        contacto: "Contacto"
     },
 
     eu: {
@@ -186,7 +222,43 @@ const textos = {
         avisoLegal: "Lege oharra",
 
         privacidad: "Pribatutasun politika",
-    
+        
+        avisoLegal: "Lege-oharra",
+
+        legalIntro:
+        "Euskal Atlasen erabilera-baldintzei, jabetza intelektualari eta datu pertsonalen babesari buruzko informazioa.",
+
+        titularWeb: "Webgunearen titularra",
+
+        titularWebTexto:
+        "Euskal Atlas euskal kultura- eta mitologia-ondarea ikertu, bildu eta zabaltzeko sortutako ikerketa eta dibulgazio proiektu digitala da, sarbide publikoko atlas interaktibo baten bidez.",
+
+        finalidad: "Webgunearen xedea",
+
+        finalidadTexto:
+        "Euskal Atlasen helburua euskal mitologiari buruzko informazio geografikoa, bibliografikoa eta dokumentala modu errazean eskaintzea da, dibulgazio, hezkuntza eta ikerketa helburuekin. Edukiak etengabe berritu, zabaldu edo zuzendu ahal izango dira proiektuak aurrera egin ahala.",
+
+        propiedadIntelectual: "Jabetza intelektuala",
+
+        propiedadTexto:
+        "Euskal Atlaseko testuak, datu-baseak, diseinuak, ikonoak, mapak, garapen informatikoak eta gainerako jatorrizko edukiak indarrean dagoen jabetza intelektualaren araudiak babesten ditu. Eduki horiek helburu pertsonal, hezitzaile edo ikertzaileekin erabiltzea baimentzen da, betiere iturria behar bezala aipatuz. Debekatuta dago eduki horien erreprodukzioa edo erabilera komertziala, berariazko baimenik gabe.",
+
+        fuentes: "Informazio-iturriak",
+
+        fuentesTexto:
+        "Argitaratutako informazioa bibliografia espezializatuan, ikerketetan eta dokumentazio-iturrietan oinarritzen da. Ahal den guztietan, erabilitako iturriak dagokion fitxan adierazten dira, kontsulta eta egiaztapena errazteko.",
+
+        responsabilidad: "Erantzukizunaren muga",
+
+        responsabilidadTexto:
+        "Euskal Atlasek ahalegin etengabea egiten du argitaratutako informazioa zehatza eta eguneratua izan dadin. Hala ere, ezin da akatsik edo omisiorik ez dagoela bermatu; horregatik, edukiak informazio-izaerakoak dira eta aldez aurretik jakinarazi gabe eguneratu edo aldatu ahal izango dira.",
+
+        proteccionDatos: "Datu pertsonalen babesa",
+
+        proteccionDatosTexto:
+        "Gaur egun Euskal Atlasek ez du bisitarien datu pertsonalik biltzen edo gordetzen erregistro edo harremanetarako formularioen bidez. Etorkizunean datu pertsonalen tratamendua eskatzen duten zerbitzuak gehitzen badira, tratamendu hori Europako Parlamentuaren eta Kontseiluaren 2016/679 (EB) Erregelamendu Orokorraren (DBEO) eta Datu Pertsonalak Babesteko eta Eskubide Digitalak Bermatzeko 3/2018 Lege Organikoaren arabera egingo da.",
+
+        contacto: "Harremanetarako"
     }
 };
 const interfaz = {
