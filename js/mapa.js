@@ -11,18 +11,28 @@ const limites = L.latLngBounds(
 );
 
 var mapa = L.map("mapa",{
-
     minZoom:8,
     maxZoom:15,
-
     maxBounds:limites,
     maxBoundsViscosity:1.0,
-
     zoomAnimation:false,
     fadeAnimation:false,
     markerZoomAnimation:false
+});
 
-}).setView([42.6,-2.25],8);
+mapa.fitBounds(limites, {
+    padding:[15,15]
+});
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        mapa.invalidateSize();
+        mapa.fitBounds(limites, {
+            padding:[15,15]
+        });
+    },400);
+});
+
 
 const leyenda = L.control({ position: "bottomright" });
 

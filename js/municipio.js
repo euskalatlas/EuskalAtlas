@@ -175,23 +175,21 @@ categoriasOrden.forEach(categoria => {
     contenido.innerHTML = `
         <div class="contenido">
 
-            <div class="sin-datos">
+    <div class="sin-datos">
 
-                <h3>ℹ️ Sin referencias documentadas</h3>
+        <h3>ℹ️ ${interfaz[idioma].sinReferencias}</h3>
 
-                <p>
-                    Actualmente no se han documentado referencias mitológicas
-                    para este municipio en Euskal Atlas.
-                </p>
+        <p>
+            ${interfaz[idioma].sinReferenciasTexto1}
+        </p>
 
-                <p>
-                    Esta ficha podrá ampliarse en futuras actualizaciones a medida
-                    que se incorporen nuevas investigaciones y fuentes.
-                </p>
+        <p>
+            ${interfaz[idioma].sinReferenciasTexto2}
+        </p>
 
-            </div>
+    </div>
 
-        </div>
+</div>
     `;
 
     return;
