@@ -11,7 +11,7 @@ const limites = L.latLngBounds(
 );
 
 var mapa = L.map("mapa",{
-    minZoom:8,
+    minZoom:4,
     maxZoom:15,
     maxBounds:limites,
     maxBoundsViscosity:1.0,
