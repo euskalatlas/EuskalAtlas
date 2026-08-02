@@ -1493,15 +1493,23 @@ footer{
 
     .selectorCard{
 
-        min-height:58px;
-        padding:10px 14px;
+    min-height:auto;
+
+    padding:14px;
+
+}
+
+    .selectorIcono{
+
+        width:44px;
+        height:44px;
 
     }
 
     .selectorIcono img{
 
-        width:35px;
-        height:35px;
+        width:42px;
+        height:42px;
 
     }
 
@@ -1513,7 +1521,14 @@ footer{
 
     .selectorResumen{
 
-        font-size:14px;
+        font-size:13px;
+        line-height:1.25;
+
+    }
+
+    .selectorFlecha{
+
+        font-size:24px;
 
     }
 
