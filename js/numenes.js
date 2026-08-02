@@ -197,15 +197,7 @@ document
         numenesSeleccionados.push(c.value);
 
     });
-document
-.getElementById("cerrarFichaNumenesX")
-.addEventListener("click", function(){
 
-    document
-        .getElementById("modalFichaNumenes")
-        .classList.add("oculto");
-
-});
 
 actualizarResumenNumenes();
 

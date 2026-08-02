@@ -212,6 +212,7 @@ const textos = {
         descripcionCategorias: "Hautatu kategoria bat edo gehiago.",
         descripcionBibliografia: "Hautatu erreferentzia bibliografiko bat edo gehiago.",
         descripcionNumenes: "Hautatu izaki mitologiko bat edo gehiago.",
+        descripcionMunicipios :"Bilatu udalerri bat haren fitxa osoa irekitzeko.",
         
         footerDescripcion: "Euskal ondare mitologikoaren atlas interaktiboa.",
 
