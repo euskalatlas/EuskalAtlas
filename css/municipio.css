@@ -474,10 +474,16 @@ footer{
     }
 
     .contenido{
-        padding:0 15px;
+        display:block;
+    
+    }
+    .columnaDerecha{
+        margin-top:35px;
     }
 
     .resumen{
+        display:grid;
+        grid-template-columns:1fr 1fr;
         gap:12px;
     }
 
