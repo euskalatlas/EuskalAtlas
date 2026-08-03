@@ -2501,3 +2501,57 @@ h3 small{
     display:block;
 
 }
+
+@media (max-width:768px){
+
+    .info.legend{
+
+        display:flex;
+
+        align-items:center;
+
+        gap:8px;
+
+        padding:8px 10px !important;
+
+        font-size:11px !important;
+
+        line-height:1.2;
+
+        white-space:nowrap;
+
+        margin-bottom:70px !important;
+
+    }
+
+    .info.legend h4{
+
+        margin:0 8px 0 0 !important;
+
+        font-size:13px !important;
+
+    }
+
+    .info.legend div{
+
+        display:flex;
+
+        align-items:center;
+
+        gap:4px;
+
+        margin:0 !important;
+
+    }
+
+    .info.legend span{
+
+        width:12px !important;
+
+        height:12px !important;
+
+        margin-right:0 !important;
+
+    }
+
+}
