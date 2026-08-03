@@ -2501,34 +2501,36 @@ h3 small{
     display:block;
 
 }
+/* LEYENDA MÓVIL */
 
 @media (max-width:768px){
 
     .info.legend{
 
         display:flex;
-
         align-items:center;
 
-        gap:8px;
+        gap:10px;
+
+        top:12px !important;
+        right:12px !important;
+
+        bottom:auto !important;
+        left:auto !important;
 
         padding:8px 10px !important;
 
-        font-size:11px !important;
-
-        line-height:1.2;
-
-        white-space:nowrap;
-
-        margin-bottom:70px !important;
+        margin:0 !important;
 
     }
 
     .info.legend h4{
 
-        margin:0 8px 0 0 !important;
+        margin:0 !important;
 
-        font-size:13px !important;
+        font-size:13px;
+
+        white-space:nowrap;
 
     }
 
@@ -2546,11 +2548,11 @@ h3 small{
 
     .info.legend span{
 
-        width:12px !important;
+        width:12px;
 
-        height:12px !important;
+        height:12px;
 
-        margin-right:0 !important;
+        margin-right:3px;
 
     }
 
