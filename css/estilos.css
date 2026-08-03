@@ -191,7 +191,7 @@ header p{
 
 .modalContenido{
 
-    width:min(92vw,400px);
+    width:min(88vw,500px);
 
     overflow:visible;
 
@@ -208,6 +208,7 @@ header p{
     flex-direction:column;
 
     overflow:hidden;
+    height:min(88vw,500px);
 
 }
 
@@ -263,7 +264,7 @@ header p{
 
     margin:0;
 
-    font-size:24px;
+    font-size:1.5rem;
 
     color:#173c2c;
 
