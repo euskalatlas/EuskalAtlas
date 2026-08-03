@@ -46,10 +46,60 @@ leyenda.onAdd = function () {
 
 leyenda.addTo(mapa);
 
+
 const vistaInicial = {
     center: mapa.getCenter(),
     zoom: mapa.getZoom()
 };
+
+function centrarMapa() {
+
+    mapa.closePopup();
+
+    mapa.fitBounds(limites,{
+        padding:[15,15]
+    });
+
+}
+
+const botonCentrar = L.control({ position: "topleft" });
+
+
+botonCentrar.onAdd = function () {
+
+    const div = L.DomUtil.create("div", "leaflet-bar leaflet-control");
+
+    div.innerHTML = `
+        <a
+            href="#"
+            id="botonCentrarMapa"
+            title="Centrar mapa"
+            aria-label="Centrar mapa">
+
+            <img
+                src="imagenes/iconos/centrar-mapa.webp"
+                alt=""
+                width="20"
+                height="20">
+
+        </a>
+    `;
+
+    L.DomEvent.disableClickPropagation(div);
+
+    div.onclick = function (e) {
+
+        L.DomEvent.preventDefault(e);
+
+        centrarMapa();
+
+    };
+
+    return div;
+
+};
+
+botonCentrar.addTo(mapa);
 
 // Mapa base
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {

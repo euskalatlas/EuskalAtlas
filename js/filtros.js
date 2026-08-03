@@ -12,52 +12,52 @@ const TODAS = "__TODAS__";
 function aplicarFiltros(registros){
 
     return registros.filter(r => {
-// ==========================
-// BIBLIOGRAFÍA
-// ==========================
+    // ==========================
+    // BIBLIOGRAFÍA
+    // ==========================
 
-if(
-    r.fuente &&
-    !bibliografiasSeleccionadas.includes(r.fuente)
-    
-){
-    return false;
-}
-        // ==========================
-        // PROVINCIA
-        // ==========================
+    if(
+        r.fuente &&
+        !bibliografiasSeleccionadas.includes(r.fuente)
+        
+    ){
+        return false;
+    }
+            // ==========================
+            // PROVINCIA
+            // ==========================
 
-        if(
-             r.provincia &&
-    !provinciasSeleccionadas.includes(r.provincia)
-        ){
-            return false;
-        }
+            if(
+                r.provincia &&
+        !provinciasSeleccionadas.includes(r.provincia)
+            ){
+                return false;
+            }
 
-        // ==========================
-        // CATEGORÍA
-        // ==========================
+            // ==========================
+            // CATEGORÍA
+            // ==========================
 
-        if(
-            r.Categoria &&
-    !categoriasSeleccionadas.includes(r.Categoria)
-        ){
-            return false;
-        }
+            if(
+                r.Categoria &&
+        !categoriasSeleccionadas.includes(r.Categoria)
+            ){
+                return false;
+            }
 
-        // ==========================
-        // NÚMENES
-        // ==========================
+            // ==========================
+            // NÚMENES
+            // ==========================
 
-        if(
-            !numenesSeleccionados.includes(r.numen)
-        ){
-            return false;
-        }
+            if(
+                !numenesSeleccionados.includes(r.numen)
+            ){
+                return false;
+            }
 
-        return true;
+            return true;
 
-    });
+        });
 
 }
 
@@ -300,94 +300,94 @@ function actualizarResultados(){
     // Si empatan, ordenar alfabéticamente
     return a.nombre.localeCompare(b.nombre, "es");
 
-});
+    });
 
-const lista = document.getElementById("listaMunicipios");
-const aviso = document.getElementById("sinResultados");
+    const lista = document.getElementById("listaMunicipios");
+    const aviso = document.getElementById("sinResultados");
 
-// Mostrar u ocultar el mensaje de "Sin resultados"
-if(municipios.length === 0){
+    // Mostrar u ocultar el mensaje de "Sin resultados"
+    if(municipios.length === 0){
 
-    lista.style.display = "none";
-    aviso.classList.remove("oculto");
+        lista.style.display = "none";
+        aviso.classList.remove("oculto");
 
-}else{
+    }else{
 
-    lista.style.display = "";
-    aviso.classList.add("oculto");
+        lista.style.display = "";
+        aviso.classList.add("oculto");
 
-}
+    }
 
-lista.innerHTML = "";
+    lista.innerHTML = "";
 
-   municipios.forEach(m => {
+    municipios.forEach(m => {
 
-    const fila = document.createElement("div");
+        const fila = document.createElement("div");
 
-    // Enlace visible (igual que ahora)
-    const enlaceMapa = document.createElement("span");
-    enlaceMapa.textContent = `${m.nombre} (${m.registros})`;
-    enlaceMapa.style.cursor = "pointer";
+        // Enlace visible (igual que ahora)
+        const enlaceMapa = document.createElement("span");
+        enlaceMapa.textContent = `${m.nombre} (${m.registros})`;
+        enlaceMapa.style.cursor = "pointer";
 
-    enlaceMapa.addEventListener("click", function(){
+        enlaceMapa.addEventListener("click", function(){
 
-        moviendoDesdeLista = false;
-        mapa.closePopup();
+            moviendoDesdeLista = false;
+            mapa.closePopup();
 
-        capaMunicipios.eachLayer(function(layer){
+            capaMunicipios.eachLayer(function(layer){
 
-            if(layer.feature.properties.iz_ofizial === m.nombre){
+                if(layer.feature.properties.iz_ofizial === m.nombre){
 
-                moviendoDesdeLista = true;
+                    moviendoDesdeLista = true;
 
-                const centro = layer.getBounds().getCenter();
+                    const centro = layer.getBounds().getCenter();
 
-                const punto = mapa.project(centro,11);
-                punto.y -= 180;
+                    const punto = mapa.project(centro,11);
+                    punto.y -= 180;
 
-                const nuevoCentro = mapa.unproject(punto,11);
+                    const nuevoCentro = mapa.unproject(punto,11);
 
-                mapa.setView(nuevoCentro,11);
+                    mapa.setView(nuevoCentro,11);
 
-                layer.fire("click");
+                    layer.fire("click");
 
-            }
+                }
+
+            });
 
         });
 
+        fila.appendChild(enlaceMapa);
+
+        // Enlace SOLO para lectores de pantalla
+        const enlaceFicha = document.createElement("a");
+
+        enlaceFicha.href =
+            `municipio.html?municipio=${encodeURIComponent(m.nombre)}`;
+        
+        enlaceFicha.className = "sr-only";
+
+        enlaceFicha.textContent =
+            `Abrir la ficha completa del municipio ${m.nombre}`;
+
+        fila.appendChild(enlaceFicha);
+
+        lista.appendChild(fila);
+
     });
 
-    fila.appendChild(enlaceMapa);
+    const numenesVisibles = new Set();
 
-    // Enlace SOLO para lectores de pantalla
-    const enlaceFicha = document.createElement("a");
+    aplicarFiltros(mitologia).forEach(registro => {
 
-    enlaceFicha.href =
-        `municipio.html?municipio=${encodeURIComponent(m.nombre)}`;
-    
-    enlaceFicha.className = "sr-only";
+        if(registro.numen && registro.numen.trim() !== ""){
+            numenesVisibles.add(registro.numen.trim());
+        }
 
-    enlaceFicha.textContent =
-        `Abrir la ficha completa del municipio ${m.nombre}`;
+    });
 
-    fila.appendChild(enlaceFicha);
-
-    lista.appendChild(fila);
-
-});
-
-const numenesVisibles = new Set();
-
-aplicarFiltros(mitologia).forEach(registro => {
-
-    if(registro.numen && registro.numen.trim() !== ""){
-        numenesVisibles.add(registro.numen.trim());
-    }
-
-});
-
-document.getElementById("totalNumenes").textContent =
-    numenesVisibles.size;
+    document.getElementById("totalNumenes").textContent =
+        numenesVisibles.size;
 
 }
 
@@ -436,5 +436,8 @@ function restablecerFiltros(){
 
     // Actualizar mapa y resultados
     actualizarMapa();
+
+    // Volver a la vista inicial del mapa
+    centrarMapa();
 
 }
