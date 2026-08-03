@@ -34,7 +34,7 @@ window.addEventListener("load", () => {
 });
 
 
-const leyenda = L.control({ position: "bottomright" });
+const leyenda = L.control({ position: "topright" });
 
 leyenda.onAdd = function () {
 

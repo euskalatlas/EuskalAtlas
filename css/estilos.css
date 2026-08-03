@@ -2502,58 +2502,43 @@ h3 small{
 
 }
 /* LEYENDA MÓVIL */
+.info.legend{
 
-@media (max-width:768px){
+    display:flex;
+    align-items:center;
 
-    .info.legend{
+    gap:8px;
 
-        display:flex;
-        align-items:center;
+    top:10px !important;
+    right:10px !important;
 
-        gap:10px;
+    padding:8px 10px;
 
-        top:12px !important;
-        right:12px !important;
+}
 
-        bottom:auto !important;
-        left:auto !important;
+.info.legend h4{
 
-        padding:8px 10px !important;
+    margin:0;
+    font-size:15px;
 
-        margin:0 !important;
+}
 
-    }
+.info.legend div{
 
-    .info.legend h4{
+    display:flex;
+    align-items:center;
 
-        margin:0 !important;
+    gap:6px;
 
-        font-size:13px;
+    margin:0;
 
-        white-space:nowrap;
+}
 
-    }
+.info.legend span{
 
-    .info.legend div{
+    width:14px;
+    height:14px;
 
-        display:flex;
-
-        align-items:center;
-
-        gap:4px;
-
-        margin:0 !important;
-
-    }
-
-    .info.legend span{
-
-        width:12px;
-
-        height:12px;
-
-        margin-right:3px;
-
-    }
+    margin-right:4px;
 
 }
