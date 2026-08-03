@@ -141,6 +141,9 @@ const textos = {
             "Zuberoa": "Zuberoa"
 
         },
+        mapaDistribucion: "Distribución geográfica",
+        municipiosDocumentados: "Municipios con referencias documentadas.",
+
     },
 
     eu: {
@@ -197,22 +200,22 @@ const textos = {
         catOtras: "Beste izaki eta motibo mitologikoak",
         todasProvincias: "Probintzia guztiak",
         ningunaProvincia: "Probintziarik ez",
-        unaProvincia: "Probintzia 1",
+        unaProvincia: "Probintzia bakarra",
         variasProvincias: "probintzia",
 
         todasCategorias: "Kategoria guztiak",
         ningunaCategoria: "Kategoriarik ez",
-        unaCategoria: "Kategoria 1",
+        unaCategoria: "Kategoria bakarra",
         variasCategorias: "kategoria",
 
         todosNumenes: "Izaki guztiak",
         ningunNumen: "Izakirik ez",
-        unNumen: "Izaki 1",
+        unNumen: "Izaki mitologiko bakarra",
         variosNumenes: "izaki",
 
         todaBibliografia: "Bibliografia guztia",
         ningunaBibliografia: "Bibliografiarik ez",
-        unaBibliografia: "Iturri bibliografiko 1",
+        unaBibliografia: "Iturri bibliografiko bakarra",
         variasBibliografias: "Iturri bibliografiko",
 
         fichaMunicipio: "UDALERRIAREN FITXA",
@@ -284,6 +287,11 @@ const textos = {
             "Zuberoa": "Zuberoa"
 
         },
+
+        mapaDistribucion: "Banaketa geografikoa",
+        municipiosDocumentados: "Erreferentzia dokumentatuak dituzten udalerriak.",
+
+
     }
 };
 const interfaz = {
@@ -373,6 +381,9 @@ const interfaz = {
         modalMunicipios: "Abrir ficha de municipio",
         modalFichaNumenes: "Seleccionar ser mitológico",
 
+        mapaDistribucion: "Distribución geográfica",
+        municipiosDocumentados: "Municipios con referencias documentadas.",
+
     },
 
     eu: {
@@ -440,12 +451,12 @@ const interfaz = {
 
         todosNumenes: "Izaki guztiak",
         ningunNumen: "Izakirik ez",
-        unNumen: "Izaki 1",
+        unNumen: "Izaki mitologiko bakarra",
         variosNumenes: "izaki",
 
         todaBibliografia: "Bibliografia guztia",
         ningunaBibliografia: "Bibliografiarik ez",
-        unaBibliografia: "Iturri bibliografiko 1",
+        unaBibliografia: "Iturri bibliografiko bakarra",
         variasBibliografias: "Iturri bibliografiko",
 
         fichaMunicipio: "UDALERRIAREN FITXA",
@@ -459,6 +470,9 @@ const interfaz = {
         modalBibliografia: "Bibliografia hautatu",
         modalMunicipios: "Udalerriaren fitxa ireki",
         modalFichaNumenes: "Izaki mitologikoa hautatu",
+
+        mapaDistribucion: "Banaketa geografikoa",
+        municipiosDocumentados: "Erreferentzia dokumentatuak dituzten udalerriak.",
     }
 
 };

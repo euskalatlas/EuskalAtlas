@@ -114,6 +114,8 @@ let moviendoDesdeLista = false;
 // CARGAR GEOJSON
 // ======================================
 
+let geojsonMunicipios = null;
+
 Promise.all([
 
     fetch("mapas/municipios-euskadi.geojson").then(r => r.json()),
@@ -124,6 +126,9 @@ Promise.all([
 
     euskadi.features.push(...iparralde.features);
     euskadi.features.push(...navarra.features);
+
+    geojsonMunicipios = euskadi;
+
 
     capaMunicipios = L.geoJSON(euskadi, {
 
@@ -403,105 +408,105 @@ window.addEventListener("resize", function () {
 
 function actualizarLeyenda(categoria){
     //alert(categoria);
-console.log("Idioma:", idioma);
-console.log("Escala:", textos[idioma].escala);
-    let html = "";
+    console.log("Idioma:", idioma);
+    console.log("Escala:", textos[idioma].escala);
+        let html = "";
 
-    if(categoria === TODAS){
+        if(categoria === TODAS){
+
+        html = `
+        <h4>${textos[idioma].escala}</h4>
+
+        <div aria-label="Sin registros">
+            <span style="background:#efefef"></span>0
+        </div>
+
+        <div aria-label="Un ser mitológico">
+            <span style="background:#f169b9"></span>1
+        </div>
+
+        <div aria-label="Entre dos y tres seres mitológicos">
+            <span style="background:#c52e81"></span>2–3
+        </div>
+
+        <div aria-label="Entre cuatro y seis seres mitológicos">
+            <span style="background:#6e073b"></span>4–6
+        </div>
+
+        <div aria-label="Siete o más seres mitológicos">
+            <span style="background:#3b0219"></span>7+
+        </div>
+        `;
+
+    }else{
+
+    let color1, color2, color3;
+
+    switch(categoria){
+
+        case "Figuras mitológicas femeninas":
+            //alert("ENTRA");
+            color1 = "#f38b94";
+            color2 = "#b23a48";
+            color3 = "#6a040f";
+            break;
+
+        case "Figuras mitológicas masculinas":
+            color1 = "#f19710";
+            color2 = "#a3660a";
+            color3 = "#6e4d04";
+            break;
+
+        case "Seres zoomorfos":
+            color1 = "#1432da";
+            color2 = "#09288f";
+            color3 = "#11035e";
+            break;
+
+        case "Fenómenos y manifestaciones naturales":
+            color1 = "#9417ce";
+            color2 = "#660f7c";
+            color3 = "#330346";
+            break;
+
+        case "Otras entidades y motivos mitológicos":
+            color1 = "#f0ed53";
+            color2 = "#e9db15";
+            color3 = "#abad0d";
+            break;
+    }
 
     html = `
     <h4>${textos[idioma].escala}</h4>
 
     <div aria-label="Sin registros">
-        <span style="background:#efefef"></span>0
+        <span style="background:#e8e8e8"></span>0
     </div>
 
     <div aria-label="Un ser mitológico">
-        <span style="background:#f169b9"></span>1
+        <span style="background:${color1}"></span>1
     </div>
 
     <div aria-label="Entre dos y tres seres mitológicos">
-        <span style="background:#c52e81"></span>2–3
+        <span style="background:${color2}"></span>2–3
     </div>
 
-    <div aria-label="Entre cuatro y seis seres mitológicos">
-        <span style="background:#6e073b"></span>4–6
-    </div>
-
-    <div aria-label="Siete o más seres mitológicos">
-        <span style="background:#3b0219"></span>7+
+    <div aria-label="Cuatro o más seres mitológicos">
+        <span style="background:${color3}"></span>4+
     </div>
     `;
 
-}else{
+        }
+        
+        leyenda.getContainer().innerHTML = html;
+        const leyendaMapa = leyenda.getContainer();
 
-let color1, color2, color3;
+        leyendaMapa.setAttribute("role", "img");
 
-switch(categoria){
-
-    case "Figuras mitológicas femeninas":
-        //alert("ENTRA");
-        color1 = "#f38b94";
-        color2 = "#b23a48";
-        color3 = "#6a040f";
-        break;
-
-    case "Figuras mitológicas masculinas":
-        color1 = "#f19710";
-        color2 = "#a3660a";
-        color3 = "#6e4d04";
-        break;
-
-    case "Seres zoomorfos":
-        color1 = "#1432da";
-        color2 = "#09288f";
-        color3 = "#11035e";
-        break;
-
-    case "Fenómenos y manifestaciones naturales":
-        color1 = "#9417ce";
-        color2 = "#660f7c";
-        color3 = "#330346";
-        break;
-
-    case "Otras entidades y motivos mitológicos":
-        color1 = "#f0ed53";
-        color2 = "#e9db15";
-        color3 = "#abad0d";
-        break;
-}
-
-html = `
-<h4>${textos[idioma].escala}</h4>
-
-<div aria-label="Sin registros">
-    <span style="background:#e8e8e8"></span>0
-</div>
-
-<div aria-label="Un ser mitológico">
-    <span style="background:${color1}"></span>1
-</div>
-
-<div aria-label="Entre dos y tres seres mitológicos">
-    <span style="background:${color2}"></span>2–3
-</div>
-
-<div aria-label="Cuatro o más seres mitológicos">
-    <span style="background:${color3}"></span>4+
-</div>
-`;
-
-    }
-    
-    leyenda.getContainer().innerHTML = html;
-    const leyendaMapa = leyenda.getContainer();
-
-    leyendaMapa.setAttribute("role", "img");
-
-    leyendaMapa.setAttribute(
-        "aria-label",
-        "Escala de colores del mapa. Cuanto más oscuro es el color, mayor es el número de seres mitológicos registrados en cada municipio."
-    );
+        leyendaMapa.setAttribute(
+            "aria-label",
+            "Escala de colores del mapa. Cuanto más oscuro es el color, mayor es el número de seres mitológicos registrados en cada municipio."
+        );
 
 }
 

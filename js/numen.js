@@ -44,6 +44,10 @@ function cargarNumen() {
     n.nombre.es.trim().toLowerCase() === nombreNumen.trim().toLowerCase()
     );
 
+    console.log("Nombre URL:", nombreNumen);
+    console.log("Ficha encontrada:", ficha);
+
+
     // ==========================
     // MUNICIPIOS
     // ==========================
@@ -81,7 +85,7 @@ function cargarNumen() {
     "Navarra",
     "Baja Navarra",
     "Zuberoa"
-];
+    ];
 
     const municipiosPorProvincia = {};
 
@@ -102,181 +106,298 @@ function cargarNumen() {
 
    let htmlMunicipios = "";
 
-provinciasOrden.forEach(provincia => {
+    provinciasOrden.forEach(provincia => {
 
-    htmlMunicipios += `<div class="provincia">${provincia}</div>`;
+        htmlMunicipios += `<div class="provincia">${provincia}</div>`;
 
-    if (!municipiosPorProvincia[provincia]) {
+        if (!municipiosPorProvincia[provincia]) {
+
+            htmlMunicipios += `
+                <div class="sin-municipios">
+                    —
+                </div>
+            `;
+
+            return;
+        }
+
+        const lista = [...municipiosPorProvincia[provincia]]
+            .sort((a, b) => a.localeCompare(b, "es"));
 
         htmlMunicipios += `
-            <div class="sin-municipios">
-                —
+            <div class="lista-municipios">
+                <ul>
+
+                    ${lista.map(municipio => `
+                        <li>
+                            <a class="municipio-link"
+                            href="municipio.html?municipio=${encodeURIComponent(municipio)}"
+                            >
+
+                                ${municipio}
+
+                            </a>
+                        </li>
+                    `).join("")}
+
+                </ul>
             </div>
         `;
+    });
 
-        return;
-    }
+        // ==========================
+        // HTML
+        // ==========================
+    document.getElementById("tituloCabecera").textContent =
+        ficha ? ficha.nombre.es : nombreNumen;
 
-    const lista = [...municipiosPorProvincia[provincia]]
-        .sort((a, b) => a.localeCompare(b, "es"));
+    document.getElementById("subtituloCabecera").textContent =
+        ficha ? ficha.categoria[idioma] : "";
 
-    htmlMunicipios += `
-        <div class="lista-municipios">
-            <ul>
+    const volver = document.querySelector(".volver-atras");
 
-                ${lista.map(municipio => `
-                    <li>
-                        <a class="municipio-link"
-                           href="municipio.html?municipio=${encodeURIComponent(municipio)}"
-                           >
+    volver.textContent = interfaz[idioma].volver;
 
-                            ${municipio}
+    volver.onclick = function (e) {
 
-                        </a>
-                    </li>
-                `).join("")}
+        e.preventDefault();
 
-            </ul>
-        </div>
-    `;
-});
+        if (history.length > 1) {
+            history.back();
+        } else {
+            window.location.href = "index.html";
+        }
 
-    // ==========================
-    // HTML
-    // ==========================
-document.getElementById("tituloCabecera").textContent =
-    ficha ? ficha.nombre.es : nombreNumen;
+    };
 
-document.getElementById("subtituloCabecera").textContent =
-    ficha ? ficha.categoria[idioma] : "";
+    volver.textContent = interfaz[idioma].volver;
 
-const volver = document.querySelector(".volver-atras");
+    volver.onclick = function (e) {
 
-volver.textContent = interfaz[idioma].volver;
+        e.preventDefault();
 
-volver.onclick = function (e) {
+        if (history.length > 1) {
+            history.back();
+        } else {
+            window.location.href = "index.html";
+        }
 
-    e.preventDefault();
+    };
+        
+        contenido.innerHTML = `
 
-    if (history.length > 1) {
-        history.back();
-    } else {
-        window.location.href = "index.html";
-    }
+            <div class="contenido">
 
-};
+                <div class="resumen">
 
-volver.textContent = interfaz[idioma].volver;
+                <div class="tarjeta">
 
-volver.onclick = function (e) {
+                    <img
+                        src="imagenes/iconos/municipio.webp"
+                        class="icono-tarjeta"
+                        alt="">
 
-    e.preventDefault();
+                    <div>
 
-    if (history.length > 1) {
-        history.back();
-    } else {
-        window.location.href = "index.html";
-    }
+                        <div class="numero">
+                            ${municipios.length}
+                        </div>
 
-};
-    
-    contenido.innerHTML = `
+                        <div class="texto">
+                            ${municipios.length === 1
+                                ? interfaz[idioma].municipio
+                                : interfaz[idioma].municipios}
+                        </div>
 
+                    </div>
 
+                </div>
 
-<div class="contenido">
+                <div class="tarjeta">
 
-    <div class="resumen">
+                    <img
+                        src="imagenes/iconos/bibliografia.webp"
+                        class="icono-tarjeta"
+                        alt="">
 
-    <div class="tarjeta">
+                    <div>
 
-        <img
-            src="imagenes/iconos/municipio.webp"
-            class="icono-tarjeta"
-            alt="">
+                        <div class="numero">
+                            ${fuentes.length}
+                        </div>
 
-        <div>
+                        <div class="texto">
+                            ${fuentes.length === 1
+                                ? interfaz[idioma].fuente
+                                : interfaz[idioma].fuentes}
+                        </div>
 
-            <div class="numero">
-                ${municipios.length}
+                    </div>
+
+                </div>
+
             </div>
+                ${ficha ? `
 
-            <div class="texto">
-                ${municipios.length === 1
-                    ? interfaz[idioma].municipio
-                    : interfaz[idioma].municipios}
-            </div>
+                <div class="contenidoPrincipal">
 
-        </div>
+                    <div class="columnaIzquierda">
 
-    </div>
+                        <section class="bloque">
 
-    <div class="tarjeta">
+                            <h3>${interfaz[idioma].descripcion}</h3>
 
-        <img
-            src="imagenes/iconos/bibliografia.webp"
-            class="icono-tarjeta"
-            alt="">
+                            <p>${ficha.descripcion[idioma]}</p>
 
-        <div>
+                        </section>
 
-            <div class="numero">
-                ${fuentes.length}
-            </div>
+                        <section class="bloque">
 
-            <div class="texto">
-                ${fuentes.length === 1
-                    ? interfaz[idioma].fuente
-                    : interfaz[idioma].fuentes}
-            </div>
+                            <h3>${interfaz[idioma].presencia}</h3>
 
-        </div>
+                            <p>
+                                ${interfaz[idioma].seleccionarMunicipio}
+                            </p>
 
-    </div>
+                            ${htmlMunicipios}
 
-</div>
-    ${ficha ? `
-    <section class="bloque">
+                        </section>
 
-        <h3>${interfaz[idioma].descripcion}</h3>
+                    </div>
 
-        <p>${ficha.descripcion[idioma]}</p>
+                    <div class="columnaDerecha">
 
-    </section>
-    ` : ""}
-<div class="informacion">
+                        <section class="bloque">
 
-    <section class="bloque">
+                            <h3>${interfaz[idioma].mapaDistribucion}</h3>
 
-        <h3>${interfaz[idioma].presencia}</h3>
-        <p>
-            ${interfaz[idioma].seleccionarMunicipio}
-        </p>
+                            <p class="subtituloMapa">
+                                ${interfaz[idioma].municipiosDocumentados}
+                            </p>
 
-        ${htmlMunicipios}
+                            <div id="mapaNumen"></div>
 
-    </section>
+                        </section>
 
-    <section class="bloque">
+                        <section class="bloque">
 
-        <h3>${interfaz[idioma].bibliografia}</h3>
+                            <h3>${interfaz[idioma].bibliografia}</h3>
 
-        <ul class="bibliografia">
+                            <ul class="bibliografia">
 
-            ${fuentes.map(fuente => `
-                <li>${fuente}</li>
-            `).join("")}
+                                ${fuentes.map(fuente => `
+                                    <li>${fuente}</li>
+                                `).join("")}
 
-        </ul>
+                            </ul>
 
-    </section>
+                        </section>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
-`;
+                ` : ""}
+
+                </div>
+
+        `;
+        if(ficha){
+
+            crearMapaNumen(municipios);
+
+        }   
 
 }
 
 cargarNumen();
+
+function crearMapaNumen(listaMunicipios){
+
+    Promise.all([
+
+        fetch("mapas/municipios-euskadi.geojson").then(r => r.json()),
+        fetch("mapas/Iparralde_municipios.geojson").then(r => r.json()),
+        fetch("mapas/Navarra_municipios.geojson").then(r => r.json())
+
+    ]).then(([euskadi, iparralde, navarra]) => {
+
+        euskadi.features.push(...iparralde.features);
+        euskadi.features.push(...navarra.features);
+
+        const limites = L.latLngBounds(
+
+            [41.9, -2.75],
+
+            [43.65, -0.70]
+
+        );
+
+        const mapaNumen = L.map("mapaNumen",{
+
+            zoomControl:false,
+
+            attributionControl:false,
+
+            dragging:false,
+
+            touchZoom:false,
+
+            doubleClickZoom:false,
+
+            scrollWheelZoom:false,
+
+            boxZoom:false,
+
+            keyboard:false,
+
+            tap:false
+
+        });
+
+        L.tileLayer(
+            "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        ).addTo(mapaNumen);
+
+        const capa = L.geoJSON(euskadi,{
+
+        style:function(feature){
+
+            const seleccionado = listaMunicipios.includes(
+                feature.properties.iz_ofizial
+            );
+
+            return{
+
+                color:"#666",
+
+                weight:1,
+
+                fillColor: seleccionado
+                    ? "#6e073b"
+                    : "#e8efe3",
+
+                fillOpacity: seleccionado
+                    ? 0.85
+                    : 1
+
+            };
+
+        }
+
+    }).addTo(mapaNumen);
+
+        mapaNumen.fitBounds([
+
+            [41.9, -2.75],
+            [43.65, -0.70]
+
+        ],{
+
+            padding:[10,10]
+
+        });
+
+    });
+
+}

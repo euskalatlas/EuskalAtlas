@@ -561,10 +561,10 @@
 },
 {
   "nombre": {
-    "es": "Aide (Aideko, Aidetikako)",
-    "eu": "Aide (Aideko, Aidetikako)",
-    "en": "Aide (Aideko, Aidetikako)",
-    "fr": "Aide (Aideko, Aidetikako)"
+    "es": "Aide, Aideko, Aidetikako",
+    "eu": "Aide, Aideko, Aidetikako",
+    "en": "Aide, Aideko, Aidetikako",
+    "fr": "Aide, Aideko, Aidetikako"
   },
   "descripcion": {
     "es": "Espíritu relacionado con el viento y el aire en la tradición vasca. Se manifiesta como una fuerza invisible capaz de influir en el entorno y cuyo comportamiento varía según las creencias de cada localidad.",
@@ -688,7 +688,7 @@
   },
   "descripcion": {
     "es": "Luz de origen sobrenatural que aparece en diversos relatos populares. Puede servir como guía, advertencia o manifestación de la presencia de fuerzas invisibles.",
-    "eu": "Jatorri naturaz gaindikoa duen argia da, herri-kondaira askotan agertzen dena. Gidari, ohartarazpen edo indar ikusezinen presentziaren adierazgarri izan daiteke.",
+    "eu": "Jatorri naturaz gaindikoa duen Argia da, herri-kondaira askotan agertzen dena. Gidari, ohartarazpen edo indar ikusezinen presentziaren adierazgarri izan daiteke.",
     "en": "A supernatural light appearing in various folk tales. It may serve as a guide, a warning or a sign of the presence of invisible forces.",
     "fr": "Lumière d'origine surnaturelle apparaissant dans divers récits populaires. Elle peut servir de guide, d'avertissement ou de manifestation de la présence de forces invisibles."
   },
@@ -721,10 +721,10 @@
 },
 {
   "nombre": {
-    "es": "Atxular, Axular",
-    "eu": "Atxular, Axular",
-    "en": "Atxular, Axular",
-    "fr": "Atxular, Axular"
+    "es": "Atxular,Axular",
+    "eu": "Atxular,Axular",
+    "en": "Atxular,Axular",
+    "fr": "Atxular,Axular"
   },
   "descripcion": {
     "es": "Personaje legendario cuyo nombre aparece en diversas tradiciones populares. Dependiendo del relato, se relaciona con conocimientos extraordinarios o con seres sobrenaturales.",
@@ -961,14 +961,14 @@
 },
 {
   "nombre": {
-    "es": "Gauargi",
-    "eu": "Gauargi",
-    "en": "Gauargi",
-    "fr": "Gauargi"
+    "es": "GauArgi",
+    "eu": "GauArgi",
+    "en": "GauArgi",
+    "fr": "GauArgi"
   },
   "descripcion": {
     "es": "Luz sobrenatural que aparece durante la noche. En las leyendas puede guiar, desorientar o anunciar la presencia de otros seres del mundo invisible.",
-    "eu": "Gauez agertzen den argi naturaz gaindikoa da. Kondairetan gidari izan daiteke, bidea nahasi edo mundu ikusezinaren beste izaki batzuen presentzia iragarri.",
+    "eu": "Gauez agertzen den Argi naturaz gaindikoa da. Kondairetan gidari izan daiteke, bidea nahasi edo mundu ikusezinaren beste izaki batzuen presentzia iragarri.",
     "en": "A supernatural light that appears during the night. In legends it may guide, mislead or announce the presence of other beings from the invisible world.",
     "fr": "Lumière surnaturelle apparaissant pendant la nuit. Dans les légendes, elle peut guider, égarer ou annoncer la présence d'autres êtres du monde invisible."
   },
