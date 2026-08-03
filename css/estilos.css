@@ -1302,19 +1302,6 @@ footer{
 @media (max-width:768px){
     
 
-    .modalContenido{
-
-        width:78vw;
-
-        height:78vh;
-
-        max-height:78vh;
-
-        padding:18px;
-
-    }
-
-
     .popup-municipio{
 
         width:260px;
@@ -1583,6 +1570,91 @@ footer{
     .selectorFlecha{
 
         font-size:24px;
+
+    }
+
+    /* ==========================
+    MODALES MÓVIL
+    ========================== */
+
+    .modalContenido{
+
+        width:90vw;
+        height:auto;
+
+        max-height:90vh;
+
+        overflow-y:auto;
+
+        padding:16px;
+
+    }
+
+    .modalCabecera{
+
+        align-items:flex-start;
+
+        gap:14px;
+
+    }
+
+    .modalCabecera img{
+
+        width:60px;
+        height:60px;
+
+    }
+
+    .modalCabecera h3{
+
+        font-size:2rem;
+
+        line-height:1.1;
+
+        margin-bottom:8px;
+
+    }
+
+    .modalDescripcion{
+
+        font-size:0.95rem;
+
+        line-height:1.4;
+
+        margin-top:6px;
+
+    }
+
+    .modalCabecera p{
+
+        font-size:1.05rem;
+
+        line-height:1.35;
+
+    }
+
+    .listaOpciones{
+
+        max-height:220px;
+
+    }
+
+    .modalDescripcion{
+
+        font-size:0.95rem;
+
+        line-height:1.4;
+
+        margin-top:6px;
+
+    }
+
+    #listaProvincias,
+    #listaCategorias,
+    #listaBibliografias,
+    #listaNumenes{
+
+        max-height:220px;
 
     }
 
