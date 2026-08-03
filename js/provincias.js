@@ -23,7 +23,15 @@ mitologia.forEach(registro => {
 });
 
     // Orden alfabético
-let lista = [...provincias].sort();
+// Orden alfabético según el idioma mostrado
+let lista = [...provincias].sort((a, b) => {
+
+    const nombreA = textos[idioma].provinciasTraducidas[a] || a;
+    const nombreB = textos[idioma].provinciasTraducidas[b] || b;
+
+    return nombreA.localeCompare(nombreB, idioma);
+
+});
 
 // Al cambiar de categoría, seleccionar todos los númenes
 if (provinciasSeleccionadas.length === 0) {
@@ -35,15 +43,15 @@ lista.forEach(provincia => {
     const linea = document.createElement("div");
 
     linea.innerHTML = `
-<label>
-<input
-    type="checkbox"
-    value="${provincia}"
-    ${provinciasSeleccionadas.includes(provincia) ? "checked" : ""}
->
-${provincia}
-</label>
-`;
+        <label>
+        <input
+            type="checkbox"
+            value="${provincia}"
+            ${provinciasSeleccionadas.includes(provincia) ? "checked" : ""}
+        >
+        ${textos[idioma].provinciasTraducidas[provincia] || provincia}
+        </label>
+        `;
 
     contenedor.appendChild(linea);
 

@@ -167,7 +167,7 @@ Promise.all([
                             <div class="popup-header">
 
                                 <img
-                                    src="imagenes/iconos/municipio.png"
+                                    src="imagenes/iconos/municipio.webp"
                                     class="popup-icono"
                                     alt="">
 
@@ -211,7 +211,7 @@ Promise.all([
                                 <div class="popup-card">
 
                                     <img
-                                        src="imagenes/iconos/ser-mitologico.png"
+                                        src="imagenes/iconos/ser-mitologico.webp"
                                         class="popup-card-icono"
                                         alt="">
 
@@ -232,7 +232,7 @@ Promise.all([
                                 <div class="popup-card">
 
                                     <img
-                                        src="imagenes/iconos/bibliografia.png"
+                                        src="imagenes/iconos/bibliografia.webp"
                                         class="popup-card-icono"
                                         alt="">
 

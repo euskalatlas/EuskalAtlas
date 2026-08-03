@@ -128,7 +128,19 @@ const textos = {
         proteccionDatosTexto:
         "En la actualidad Euskal Atlas no solicita ni almacena datos personales de los visitantes mediante formularios de registro o contacto. Si en el futuro se incorporasen servicios que impliquen el tratamiento de datos personales, estos se gestionarán conforme al Reglamento (UE) 2016/679 (Reglamento General de Protección de Datos - RGPD) y a la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).",
 
-        contacto: "Contacto"
+        contacto: "Contacto",
+
+        provinciasTraducidas: {
+
+            "Alava": "Álava",
+            "Bizkaia": "Bizkaia",
+            "Gipuzkoa": "Gipuzkoa",
+            "Navarra": "Navarra",
+            "Lapurdi": "Lapurdi",
+            "Baja Navarra": "Baja Navarra",
+            "Zuberoa": "Zuberoa"
+
+        },
     },
 
     eu: {
@@ -259,7 +271,19 @@ const textos = {
         proteccionDatosTexto:
         "Gaur egun Euskal Atlasek ez du bisitarien datu pertsonalik biltzen edo gordetzen erregistro edo harremanetarako formularioen bidez. Etorkizunean datu pertsonalen tratamendua eskatzen duten zerbitzuak gehitzen badira, tratamendu hori Europako Parlamentuaren eta Kontseiluaren 2016/679 (EB) Erregelamendu Orokorraren (DBEO) eta Datu Pertsonalak Babesteko eta Eskubide Digitalak Bermatzeko 3/2018 Lege Organikoaren arabera egingo da.",
 
-        contacto: "Harremanetarako"
+        contacto: "Harremanetarako",
+
+        provinciasTraducidas: {
+
+            "Alava": "Araba",
+            "Bizkaia": "Bizkaia",
+            "Gipuzkoa": "Gipuzkoa",
+            "Navarra": "Nafarroa",
+            "Lapurdi": "Lapurdi",
+            "Baja Navarra": "Nafarroa Beherea",
+            "Zuberoa": "Zuberoa"
+
+        },
     }
 };
 const interfaz = {

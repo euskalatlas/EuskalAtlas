@@ -191,7 +191,7 @@ volver.onclick = function (e) {
     <div class="tarjeta">
 
         <img
-            src="imagenes/iconos/municipio.png"
+            src="imagenes/iconos/municipio.webp"
             class="icono-tarjeta"
             alt="">
 
@@ -214,7 +214,7 @@ volver.onclick = function (e) {
     <div class="tarjeta">
 
         <img
-            src="imagenes/iconos/bibliografia.png"
+            src="imagenes/iconos/bibliografia.webp"
             class="icono-tarjeta"
             alt="">
 

@@ -209,7 +209,7 @@ categoriasOrden.forEach(categoria => {
         <div class="tarjeta">
 
             <img
-                src="imagenes/iconos/ser-mitologico.png"
+                src="imagenes/iconos/ser-mitologico.webp"
                 class="icono-tarjeta"
                 alt="">
 
@@ -230,7 +230,7 @@ categoriasOrden.forEach(categoria => {
         <div class="tarjeta">
 
             <img
-                src="imagenes/iconos/bibliografia.png"
+                src="imagenes/iconos/bibliografia.webp"
                 class="icono-tarjeta"
                 alt="">
 
