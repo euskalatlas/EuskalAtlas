@@ -56,6 +56,7 @@ body{
 
     box-shadow:0 4px 12px rgba(0,0,0,.08);
 
+    text-align: center;
 }
 
 .icono-tarjeta{
@@ -343,7 +344,13 @@ body{
 
 }
 
+.columnaIzquierda .bloque:first-child p{
 
+text-align:justify;
+text-justify:inter-word;
+line-height:1.75;
+
+}
 /* ===========================
    CABECERA
 =========================== */
@@ -573,6 +580,7 @@ footer{
 
 }
 
+
 @media (max-width:900px){
 
     .contenido{
@@ -656,11 +664,20 @@ footer{
 
     .volver{
 
-        position:static;
-        transform:none;
-        justify-content:center;
-        flex-wrap:wrap;
-        margin-top:10px;
+    position:static;
+    transform:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:100%;
+
+    gap:12px;
+
+    margin-top:12px;
 
     }
 
@@ -774,11 +791,11 @@ footer{
 
     /* Descripción más agradable de leer */
 
-    .descripcion p{
+    .columnaIzquierda .bloque:first-child p{
 
-        text-align:justify;
-        text-justify:inter-word;
-        line-height:1.75;
+    text-align:justify;
+    text-justify:inter-word;
+    line-height:1.75;
 
     }
 
@@ -786,7 +803,8 @@ footer{
 
     .bloque{
 
-        margin-bottom:42px;
+    margin-top:5px;
+    margin-bottom:0;
 
     }
 

@@ -172,20 +172,6 @@ function cargarNumen() {
         }
 
     };
-
-    volver.textContent = interfaz[idioma].volver;
-
-    volver.onclick = function (e) {
-
-        e.preventDefault();
-
-        if (history.length > 1) {
-            history.back();
-        } else {
-            window.location.href = "index.html";
-        }
-
-    };
         
         contenido.innerHTML = `
 
@@ -371,9 +357,7 @@ function crearMapaNumen(listaMunicipios){
 
         });
 
-        L.tileLayer(
-            "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        ).addTo(mapaNumen);
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(mapaNumen);
 
         const capa = L.geoJSON(euskadi,{
 
