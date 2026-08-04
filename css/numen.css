@@ -109,7 +109,7 @@ body{
 
     color:#1b4332;
 
-    font-size:28px;
+    font-size:24px;
 
     margin-bottom:18px;
 
@@ -316,7 +316,7 @@ body{
 
     display:grid;
 
-    grid-template-columns:2fr 1fr;
+    grid-template-columns:1.6fr 1.4fr;
 
     gap:40px;
 

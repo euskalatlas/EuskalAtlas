@@ -998,7 +998,7 @@
   },
   {
     "provincia": "Bizkaia",
-    "municipio": "Maaria",
+    "municipio": "MAari,Aharia",
     "numen": "Jentil",
     "id": 44,
     "Categoria": "Figuras mitológicas masculinas",
@@ -1006,7 +1006,7 @@
   },
   {
     "provincia": "Bizkaia",
-    "municipio": "Maaria",
+    "municipio": "MAari,Aharia",
     "numen": "Lamia",
     "id": 49,
     "Categoria": "Figuras mitológicas femeninas",
@@ -1014,7 +1014,7 @@
   },
   {
     "provincia": "Bizkaia",
-    "municipio": "Maaria",
+    "municipio": "MAari,Aharia",
     "numen": "Sorgin",
     "id": 71,
     "Categoria": "Figuras mitológicas femeninas",
@@ -1780,7 +1780,7 @@
   {
     "provincia": "Alava",
     "municipio": "Bernedo",
-    "numen": "Aari",
+    "numen": "Aari,Ahari",
     "id": 1,
     "Categoria": "Otras entidades y motivos mitológicos",
     "fuente": "J.M. Barandiaran, Diccionario Ilustrado de Mitología Vasca, LGEV."
