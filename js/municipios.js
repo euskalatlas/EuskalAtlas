@@ -1,5 +1,3 @@
-console.log("municipios.js cargado");
-
 const botonMunicipios = document.getElementById("abrirMunicipios");
 const modalMunicipios = document.getElementById("modalMunicipios");
 const listaMunicipios = document.getElementById("listaMunicipiosModal");

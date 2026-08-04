@@ -408,8 +408,7 @@ window.addEventListener("resize", function () {
 
 function actualizarLeyenda(categoria){
     //alert(categoria);
-    console.log("Idioma:", idioma);
-    console.log("Escala:", textos[idioma].escala);
+    
         let html = "";
 
         if(categoria === TODAS){

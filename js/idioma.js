@@ -541,7 +541,7 @@ if (btnES && btnEU) {
 
         idioma = "es";
         localStorage.setItem("idioma", idioma);
-        console.log("Cambio a castellano");
+        
 
         actualizarBotones();
         aplicarIdioma();
@@ -553,7 +553,7 @@ if (btnES && btnEU) {
 
         idioma = "eu";
         localStorage.setItem("idioma", idioma);
-        console.log("Cambio a euskera");
+        
 
         actualizarBotones();
         aplicarIdioma();

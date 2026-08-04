@@ -1,5 +1,3 @@
-console.log("ficha-numenes.js cargado");
-
 const botonFichaNumenes = document.getElementById("abrirFichaNumenes");
 const modalFichaNumenes = document.getElementById("modalFichaNumenes");
 const listaFichaNumenes = document.getElementById("listaFichaNumenes");
@@ -51,8 +49,6 @@ function pintarnumenes(filtro = "") {
 
 // Abrir modal
 botonFichaNumenes.onclick = () => {
-
-    console.log("CLICK");
 
     modalFichaNumenes.classList.remove("oculto");
 

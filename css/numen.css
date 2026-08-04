@@ -772,4 +772,22 @@ footer{
 
     }
 
+    /* Descripción más agradable de leer */
+
+    .descripcion p{
+
+        text-align:justify;
+        text-justify:inter-word;
+        line-height:1.75;
+
+    }
+
+    /* Más separación entre bloques */
+
+    .bloque{
+
+        margin-bottom:42px;
+
+    }
+
 }
