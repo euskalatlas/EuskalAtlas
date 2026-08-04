@@ -202,85 +202,99 @@ categoriasOrden.forEach(categoria => {
     contenido.innerHTML = `
 
 
-<div class="contenido">
+        <div class="contenido">
 
-    <div class="resumen">
+            <div class="resumen">
 
-        <div class="tarjeta">
+                <div class="tarjeta">
 
-            <img
-                src="imagenes/iconos/ser-mitologico.webp"
-                class="icono-tarjeta"
-                alt="">
+                    <img
+                        src="imagenes/iconos/ser-mitologico.webp"
+                        class="icono-tarjeta"
+                        alt="">
 
-            <div>
+                    <div>
 
-                <div class="numero">${numenes.length}</div>
+                        <div class="numero">${numenes.length}</div>
 
-                <div class="texto">
-                    ${numenes.length === 1
-                        ? interfaz[idioma].serMitologico
-                        : interfaz[idioma].seresMitologicos}
+                        <div class="texto">
+                            ${numenes.length === 1
+                                ? interfaz[idioma].serMitologico
+                                : interfaz[idioma].seresMitologicos}
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="tarjeta">
+
+                    <img
+                        src="imagenes/iconos/bibliografia.webp"
+                        class="icono-tarjeta"
+                        alt="">
+
+                    <div>
+
+                        <div class="numero">${fuentes.length}</div>
+
+                        <div class="texto">
+                            ${fuentes.length === 1
+                                ? interfaz[idioma].fuente
+                                : interfaz[idioma].fuentes}
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
 
+            <div class="informacion">
+            ${mensajeSinDatos}
+
+            <section class="bloque">
+
+            <h3>${interfaz[idioma].seresDocumentados}</h3>
+                <p>
+                    ${interfaz[idioma].seleccionarSer}
+                </p>
+
+                ${listaNumenes}
+
+            </section>
+
+            <section class="bloque">
+
+                <h3>${interfaz[idioma].bibliografia}</h3>
+
+                <ul class="bibliografia">
+
+                    ${listaFuentes}
+
+                </ul>
+
+            </section>
+
         </div>
 
-        <div class="tarjeta">
-
-            <img
-                src="imagenes/iconos/bibliografia.webp"
-                class="icono-tarjeta"
-                alt="">
-
-            <div>
-
-                <div class="numero">${fuentes.length}</div>
-
-                <div class="texto">
-                    ${fuentes.length === 1
-                        ? interfaz[idioma].fuente
-                        : interfaz[idioma].fuentes}
-                </div>
-
-            </div>
-
         </div>
 
-    </div>
+    `;
+    if (typeof gtag === "function") {
 
-    <div class="informacion">
-    ${mensajeSinDatos}
+        gtag("event", "abrir_municipio", {
 
-    <section class="bloque">
+            municipio: municipio,
 
-    <h3>${interfaz[idioma].seresDocumentados}</h3>
-        <p>
-            ${interfaz[idioma].seleccionarSer}
-        </p>
+            provincia: provincia,
 
-        ${listaNumenes}
+            idioma: idioma
 
-    </section>
+        });
 
-    <section class="bloque">
+    }
 
-        <h3>${interfaz[idioma].bibliografia}</h3>
-
-        <ul class="bibliografia">
-
-            ${listaFuentes}
-
-        </ul>
-
-    </section>
-
-</div>
-
-</div>
-
-`;
 
 }
 

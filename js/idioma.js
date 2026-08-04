@@ -47,7 +47,7 @@ const textos = {
         buscarMunicipio: "Buscar municipio...",
         buscarFichaNumen: "Buscar ser mitológico...",
         volver: "← Volver",
-        volverMapa: "Volver al mapa",
+        volverMapa: "Página de inicio",
         catFemeninas: "Figuras mitológicas femeninas",
         catMasculinas: "Figuras mitológicas masculinas",
         catZoomorfos: "Seres zoomorfos",
@@ -73,8 +73,8 @@ const textos = {
         unaBibliografia: "1 fuente",
         variasBibliografias: "fuentes",
 
-        fichaMunicipio: "FICHA DE MUNICIPIO",
-        fichaSer: "FICHA DE SER MITOLÓGICO",
+        fichaMunicipio: "Ficha de municipio",
+        fichaSer: "Ficha de ser mitológico",
         abrirMunicipio: "Abrir una ficha",
         abrirSer: "Abrir una ficha",
 
@@ -82,6 +82,8 @@ const textos = {
         descripcionCategorias: "Selecciona una o varias categorías.",
         descripcionBibliografia: "Selecciona una o varias referencias bibliográficas.",
         descripcionNumenes: "Selecciona uno o varios seres mitológicos.",
+        descripcionNumen: "Selecciona un ser mitológico para abrir su ficha completa.",
+        descripcionMunicipios: "Selecciona un municipio para abrir su ficha completa.",
 
         footerDescripcion: "Atlas interactivo del patrimonio mitológico vasco.",
 
@@ -167,7 +169,7 @@ const textos = {
 
         infoFiltros: "Mapa eta emaitzen panela automatikoki eguneratzen dira hautatutako filtroen arabera.",
 
-        ayudaMunicipios: "Aukeratu edozein udalerri fitxa osora sartzeko.",
+        ayudaMunicipios: "Aukeratu udalerri bat haren fitxa osoa ikusteko.",
 
         sinResultados: "⚠ Emaitzarik ez",
         sinResultadosTexto: "Ez da erregistrorik aurkitu hautatutako filtroekin.",
@@ -176,7 +178,7 @@ const textos = {
         modalCategorias: "Kategoriak hautatu",
         modalSeres: "Izaki mitologikoak hautatu",
         modalBibliografia: "Bibliografia hautatu",
-        modalMunicipios: "Udalerriaren fitxa ireki",
+        modalMunicipios: "Udalerria hautatu",
         modalFichaNumenes: "Izaki mitologikoa hautatu",
 
         seleccionarTodas: "Denak hautatu",
@@ -192,7 +194,7 @@ const textos = {
         buscarMunicipio: "Bilatu udalerria...",
         buscarFichaNumen: "Bilatu izaki mitologikoa...",
         volver: "← Itzuli",
-        volverMapa: "Mapara itzuli",
+        volverMapa: "Hasiera-orria",
         catFemeninas: "Irudi mitologiko femeninoak",
         catMasculinas: "Irudi mitologiko maskulinoak",
         catZoomorfos: "Izaki zoomorfoak",
@@ -218,16 +220,28 @@ const textos = {
         unaBibliografia: "Iturri bibliografiko bakarra",
         variasBibliografias: "Iturri bibliografiko",
 
-        fichaMunicipio: "UDALERRIAREN FITXA",
-        fichaSer: "IZAKI MITOLOGIKOAREN FITXA",
+        fichaMunicipio: "Udalerriaren fitxa",
+        fichaSer: "Izaki mitologikoaren fitxa",
         abrirMunicipio: "Fitxa ireki",
         abrirSer: "Fitxa ireki",
 
-        descripcionProvincias: "Hautatu mapa iragazteko probintzia bat edo gehiago.",
-        descripcionCategorias: "Hautatu kategoria bat edo gehiago.",
-        descripcionBibliografia: "Hautatu erreferentzia bibliografiko bat edo gehiago.",
-        descripcionNumenes: "Hautatu izaki mitologiko bat edo gehiago.",
-        descripcionMunicipios :"Bilatu udalerri bat haren fitxa osoa irekitzeko.",
+        descripcionProvincias:
+        "Hautatu probintzia bat edo gehiago mapa iragazteko.",
+
+        descripcionCategorias:
+        "Hautatu kategoria bat edo gehiago.",
+
+        descripcionBibliografia:
+        "Hautatu erreferentzia bibliografiko bat edo gehiago.",
+
+        descripcionNumenes:
+        "Hautatu izaki mitologiko bat edo gehiago.",
+
+        descripcionMunicipios:
+        "Hautatu udalerri bat haren fitxa osoa irekitzeko.",
+
+        descripcionNumen:
+        "Hautatu izaki mitologiko bat haren fitxa osoa irekitzeko.",
         
         footerDescripcion: "Euskal ondare mitologikoaren atlas interaktiboa.",
 
@@ -243,38 +257,25 @@ const textos = {
 
         legalIntro:
         "Euskal Atlasen erabilera-baldintzei, jabetza intelektualari eta datu pertsonalen babesari buruzko informazioa.",
-
-        titularWeb: "Webgunearen titularra",
-
+        
         titularWebTexto:
-        "Euskal Atlas euskal kultura- eta mitologia-ondarea ikertu, bildu eta zabaltzeko sortutako ikerketa eta dibulgazio proiektu digitala da, sarbide publikoko atlas interaktibo baten bidez.",
-
-        finalidad: "Webgunearen xedea",
+        "Euskal Atlas ikerketa- eta dibulgazio-proiektu digitala da, eta euskal kultura-ondarea eta mitologia aztertu, bildu eta zabaltzen ditu, sarbide publikoko atlas interaktibo baten bidez.",
 
         finalidadTexto:
-        "Euskal Atlasen helburua euskal mitologiari buruzko informazio geografikoa, bibliografikoa eta dokumentala modu errazean eskaintzea da, dibulgazio, hezkuntza eta ikerketa helburuekin. Edukiak etengabe berritu, zabaldu edo zuzendu ahal izango dira proiektuak aurrera egin ahala.",
-
-        propiedadIntelectual: "Jabetza intelektuala",
+        "Euskal Atlasen helburua euskal mitologiari buruzko informazio geografikoa, bibliografikoa eta dokumentala eskuragarri jartzea da, dibulgazio-, hezkuntza- eta ikerketa-helburuekin. Edukiak etengabe eguneratu, zabaldu edo zuzendu ahal izango dira proiektuak aurrera egin ahala.",
 
         propiedadTexto:
-        "Euskal Atlaseko testuak, datu-baseak, diseinuak, ikonoak, mapak, garapen informatikoak eta gainerako jatorrizko edukiak indarrean dagoen jabetza intelektualaren araudiak babesten ditu. Eduki horiek helburu pertsonal, hezitzaile edo ikertzaileekin erabiltzea baimentzen da, betiere iturria behar bezala aipatuz. Debekatuta dago eduki horien erreprodukzioa edo erabilera komertziala, berariazko baimenik gabe.",
-
-        fuentes: "Informazio-iturriak",
+        "Euskal Atlaseko testuak, datu-baseak, diseinuak, ikonografia, mapak, garapen digitalak eta gainerako jatorrizko edukiak indarrean dagoen jabetza intelektualaren araudiak babesten ditu. Eduki horiek helburu pertsonal, hezitzaile edo ikerketakoetarako erabiltzea baimentzen da, betiere iturria behar bezala aipatuz. Debekatuta dago eduki horien erreprodukzioa edo erabilera komertziala, berariazko baimenik gabe.",
 
         fuentesTexto:
         "Argitaratutako informazioa bibliografia espezializatuan, ikerketetan eta dokumentazio-iturrietan oinarritzen da. Ahal den guztietan, erabilitako iturriak dagokion fitxan adierazten dira, kontsulta eta egiaztapena errazteko.",
 
-        responsabilidad: "Erantzukizunaren muga",
-
         responsabilidadTexto:
-        "Euskal Atlasek ahalegin etengabea egiten du argitaratutako informazioa zehatza eta eguneratua izan dadin. Hala ere, ezin da akatsik edo omisiorik ez dagoela bermatu; horregatik, edukiak informazio-izaerakoak dira eta aldez aurretik jakinarazi gabe eguneratu edo aldatu ahal izango dira.",
-
-        proteccionDatos: "Datu pertsonalen babesa",
+        "Euskal Atlasek etengabeko ahalegina egiten du argitaratutako informazioa zehatza eta eguneratua izan dadin. Hala ere, ezin da bermatu akatsik edo omisiorik ez dagoela; horrenbestez, edukiak informazio-izaerakoak dira eta aldez aurretik jakinarazi gabe eguneratu edo aldatu ahal izango dira.",
 
         proteccionDatosTexto:
         "Gaur egun Euskal Atlasek ez du bisitarien datu pertsonalik biltzen edo gordetzen erregistro edo harremanetarako formularioen bidez. Etorkizunean datu pertsonalen tratamendua eskatzen duten zerbitzuak gehitzen badira, tratamendu hori Europako Parlamentuaren eta Kontseiluaren 2016/679 (EB) Erregelamendu Orokorraren (DBEO) eta Datu Pertsonalak Babesteko eta Eskubide Digitalak Bermatzeko 3/2018 Lege Organikoaren arabera egingo da.",
-
-        contacto: "Harremanetarako",
+        contacto: "Kontaktua",
 
         provinciasTraducidas: {
 
@@ -341,7 +342,7 @@ const interfaz = {
 
         // Navegación
         volver: "← Volver",
-        volverMapa: "Volver al mapa",
+        volverMapa: "Página de inicio",
         verFicha: "Ver ficha completa",
         sinInformacionCategoria: "No hay información para esta categoría.",
         catFemeninas: "Figuras mitológicas femeninas",
@@ -369,12 +370,12 @@ const interfaz = {
         unaBibliografia: "1 fuente",
         variasBibliografias: "fuentes",
 
-        fichaMunicipio: "FICHA DE MUNICIPIO",
-        fichaSer: "FICHA DE SER MITOLÓGICO",
+        fichaMunicipio: "Ficha de municipio",
+        fichaSer: "Ficha de ser mitológico",
         abrirMunicipio: "Abrir una ficha",
         abrirSer: "Abrir una ficha",
 
-         modalProvincias: "Seleccionar provincias",
+        modalProvincias: "Seleccionar provincias",
         modalCategorias: "Seleccionar categorías",
         modalSeres: "Seleccionar seres mitológicos",
         modalBibliografia: "Seleccionar bibliografía",
@@ -408,10 +409,10 @@ const interfaz = {
 
         // Textos
         seleccionarMunicipio:
-            "Aukeratu edozein udalerri fitxa osora sartzeko.",
+        "Aukeratu udalerri bat haren fitxa osoa ikusteko.",
 
         seleccionarSer:
-            "Aukeratu edozein izaki mitologikoren fitxa osora sartzeko.",
+        "Aukeratu izaki mitologiko bat haren fitxa osoa ikusteko.",
 
         seresDocumentados:
             "Dokumentatutako izaki mitologikoak",
@@ -431,14 +432,14 @@ const interfaz = {
 
         // Navegación
         volver: "← Itzuli",
-        volverMapa: "Mapara itzuli",
+        volverMapa: "Hasiera-orria",
         verFicha: "Fitxa osoa ikusi",
         sinInformacionCategoria: "Ez dago informaziorik kategoria honetarako.",
-        catFemeninas: "Figuras mitológicas femeninas",
-        catMasculinas: "Figuras mitológicas masculinas",
-        catZoomorfos: "Seres zoomorfos",
-        catFenomenos: "Fenómenos y manifestaciones naturales",
-        catOtras: "Otras entidades y motivos mitológicos",
+        catFemeninas: "Irudi mitologiko femeninoak",
+        catMasculinas: "Irudi mitologiko maskulinoak",
+        catZoomorfos: "Izaki zoomorfoak",
+        catFenomenos: "Fenomeno eta agerpen naturalak",
+        catOtras: "Beste izaki eta motibo mitologikoak",
         todasProvincias: "Probintzia guztiak",
         ningunaProvincia: "Probintziarik ez",
         unaProvincia: "Probintzia 1",
@@ -459,8 +460,8 @@ const interfaz = {
         unaBibliografia: "Iturri bibliografiko bakarra",
         variasBibliografias: "Iturri bibliografiko",
 
-        fichaMunicipio: "UDALERRIAREN FITXA",
-        fichaSer: "IZAKI MITOLOGIKOAREN FITXA",
+        fichaMunicipio: "Udalerriaren fitxa",
+        fichaSer: "Izaki mitologikoaren fitxa",
         abrirMunicipio: "Fitxa ireki",
         abrirSer: "Fitxa ireki",
 
@@ -468,11 +469,18 @@ const interfaz = {
         modalCategorias: "Kategoriak hautatu",
         modalSeres: "Izaki mitologikoak hautatu",
         modalBibliografia: "Bibliografia hautatu",
-        modalMunicipios: "Udalerriaren fitxa ireki",
+        modalMunicipios: "Udalerria hautatu",
         modalFichaNumenes: "Izaki mitologikoa hautatu",
 
         mapaDistribucion: "Banaketa geografikoa",
         municipiosDocumentados: "Erreferentzia dokumentatuak dituzten udalerriak.",
+        
+        catFemeninas: "Irudi mitologiko femeninoak",
+        catMasculinas: "Irudi mitologiko maskulinoak",
+        catZoomorfos: "Izaki zoomorfoak",
+        catFenomenos: "Fenomeno eta agerpen naturalak",
+        catOtras: "Beste izaki eta motibo mitologikoak",
+    
     }
 
 };

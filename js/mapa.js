@@ -13,8 +13,8 @@ const limites = L.latLngBounds(
 var mapa = L.map("mapa",{
     minZoom:4,
     maxZoom:15,
-    maxBounds:limites,
-    maxBoundsViscosity:1.0,
+    // maxBounds:limites,
+    // maxBoundsViscosity:1.0,
     zoomAnimation:false,
     fadeAnimation:false,
     markerZoomAnimation:false

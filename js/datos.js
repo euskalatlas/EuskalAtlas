@@ -9,63 +9,53 @@ let bibliografiasSeleccionadas = [];
 let mitologia = [];
 let fichasNumenes = [];
 
-// Cargar el archivo JSON
-fetch("datos/mitologia.json")
-    .then(response => response.json())
-    .then(data => {
+Promise.all([
 
-        mitologia = data;
+    fetch("datos/mitologia.json").then(r => r.json()),
+    fetch("datos/numenes.json").then(r => r.json())
 
-numenesSeleccionados = [
-    ...new Set(
-        mitologia
-            .filter(r => r.numen && r.numen.trim() !== "")
-            .map(r => r.numen)
-    )
-].sort();
-fetch("datos/numenes.json")
-    .then(response => response.json())
-    .then(data => {
+]).then(([mitologiaData, numenesData]) => {
 
-        fichasNumenes = data;
+    mitologia = mitologiaData;
+    fichasNumenes = numenesData;
 
-    })
-    .catch(error => console.error(error));
-    
+    numenesSeleccionados = [
+        ...new Set(
+            mitologia
+                .filter(r => r.numen && r.numen.trim() !== "")
+                .map(r => r.numen)
+        )
+    ].sort();
 
-// NUEVO
-provinciasSeleccionadas = [
-    ...new Set(
-        mitologia
-            .filter(r => r.provincia)
-            .map(r => r.provincia)
-    )
-].sort();
+    provinciasSeleccionadas = [
+        ...new Set(
+            mitologia
+                .filter(r => r.provincia)
+                .map(r => r.provincia)
+        )
+    ].sort();
 
-categoriasSeleccionadas = [
-    ...new Set(
-        mitologia
-            .filter(r => r.Categoria)
-            .map(r => r.Categoria)
-    )
-].sort();
+    categoriasSeleccionadas = [
+        ...new Set(
+            mitologia
+                .filter(r => r.Categoria)
+                .map(r => r.Categoria)
+        )
+    ].sort();
 
-bibliografiasSeleccionadas = [
-    ...new Set(
-        mitologia
-            .filter(r => r.fuente)
-            .map(r => r.fuente)
-    )
-].sort();
+    bibliografiasSeleccionadas = [
+        ...new Set(
+            mitologia
+                .filter(r => r.fuente)
+                .map(r => r.fuente)
+        )
+    ].sort();
 
+    if (typeof actualizarListaNumenes === "function") {
+        actualizarListaNumenes("Todas las Categorias");
+    }
 
-
-if (typeof actualizarListaNumenes === "function") {
-    actualizarListaNumenes("Todas las Categorias");
-}
-    })
-    .catch(error => console.error(error));
-
+}).catch(error => console.error(error));
 
 // =====================================
 // BUSCAR MUNICIPIO

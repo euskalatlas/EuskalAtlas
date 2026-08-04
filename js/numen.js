@@ -4,9 +4,15 @@ const nombreNumen = parametros.get("numen");
 function cargarNumen() {
 
     // Esperar a que cargue el JSON
-    if (!mitologia.length) {
-        setTimeout(cargarNumen, 100);
+    if (
+        !mitologia.length ||
+        !fichasNumenes ||
+        fichasNumenes.length === 0
+    ) {
+
+        setTimeout(cargarNumen,100);
         return;
+
     }
 
     // Buscar el númen
@@ -40,13 +46,10 @@ function cargarNumen() {
 
             return;
     }
+ 
     const ficha = fichasNumenes.find(n =>
     n.nombre.es.trim().toLowerCase() === nombreNumen.trim().toLowerCase()
     );
-
-    console.log("Nombre URL:", nombreNumen);
-    console.log("Ficha encontrada:", ficha);
-
 
     // ==========================
     // MUNICIPIOS
@@ -303,6 +306,19 @@ function cargarNumen() {
 
         `;
         if(ficha){
+            if (typeof gtag === "function") {
+
+                gtag("event", "abrir_numen", {
+
+                    nombre: ficha.nombre.es,
+
+                    categoria: ficha.categoria.es,
+
+                    idioma: idioma
+
+                });
+
+            }
 
             crearMapaNumen(municipios);
 
@@ -390,11 +406,11 @@ function crearMapaNumen(listaMunicipios){
         mapaNumen.fitBounds([
 
             [41.9, -2.75],
-            [43.65, -0.70]
+            [43.65, -1.40]
 
         ],{
 
-            padding:[10,10]
+            padding:[25,25]
 
         });
 
