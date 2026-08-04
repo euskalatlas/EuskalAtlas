@@ -343,21 +343,7 @@ body{
 
 }
 
-@media (max-width:900px){
 
-    .informacion{
-
-        grid-template-columns:1fr;
-
-    }
-    
-   .descripcionMapa{
-
-    grid-template-columns:1fr;
-
-    } 
-
-}
 /* ===========================
    CABECERA
 =========================== */
@@ -559,112 +545,6 @@ footer{
 }
 
 
-@media (max-width:768px){
-
-    header{
-        padding:18px;
-    }
-
-    .cabecera{
-        flex-direction:column;
-        text-align:center;
-        gap:15px;
-    }
-
-    .izquierda{
-        flex-direction:column;
-        gap:12px;
-    }
-
-    .logo{
-        width:65px;
-        height:65px;
-    }
-
-    .titulo h1{
-        font-size:1.8rem;
-        line-height:1.2;
-        word-break:break-word;
-    }
-
-    .titulo p{
-        font-size:1rem;
-    }
-
-    .volver{
-    position:static;
-    transform:none;
-
-    justify-content:center;
-    flex-wrap:wrap;
-
-    margin-top:8px;
-    }
-
-    .contenido{
-        display:block;
-    
-    }
-    .columnaDerecha{
-        margin-top:35px;
-    }
-
-    .resumen{
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:12px;
-    }
-
-    .tarjeta{
-
-    width:160px;
-
-    padding:12px;
-
-    gap:10px;
-
-    }
-
-    .icono-tarjeta{
-
-        width:34px;
-
-        height:34px;
-
-        padding:6px;
-
-    }
-
-    .tarjeta img{
-
-        width:60px;
-        height:60px;
-
-    }
-
-    .numero{
-
-        font-size:2rem;
-
-    }
-
-    .texto{
-
-        font-size:12px;
-
-    }
-
-    .bloque h3{
-        font-size:24px;
-    }
-
-    .bibliografia li,
-    .lista-municipios li{
-        font-size:16px;
-    }
-
-}
-
 #contenido{
 
     flex:1;
@@ -690,5 +570,206 @@ footer{
     width:100%;
 
     border-radius:14px;
+
+}
+
+@media (max-width:900px){
+
+    .contenido{
+
+        padding:0 20px;
+
+    }
+
+    .contenidoPrincipal{
+
+        display:flex;
+        flex-direction:column;
+        gap:30px;
+
+    }
+
+    .columnaIzquierda,
+    .columnaDerecha{
+
+        width:100%;
+
+    }
+
+    #mapaNumen{
+
+        height:420px;
+
+    }
+
+    .resumen{
+
+        justify-content:center;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    header{
+
+        padding:18px;
+
+    }
+
+    .cabecera{
+
+        flex-direction:column;
+        text-align:center;
+        gap:14px;
+
+    }
+
+    .izquierda{
+
+        flex-direction:column;
+        gap:12px;
+
+    }
+
+    .logo{
+
+        width:65px;
+        height:65px;
+
+    }
+
+    .titulo h1{
+
+        font-size:2rem;
+        line-height:1.15;
+
+    }
+
+    .titulo p{
+
+        font-size:1rem;
+        text-align:center;
+
+    }
+
+    .volver{
+
+        position:static;
+        transform:none;
+        justify-content:center;
+        flex-wrap:wrap;
+        margin-top:10px;
+
+    }
+
+    /* CONTENIDO */
+
+    .contenido{
+
+        padding:0 18px;
+
+    }
+
+    .contenidoPrincipal{
+
+        display:flex;
+        flex-direction:column;
+
+    }
+
+    /* IMPORTANTE:
+    primero descripción y municipios,
+    después el mapa */
+
+    .columnaIzquierda{
+
+        order:1;
+
+    }
+
+    .columnaDerecha{
+
+        order:2;
+        margin-top:20px;
+
+    }
+
+    /* TARJETAS */
+
+    .resumen{
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
+
+    }
+
+    .tarjeta{
+
+        width:100%;
+        max-width:320px;
+
+        padding:16px;
+
+    }
+
+    .icono-tarjeta{
+
+        width:40px;
+        height:40px;
+
+    }
+
+    .numero{
+
+        font-size:2rem;
+
+    }
+
+    .texto{
+
+        font-size:15px;
+
+    }
+
+    /* TITULOS */
+
+    .bloque h3{
+
+        font-size:34px;
+
+    }
+
+    .provincia{
+
+        font-size:24px;
+
+    }
+
+    .bibliografia li,
+    .lista-municipios li{
+
+        font-size:17px;
+
+    }
+
+    /* MAPA */
+
+    #mapaNumen{
+
+        width:100%;
+        height:340px;
+        margin-top:8px;
+
+    }
+
+    .subtituloMapa{
+
+        margin-bottom:14px;
+
+    }
 
 }
