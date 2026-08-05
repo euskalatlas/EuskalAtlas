@@ -2250,6 +2250,8 @@ h3 small{
 
         min-height:95px;
         padding:10px 6px;
+        box-sizing:border-box;
+
 
     }
 
