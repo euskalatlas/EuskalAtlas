@@ -554,7 +554,6 @@ if (btnES && btnEU) {
         idioma = "eu";
         localStorage.setItem("idioma", idioma);
         
-
         actualizarBotones();
         aplicarIdioma();
         actualizarMapa();
@@ -564,5 +563,4 @@ if (btnES && btnEU) {
     actualizarBotones();
 
 }
-console.count("aplicarIdioma");
 aplicarIdioma();

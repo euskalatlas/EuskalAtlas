@@ -230,59 +230,51 @@ function cargarNumen() {
 
                 <div class="contenidoPrincipal">
 
-                    <div class="columnaIzquierda">
+                    <section class="bloque bloqueDescripcion">
 
-                        <section class="bloque">
+                        <h3>${interfaz[idioma].descripcion}</h3>
 
-                            <h3>${interfaz[idioma].descripcion}</h3>
+                        <p>${ficha.descripcion[idioma]}</p>
 
-                            <p>${ficha.descripcion[idioma]}</p>
+                    </section>
 
-                        </section>
+                    <section class="bloque bloqueMapa">
 
-                        <section class="bloque">
+                        <h3>${interfaz[idioma].mapaDistribucion}</h3>
 
-                            <h3>${interfaz[idioma].presencia}</h3>
+                        <p class="subtituloMapa">
+                            ${interfaz[idioma].municipiosDocumentados}
+                        </p>
 
-                            <p>
-                                ${interfaz[idioma].seleccionarMunicipio}
-                            </p>
+                        <div id="mapaNumen"></div>
 
-                            ${htmlMunicipios}
+                    </section>
 
-                        </section>
+                    <section class="bloque bloquePresencia">
 
-                    </div>
+                        <h3>${interfaz[idioma].presencia}</h3>
 
-                    <div class="columnaDerecha">
+                        <p>
+                            ${interfaz[idioma].seleccionarMunicipio}
+                        </p>
 
-                        <section class="bloque">
+                        ${htmlMunicipios}
 
-                            <h3>${interfaz[idioma].mapaDistribucion}</h3>
+                    </section>
 
-                            <p class="subtituloMapa">
-                                ${interfaz[idioma].municipiosDocumentados}
-                            </p>
+                    <section class="bloque bloqueBibliografia">
 
-                            <div id="mapaNumen"></div>
+                        <h3>${interfaz[idioma].bibliografia}</h3>
 
-                        </section>
+                        <ul class="bibliografia">
 
-                        <section class="bloque">
+                            ${fuentes.map(fuente => `
+                                <li>${fuente}</li>
+                            `).join("")}
 
-                            <h3>${interfaz[idioma].bibliografia}</h3>
+                        </ul>
 
-                            <ul class="bibliografia">
-
-                                ${fuentes.map(fuente => `
-                                    <li>${fuente}</li>
-                                `).join("")}
-
-                            </ul>
-
-                        </section>
-
-                    </div>
+                    </section>
 
                 </div>
 

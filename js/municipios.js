@@ -50,7 +50,7 @@ function pintarMunicipios(filtro = "") {
 // Abrir modal
 botonMunicipios.onclick = () => {
 
-    console.log("CLICK");
+
 
     modalMunicipios.classList.remove("oculto");
 

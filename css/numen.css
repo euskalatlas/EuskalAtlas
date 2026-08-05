@@ -313,44 +313,33 @@ body{
 
 }
 
+
 .contenidoPrincipal{
 
     display:grid;
-
     grid-template-columns:1.6fr 1.4fr;
-
     gap:40px;
-
     align-items:start;
 
-}
-
-.columnaIzquierda,
-.columnaDerecha{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:0;
-    padding-top:0;
+    grid-template-areas:
+        "descripcion mapa"
+        "presencia bibliografia";
 
 }
 
-.columnaIzquierda .bloque + .bloque,
-.columnaDerecha .bloque + .bloque{
+.bloqueDescripcion{grid-area:descripcion;}
+.bloqueMapa{grid-area:mapa;}
+.bloquePresencia{grid-area:presencia;}
+.bloqueBibliografia{grid-area:bibliografia;}
 
-    margin-top:10px;
+.bloqueDescripcion p{
 
-}
-
-.columnaIzquierda .bloque:first-child p{
-
-text-align:justify;
-text-justify:inter-word;
-line-height:1.75;
+    text-align:justify;
+    text-justify:inter-word;
+    line-height:1.75;
 
 }
+
 /* ===========================
    CABECERA
 =========================== */
@@ -691,25 +680,12 @@ footer{
 
     .contenidoPrincipal{
 
-        display:flex;
-        flex-direction:column;
-
-    }
-
-    /* IMPORTANTE:
-    primero descripción y municipios,
-    después el mapa */
-
-    .columnaIzquierda{
-
-        order:1;
-
-    }
-
-    .columnaDerecha{
-
-        order:2;
-        margin-top:20px;
+        grid-template-columns:1fr;
+        grid-template-areas:
+            "descripcion"
+            "mapa"
+            "presencia"
+            "bibliografia";
 
     }
 

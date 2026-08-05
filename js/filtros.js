@@ -394,7 +394,6 @@ function actualizarResultados(){
 
 
 function actualizarMapa(){
-console.count("ACTUALIZAR MAPA");
     if(categoriasSeleccionadas.length === 1){
 
         colorearCategoria(categoriasSeleccionadas[0]);
