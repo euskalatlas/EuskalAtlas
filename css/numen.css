@@ -102,7 +102,7 @@ body{
 
 .bloque{
 
-    margin-top:25px;
+    margin-top:18px;
 
 }
 
@@ -318,7 +318,8 @@ body{
 
     display:grid;
     grid-template-columns:1.6fr 1.4fr;
-    gap:40px;
+    column-gap:40px;
+    row-gap:18px;
     align-items:start;
 
     grid-template-areas:
@@ -329,7 +330,7 @@ body{
 
 .bloqueDescripcion{grid-area:descripcion;}
 .bloqueMapa{grid-area:mapa;}
-.bloquePresencia{grid-area:presencia;}
+.bloquePresencia{grid-area:presencia;margin-top: -300px;} /*subir el bloque en el escritorio de los municpios*/
 .bloqueBibliografia{grid-area:bibliografia;}
 
 .bloqueDescripcion p{
@@ -574,7 +575,8 @@ footer{
 
     .contenido{
 
-        padding:0 20px;
+    padding:0 14px;
+    margin:10px auto 30px;
 
     }
 
@@ -601,8 +603,68 @@ footer{
 
     .resumen{
 
-        justify-content:center;
+        display:grid;
+        grid-template-columns:repeat(2, minmax(0,1fr));
+        gap:14px;
 
+    }
+
+    .tarjeta{
+
+        width:100%;
+        max-width:none;
+
+    }
+
+.bloque h3{
+
+    display:flex;
+    align-items:flex-end;
+
+    border-bottom:none;
+
+}
+
+.bloque h3::after{
+
+    content:"";
+
+    flex:1;
+
+    margin-left:12px;
+
+    border-bottom:3px solid #1b4332;
+}
+
+    .bloqueMapa{
+
+    display:flex;
+    flex-direction:column;
+    /*align-items:center;*/
+    
+
+    }
+
+    .bloqueMapa h3,
+    .bloqueMapa .subtituloMapa{
+
+        align-self:stretch;
+
+    }
+
+    #mapaNumen{
+        
+        width:100%;
+        max-width:500px;
+        margin:10px auto 0;
+
+    }
+
+    .bloqueMapa,
+    .bloquePresencia,
+    .bloqueBibliografia,
+    .bloqueDescripcion{
+        width:100%;
     }
 
 }
@@ -674,29 +736,25 @@ footer{
 
     .contenido{
 
-        padding:0 18px;
+    padding:0 14px;
+    margin:10px auto 30px;
 
     }
 
     .contenidoPrincipal{
 
-        grid-template-columns:1fr;
-        grid-template-areas:
-            "descripcion"
-            "mapa"
-            "presencia"
-            "bibliografia";
+    display:flex;
+    flex-direction:column;
+    gap:30px;
 
     }
 
     /* TARJETAS */
-
     .resumen{
 
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        gap:12px;
+        display:grid;
+        grid-template-columns:repeat(2, minmax(0,1fr));
+        gap:14px;
 
     }
 
@@ -730,11 +788,16 @@ footer{
 
     /* TITULOS */
 
-    .bloque h3{
+.bloque h3{
+    border-bottom:none;
+}
 
-        font-size:34px;
-
-    }
+.bloque h3::after{
+    content:"";
+    display:block;
+    flex:1;
+    border-bottom:3px solid #1b4332;
+}
 
     .provincia{
 
@@ -784,4 +847,26 @@ footer{
 
     }
 
+    .bloqueMapa{
+
+    display:flex;
+    flex-direction:column;
+    /*align-items:center;*/
+
+    }
+
+    .bloqueMapa h3,
+    .bloqueMapa .subtituloMapa{
+
+        align-self:stretch;
+
+    }
+
+    #mapaNumen{
+        
+        width:100%;
+        max-width:500px;
+        margin:10px auto 0;
+
+    }
 }
