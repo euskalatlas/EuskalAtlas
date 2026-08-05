@@ -613,6 +613,9 @@ footer{
 
         width:100%;
         max-width:150px;
+        /*min-height: 110px;*/
+
+        padding:16px;
 
     }
 
