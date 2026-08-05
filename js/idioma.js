@@ -134,7 +134,7 @@ const textos = {
 
         provinciasTraducidas: {
 
-            "Alava": "Álava",
+            "Álava": "Álava",
             "Bizkaia": "Bizkaia",
             "Gipuzkoa": "Gipuzkoa",
             "Navarra": "Navarra",
@@ -279,7 +279,7 @@ const textos = {
 
         provinciasTraducidas: {
 
-            "Alava": "Araba",
+            "Álava": "Araba",
             "Bizkaia": "Bizkaia",
             "Gipuzkoa": "Gipuzkoa",
             "Navarra": "Nafarroa",

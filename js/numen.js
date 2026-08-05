@@ -81,7 +81,7 @@ function cargarNumen() {
     // ==========================
 
    const provinciasOrden = [
-    "Alava",
+    "Álava",
     "Bizkaia",
     "Gipuzkoa",
     "Lapurdi",
