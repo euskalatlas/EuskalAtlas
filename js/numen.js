@@ -404,6 +404,6 @@ function crearMapaNumen(listaMunicipios){
         });
 
     });
-    },100);
+    },1);
 
 }
