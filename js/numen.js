@@ -389,7 +389,9 @@ function crearMapaNumen(listaMunicipios){
         }
 
     }).addTo(mapaNumen);
+    setTimeout(() => {
 
+    mapaNumen.invalidateSize();
         mapaNumen.fitBounds([
 
             [41.9, -2.75],
@@ -402,5 +404,6 @@ function crearMapaNumen(listaMunicipios){
         });
 
     });
+    },300);
 
 }
