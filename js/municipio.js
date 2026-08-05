@@ -29,19 +29,11 @@ contenido.innerHTML = "<div class='contenido'></div>";
 
     const provincia = resultados[0].provincia;
     
-        if (typeof gtag === "function") {
-        console.log("ENVIANDO MUNICIPIO", municipio);        gtag("event", "abrir_municipio", {
-            nombre:municipio,
-            
-            municipio: municipio,
-
-            provincia: provincia,
-
-            idioma: idioma
-
-        });
-
-    }
+    gtag("event", "abrir_municipio", {
+        municipio_nombre: municipio,
+        municipio_provincia: provincia,
+        idioma: idioma
+    });
     // ==========================
     // NÚMENES
     // ==========================
