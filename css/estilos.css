@@ -2114,13 +2114,9 @@ h3 small{
 
     .explorarBotones{
 
-        width: 100%;
-        
-        max-width:700px;
+        max-width:100%;
 
         grid-template-columns:repeat(2,minmax(0,1fr));
-
-        margin:0 auto;
 
     }
 
@@ -2193,16 +2189,11 @@ h3 small{
 
     .explorarBotones{
 
-        width: 100%;
-        
-        max-width:700px;
+        max-width:100%;
 
         grid-template-columns:repeat(2,minmax(0,1fr));
 
-        margin:0 auto;
-
     }
-    
     .tarjetaAccion{
 
         width:100%;
