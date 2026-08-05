@@ -31,7 +31,8 @@ contenido.innerHTML = "<div class='contenido'></div>";
     
         if (typeof gtag === "function") {
         console.log("ENVIANDO MUNICIPIO", municipio);        gtag("event", "abrir_municipio", {
-
+            nombre:municipio,
+            
             municipio: municipio,
 
             provincia: provincia,
