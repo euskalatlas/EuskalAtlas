@@ -285,7 +285,7 @@ function cargarNumen() {
         `;
         if(ficha){
             if (typeof gtag === "function") {
-
+                console.log("ENVIANDO EVENTO", ficha.nombre.es);
                 gtag("event", "abrir_numen", {
 
                     nombre: ficha.nombre.es,

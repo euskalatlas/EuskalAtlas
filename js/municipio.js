@@ -28,7 +28,19 @@ contenido.innerHTML = "<div class='contenido'></div>";
     }
 
     const provincia = resultados[0].provincia;
+    
+        if (typeof gtag === "function") {
+        console.log("ENVIANDO MUNICIPIO", municipio);        gtag("event", "abrir_municipio", {
 
+            municipio: municipio,
+
+            provincia: provincia,
+
+            idioma: idioma
+
+        });
+
+    }
     // ==========================
     // NÚMENES
     // ==========================
@@ -281,20 +293,8 @@ categoriasOrden.forEach(categoria => {
         </div>
 
     `;
-    if (typeof gtag === "function") {
 
-        gtag("event", "abrir_municipio", {
-
-            municipio: municipio,
-
-            provincia: provincia,
-
-            idioma: idioma
-
-        });
-
-    }
-
+    return;
 
 }
 
