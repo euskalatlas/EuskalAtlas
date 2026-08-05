@@ -764,7 +764,8 @@ footer{
     .tarjeta{
 
         width:100%;
-        max-width:320px;
+        max-width:150px;
+        /*min-height: 110px;*/
 
         padding:16px;
 
