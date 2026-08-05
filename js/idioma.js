@@ -385,6 +385,7 @@ const interfaz = {
         mapaDistribucion: "Distribución geográfica",
         municipiosDocumentados: "Municipios con referencias documentadas.",
 
+        mapaNumenAria:"Mapa de distribución geográfica de {nombre}. Se han documentado referencias en {cantidad} municipios. Los municipios resaltados indican las localidades donde existen referencias documentadas de este ser mitológico.",
     },
 
     eu: {
@@ -481,6 +482,7 @@ const interfaz = {
         catFenomenos: "Fenomeno eta agerpen naturalak",
         catOtras: "Beste izaki eta motibo mitologikoak",
     
+        mapaNumenAria:"{nombre} izaki mitologikoaren banaketa geografikoaren mapa. Erreferentziak {cantidad} udalerritan dokumentatu dira. Nabarmendutako udalerriek izaki mitologiko honen erreferentzia dokumentatuak dituzten tokiak adierazten dituzte.",
     }
 
 };

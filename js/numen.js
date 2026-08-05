@@ -349,6 +349,17 @@ function crearMapaNumen(listaMunicipios){
 
         });
 
+        const mapaElemento = document.getElementById("mapaNumen");
+
+        mapaElemento.setAttribute("role", "img");
+
+        mapaElemento.setAttribute(
+            "aria-label",
+            interfaz[idioma].mapaNumenAria
+                .replace("{nombre}", nombreNumen)
+                .replace("{cantidad}", listaMunicipios.length)
+        );
+
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(mapaNumen);
 
         const capa = L.geoJSON(euskadi,{
