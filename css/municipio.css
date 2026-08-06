@@ -553,6 +553,139 @@ footer{
 
 }
 
+
+#accionesCabecera{
+
+    position:absolute;
+
+    top:18px;
+
+    right:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    gap:8px;
+
+}
+
+#botonesAccesibilidad{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+}
+
+.accesibilidad{
+
+    width:30px;
+    height:24px;
+
+    border:1px solid transparent;
+
+    background:transparent;
+
+    color:#d4af37;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    border-radius:4px;
+
+    transition:.2s;
+
+}
+
+.accesibilidad.activo{
+
+    border:1px solid #d4af37;
+
+    background:#d4af37;
+
+    color:#1b4332;
+
+}
+
+.accesibilidad:hover{
+
+    border:1px solid #d4af37;
+
+    background:rgba(212,175,55,.15);
+
+}
+/* ===========================
+   MODO ALTO CONTRASTE
+=========================== */
+
+body.alto-contraste{
+
+    background:#fff;
+    color:#000;
+
+}
+
+body.alto-contraste header{
+
+    background:#102b20;
+
+}
+
+body.alto-contraste header h1,
+body.alto-contraste header p,
+body.alto-contraste .volver a{
+
+    color:#fff;
+
+}
+
+body.alto-contraste .tarjeta{
+
+    border:2px solid #000;
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+
+}
+
+body.alto-contraste .sin-datos{
+
+    background:#fff;
+    border:2px solid #000;
+    border-left:6px solid #000;
+
+}
+
+body.alto-contraste .categoria-numenes h4{
+
+    color:#000;
+    border-bottom:2px solid #000;
+
+}
+
+body.alto-contraste .numen{
+
+    background:#fff;
+    color:#000;
+    border:2px solid #000;
+
+}
+
+body.alto-contraste .numen:hover{
+
+    background:#000;
+    color:#fff;
+
+}
+
+body.alto-contraste button:focus,
+body.alto-contraste a:focus{
+
+    outline:4px solid #ffbf47;
+    outline-offset:4px;
+
+}
+
 @media (max-width:900px){
 
     .contenido{
@@ -744,5 +877,59 @@ footer{
         font-size:17px;
 
     }
+
+}
+
+/* ===========================
+   TEXTO GRANDE
+=========================== */
+
+body.texto-grande{
+
+    font-size:112.5%;
+
+}
+
+body.texto-grande .numero{
+
+    font-size:2rem;
+
+}
+
+body.texto-grande .texto{
+
+    font-size:1.15rem;
+
+}
+
+body.texto-grande .bloque h3{
+
+    font-size:32px;
+
+}
+
+body.texto-grande .categoria-numenes h4{
+
+    font-size:20px;
+
+}
+
+body.texto-grande .numen{
+
+    font-size:17px;
+
+}
+
+body.texto-grande .bibliografia li{
+
+    font-size:19px;
+
+}
+
+body.texto-grande .sin-datos p{
+
+    font-size:1.15rem;
+
+    line-height:1.8;
 
 }

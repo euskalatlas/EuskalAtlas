@@ -1105,12 +1105,11 @@ transition:.25s;
 
 #selectorIdioma{
 
-    position:absolute;
-
-    top:20px;
-    right:25px;
+    position:static;
 
     display:flex;
+
+    justify-content:flex-end;
 
     align-items:center;
 
@@ -2012,6 +2011,134 @@ h3 small{
 
 }
 
+#accionesCabecera{
+
+    position:absolute;
+
+    top:18px;
+
+    right:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    gap:8px;
+
+}
+
+#botonesAccesibilidad{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+}
+
+.accesibilidad{
+
+    width:30px;
+    height:24px;
+
+    border:1px solid transparent;
+
+    background:transparent;
+
+    color:#d4af37;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    border-radius:4px;
+
+    transition:.2s;
+
+}
+
+.accesibilidad.activo{
+
+    border:1px solid #d4af37;
+
+    background:#d4af37;
+
+    color:#1b4332;
+
+}
+
+.accesibilidad:hover{
+
+    border:1px solid #d4af37;
+
+    background:rgba(212,175,55,.15);
+
+}
+body.alto-contraste{
+
+    background:#ffffff;
+
+    color:#000000;
+
+}
+
+body.alto-contraste .cabecera{
+
+    background:#102b20;
+
+}
+body.alto-contraste header h1,
+body.alto-contraste header p{
+
+    color:white;
+
+}
+body.alto-contraste h2,
+body.alto-contraste h3{
+
+    color:#000;
+
+}
+
+body.alto-contraste .selectorCard,
+body.alto-contraste .tarjeta,
+body.alto-contraste .tarjetaAccion{
+
+    border:2px solid #000;
+    box-shadow:0 3px 8px rgba(0,0,0,.25);
+
+}
+body.alto-contraste #panelResultados{
+
+    border:2px solid #000;
+
+}
+body.alto-contraste .infoFiltros{
+
+    border:2px solid #000;
+
+}
+body.alto-contraste button:focus,
+body.alto-contraste a:focus,
+body.alto-contraste input:focus,
+body.alto-contraste select:focus{
+
+    outline:4px solid #ffbf47;
+    outline-offset:4px;
+
+}
+
+body.alto-contraste .info.legend{
+
+    border:2px solid #000;
+    box-shadow:0 4px 12px rgba(0,0,0,.35);
+
+}
+
+body.alto-contraste .info.legend span{
+
+    border:2px solid #000;
+
+}
 /* ===========================
    MEDIA TABLET*/ 
 
@@ -2121,6 +2248,167 @@ h3 small{
     }
 
 }
+
+
+/* ===========================
+   TEXTO GRANDE
+=========================== */
+
+body.texto-grande .selectorTitulo,
+body.texto-grande .accionTitulo{
+
+    font-size:13px;
+
+}
+
+
+body.texto-grande .infoFiltros{
+
+    font-size:17px;
+
+}
+
+body.texto-grande .tarjeta{
+
+    min-height:120px;
+
+}
+
+body.texto-grande .tarjeta span{
+
+    font-size:24px;
+
+}
+
+body.texto-grande .tarjeta small{
+
+    font-size:14px;
+
+}
+
+body.texto-grande #listaMunicipios button{
+
+    font-size:18px;
+
+}
+
+body.texto-grande .popup-numen{
+
+    font-size:17px;
+
+}
+body.texto-grande .selectorResumen,
+body.texto-grande .accionSubtitulo{
+
+    font-size:20px;
+
+}
+
+body.texto-grande #listaMunicipios button{
+
+    font-size:20px;
+
+}
+.selectorCard,
+.tarjetaAccion{
+
+    min-height:75px;
+    height:auto;
+
+}
+body.texto-grande .municipio-item{
+
+    font-size:18px;
+
+}
+body.texto-grande #listaMunicipios div{
+
+    font-size:18px;
+    line-height:1.6;
+    padding: 10px 0;
+
+}
+
+body.texto-grande .popup-card{
+
+    padding:12px;
+    min-height:80px;
+
+}
+
+body.texto-grande .popup-provincia,
+body.texto-grande .popup-dato,
+body.texto-grande .popup-numen{
+
+    font-size:16px;
+
+}
+
+body.texto-grande .popup-ficha{
+
+    font-size:18px;
+
+}
+
+body.texto-grande .popup-titulo{
+
+    font-size:22px;
+
+}
+
+body.texto-grande .popup-provincia{
+
+    font-size:16px;
+
+}
+
+body.texto-grande .popup-numero{
+
+    font-size:26px;
+
+}
+
+body.texto-grande .popup-card small{
+
+    font-size:13px;
+
+}
+
+body.texto-grande .popup-subtitulo{
+
+    font-size:13px;
+
+}
+
+body.texto-grande .popup-numen{
+
+    font-size:17px;
+
+}
+
+body.texto-grande .popup-ficha{
+
+    font-size:18px;
+
+}
+body.texto-grande .popup-estadisticas{
+
+    grid-template-columns:1fr;
+
+}
+.leaflet-popup-close-button{
+
+    top:12px !important;
+    right:12px !important;
+
+    font-size:22px !important;
+
+    color:#666 !important;
+
+    z-index:1000;
+
+}
+
 
 @media (max-width:768px){
 

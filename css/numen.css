@@ -313,25 +313,40 @@ body{
 
 }
 
-
 .contenidoPrincipal{
 
     display:grid;
     grid-template-columns:1.6fr 1.4fr;
+
     column-gap:40px;
-    row-gap:18px;
+    row-gap:25px;
+
     align-items:start;
 
     grid-template-areas:
         "descripcion mapa"
-        "presencia bibliografia";
+        "presencia mapa"
+        "bibliografia mapa";
 
 }
 
-.bloqueDescripcion{grid-area:descripcion;}
-.bloqueMapa{grid-area:mapa;}
-.bloquePresencia{grid-area:presencia;margin-top: -300px;} /*subir el bloque en el escritorio de los municpios*/
-.bloqueBibliografia{grid-area:bibliografia;}
+.bloqueDescripcion{
+    grid-area:descripcion;
+}
+
+.bloqueMapa{
+    grid-area:mapa;
+    align-self:start;
+}
+
+.bloquePresencia{
+    grid-area:presencia;
+    margin-top:0;
+}
+
+.bloqueBibliografia{
+    grid-area:bibliografia;
+}
 
 .bloqueDescripcion p{
 
@@ -570,6 +585,135 @@ footer{
 
 }
 
+
+#accionesCabecera{
+
+    position:absolute;
+
+    top:18px;
+
+    right:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    gap:8px;
+
+}
+
+#botonesAccesibilidad{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+}
+
+.accesibilidad{
+
+    width:30px;
+    height:24px;
+
+    border:1px solid transparent;
+
+    background:transparent;
+
+    color:#d4af37;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    border-radius:4px;
+
+    transition:.2s;
+
+}
+
+.accesibilidad.activo{
+
+    border:1px solid #d4af37;
+
+    background:#d4af37;
+
+    color:#1b4332;
+
+}
+
+.accesibilidad:hover{
+
+    border:1px solid #d4af37;
+
+    background:rgba(212,175,55,.15);
+
+}
+/* ===========================
+   MODO ALTO CONTRASTE
+=========================== */
+
+body.alto-contraste{
+
+    background:#ffffff;
+    color:#000;
+
+}
+
+body.alto-contraste header{
+
+    background:#102b20;
+
+}
+
+body.alto-contraste header h1,
+body.alto-contraste header p,
+body.alto-contraste .volver a{
+
+    color:#fff;
+
+}
+
+body.alto-contraste h3,
+body.alto-contraste h4,
+body.alto-contraste .provincia{
+
+    color:#000;
+
+}
+
+body.alto-contraste .tarjeta{
+
+    border:2px solid #000;
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+
+}
+
+body.alto-contraste #mapaNumen{
+
+    border:2px solid #000;
+
+}
+
+body.alto-contraste .subtituloMapa{
+
+    color:#333;
+
+}
+
+body.alto-contraste .municipio-link{
+
+    color:#000;
+    font-weight:600;
+
+}
+
+body.alto-contraste button:focus,
+body.alto-contraste a:focus{
+
+    outline:4px solid #ffbf47;
+    outline-offset:4px;
+
+}
 
 @media (max-width:900px){
 
@@ -873,4 +1017,83 @@ footer{
         margin:10px auto 0;
 
     }
+}
+
+/* ===========================
+   TEXTO GRANDE
+=========================== */
+
+body.texto-grande .bloqueDescripcion p{
+
+    font-size:1.18rem;
+
+    line-height:1.9;
+
+}
+
+body.texto-grande .provincia{
+
+    font-size:24px;
+
+}
+
+body.texto-grande .lista-municipios li{
+
+    font-size:18px;
+
+}
+
+body.texto-grande .municipio-link{
+
+    font-size:18px;
+
+}
+
+body.texto-grande .bibliografia li{
+
+    font-size:19px;
+
+}
+
+body.texto-grande h3{
+
+    font-size:30px;
+
+}
+
+body.texto-grande h4{
+
+    font-size:24px;
+
+}
+body.texto-grande .tarjeta{
+
+    padding:24px;
+
+}
+
+body.texto-grande .icono-tarjeta{
+
+    width:56px;
+    height:56px;
+
+}
+
+body.texto-grande .numero{
+
+    font-size:2.3rem;
+
+}
+
+body.texto-grande .texto{
+
+    font-size:1.25rem;
+
+    line-height:1.3;
+
+}
+body.texto-grande .tarjeta{
+
+    width:260px;
+
 }
