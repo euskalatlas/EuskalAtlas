@@ -2,7 +2,6 @@ const parametros = new URLSearchParams(window.location.search);
 const nombreNumen = parametros.get("numen");
 
 function cargarNumen() {
-    console.log("1. Entrando en cargarNumen");
     // Esperar a que cargue el JSON
     if (
         !mitologia.length ||
@@ -301,7 +300,6 @@ function cargarNumen() {
                 </div>
 
         `;
-        console.log("B - HTML creado");
         if(ficha){
             if (typeof gtag === "function") {
                 console.log("ENVIANDO EVENTO", ficha.nombre.es);
@@ -312,7 +310,6 @@ function cargarNumen() {
                 });
 
             }
-            console.log("2. Voy a crear el mapa");
             crearMapaNumen(municipios);
 
         }   
@@ -322,7 +319,6 @@ function cargarNumen() {
 cargarNumen();
 
 function crearMapaNumen(listaMunicipios){
-console.log("3. Entrando en crearMapaNumen");
     Promise.all([
 
         fetch("mapas/municipios-euskadi.geojson").then(r => r.json()),
@@ -330,7 +326,6 @@ console.log("3. Entrando en crearMapaNumen");
         fetch("mapas/Navarra_municipios.geojson").then(r => r.json())
 
     ]).then(([euskadi, iparralde, navarra]) => {
-        console.log("4. GeoJSON cargados");
         euskadi.features.push(...iparralde.features);
         euskadi.features.push(...navarra.features);
 
@@ -364,7 +359,6 @@ console.log("3. Entrando en crearMapaNumen");
             tap:false
 
         });
-        console.log("5. Mapa creado");
 
         const mapaElemento = document.getElementById("mapaNumen");
 
