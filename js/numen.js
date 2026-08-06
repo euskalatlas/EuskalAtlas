@@ -192,6 +192,7 @@ function cargarNumen() {
     };
         
         contenido.innerHTML = `
+        console.log("A - Voy a crear el HTML");
 
             <div class="contenido">
 
@@ -301,6 +302,7 @@ function cargarNumen() {
                 </div>
 
         `;
+        console.log("B - HTML creado");
         if(ficha){
             if (typeof gtag === "function") {
                 console.log("ENVIANDO EVENTO", ficha.nombre.es);
