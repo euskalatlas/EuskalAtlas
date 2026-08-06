@@ -46,10 +46,6 @@ function cargarNumen() {
 
             return;
     }
-
-    gtag('event', 'abrir_numen', {
-        numen: nombreNumen
-    });
  
     const ficha = fichasNumenes.find(n =>
     n.nombre.es.trim().toLowerCase() === nombreNumen.trim().toLowerCase()
@@ -304,7 +300,21 @@ function cargarNumen() {
 
                 </div>
 
-        `; 
+        `;
+        if(ficha){
+            if (typeof gtag === "function") {
+                console.log("ENVIANDO EVENTO", ficha.nombre.es);
+                gtag("event", "abrir_numen", {
+                    numen_nombre: ficha.nombre.es,
+                    numen_categoria: ficha.categoria.es,
+                    idioma: idioma
+                });
+
+            }
+            console.log("2. Voy a crear el mapa");
+            crearMapaNumen(municipios);
+
+        }   
 
 }
 
