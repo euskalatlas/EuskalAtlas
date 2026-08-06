@@ -83,6 +83,32 @@ function cargarMunicipio() {
     }
 
     metaDescripcion.content = descripcion;
+    
+    // ==========================
+        // SCHEMA.ORG
+        // ==========================
+
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": municipio,
+            "description": descripcion,
+            "url": window.location.href,
+            "mainEntityOfPage": window.location.href,
+            "inLanguage": idioma,
+            "author": {
+                "@type": "Organization",
+                "name": "EuskalAtlas"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "EuskalAtlas",
+                "url": "https://euskalatlas.com"
+            }
+        };
+     document.getElementById("schema-jsonld").textContent =
+    JSON.stringify(schema);   
+    
     const volver = document.querySelector(".volver-atras");
 
     volver.textContent = interfaz[idioma].volver;
@@ -283,13 +309,16 @@ function cargarMunicipio() {
         </div>
 
     `;
+    if (typeof gtag === "function") {
+        gtag("event", "abrir_municipio", {
+            municipio_nombre: municipio,
+            municipio_provincia: provincia,
+            idioma: idioma
+        });
+    }
 
     return;
-    gtag("event", "abrir_municipio", {
-        municipio_nombre: municipio,
-        municipio_provincia: provincia,
-        idioma: idioma
-    });
+
 
 }
 
