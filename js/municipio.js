@@ -283,6 +283,8 @@ function cargarMunicipio() {
         </div>
 
     `;
+
+    return;
     gtag("event", "abrir_municipio", {
         municipio_nombre: municipio,
         municipio_provincia: provincia,

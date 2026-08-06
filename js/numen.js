@@ -46,6 +46,10 @@ function cargarNumen() {
 
             return;
     }
+
+    gtag('event', 'abrir_numen', {
+        numen: nombreNumen
+    });
  
     const ficha = fichasNumenes.find(n =>
     n.nombre.es.trim().toLowerCase() === nombreNumen.trim().toLowerCase()
