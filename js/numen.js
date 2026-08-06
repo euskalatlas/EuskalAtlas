@@ -192,7 +192,6 @@ function cargarNumen() {
     };
         
         contenido.innerHTML = `
-        console.log("A - Voy a crear el HTML");
 
             <div class="contenido">
 
