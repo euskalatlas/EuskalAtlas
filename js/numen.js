@@ -110,42 +110,48 @@ function cargarNumen() {
 
     provinciasOrden.forEach(provincia => {
 
-        htmlMunicipios += `<div class="provincia">${provincia}</div>`;
+    const nombreProvincia =
+        textos[idioma].provinciasTraducidas[provincia] || provincia;
 
-        if (!municipiosPorProvincia[provincia]) {
+    htmlMunicipios += `
+        <div class="provincia">
+            ${nombreProvincia}
+        </div>
+    `;
 
-            htmlMunicipios += `
-                <div class="sin-municipios">
-                    —
-                </div>
-            `;
-
-            return;
-        }
-
-        const lista = [...municipiosPorProvincia[provincia]]
-            .sort((a, b) => a.localeCompare(b, "es"));
+    if (!municipiosPorProvincia[provincia]) {
 
         htmlMunicipios += `
-            <div class="lista-municipios">
-                <ul>
-
-                    ${lista.map(municipio => `
-                        <li>
-                            <a class="municipio-link"
-                            href="municipio.html?municipio=${encodeURIComponent(municipio)}"
-                            >
-
-                                ${municipio}
-
-                            </a>
-                        </li>
-                    `).join("")}
-
-                </ul>
+            <div class="sin-municipios">
+                —
             </div>
         `;
-    });
+
+        return;
+    }
+
+    const lista = [...municipiosPorProvincia[provincia]]
+        .sort((a, b) => a.localeCompare(b, "es"));
+
+    htmlMunicipios += `
+        <div class="lista-municipios">
+            <ul>
+
+                ${lista.map(municipio => `
+                    <li>
+                        <a class="municipio-link"
+                           href="municipio.html?municipio=${encodeURIComponent(municipio)}">
+
+                            ${municipio}
+
+                        </a>
+                    </li>
+                `).join("")}
+
+            </ul>
+        </div>
+    `;
+});
 
         // ==========================
         // HTML
