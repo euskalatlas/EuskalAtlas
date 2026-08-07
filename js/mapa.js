@@ -26,11 +26,6 @@ mapa.zoomControl.setPosition("topleft");
 const botonZoomMas = mapa.zoomControl.getContainer().querySelector(".leaflet-control-zoom-in");
 const botonZoomMenos = mapa.zoomControl.getContainer().querySelector(".leaflet-control-zoom-out");
 
-botonZoomMas.title = interfaz[idioma].zoomMas;
-botonZoomMas.setAttribute("aria-label", interfaz[idioma].zoomMas);
-
-botonZoomMenos.title = interfaz[idioma].zoomMenos;
-botonZoomMenos.setAttribute("aria-label", interfaz[idioma].zoomMenos);
 
 mapa.fitBounds(limites, {
     padding:[15,15]
