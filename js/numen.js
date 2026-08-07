@@ -50,6 +50,10 @@ function cargarNumen() {
     n.nombre.es.trim().toLowerCase() === nombreNumen.trim().toLowerCase()
     );
 
+    const nombreImagen = ficha
+    ? `imagenes/icono_ser_mitologico/${ficha.nombre.es}.png`
+    : "";
+
     // ==========================
     // MUNICIPIOS
     // ==========================
@@ -277,13 +281,32 @@ function cargarNumen() {
 
                 <div class="contenidoPrincipal">
 
-                    <section class="bloque bloqueDescripcion">
+                <section class="bloque bloqueDescripcion">
 
-                        <h3>${interfaz[idioma].descripcion}</h3>
+                    <h3>${interfaz[idioma].descripcion}</h3>
 
-                        <p>${ficha.descripcion[idioma]}</p>
+                    <div class="descripcionSuperior">
 
-                    </section>
+    <div class="textoDescripcion">
+
+        <p>${ficha.descripcion[idioma]}</p>
+
+    </div>
+
+    <div class="imagenDescripcion">
+
+        <img
+            id="imagenNumen"
+            src="${nombreImagen}"
+            class="imagenNumen"
+            alt="${interfaz[idioma].imagenNumenAlt.replace("{nombre}", ficha.nombre[idioma])}"
+        >
+
+    </div>
+
+    </div>
+
+                </section>
 
                     <section class="bloque bloqueMapa">
 
@@ -341,6 +364,20 @@ function cargarNumen() {
 
             }
             crearMapaNumen(municipios);
+            const imagen = document.getElementById("imagenNumen");
+
+            if (imagen) {
+imagen.onerror = function(){
+
+    const descripcion = document.querySelector(".descripcionSuperior");
+
+    this.parentElement.remove();
+
+    descripcion.style.gridTemplateColumns = "1fr";
+
+};
+
+            }
 
         }   
 

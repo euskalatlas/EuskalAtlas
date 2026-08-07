@@ -20,6 +20,18 @@ var mapa = L.map("mapa",{
     markerZoomAnimation:false
 });
 
+// Traducir botones de zoom
+mapa.zoomControl.setPosition("topleft");
+
+const botonZoomMas = mapa.zoomControl.getContainer().querySelector(".leaflet-control-zoom-in");
+const botonZoomMenos = mapa.zoomControl.getContainer().querySelector(".leaflet-control-zoom-out");
+
+botonZoomMas.title = interfaz[idioma].zoomMas;
+botonZoomMas.setAttribute("aria-label", interfaz[idioma].zoomMas);
+
+botonZoomMenos.title = interfaz[idioma].zoomMenos;
+botonZoomMenos.setAttribute("aria-label", interfaz[idioma].zoomMenos);
+
 mapa.fitBounds(limites, {
     padding:[15,15]
 });
@@ -73,8 +85,8 @@ botonCentrar.onAdd = function () {
         <a
             href="#"
             id="botonCentrarMapa"
-            title="Centrar mapa"
-            aria-label="Centrar mapa">
+            title="${interfaz[idioma].centrarMapa}"
+            aria-label="${interfaz[idioma].centrarMapa}">
 
             <img
                 src="imagenes/iconos/centrar-mapa.webp"
@@ -504,8 +516,30 @@ function actualizarLeyenda(categoria){
 
         leyendaMapa.setAttribute(
             "aria-label",
-            "Escala de colores del mapa. Cuanto más oscuro es el color, mayor es el número de seres mitológicos registrados en cada municipio."
+            interfaz[idioma].leyendaMapaAria
         );
 
 }
 
+function actualizarTextosMapa() {
+
+    const botonZoomMas = document.querySelector(".leaflet-control-zoom-in");
+    const botonZoomMenos = document.querySelector(".leaflet-control-zoom-out");
+    const botonCentrar = document.getElementById("botonCentrarMapa");
+
+    if (botonZoomMas) {
+        botonZoomMas.title = interfaz[idioma].zoomMas;
+        botonZoomMas.setAttribute("aria-label", interfaz[idioma].zoomMas);
+    }
+
+    if (botonZoomMenos) {
+        botonZoomMenos.title = interfaz[idioma].zoomMenos;
+        botonZoomMenos.setAttribute("aria-label", interfaz[idioma].zoomMenos);
+    }
+
+    if (botonCentrar) {
+        botonCentrar.title = interfaz[idioma].centrarMapa;
+        botonCentrar.setAttribute("aria-label", interfaz[idioma].centrarMapa);
+    }
+
+}

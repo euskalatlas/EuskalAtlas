@@ -146,6 +146,8 @@ const textos = {
         mapaDistribucion: "Distribución geográfica",
         municipiosDocumentados: "Municipios con referencias documentadas.",
 
+        imagenNumenAlt:"Ilustración de {nombre} según la tradición mitológica vasca"
+    
     },
 
     eu: {
@@ -292,7 +294,7 @@ const textos = {
         mapaDistribucion: "Banaketa geografikoa",
         municipiosDocumentados: "Erreferentzia dokumentatuak dituzten udalerriak.",
 
-
+        imagenNumenAlt:"{nombre} euskal mitologiaren araberako ilustrazioa"
     }
 };
 const interfaz = {
@@ -386,6 +388,14 @@ const interfaz = {
         municipiosDocumentados: "Municipios con referencias documentadas.",
 
         mapaNumenAria:"Mapa de distribución geográfica de {nombre}. Se han documentado referencias en {cantidad} municipios. Los municipios resaltados indican las localidades donde existen referencias documentadas de este ser mitológico.",
+    
+        zoomMas: "Acercar",
+        zoomMenos: "Alejar",
+        centrarMapa: "Centrar mapa",
+        leyendaMapaAria:"Escala de colores del mapa. Cuanto más oscuro es el color, mayor es el número de seres mitológicos registrados en cada municipio.",
+    
+        imagenNumenAlt:"Ilustración de {nombre} según la tradición mitológica vasca"
+
     },
 
     eu: {
@@ -483,6 +493,13 @@ const interfaz = {
         catOtras: "Beste izaki eta motibo mitologikoak",
     
         mapaNumenAria:"{nombre} izaki mitologikoaren banaketa geografikoaren mapa. Erreferentziak {cantidad} udalerritan dokumentatu dira. Nabarmendutako udalerriek izaki mitologiko honen erreferentzia dokumentatuak dituzten tokiak adierazten dituzte.",
+        zoomMas: "Handitu",
+        zoomMenos: "Txikitu",
+        centrarMapa: "Mapa erdiratu",
+        leyendaMapaAria:"Maparen kolore-eskala. Kolorea zenbat eta ilunagoa izan, orduan eta izaki mitologiko gehiago dokumentatu dira udalerri horretan.",
+    
+        imagenNumenAlt:"{nombre} euskal mitologiaren araberako ilustrazioa"
+
     }
 
 };
@@ -548,6 +565,7 @@ if (btnES && btnEU) {
         actualizarBotones();
         aplicarIdioma();
         actualizarMapa();
+        actualizarTextosMapa();
 
     });
 
@@ -559,6 +577,7 @@ if (btnES && btnEU) {
         actualizarBotones();
         aplicarIdioma();
         actualizarMapa();
+        actualizarTextosMapa();
 
     });
 
@@ -566,3 +585,7 @@ if (btnES && btnEU) {
 
 }
 aplicarIdioma();
+
+if (typeof actualizarTextosMapa === "function") {
+    actualizarTextosMapa();
+}
