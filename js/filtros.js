@@ -440,3 +440,66 @@ function restablecerFiltros(){
     centrarMapa();
 
 }
+
+function prepararBuscador(inputId, listaId, botonAceptarId){
+
+    const input = document.getElementById(inputId);
+
+    if(!input) return;
+
+    input.addEventListener("input", function(){
+
+        const texto = this.value.trim().toLowerCase();
+
+        const filas = document.querySelectorAll(`#${listaId} > div`);
+
+        let visibles = [];
+
+        filas.forEach(fila =>{
+
+            if(fila.textContent.toLowerCase().includes(texto)){
+
+                fila.style.display = "";
+                visibles.push(fila);
+
+            }else{
+
+                fila.style.display = "none";
+
+            }
+
+        });
+
+        // Si el usuario usa el buscador,
+        // desmarcamos todo
+        if(texto !== ""){
+
+            document
+                .querySelectorAll(`#${listaId} input[type="checkbox"]`)
+                .forEach(c=>c.checked=false);
+
+            visibles.forEach(fila=>{
+
+                fila.querySelector("input").checked = true;
+
+            });
+
+        }
+
+    });
+
+    input.addEventListener("keydown", function(e){
+
+        if(e.key==="Enter"){
+
+            e.preventDefault();
+
+            document
+                .getElementById(botonAceptarId)
+                .click();
+
+        }
+
+    });
+
+}

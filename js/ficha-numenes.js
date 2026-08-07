@@ -71,3 +71,20 @@ inputBuscarFichaNumen.oninput = () => {
     pintarnumenes(inputBuscarFichaNumen.value);
 
 };
+
+inputBuscarFichaNumen.addEventListener("keydown", function(e){
+
+    if(e.key !== "Enter") return;
+
+    e.preventDefault();
+
+    const primerResultado =
+        listaFichaNumenes.querySelector("a");
+
+    if(primerResultado){
+
+        primerResultado.click();
+
+    }
+
+});

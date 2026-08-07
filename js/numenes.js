@@ -127,7 +127,11 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 });
-
+prepararBuscador(
+    "buscarNumen",
+    "listaNumenes",
+    "cerrarNumenes"
+);
 
 
 // ======================================

@@ -52,7 +52,7 @@ lista.forEach(provincia => {
         ${textos[idioma].provinciasTraducidas[provincia] || provincia}
         </label>
         `;
-
+    
     contenedor.appendChild(linea);
 
 });
@@ -116,6 +116,12 @@ document.addEventListener("DOMContentLoaded", function(){
         });
 
     });
+
+    prepararBuscador(
+    "buscarprovincia",
+    "listaProvincias",
+    "cerrarProvincias"
+);
 
 });
 

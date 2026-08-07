@@ -73,3 +73,19 @@ inputBuscarMunicipio.oninput = () => {
     pintarMunicipios(inputBuscarMunicipio.value);
 
 };
+inputBuscarMunicipio.addEventListener("keydown", function(e){
+
+    if(e.key !== "Enter") return;
+
+    e.preventDefault();
+
+    const primerResultado =
+        listaMunicipios.querySelector("a");
+
+    if(primerResultado){
+
+        primerResultado.click();
+
+    }
+
+});

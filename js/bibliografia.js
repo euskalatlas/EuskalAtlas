@@ -111,6 +111,11 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 });
+prepararBuscador(
+    "buscarBibliografia",
+    "listaBibliografias",
+    "cerrarBibliografia"
+);
 
 
 

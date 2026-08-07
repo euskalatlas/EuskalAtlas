@@ -111,6 +111,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
 });
 
+prepararBuscador(
+    "buscarCategoria",
+    "listaCategorias",
+    "cerrarCategorias"
+);
+
 
 
 // ======================================
