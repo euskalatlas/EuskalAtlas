@@ -51,7 +51,7 @@ function cargarNumen() {
     );
 
     const nombreImagen = ficha
-    ? `imagenes/icono_ser_mitologico/${ficha.nombre.es}.png`
+    ? `imagenes/icono_ser_mitologico/${ficha.nombre.es}.webp`
     : "";
 
     // ==========================
