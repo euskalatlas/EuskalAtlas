@@ -1212,3 +1212,29 @@ body.texto-grande .tarjeta{
     visibility:visible;
 
 }
+
+@media (max-width:768px){
+
+    .descripcionSuperior{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+    .imagenDescripcion{
+
+        order:-1;
+
+        justify-content:center;
+
+    }
+
+    .textoDescripcion{
+
+        order:2;
+
+    }
+
+}
