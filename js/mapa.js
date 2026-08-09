@@ -538,3 +538,5 @@ function actualizarTextosMapa() {
     }
 
 }
+
+actualizarTextosMapa();
