@@ -212,6 +212,24 @@ function cargarNumen() {
 
     volver.textContent = interfaz[idioma].volver;
 
+    volver.setAttribute(
+    "aria-label",
+    interfaz[idioma].volverAria
+    );
+
+    const volverMapa = document.querySelector(".volver-mapa");
+
+    volverMapa.setAttribute(
+        "aria-label",
+        interfaz[idioma].volverMapaAria
+    );
+
+    document.querySelector(".volver").setAttribute(
+        "aria-label",
+        interfaz[idioma].navegacionFicha
+    );
+    
+    
     volver.onclick = function (e) {
 
         e.preventDefault();
@@ -366,22 +384,34 @@ function cargarNumen() {
             crearMapaNumen(municipios);
             const imagen = document.getElementById("imagenNumen");
 
-            if (imagen) {
-imagen.onerror = function(){
+        if (imagen) {
 
-    const descripcion = document.querySelector(".descripcionSuperior");
+            imagen.addEventListener("load", function(){
 
-    this.parentElement.remove();
+                this.classList.add("cargada");
 
-    descripcion.style.gridTemplateColumns = "1fr";
+            });
 
-};
+            imagen.onerror = function(){
+
+                const descripcion = document.querySelector(".descripcionSuperior");
+
+                this.parentElement.remove();
+
+                descripcion.style.gridTemplateColumns = "1fr";
+
+            };
+
+            if (imagen.complete && imagen.naturalWidth > 0) {
+
+                imagen.classList.add("cargada");
 
             }
 
-        }   
+        }  
 
-}
+        }
+    }
 
 cargarNumen();
 

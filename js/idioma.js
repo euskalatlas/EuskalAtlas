@@ -345,6 +345,9 @@ const interfaz = {
         // Navegación
         volver: "← Volver",
         volverMapa: "Página de inicio",
+
+        volverAria: "Volver a la página anterior",
+        volverMapaAria: "Volver al mapa principal",
         verFicha: "Ver ficha completa",
         sinInformacionCategoria: "No hay información para esta categoría.",
         catFemeninas: "Figuras mitológicas femeninas",
@@ -394,8 +397,8 @@ const interfaz = {
         centrarMapa: "Centrar mapa",
         leyendaMapaAria:"Escala de colores del mapa. Cuanto más oscuro es el color, mayor es el número de seres mitológicos registrados en cada municipio.",
     
-        imagenNumenAlt:"Ilustración de {nombre} según la tradición mitológica vasca"
-
+        imagenNumenAlt:"Ilustración de {nombre} según la tradición mitológica vasca",
+        navegacionFicha: "Navegación de la ficha"
     },
 
     eu: {
@@ -444,7 +447,10 @@ const interfaz = {
         // Navegación
         volver: "← Itzuli",
         volverMapa: "Hasiera-orria",
+        volverAria: "Aurreko orrialdera itzuli",
+        volverMapaAria: "Mapa nagusira itzuli",
         verFicha: "Fitxa osoa ikusi",
+        navegacionFicha: "Fitxaren nabigazioa",
         sinInformacionCategoria: "Ez dago informaziorik kategoria honetarako.",
         catFemeninas: "Irudi mitologiko femeninoak",
         catMasculinas: "Irudi mitologiko maskulinoak",

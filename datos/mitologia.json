@@ -3309,10 +3309,10 @@
   {
     "provincia": "Gipuzkoa",
     "municipio": "Getaria",
-    "numen": null,
+    "numen": "Herensuge",
     "id": "",
-    "Categoria": "",
-    "fuente": null
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
   },
   {
     "provincia": "Gipuzkoa",
@@ -6981,7 +6981,23 @@
     "numen": "Tartalo",
     "id": "74",
     "Categoria": "Figuras mitológicas masculinas",
-    "fuente": "Webster, W. (1879). Basque legends: Collected, chiefly in the Labourd (2nd ed.). Griffith and Farran."
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
+  },
+  {
+    "provincia": "Lapurdi",
+    "municipio": "Ahetze",
+    "numen": "Sorgin",
+    "id": "74",
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
+  },
+   {
+    "provincia": "Lapurdi",
+    "municipio": "Ahetze",
+    "numen": "Basajaun",
+    "id": "74",
+    "Categoria": "Figuras mitológicas masculinas",
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
   },
   {
     "provincia": "Lapurdi",
@@ -7358,6 +7374,14 @@
     "id": 43,
     "Categoria": "Otras entidades y motivos mitológicos",
     "fuente": "J.M. Barandiaran, Diccionario Ilustrado de Mitología Vasca, LGEV."
+  },
+    {
+    "provincia": "Lapurdi",
+    "municipio": "Saint-Jean-de-Luz",
+    "numen": "Sorgin",
+    "id": 43,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
   },
   {
     "provincia": "Lapurdi",
@@ -8066,6 +8090,15 @@
     "Categoria": "Figuras mitológicas masculinas",
     "fuente": "J.M. Barandiaran, Diccionario Ilustrado de Mitología Vasca, LGEV."
   },
+
+    {
+    "provincia": "Baja Navarra",
+    "municipio": "Saint-Jean-Pied-de-Port",
+    "numen": "Tartalo",
+    "id": 55,
+    "Categoria": "Figuras mitológicas masculinas",
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
+  },
   
   {
     "provincia": "Baja Navarra",
@@ -8297,7 +8330,7 @@
     "numen": "Tartalo",
     "id": "74",
     "Categoria": "Figuras mitológicas masculinas",
-    "fuente": "Webster, W. (1879). Basque legends: Collected, chiefly in the Labourd (2nd ed.). Griffith and Farran."
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
   },
   {
     "provincia": "Zuberoa",

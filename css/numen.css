@@ -1203,4 +1203,12 @@ body.texto-grande .tarjeta{
 
     box-sizing:border-box;
 
+    visibility:hidden;
+
+}
+
+.imagenNumen.cargada{
+
+    visibility:visible;
+
 }
