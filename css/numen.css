@@ -1023,6 +1023,58 @@ body.alto-contraste a:focus{
         margin:10px auto 0;
 
     }
+        /* ORDEN DE LA FICHA EN MÓVIL */
+
+    .bloqueDescripcion{
+        order:1;
+    }
+
+    .bloqueMapa{
+        order:2;
+    }
+
+    .bloquePresencia{
+        order:3;
+    }
+
+    .bloqueBibliografia{
+        order:4;
+    }
+
+    /* FOTO ENCIMA DE LA DESCRIPCIÓN */
+
+    .descripcionSuperior{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+    .imagenDescripcion{
+
+        order:-1;
+
+        justify-content:center;
+
+    }
+
+    .textoDescripcion{
+
+        order:2;
+
+    }
+
+    .imagenNumen{
+
+        width:220px;
+        height:220px;
+
+        max-width:220px;
+
+        margin:0 auto;
+
+    }
 }
 
 /* ===========================

@@ -6978,10 +6978,10 @@
   {
     "provincia": "Lapurdi",
     "municipio": "Ahetze",
-    "numen": null,
-    "id": "",
-    "Categoria": "",
-    "fuente": null
+    "numen": "Tartalo",
+    "id": "74",
+    "Categoria": "Figuras mitológicas masculinas",
+    "fuente": "Webster, W. (1879). Basque legends: Collected, chiefly in the Labourd (2nd ed.). Griffith and Farran."
   },
   {
     "provincia": "Lapurdi",
@@ -8290,6 +8290,14 @@
     "id": 49,
     "Categoria": "Figuras mitológicas femeninas",
     "fuente": "J.M. Barandiaran, Diccionario Ilustrado de Mitología Vasca, LGEV."
+  },
+    {
+    "provincia": "Zuberoa",
+    "municipio": "Esquiule",
+    "numen": "Tartalo",
+    "id": "74",
+    "Categoria": "Figuras mitológicas masculinas",
+    "fuente": "Webster, W. (1879). Basque legends: Collected, chiefly in the Labourd (2nd ed.). Griffith and Farran."
   },
   {
     "provincia": "Zuberoa",
