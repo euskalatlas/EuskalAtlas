@@ -22,7 +22,7 @@ const textos = {
 
         infoFiltros: "El mapa y el panel de resultados se actualizan automáticamente según los filtros seleccionados.",
 
-        ayudaMunicipios: "Haz clic en un municipio para verlo en detalle.",
+        ayudaMunicipios: "Haz clic en un municipio para verlo en detalle. El número entre paréntesis indica los seres mitológicos documentados.",
 
         sinResultados: "⚠ Sin resultados",
         sinResultadosTexto: "No se han encontrado registros con los filtros seleccionados.",
@@ -171,7 +171,7 @@ const textos = {
 
         infoFiltros: "Mapa eta emaitzen panela automatikoki eguneratzen dira hautatutako filtroen arabera.",
 
-        ayudaMunicipios: "Aukeratu udalerri bat haren fitxa osoa ikusteko.",
+        ayudaMunicipios: "Aukeratu udalerri bat haren fitxa osoa ikusteko. Parentesi arteko zenbakiak dokumentatutako izaki mitologikoen kopurua adierazten du.",
 
         sinResultados: "⚠ Emaitzarik ez",
         sinResultadosTexto: "Ez da erregistrorik aurkitu hautatutako filtroekin.",
