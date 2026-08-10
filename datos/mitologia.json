@@ -1095,7 +1095,7 @@
   {
     "provincia": "Bizkaia",
     "municipio": "Meaka",
-    "numen": "Kurtzeko-bide",
+    "numen": "Gorputzbide-Korputzbide",
     "id": 48,
     "Categoria": "Otras entidades y motivos mitológicos",
     "fuente": "J.M. Barandiaran, Diccionario Ilustrado de Mitología Vasca, LGEV."
@@ -3170,7 +3170,7 @@
   {
     "provincia": "Gipuzkoa",
     "municipio": "Elduain",
-    "numen": "Kurri-kurri (Mairu, Jentil)",
+    "numen": "Mairu",
     "id": 47,
     "Categoria": "Figuras mitológicas masculinas",
     "fuente": "J.M. Barandiaran, Diccionario Ilustrado de Mitología Vasca, LGEV."
@@ -8540,5 +8540,205 @@
     "id": "",
     "Categoria": "",
     "fuente": null
+  },
+    {
+    "provincia": "Lapurdi",
+    "municipio": "Ahetze",
+    "numen": "Tartalo",
+    "id": 83,
+    "Categoria": "Figuras mitológicas masculinas",
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
+  },
+  {
+    "provincia": "Zuberoa",
+    "municipio": "Esquiule",
+    "numen": "Tartalo",
+    "id": 84,
+    "Categoria": "Figuras mitológicas masculinas",
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
+  },
+  {
+    "provincia": "Nafarroa Beherea",
+    "municipio": "Saint-Jean-Pied-de-Port",
+    "numen": "Tartalo",
+    "id": 85,
+    "Categoria": "Figuras mitológicas masculinas",
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
+  },
+  {
+    "provincia": "Nafarroa Beherea",
+    "municipio": "Saint-Jean-Pied-de-Port",
+    "numen": "Herensuge",
+    "id": 86,
+    "Categoria": "Figuras mitológicas masculinas",
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
+  },
+  {
+    "provincia": "Lapurdi",
+    "municipio": "Guéthary",
+    "numen": "Herensuge",
+    "id": 87,
+    "Categoria": "Figuras mitológicas masculinas",
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
+  },
+  {
+    "provincia": "Lapurdi",
+    "municipio": "Ahetze",
+    "numen": "Lamia",
+    "id": 88,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
+  },
+  {
+    "provincia": "Lapurdi",
+    "municipio": "Ahetze",
+    "numen": "Sorgin",
+    "id": 89,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
+  },
+  {
+    "provincia": "Lapurdi",
+    "municipio": "Saint-Jean-de-Luz",
+    "numen": "Sorgin",
+    "id": 90,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
+  },
+  {
+    "provincia": "Bizkaia",
+    "municipio": "Berriz",
+    "numen": "Lamia",
+    "id": 91,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1935). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 1). Espasa-Calpe."
+  },
+  {
+    "provincia": "Lapurdi",
+    "municipio": "Espelette",
+    "numen": "Lamia",
+    "id": 92,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1942). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 2). Espasa-Calpe."
+  },
+  {
+    "provincia": "Bizkaia",
+    "municipio": "Mungia",
+    "numen": "Lamia",
+    "id": 93,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1942). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 2). Espasa-Calpe."
+  },
+  {
+    "provincia": "Nafarroa Beherea",
+    "municipio": "Saint-Jean-le-Vieux",
+    "numen": "Basajaun",
+    "id": 94,
+    "Categoria": "Figuras mitológicas masculinas",
+    "fuente": "Azkue, R. M. de. (1942). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 2). Espasa-Calpe."
+  },
+  {
+    "provincia": "Navarra",
+    "municipio": "Luzaide/Valcarlos",
+    "numen": "Lamia",
+    "id": 95,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1942). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 2). Espasa-Calpe."
+  },
+  {
+    "provincia": "Bizkaia",
+    "municipio": "Otxandio",
+    "numen": "Lamia",
+    "id": 96,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1942). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 2). Espasa-Calpe."
+  },
+  {
+    "provincia": "Bizkaia",
+    "municipio": "Aulesti",
+    "numen": "Lamia",
+    "id": 97,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1942). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 2). Espasa-Calpe."
+  },
+  {
+    "provincia": "Gipuzkoa",
+    "municipio": "Ataun",
+    "numen": "Basajaun",
+    "id": 98,
+    "Categoria": "Figuras mitológicas masculinas",
+    "fuente": "Azkue, R. M. de. (1942). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 2). Espasa-Calpe."
+  },
+  {
+    "provincia": "Navarra",
+    "municipio": "Aezkoa",
+    "numen": "Sorgin",
+    "id": 99,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1935). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 1). Espasa-Calpe."
+  },
+  {
+    "provincia": "Gipuzkoa",
+    "municipio": "Irun",
+    "numen": "Sorgin",
+    "id": 100,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1935). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 1). Espasa-Calpe."
+  },
+    {
+    "provincia": "Gipuzkoa",
+    "municipio": "Hondarribia",
+    "numen": "Sorgin",
+    "id": 100,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1935). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 1). Espasa-Calpe."
+  },
+    {
+    "provincia": "Gipuzkoa",
+    "municipio": "Lezo",
+    "numen": "Sorgin",
+    "id": 100,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1935). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 1). Espasa-Calpe."
+  },
+    {
+    "provincia": "Gipuzkoa",
+    "municipio": "Errenteria",
+    "numen": "Sorgin",
+    "id": 100,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1935). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 1). Espasa-Calpe."
+  },
+    {
+    "provincia": "Gipuzkoa",
+    "municipio": "Pasaia",
+    "numen": "Sorgin",
+    "id": 100,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1935). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 1). Espasa-Calpe."
+  },
+  {
+    "provincia": "Navarra",
+    "municipio": "Lizoain-Arriasgoiti/Lizoainibar-Arriasgoiti",
+    "numen": "Sorgin",
+    "id": 101,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1935). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 1). Espasa-Calpe."
+  },
+  {
+    "provincia": "Bizkaia",
+    "municipio": "Eskoriatza",
+    "numen": "Sorgin",
+    "id": 102,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1942). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 2). Espasa-Calpe."
+  },
+  {
+    "provincia": "Bizkaia",
+    "municipio": "Lemoa",
+    "numen": "Sorgin",
+    "id": 104,
+    "Categoria": "Figuras mitológicas femeninas",
+    "fuente": "Azkue, R. M. de. (1942). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 2). Espasa-Calpe."
   }
 ]
