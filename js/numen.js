@@ -340,7 +340,15 @@ function cargarNumen() {
 
                     <section class="bloque bloquePresencia">
 
-                        <h3>${interfaz[idioma].presencia}</h3>
+                        <h3>
+                            ${interfaz[idioma].presencia}
+                            <span class="contadorMunicipios">
+                                · ${municipios.length}
+                                ${municipios.length === 1
+                                    ? interfaz[idioma].municipio
+                                    : interfaz[idioma].municipios}
+                            </span>
+                        </h3>
 
                         <p>
                             ${interfaz[idioma].seleccionarMunicipio}

@@ -1248,3 +1248,8 @@ body.texto-grande .tarjeta{
     }
 
 }
+
+.contadorMunicipios{
+    font-size:0.8em;
+    font-weight:500;
+}

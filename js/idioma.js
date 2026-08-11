@@ -146,11 +146,20 @@ const textos = {
         mapaDistribucion: "Distribución geográfica",
         municipiosDocumentados: "Municipios con referencias documentadas.",
 
-        imagenNumenAlt:"Ilustración de {nombre} según la tradición mitológica vasca"
+        imagenNumenAlt:"Ilustración de {nombre} según la tradición mitológica vasca",
+
+        avisoActualizacionTitulo: "Proyecto en actualización continua",
+
+        avisoActualizacionTexto:"EuskalAtlas es un proyecto en constante desarrollo. La información y las referencias documentales se amplían y revisan progresivamente. Si detectas algún error, omisión o información que deba corregirse, puedes escribirnos a euskalatlas@gmail.com.",
     
     },
 
     eu: {
+
+        avisoActualizacionTitulo: "Proiektu etengabe eguneratzen",
+
+        avisoActualizacionTexto:"EuskalAtlas etengabe garatzen ari den proiektua da. Informazioa eta erreferentzia dokumentalak pixkanaka zabaltzen eta berrikusten dira. Akatsen, hutsuneen edo zuzendu beharreko informazioren bat antzematen baduzu, idatzi euskalatlas@gmail.com helbidera.",
+
         provincias: "Probintziak",
         categorias: "Kategoriak",
         bibliografia: "Bibliografia",
