@@ -304,6 +304,309 @@ const textos = {
         municipiosDocumentados: "Erreferentzia dokumentatuak dituzten udalerriak.",
 
         imagenNumenAlt:"{nombre} euskal mitologiaren araberako ilustrazioa"
+    },    en: {
+
+        provincias: "Provinces",
+        categorias: "Categories",
+        bibliografia: "Bibliography",
+        escala: "References",
+        registros: "Records",
+        municipios: "Towns",
+        seres: "Mythological beings",
+        restablecer: "Reset filters",
+        subtitulo: "Digital atlas of Basque cultural heritage",
+
+        btnProvincias: "Select provinces",
+        btnCategorias: "Select categories",
+        btnSeres: "Select mythological beings",
+        btnBibliografia: "Select bibliography",
+
+        abrirMunicipio: "📄 Open town profile",
+        abrirSer: "✨ Open mythological being profile",
+
+        infoFiltros: "The map and results panel are automatically updated according to the selected filters.",
+
+        ayudaMunicipios: "Click on a town to view it in detail. The number in parentheses indicates the documented mythological beings.",
+
+        sinResultados: "⚠ No results",
+        sinResultadosTexto: "No records were found with the selected filters.",
+
+        modalProvincias: "Select provinces",
+        modalCategorias: "Select categories",
+        modalSeres: "Select mythological beings",
+        modalBibliografia: "Select bibliography",
+        modalMunicipios: "Open town profile",
+        modalFichaNumenes: "Select mythological being",
+
+        seleccionarTodas: "Select all",
+        deseleccionarTodas: "Deselect all",
+        aceptar: "Accept",
+
+        copyright: "© 2026 Euskal Atlas. All rights reserved.",
+
+        buscarProvincia: "Search province...",
+        buscarCategoria: "Search category...",
+        buscarSer: "Search mythological beings...",
+        buscarBibliografia: "Search bibliography...",
+        buscarMunicipio: "Search town...",
+        buscarFichaNumen: "Search mythological being...",
+        volver: "← Back",
+        volverMapa: "Home",
+
+        catFemeninas: "Female mythological figures",
+        catMasculinas: "Male mythological figures",
+        catZoomorfos: "Zoomorphic beings",
+        catFenomenos: "Natural phenomena and manifestations",
+        catOtras: "Other mythological entities and motifs",
+
+        todasProvincias: "All provinces",
+        ningunaProvincia: "No province",
+        unaProvincia: "1 province",
+        variasProvincias: "provinces",
+
+        todasCategorias: "All categories",
+        ningunaCategoria: "No category",
+        unaCategoria: "1 category",
+        variasCategorias: "categories",
+
+        todosNumenes: "All beings",
+        ningunNumen: "No being",
+        unNumen: "1 being",
+        variosNumenes: "beings",
+
+        todaBibliografia: "All bibliography",
+        ningunaBibliografia: "No bibliography",
+        unaBibliografia: "1 source",
+        variasBibliografias: "sources",
+
+        fichaMunicipio: "Town profile",
+        fichaSer: "Mythological being profile",
+        abrirMunicipio: "Open a profile",
+        abrirSer: "Open a profile",
+
+        descripcionProvincias: "Choose one or more provinces to filter the map.",
+        descripcionCategorias: "Select one or more categories.",
+        descripcionBibliografia: "Select one or more bibliographic references.",
+        descripcionNumenes: "Select one or more mythological beings.",
+        descripcionNumen: "Select a mythological being to open its complete profile.",
+        descripcionMunicipios: "Select a town to open its complete profile.",
+
+        footerDescripcion: "Interactive atlas of Basque mythological heritage.",
+
+        contacto: "Contact",
+        metodologia: "Methodology",
+        avisoLegal: "Legal notice",
+        privacidad: "Privacy policy",
+
+        legalIntro:
+        "Information about the terms of use, intellectual property and data protection of Euskal Atlas.",
+
+        titularWeb: "Website owner",
+
+        titularWebTexto:
+        "Euskal Atlas is a digital research and outreach project dedicated to the study, collection and dissemination of Basque cultural and mythological heritage through a publicly accessible interactive atlas.",
+
+        finalidad: "Purpose of the website",
+
+        finalidadTexto:
+        "The aim of Euskal Atlas is to provide access to geographical, bibliographic and documentary information related to Basque mythology for outreach, educational and research purposes. The contents may be expanded, updated or corrected as the project progresses.",
+
+        propiedadIntelectual: "Intellectual property",
+
+        propiedadTexto:
+        "The texts, databases, designs, iconography, maps, software developments and other original contents of Euskal Atlas are protected by applicable intellectual property legislation. Their consultation and use for personal, educational and research purposes is permitted, provided that the source is properly cited. Reproduction or commercial use without express authorization is prohibited.",
+
+        fuentes: "Information sources",
+
+        fuentesTexto:
+        "The published information comes from bibliographic works, research and specialized documentation. Whenever possible, the sources used are indicated in the corresponding profiles to facilitate consultation and verification.",
+
+        responsabilidad: "Limitation of liability",
+
+        responsabilidadTexto:
+        "Euskal Atlas makes continuous efforts to ensure the quality and accuracy of the published information. However, the absence of errors or omissions cannot be guaranteed; the contents are therefore for informational purposes and may be modified or updated without prior notice.",
+
+        proteccionDatos: "Data protection",
+
+        proteccionDatosTexto:
+        "At present, Euskal Atlas does not request or store visitors' personal data through registration or contact forms. If services involving the processing of personal data are introduced in the future, they will be managed in accordance with Regulation (EU) 2016/679 (General Data Protection Regulation - GDPR) and Organic Law 3/2018 on the Protection of Personal Data and Guarantee of Digital Rights.",
+
+        provinciasTraducidas: {
+
+            "Álava": "Álava",
+            "Bizkaia": "Bizkaia",
+            "Gipuzkoa": "Gipuzkoa",
+            "Navarra": "Navarre",
+            "Lapurdi": "Lapurdi",
+            "Baja Navarra": "Lower Navarre",
+            "Zuberoa": "Soule"
+
+        },
+
+        mapaDistribucion: "Geographical distribution",
+        municipiosDocumentados: "towns with documented references.",
+
+        imagenNumenAlt:
+        "Illustration of {nombre} according to Basque mythological tradition",
+
+        avisoActualizacionTitulo:
+        "Project under continuous development",
+
+        avisoActualizacionTexto:
+        "EuskalAtlas is a project in continuous development. Information and documentary references are progressively expanded and reviewed. If you detect an error, omission or information that should be corrected, you can contact us at euskalatlas@gmail.com."
+
+    },    fr: {
+
+        provincias: "Provinces",
+        categorias: "Catégories",
+        bibliografia: "Bibliographie",
+        escala: "Références",
+        registros: "Enregistrements",
+        municipios: "Communes",
+        seres: "Êtres mythologiques",
+        restablecer: "Réinitialiser les filtres",
+        subtitulo: "Atlas numérique du patrimoine culturel basque",
+
+        btnProvincias: "Sélectionner les provinces",
+        btnCategorias: "Sélectionner les catégories",
+        btnSeres: "Sélectionner les êtres mythologiques",
+        btnBibliografia: "Sélectionner la bibliographie",
+
+        abrirMunicipio: "📄 Ouvrir la fiche de la commune",
+        abrirSer: "✨ Ouvrir la fiche de l'être mythologique",
+
+        infoFiltros: "La carte et le panneau de résultats sont automatiquement mis à jour selon les filtres sélectionnés.",
+
+        ayudaMunicipios: "Cliquez sur une commune pour voir sa fiche détaillée. Le nombre entre parenthèses indique les êtres mythologiques documentés.",
+
+        sinResultados: "⚠ Aucun résultat",
+        sinResultadosTexto: "Aucun enregistrement ne correspond aux filtres sélectionnés.",
+
+        modalProvincias: "Sélectionner les provinces",
+        modalCategorias: "Sélectionner les catégories",
+        modalSeres: "Sélectionner les êtres mythologiques",
+        modalBibliografia: "Sélectionner la bibliographie",
+        modalMunicipios: "Ouvrir la fiche de la commune",
+        modalFichaNumenes: "Sélectionner un être mythologique",
+
+        seleccionarTodas: "Tout sélectionner",
+        deseleccionarTodas: "Tout désélectionner",
+        aceptar: "Accepter",
+
+        copyright: "© 2026 Euskal Atlas. Tous droits réservés.",
+
+        buscarProvincia: "Rechercher une province...",
+        buscarCategoria: "Rechercher une catégorie...",
+        buscarSer: "Rechercher des êtres mythologiques...",
+        buscarBibliografia: "Rechercher dans la bibliographie...",
+        buscarMunicipio: "Rechercher une commune...",
+        buscarFichaNumen: "Rechercher un être mythologique...",
+
+        volver: "← Retour",
+        volverMapa: "Accueil",
+
+        catFemeninas: "Figures mythologiques féminines",
+        catMasculinas: "Figures mythologiques masculines",
+        catZoomorfos: "Êtres zoomorphes",
+        catFenomenos: "Phénomènes et manifestations naturels",
+        catOtras: "Autres entités et motifs mythologiques",
+
+        todasProvincias: "Toutes les provinces",
+        ningunaProvincia: "Aucune province",
+        unaProvincia: "1 province",
+        variasProvincias: "provinces",
+
+        todasCategorias: "Toutes les catégories",
+        ningunaCategoria: "Aucune catégorie",
+        unaCategoria: "1 catégorie",
+        variasCategorias: "catégories",
+
+        todosNumenes: "Tous les êtres",
+        ningunNumen: "Aucun être",
+        unNumen: "1 être",
+        variosNumenes: "êtres",
+
+        todaBibliografia: "Toute la bibliographie",
+        ningunaBibliografia: "Aucune bibliographie",
+        unaBibliografia: "1 source",
+        variasBibliografias: "sources",
+
+        fichaMunicipio: "Fiche de la commune",
+        fichaSer: "Fiche de l'être mythologique",
+        abrirMunicipio: "Ouvrir une fiche",
+        abrirSer: "Ouvrir une fiche",
+
+        descripcionProvincias: "Choisissez une ou plusieurs provinces pour filtrer la carte.",
+        descripcionCategorias: "Sélectionnez une ou plusieurs catégories.",
+        descripcionBibliografia: "Sélectionnez une ou plusieurs références bibliographiques.",
+        descripcionNumenes: "Sélectionnez un ou plusieurs êtres mythologiques.",
+        descripcionNumen: "Sélectionnez un être mythologique pour ouvrir sa fiche complète.",
+        descripcionMunicipios: "Sélectionnez une commune pour ouvrir sa fiche complète.",
+
+        footerDescripcion: "Atlas interactif du patrimoine mythologique basque.",
+
+        contacto: "Contact",
+        metodologia: "Méthodologie",
+        avisoLegal: "Mentions légales",
+        privacidad: "Politique de confidentialité",
+
+        legalIntro:
+        "Informations relatives aux conditions d'utilisation, à la propriété intellectuelle et à la protection des données d'Euskal Atlas.",
+
+        titularWeb: "Propriétaire du site",
+
+        titularWebTexto:
+        "Euskal Atlas est un projet numérique de recherche et de diffusion consacré à l'étude, à la collecte et à la diffusion du patrimoine culturel et mythologique basque au moyen d'un atlas interactif accessible au public.",
+
+        finalidad: "Finalité du site",
+
+        finalidadTexto:
+        "L'objectif d'Euskal Atlas est de faciliter l'accès aux informations géographiques, bibliographiques et documentaires relatives à la mythologie basque à des fins de diffusion, d'éducation et de recherche. Les contenus pourront être complétés, mis à jour ou corrigés au fur et à mesure de l'avancement du projet.",
+
+        propiedadIntelectual: "Propriété intellectuelle",
+
+        propiedadTexto:
+        "Les textes, bases de données, designs, éléments iconographiques, cartes, développements informatiques et autres contenus originaux d'Euskal Atlas sont protégés par la législation en vigueur sur la propriété intellectuelle. Leur consultation et leur utilisation à des fins personnelles, éducatives et de recherche sont autorisées, à condition de citer correctement la source. Toute reproduction ou utilisation commerciale sans autorisation expresse est interdite.",
+
+        fuentes: "Sources d'information",
+
+        fuentesTexto:
+        "Les informations publiées proviennent d'ouvrages bibliographiques, de recherches et de documentation spécialisée. Dans la mesure du possible, les sources utilisées sont indiquées dans les fiches correspondantes afin de faciliter leur consultation et leur vérification.",
+
+        responsabilidad: "Limitation de responsabilité",
+
+        responsabilidadTexto:
+        "Euskal Atlas s'efforce en permanence de garantir la qualité et l'exactitude des informations publiées. Toutefois, l'absence d'erreurs ou d'omissions ne peut être garantie ; les contenus sont donc fournis à titre informatif et peuvent être modifiés ou mis à jour sans préavis.",
+
+        proteccionDatos: "Protection des données",
+
+        proteccionDatosTexto:
+        "Actuellement, Euskal Atlas ne demande ni ne stocke de données personnelles des visiteurs au moyen de formulaires d'inscription ou de contact. Si des services impliquant le traitement de données personnelles sont ajoutés à l'avenir, ceux-ci seront gérés conformément au règlement (UE) 2016/679 (Règlement général sur la protection des données - RGPD) et à la loi organique 3/2018 relative à la protection des données personnelles et à la garantie des droits numériques.",
+
+        provinciasTraducidas: {
+
+            "Álava": "Álava",
+            "Bizkaia": "Bizkaia",
+            "Gipuzkoa": "Guipuscoa",
+            "Navarra": "Navarre",
+            "Lapurdi": "Labourd",
+            "Baja Navarra": "Basse-Navarre",
+            "Zuberoa": "Soule"
+
+        },
+
+        mapaDistribucion: "Distribution géographique",
+        municipiosDocumentados: "Communes avec des références documentées.",
+
+        imagenNumenAlt:
+        "Illustration de {nombre} selon la tradition mythologique basque",
+
+        avisoActualizacionTitulo:
+        "Projet en mise à jour continue",
+
+        avisoActualizacionTexto:
+        "EuskalAtlas est un projet en développement continu. Les informations et les références documentaires sont progressivement complétées et révisées. Si vous détectez une erreur, une omission ou une information à corriger, vous pouvez nous écrire à euskalatlas@gmail.com."
+
     }
 };
 const interfaz = {
@@ -515,12 +818,316 @@ const interfaz = {
     
         imagenNumenAlt:"{nombre} euskal mitologiaren araberako ilustrazioa"
 
+    },    en: {
+
+        descripcion: "Description",
+        presencia: "Geographical presence",
+        bibliografia: "Bibliography",
+        escala: "References",
+
+        municipio: "town",
+        municipios: "towns",
+
+        serMitologico: "Mythological being",
+        seresMitologicos: "Mythological beings",
+
+        fuente: "Source",
+        fuentes: "Sources",
+
+        copyright: "© 2026 Euskal Atlas. All rights reserved.",
+
+        seleccionarMunicipio:
+            "Select any town to access its complete profile.",
+
+        seleccionarSer:
+            "Select any mythological being to access its complete profile.",
+
+        seresDocumentados:
+            "Documented mythological beings",
+
+        numenNoEncontrado:
+            "Mythological being not found",
+
+        sinReferencias:
+            "No documented references",
+
+        sinReferenciasTexto1:
+            "There are currently no documented mythological references for this town in Euskal Atlas.",
+
+        sinReferenciasTexto2:
+            "This profile may be expanded in future updates as new research and sources are incorporated.",
+
+        volver: "← Back",
+        volverMapa: "Home",
+
+        volverAria: "Go back to the previous page",
+        volverMapaAria: "Return to the main map",
+        verFicha: "View complete profile",
+
+        navegacionFicha: "Profile navigation",
+
+        sinInformacionCategoria:
+            "There is no information for this category.",
+
+        catFemeninas: "Female mythological figures",
+        catMasculinas: "Male mythological figures",
+        catZoomorfos: "Zoomorphic beings",
+        catFenomenos: "Natural phenomena and manifestations",
+        catOtras: "Other mythological entities and motifs",
+
+        todasProvincias: "All provinces",
+        ningunaProvincia: "No province",
+        unaProvincia: "1 province",
+        variasProvincias: "provinces",
+
+        todasCategorias: "All categories",
+        ningunaCategoria: "No category",
+        unaCategoria: "1 category",
+        variasCategorias: "categories",
+
+        todosNumenes: "All beings",
+        ningunNumen: "No being",
+        unNumen: "1 being",
+        variosNumenes: "beings",
+
+        todaBibliografia: "All bibliography",
+        ningunaBibliografia: "No bibliography",
+        unaBibliografia: "1 source",
+        variasBibliografias: "sources",
+
+        fichaMunicipio: "town profile",
+        fichaSer: "Mythological being profile",
+        abrirMunicipio: "Open a profile",
+        abrirSer: "Open a profile",
+
+        modalProvincias: "Select provinces",
+        modalCategorias: "Select categories",
+        modalSeres: "Select mythological beings",
+        modalBibliografia: "Select bibliography",
+        modalMunicipios: "Open town profile",
+        modalFichaNumenes: "Select mythological being",
+
+        mapaDistribucion: "Geographical distribution",
+
+        municipiosDocumentados:
+            "towns with documented references.",
+
+        mapaNumenAria:
+            "Geographical distribution map of {nombre}. References have been documented in {cantidad} towns. Highlighted towns indicate locations where documented references to this mythological being exist.",
+
+        zoomMas: "Zoom in",
+        zoomMenos: "Zoom out",
+        centrarMapa: "Center map",
+
+        leyendaMapaAria:
+            "Map colour scale. The darker the colour, the greater the number of mythological beings recorded in each town.",
+
+        imagenNumenAlt:
+            "Illustration of {nombre} according to Basque mythological tradition"
+
+    },
+        fr: {
+
+        descripcion: "Description",
+        presencia: "Présence géographique",
+        bibliografia: "Bibliographie",
+        escala: "Références",
+
+        municipio: "Commune",
+        municipios: "Communes",
+
+        serMitologico: "Être mythologique",
+        seresMitologicos: "Êtres mythologiques",
+
+        fuente: "Source",
+        fuentes: "Sources",
+
+        copyright: "© 2026 Euskal Atlas. Tous droits réservés.",
+
+        seleccionarMunicipio:
+            "Sélectionnez une commune pour accéder à sa fiche complète.",
+
+        seleccionarSer:
+            "Sélectionnez un être mythologique pour accéder à sa fiche complète.",
+
+        seresDocumentados:
+            "Êtres mythologiques documentés",
+
+        numenNoEncontrado:
+            "Être mythologique introuvable",
+
+        sinReferencias:
+            "Aucune référence documentée",
+
+        sinReferenciasTexto1:
+            "Aucune référence mythologique documentée n'est actuellement disponible pour cette commune dans Euskal Atlas.",
+
+        sinReferenciasTexto2:
+            "Cette fiche pourra être complétée lors de futures mises à jour au fur et à mesure de l'intégration de nouvelles recherches et sources.",
+
+        volver: "← Retour",
+        volverMapa: "Accueil",
+
+        volverAria:
+            "Retourner à la page précédente",
+
+        volverMapaAria:
+            "Retourner à la carte principale",
+
+        verFicha:
+            "Voir la fiche complète",
+
+        navegacionFicha:
+            "Navigation de la fiche",
+
+        sinInformacionCategoria:
+            "Aucune information pour cette catégorie.",
+
+        catFemeninas:
+            "Figures mythologiques féminines",
+
+        catMasculinas:
+            "Figures mythologiques masculines",
+
+        catZoomorfos:
+            "Êtres zoomorphes",
+
+        catFenomenos:
+            "Phénomènes et manifestations naturels",
+
+        catOtras:
+            "Autres entités et motifs mythologiques",
+
+        todasProvincias:
+            "Toutes les provinces",
+
+        ningunaProvincia:
+            "Aucune province",
+
+        unaProvincia:
+            "1 province",
+
+        variasProvincias:
+            "provinces",
+
+        todasCategorias:
+            "Toutes les catégories",
+
+        ningunaCategoria:
+            "Aucune catégorie",
+
+        unaCategoria:
+            "1 catégorie",
+
+        variasCategorias:
+            "catégories",
+
+        todosNumenes:
+            "Tous les êtres",
+
+        ningunNumen:
+            "Aucun être",
+
+        unNumen:
+            "1 être",
+
+        variosNumenes:
+            "êtres",
+
+        todaBibliografia:
+            "Toute la bibliographie",
+
+        ningunaBibliografia:
+            "Aucune bibliographie",
+
+        unaBibliografia:
+            "1 source",
+
+        variasBibliografias:
+            "sources",
+
+        fichaMunicipio:
+            "Fiche de la commune",
+
+        fichaSer:
+            "Fiche de l'être mythologique",
+
+        abrirMunicipio:
+            "Ouvrir une fiche",
+
+        abrirSer:
+            "Ouvrir une fiche",
+
+        modalProvincias:
+            "Sélectionner les provinces",
+
+        modalCategorias:
+            "Sélectionner les catégories",
+
+        modalSeres:
+            "Sélectionner les êtres mythologiques",
+
+        modalBibliografia:
+            "Sélectionner la bibliographie",
+
+        modalMunicipios:
+            "Ouvrir la fiche de la commune",
+
+        modalFichaNumenes:
+            "Sélectionner un être mythologique",
+
+        mapaDistribucion:
+            "Distribution géographique",
+
+        municipiosDocumentados:
+            "Communes avec des références documentées.",
+
+        mapaNumenAria:
+            "Carte de distribution géographique de {nombre}. Des références ont été documentées dans {cantidad} communes. Les communes mises en évidence indiquent les localités où des références documentées à cet être mythologique existent.",
+
+        zoomMas:
+            "Zoom avant",
+
+        zoomMenos:
+            "Zoom arrière",
+
+        centrarMapa:
+            "Centrer la carte",
+
+        leyendaMapaAria:
+            "Échelle de couleurs de la carte. Plus la couleur est foncée, plus le nombre d'êtres mythologiques enregistrés dans chaque commune est élevé.",
+
+        imagenNumenAlt:
+            "Illustration de {nombre} selon la tradition mythologique basque"
+
     }
 
 };
 
 const btnES = document.getElementById("btnES");
 const btnEU = document.getElementById("btnEU");
+const btnEN = document.getElementById("btnEN");
+const btnFR = document.getElementById("btnFR");
+
+function actualizarBotones() {
+
+    if (btnES) {
+        btnES.classList.toggle("activo", idioma === "es");
+    }
+
+    if (btnEU) {
+        btnEU.classList.toggle("activo", idioma === "eu");
+    }
+
+    if (btnEN) {
+        btnEN.classList.toggle("activo", idioma === "en");
+    }
+
+    if (btnFR) {
+        btnFR.classList.toggle("activo", idioma === "fr");
+    }
+
+}
 
 function traducirCategoria(categoria) {
 
@@ -562,43 +1169,62 @@ function aplicarIdioma() {
 
 }
 
-if (btnES && btnEU) {
+function cambiarIdioma(nuevoIdioma) {
 
-    function actualizarBotones() {
-
-        btnES.classList.toggle("activo", idioma === "es");
-        btnEU.classList.toggle("activo", idioma === "eu");
-
-    }
-
-    btnES.addEventListener("click", () => {
-
-        idioma = "es";
-        localStorage.setItem("idioma", idioma);
-        
-
-        actualizarBotones();
-        aplicarIdioma();
-        actualizarMapa();
-        actualizarTextosMapa();
-
-    });
-
-    btnEU.addEventListener("click", () => {
-
-        idioma = "eu";
-        localStorage.setItem("idioma", idioma);
-        
-        actualizarBotones();
-        aplicarIdioma();
-        actualizarMapa();
-        actualizarTextosMapa();
-
-    });
+    idioma = nuevoIdioma;
+    localStorage.setItem("idioma", idioma);
 
     actualizarBotones();
+    aplicarIdioma();
+
+    // Actualizar ficha de ser mitológico
+    if (typeof cargarNumen === "function") {
+        cargarNumen();
+    }
+
+    // Actualizar ficha de municipio
+    if (typeof cargarMunicipio === "function") {
+        cargarMunicipio();
+    }
+
+    // Actualizar elementos del mapa
+    if (typeof actualizarMapa === "function") {
+        actualizarMapa();
+    }
+
+    if (typeof actualizarTextosMapa === "function") {
+        actualizarTextosMapa();
+    }
 
 }
+
+
+if (btnES) {
+    btnES.addEventListener("click", () => {
+        cambiarIdioma("es");
+    });
+}
+
+if (btnEU) {
+    btnEU.addEventListener("click", () => {
+        cambiarIdioma("eu");
+    });
+}
+
+if (btnEN) {
+    btnEN.addEventListener("click", () => {
+        cambiarIdioma("en");
+    });
+}
+
+if (btnFR) {
+    btnFR.addEventListener("click", () => {
+        cambiarIdioma("fr");
+    });
+}
+
+actualizarBotones();
+
 document.addEventListener("DOMContentLoaded", function () {
 
     aplicarIdioma();
