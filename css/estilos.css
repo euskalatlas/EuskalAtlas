@@ -456,28 +456,6 @@ header p{
 
 }
 
-#listaMunicipios{
-
-    margin-top:10px;
-    max-height:250px;
-    overflow-y:auto;
-
-}
-
-#listaMunicipios div{
-
-    padding:5px 0;
-    border-bottom:1px solid #eee;
-    cursor:pointer;
-
-}
-
-#listaMunicipios div:hover{
-
-    color:#0b6e4f;
-    font-weight:bold;
-
-}
 
 /* ===========================
    CONTENEDOR MAPA
@@ -617,154 +595,6 @@ header p{
     word-break:normal;
 
     overflow-wrap:anywhere;
-}
-
-/* ===========================
-   POPUP MUNICIPIOS
-=========================== */
-
-.popup-municipio{
-
-    min-width:260px;
-    max-width:350px;
-    
-
-    font-family:Arial, Helvetica, sans-serif;
-
-}
-
-.popup-titulo{
-
-    font-size:16px;
-    font-weight:bold;
-    line-height: 1.1;
-
-    text-transform:none;
-
-    color:#1b4332;
-
-    margin-bottom:4px;
-    justify-content:center;
-    align-items:center;
-
-}
-
-.popup-provincia{
-
-    font-size:13px;
-
-    color:#666;
-
-    margin-bottom:12px;
-
-}
-
-.popup-separador{
-
-    height:1px;
-
-    background:#e5e5e5;
-
-    margin:12px 0;
-
-}
-
-.popup-dato{
-
-    font-size:14px;
-
-    margin:6px 0;
-
-}
-
-.popup-lista{
-
-    margin:10px 0;
-
-    max-height:180px;
-
-    overflow-y:auto;
-
-}
-
-.popup-numen{
-
-    display:block;
-
-    padding:5px 0;
-
-    border-bottom:1px solid #eeeeee;
-
-    color:#1b4332;
-
-    text-decoration:none;
-
-    transition:.2s;
-
-}
-
-.popup-numen:hover{
-
-    color:#0b6e4f;
-
-    text-decoration:underline;
-
-    background:#f3f7f5;
-
-}
-
-.popup-numen:last-child{
-
-    border-bottom:none;
-
-}
-
-.popup-ficha{
-
-    display:flex;
-
-    justify-content:center;
-    align-items:center;
-
-    width:220px;
-
-    margin:18px auto;
-
-    padding:14px 18px;
-
-    background:#1b4332;
-
-    color:white !important;
-
-    text-decoration:none;
-
-    border-radius:12px;
-
-    font-size:16px;
-
-    font-weight:600;
-
-    transition:.25s;
-
-}
-
-.popup-ficha:hover{
-
-    background:#f3f7f5;
-
-    color:#0b6e4f;
-
-    text-decoration:underline;
-
-}
-.popup-lista-contenedor{
-
-    margin-top:18px;
-
-    width:100%;
-
-    box-sizing:border-box;
-
 }
 
 /* ===========================
@@ -1533,7 +1363,7 @@ h3 small{
 
     display:flex;
 
-    align-items:center;
+    align-items:flex-start;
 
     gap:5px;
 

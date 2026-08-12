@@ -221,7 +221,7 @@ const textos = {
         unaCategoria: "Kategoria bakarra",
         variasCategorias: "kategoria",
 
-        todosNumenes: "Izaki guztiak",
+        todosNumenes: "Izaki mitologiko guztiak",
         ningunNumen: "Izakirik ez",
         unNumen: "Izaki mitologiko bakarra",
         variosNumenes: "izaki",
@@ -599,8 +599,12 @@ if (btnES && btnEU) {
     actualizarBotones();
 
 }
-aplicarIdioma();
+document.addEventListener("DOMContentLoaded", function () {
 
-if (typeof actualizarTextosMapa === "function") {
-    actualizarTextosMapa();
-}
+    aplicarIdioma();
+
+    if (typeof actualizarTextosMapa === "function") {
+        actualizarTextosMapa();
+    }
+
+});
