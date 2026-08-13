@@ -165,7 +165,7 @@ const textos = {
         bibliografia: "Bibliografia",
         escala: "Referentziak",
         registros: "Erregistroak",
-        municipios: "Udalerriak",
+        municipios: "Udalerri",
         seres: "Izaki mitologikoak",
         restablecer: "Filtroak berrezarri",
         subtitulo: "Euskal kultur ondarearen atlas digitala",
@@ -723,10 +723,10 @@ const interfaz = {
 
         // Tarjetas
         municipio: "Udalerria",
-        municipios: "Udalerriak",
+        municipios: "Udalerri",
 
-        serMitologico: "Izaki mitologikoa",
-        seresMitologicos: "Izaki mitologikoak",
+        serMitologico: "Izaki mitologiko",
+        seresMitologicos: "Izaki mitologiko",
 
         fuente: "Iturri bibliografikoa",
         fuentes: "Iturri bibliografikoak",
@@ -741,11 +741,11 @@ const interfaz = {
         "Aukeratu izaki mitologiko bat haren fitxa osoa ikusteko.",
 
         seresDocumentados:
-            "Dokumentatutako izaki mitologikoak",
+            "Dokumentatutako izaki mitologiko",
 
         // Errores
         numenNoEncontrado:
-            "Ez da izaki mitologikoa aurkitu",
+            "Ez da izaki mitologikorik aurkitu",
 
         sinReferencias:
             "Ez dago dokumentatutako erreferentziarik",
@@ -779,7 +779,7 @@ const interfaz = {
         unaCategoria: "Kategoria 1",
         variasCategorias: "kategoria",
 
-        todosNumenes: "Izaki guztiak",
+        todosNumenes: "Izaki mitologiko guztiak",
         ningunNumen: "Izakirik ez",
         unNumen: "Izaki mitologiko bakarra",
         variosNumenes: "izaki",

@@ -342,12 +342,6 @@ function cargarNumen() {
 
                         <h3>
                             ${interfaz[idioma].presencia}
-                            <span class="contadorMunicipios">
-                                · ${municipios.length}
-                                ${municipios.length === 1
-                                    ? interfaz[idioma].municipio
-                                    : interfaz[idioma].municipios}
-                            </span>
                         </h3>
 
                         <p>
