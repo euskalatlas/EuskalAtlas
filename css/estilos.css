@@ -1406,6 +1406,56 @@ h3 small{
     transform:translateX(3px);
 
 }
+/* ======================================
+   OPCIONES DE FILTRO DESACTIVADAS
+====================================== */
+
+#listaProvincias label:has(input[type="checkbox"]:disabled),
+#listaCategorias label:has(input[type="checkbox"]:disabled),
+#listaBibliografias label:has(input[type="checkbox"]:disabled),
+#listaNumenes label:has(input[type="checkbox"]:disabled){
+
+    color:#b8b8b8;
+
+    background:#f8f8f8;
+
+    cursor:not-allowed;
+
+    opacity:.65;
+
+    transform:none;
+
+}
+
+
+/* Evitar el efecto hover en opciones desactivadas */
+
+#listaProvincias label:has(input[type="checkbox"]:disabled):hover,
+#listaCategorias label:has(input[type="checkbox"]:disabled):hover,
+#listaBibliografias label:has(input[type="checkbox"]:disabled):hover,
+#listaNumenes label:has(input[type="checkbox"]:disabled):hover{
+
+    background:#f8f8f8;
+
+    border-color:transparent;
+
+    transform:none;
+
+}
+
+
+/* Checkbox desactivado */
+
+#listaProvincias input[type="checkbox"]:disabled,
+#listaCategorias input[type="checkbox"]:disabled,
+#listaBibliografias input[type="checkbox"]:disabled,
+#listaNumenes input[type="checkbox"]:disabled{
+
+    opacity:.4;
+
+    cursor:not-allowed;
+
+}
 
 #listaProvincias label:last-child,
 #listaCategorias label:last-child,
@@ -2580,4 +2630,274 @@ body.texto-grande .popup-estadisticas{
         padding:20px;
     }
 
+}
+
+/* =========================================================
+   HEADER RESPONSIVE — TABLET Y MÓVIL
+========================================================= */
+
+.cabecera{
+    position:relative;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width:769px) and (max-width:1100px){
+
+    header{
+        padding:12px 0 16px;
+    }
+
+    .cabecera{
+        min-height:105px;
+        padding:0 20px;
+    }
+
+    .cabeceraIzquierda{
+        justify-content:center;
+    }
+
+    .logo{
+        width:72px;
+        height:72px;
+    }
+
+    header h1{
+        font-size:2.2rem;
+    }
+
+    header p{
+        font-size:.9rem;
+    }
+
+    #accionesCabecera{
+        position:absolute;
+        top:12px;
+        right:16px;
+
+        display:flex;
+        flex-direction:column;
+        align-items:flex-end;
+        gap:7px;
+
+        z-index:10;
+    }
+
+    #selectorIdioma{
+        display:flex;
+        align-items:center;
+        justify-content:flex-end;
+        gap:7px;
+        white-space:nowrap;
+    }
+
+    .idioma{
+        padding:4px 6px;
+        font-size:13px;
+    }
+
+    #botonesAccesibilidad{
+        display:flex;
+        gap:6px;
+    }
+
+}
+
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media (max-width:768px){
+
+    header{
+        position:relative;
+        padding:10px 0 18px;
+    }
+
+    .cabecera{
+
+        position:relative;
+
+        display:flex;
+        flex-direction:column;
+
+        justify-content:center;
+        align-items:center;
+
+        text-align:center;
+
+        padding:62px 15px 12px;
+
+        min-height:255px;
+        box-sizing:border-box;
+
+    }
+
+    .cabeceraIzquierda{
+
+        display:flex;
+        flex-direction:column;
+
+        align-items:center;
+        justify-content:center;
+
+        gap:7px;
+
+        width:100%;
+    }
+
+
+    /* -------------------------
+       LOGO
+    ------------------------- */
+
+    .logo{
+
+        width:72px;
+        height:72px;
+
+    }
+
+
+    /* -------------------------
+       TÍTULO
+    ------------------------- */
+
+    .titulo{
+
+        align-items:center;
+        justify-content:center;
+
+        width:100%;
+    }
+
+    header h1{
+
+        font-size:2rem;
+        line-height:1.05;
+
+        margin:0;
+
+    }
+
+    header p{
+
+        font-size:.88rem;
+        line-height:1.25;
+
+        margin:5px 0 0;
+
+    }
+
+
+    /* -------------------------
+       CONTROLES SUPERIORES
+    ------------------------- */
+
+    #accionesCabecera{
+
+        position:absolute;
+
+        top:9px;
+        right:12px;
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:flex-end;
+
+        gap:5px;
+
+        z-index:20;
+
+    }
+
+
+    /* -------------------------
+       IDIOMAS
+    ------------------------- */
+
+    #selectorIdioma{
+
+        position:static;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:flex-end;
+
+        gap:4px;
+
+        margin:0;
+
+        white-space:nowrap;
+
+    }
+
+    .idioma{
+
+        min-width:30px;
+
+        padding:4px 5px;
+
+        font-size:13px;
+
+        line-height:1.2;
+
+    }
+
+    #selectorIdioma span{
+
+        font-size:13px;
+
+    }
+
+
+    /* -------------------------
+       ACCESIBILIDAD
+    ------------------------- */
+
+    #botonesAccesibilidad{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:flex-end;
+
+        gap:5px;
+
+    }
+
+    .accesibilidad{
+
+        width:30px;
+        height:24px;
+
+        font-size:14px;
+
+    }
+
+}
+/* ======================================
+   SEPARADOR DE OPCIONES NO DISPONIBLES
+====================================== */
+
+.separador-no-disponibles {
+    margin: 5px 6px 3px;
+    padding: 4px 6px;
+
+    color: #8a8a8a;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    text-align: center;
 }

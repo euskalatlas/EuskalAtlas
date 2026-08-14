@@ -1,4 +1,4 @@
-let idioma = localStorage.getItem("idioma") || "es";
+let idioma = localStorage.getItem("idioma") || "eu";
 
 const textos = {
     es: {
@@ -151,7 +151,7 @@ const textos = {
         avisoActualizacionTitulo: "Proyecto en actualización continua",
 
         avisoActualizacionTexto:"EuskalAtlas es un proyecto en constante desarrollo. La información y las referencias documentales se amplían y revisan progresivamente. Si detectas algún error, omisión o información que deba corregirse, puedes escribirnos a euskalatlas@gmail.com.",
-    
+        noDisponiblesFiltros:"No disponibles con los filtros seleccionados actualmente",
     },
 
     eu: {
@@ -303,8 +303,12 @@ const textos = {
         mapaDistribucion: "Banaketa geografikoa",
         municipiosDocumentados: "Erreferentzia dokumentatuak dituzten udalerriak.",
 
-        imagenNumenAlt:"{nombre} euskal mitologiaren araberako ilustrazioa"
-    },    en: {
+        imagenNumenAlt:"{nombre} euskal mitologiaren araberako ilustrazioa",
+noDisponiblesFiltros:
+    "Une honetan hautatutako iragazkiekin erabilgarri ez daudenak",    
+    },   
+    
+    en: {
 
         provincias: "Provinces",
         categorias: "Categories",
@@ -453,9 +457,11 @@ const textos = {
         "Project under continuous development",
 
         avisoActualizacionTexto:
-        "EuskalAtlas is a project in continuous development. Information and documentary references are progressively expanded and reviewed. If you detect an error, omission or information that should be corrected, you can contact us at euskalatlas@gmail.com."
-
-    },    fr: {
+        "EuskalAtlas is a project in continuous development. Information and documentary references are progressively expanded and reviewed. If you detect an error, omission or information that should be corrected, you can contact us at euskalatlas@gmail.com.",
+        noDisponiblesFiltros:    "Not available with the currently selected filters",
+    },    
+    
+    fr: {
 
         provincias: "Provinces",
         categorias: "Catégories",
@@ -605,8 +611,8 @@ const textos = {
         "Projet en mise à jour continue",
 
         avisoActualizacionTexto:
-        "EuskalAtlas est un projet en développement continu. Les informations et les références documentaires sont progressivement complétées et révisées. Si vous détectez une erreur, une omission ou une information à corriger, vous pouvez nous écrire à euskalatlas@gmail.com."
-
+        "EuskalAtlas est un projet en développement continu. Les informations et les références documentaires sont progressivement complétées et révisées. Si vous détectez une erreur, une omission ou une information à corriger, vous pouvez nous écrire à euskalatlas@gmail.com.",
+        noDisponiblesFiltros:    "Non disponibles avec les filtres actuellement sélectionnés",
     }
 };
 const interfaz = {

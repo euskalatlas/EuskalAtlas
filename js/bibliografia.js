@@ -2,6 +2,10 @@
 // LISTA DE BIBLIOGRAFÍAS
 // ======================================
 
+// ======================================
+// LISTA DE AUTORES
+// ======================================
+
 function actualizarListaBibliografias(){
 
     const contenedor = document.getElementById("listaBibliografias");
@@ -9,46 +13,169 @@ function actualizarListaBibliografias(){
 
     contenedor.innerHTML = "";
 
-    let bibliografias = new Set();
+    // ======================================
+    // REGISTROS COMPATIBLES
+    // Ignoramos Autor porque estamos
+    // calculando las opciones de Autor.
+    // ======================================
+
+    const registrosCompatibles =
+        obtenerRegistrosCompatibles("autor");
+
+
+    // ======================================
+    // TODOS LOS AUTORES
+    // ======================================
+
+    const autores = new Set();
 
     mitologia.forEach(registro => {
 
         if(
-            registro.fuente &&
-            registro.fuente.trim() !== ""
+            registro.autor &&
+            registro.autor.trim() !== ""
         ){
-            bibliografias.add(registro.fuente);
+            autores.add(registro.autor);
         }
 
     });
 
-    let lista = [...bibliografias].sort();
 
-    if(bibliografiasSeleccionadas.length === 0){
-        bibliografiasSeleccionadas = [...lista];
-    }
+    // ======================================
+    // AUTORES COMPATIBLES
+    // ======================================
 
-    lista.forEach(bibliografia => {
+    const autoresCompatibles = new Set();
 
-        const linea = document.createElement("div");
+    registrosCompatibles.forEach(registro => {
 
-        linea.innerHTML = `
-<label>
-<input
-    type="checkbox"
-    value="${bibliografia}"
-    ${bibliografiasSeleccionadas.includes(bibliografia) ? "checked" : ""}
->
-${bibliografia}
-</label>
-`;
-
-        contenedor.appendChild(linea);
+        if(
+            registro.autor &&
+            registro.autor.trim() !== ""
+        ){
+            autoresCompatibles.add(registro.autor);
+        }
 
     });
 
+
+    // ======================================
+    // ORDEN ALFABÉTICO
+    // ======================================
+
+    const lista = [...autores].sort((a, b) => {
+
+    const compatibleA =
+        autoresCompatibles.has(a);
+
+    const compatibleB =
+        autoresCompatibles.has(b);
+
+    // Primero los compatibles
+    if (compatibleA && !compatibleB) return -1;
+    if (!compatibleA && compatibleB) return 1;
+
+    // Dentro de cada grupo, orden alfabético
+    return a.localeCompare(b, idioma);
+
+});
+
+    
+
+    // ======================================
+    // CREAR OPCIONES
+    // ======================================
+
+    // ======================================
+// CREAR OPCIÓN
+// ======================================
+
+function crearBibliografia(autor, compatible){
+
+    const linea = document.createElement("div");
+
+    const seleccionada =
+        autoresSeleccionados.includes(autor);
+
+    linea.innerHTML = `
+        <label>
+            <input
+                type="checkbox"
+                value="${autor}"
+                ${seleccionada ? "checked" : ""}
+                ${!compatible ? "disabled" : ""}
+            >
+            ${autor}
+        </label>
+    `;
+
+    contenedor.appendChild(linea);
+
 }
 
+
+// ======================================
+// COMPATIBLES
+// ======================================
+
+const autoresDisponibles =
+    lista.filter(autor =>
+        autoresCompatibles.has(autor)
+    );
+
+
+// ======================================
+// NO COMPATIBLES
+// ======================================
+
+const autoresNoDisponibles =
+    lista.filter(autor =>
+        !autoresCompatibles.has(autor)
+    );
+
+
+// ======================================
+// MOSTRAR COMPATIBLES
+// ======================================
+
+autoresDisponibles.forEach(autor => {
+
+    crearBibliografia(autor, true);
+
+});
+
+
+// ======================================
+// SEPARADOR
+// ======================================
+
+if(autoresNoDisponibles.length > 0){
+
+    const separador =
+        document.createElement("div");
+
+    separador.className =
+        "separador-no-disponibles";
+
+    separador.textContent =
+        textos[idioma].noDisponiblesFiltros;
+
+    contenedor.appendChild(separador);
+
+}
+
+
+// ======================================
+// MOSTRAR NO COMPATIBLES
+// ======================================
+
+autoresNoDisponibles.forEach(autor => {
+
+    crearBibliografia(autor, false);
+
+});
+
+}
 
 
 // ======================================
@@ -62,22 +189,22 @@ function actualizarResumenBibliografias(){
     const total =
         document.querySelectorAll("#listaBibliografias input").length;
 
-    if(bibliografiasSeleccionadas.length === total){
+    if(autoresSeleccionados.length === total){
 
         resumen.textContent = textos[idioma].todaBibliografia;
 
-    }else if(bibliografiasSeleccionadas.length === 0){
+    }else if(autoresSeleccionados.length === 0){
 
         resumen.textContent = textos[idioma].ningunaBibliografia;
 
-    }else if(bibliografiasSeleccionadas.length === 1){
+    }else if(autoresSeleccionados.length === 1){
 
         resumen.textContent = textos[idioma].unaBibliografia;
 
     }else{
 
         resumen.textContent =
-            `${bibliografiasSeleccionadas.length} ${textos[idioma].variasBibliografias}`;
+            `${autoresSeleccionados.length} ${textos[idioma].variasBibliografias}`;
 
     }
 
@@ -170,15 +297,20 @@ document
 .getElementById("cerrarBibliografia")
 .addEventListener("click", function(){
 
-    bibliografiasSeleccionadas = [];
+    autoresSeleccionados = [];
 
     document
-    .querySelectorAll("#listaBibliografias input[type='checkbox']:checked")
+    .querySelectorAll("#listaBibliografias input[type='checkbox']:checked:not(:disabled)")
+
     .forEach(c => {
 
-        bibliografiasSeleccionadas.push(c.value);
+        autoresSeleccionados.push(c.value);
 
     });
+
+    // Recalcular las opciones disponibles
+    // en los demás filtros
+    actualizarListasDependientes();
 
     actualizarResumenBibliografias();
 
@@ -187,7 +319,6 @@ document
     modalBibliografia.classList.add("oculto");
 
 });
-
 
 modalBibliografia.addEventListener("click", function(e){
 

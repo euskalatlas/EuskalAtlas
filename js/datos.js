@@ -2,7 +2,7 @@
 // DATOS
 // =====================================
 let provinciasSeleccionadas = [];
-let bibliografiasSeleccionadas = [];
+let autoresSeleccionados = [];
 
 
 // Aquí guardaremos todos los datos de la mitología
@@ -43,13 +43,13 @@ Promise.all([
         )
     ].sort();
 
-    bibliografiasSeleccionadas = [
-        ...new Set(
-            mitologia
-                .filter(r => r.fuente)
-                .map(r => r.fuente)
-        )
-    ].sort();
+autoresSeleccionados = [
+    ...new Set(
+        mitologia
+            .filter(r => r.autor && r.autor.trim() !== "")
+            .map(r => r.autor)
+    )
+].sort();
 
     if (typeof actualizarListaNumenes === "function") {
         actualizarListaNumenes("Todas las Categorias");

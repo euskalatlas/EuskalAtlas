@@ -2,6 +2,10 @@
 // LISTA DE CATEGORÍAS
 // ======================================
 
+// ======================================
+// LISTA DE CATEGORÍAS
+// ======================================
+
 function actualizarListaCategorias(){
 
     const contenedor = document.getElementById("listaCategorias");
@@ -9,7 +13,21 @@ function actualizarListaCategorias(){
 
     contenedor.innerHTML = "";
 
-    let categorias = new Set();
+    // ======================================
+    // REGISTROS COMPATIBLES
+    // Ignoramos Categoría porque estamos
+    // calculando las opciones de Categoría.
+    // ======================================
+
+    const registrosCompatibles =
+        obtenerRegistrosCompatibles("categoria");
+
+
+    // ======================================
+    // TODAS LAS CATEGORÍAS
+    // ======================================
+
+    const categorias = new Set();
 
     mitologia.forEach(registro => {
 
@@ -22,30 +40,140 @@ function actualizarListaCategorias(){
 
     });
 
-    let lista = [...categorias].sort();
 
-    if(categoriasSeleccionadas.length === 0){
-        categoriasSeleccionadas = [...lista];
-    }
+    // ======================================
+    // CATEGORÍAS COMPATIBLES
+    // ======================================
 
-    lista.forEach(categoria => {
+    const categoriasCompatibles = new Set();
 
-        const linea = document.createElement("div");
+    registrosCompatibles.forEach(registro => {
 
-        linea.innerHTML = `
-<label>
-<input
-    type="checkbox"
-    value="${categoria}"
-    ${categoriasSeleccionadas.includes(categoria) ? "checked" : ""}
->
-${traducirCategoria(categoria)}
-</label>
-`;
-
-        contenedor.appendChild(linea);
+        if(
+            registro.Categoria &&
+            registro.Categoria.trim() !== ""
+        ){
+            categoriasCompatibles.add(registro.Categoria);
+        }
 
     });
+
+
+    // ======================================
+    // ORDEN ALFABÉTICO
+    // ======================================
+
+    const lista = [...categorias].sort((a, b) => {
+
+    const compatibleA =
+        categoriasCompatibles.has(a);
+
+    const compatibleB =
+        categoriasCompatibles.has(b);
+
+    // Primero las compatibles
+    if (compatibleA && !compatibleB) return -1;
+    if (!compatibleA && compatibleB) return 1;
+
+    // Dentro de cada grupo, orden alfabético
+    return a.localeCompare(b, idioma);
+
+});
+
+
+
+    // ======================================
+    // CREAR OPCIONES
+    // ======================================
+
+    // ======================================
+// CREAR OPCIÓN
+// ======================================
+
+function crearCategoria(categoria, compatible){
+
+    const linea = document.createElement("div");
+
+    const seleccionada =
+        categoriasSeleccionadas.includes(categoria);
+
+    linea.innerHTML = `
+        <label>
+            <input
+                type="checkbox"
+                value="${categoria}"
+                ${seleccionada ? "checked" : ""}
+                ${!compatible ? "disabled" : ""}
+            >
+            ${traducirCategoria(categoria)}
+        </label>
+    `;
+
+    contenedor.appendChild(linea);
+
+}
+
+
+// ======================================
+// COMPATIBLES
+// ======================================
+
+const categoriasDisponibles =
+    lista.filter(categoria =>
+        categoriasCompatibles.has(categoria)
+    );
+
+
+// ======================================
+// NO COMPATIBLES
+// ======================================
+
+const categoriasNoDisponibles =
+    lista.filter(categoria =>
+        !categoriasCompatibles.has(categoria)
+    );
+
+
+// ======================================
+// MOSTRAR COMPATIBLES
+// ======================================
+
+categoriasDisponibles.forEach(categoria => {
+
+    crearCategoria(categoria, true);
+
+});
+
+
+// ======================================
+// SEPARADOR
+// ======================================
+
+if(categoriasNoDisponibles.length > 0){
+
+    const separador =
+        document.createElement("div");
+
+    separador.className =
+        "separador-no-disponibles";
+
+    separador.textContent =
+        textos[idioma].noDisponiblesFiltros;
+
+    contenedor.appendChild(separador);
+
+}
+
+
+// ======================================
+// MOSTRAR NO COMPATIBLES
+// ======================================
+
+categoriasNoDisponibles.forEach(categoria => {
+
+    crearCategoria(categoria, false);
+
+});
 
 }
 
@@ -57,22 +185,29 @@ ${traducirCategoria(categoria)}
 
 function actualizarResumenCategorias(){
 
-    const resumen = document.getElementById("textoCategorias");
+    const resumen =
+        document.getElementById("textoCategorias");
 
     const total =
-        document.querySelectorAll("#listaCategorias input").length;
+        document.querySelectorAll(
+            "#listaCategorias input"
+        ).length;
+
 
     if(categoriasSeleccionadas.length === total){
 
-        resumen.textContent = textos[idioma].todasCategorias;
+        resumen.textContent =
+            textos[idioma].todasCategorias;
 
     }else if(categoriasSeleccionadas.length === 0){
 
-        resumen.textContent = textos[idioma].ningunaCategoria;
+        resumen.textContent =
+            textos[idioma].ningunaCategoria;
 
     }else if(categoriasSeleccionadas.length === 1){
 
-        resumen.textContent = textos[idioma].unaCategoria;
+        resumen.textContent =
+            textos[idioma].unaCategoria;
 
     }else{
 
@@ -170,13 +305,16 @@ document
 
     categoriasSeleccionadas = [];
 
-    document
-    .querySelectorAll("#listaCategorias input[type='checkbox']:checked")
-    .forEach(c => {
+document
+.querySelectorAll("#listaCategorias input[type='checkbox']:checked:not(:disabled)")
+.forEach(c => {
 
-        categoriasSeleccionadas.push(c.value);
+    categoriasSeleccionadas.push(c.value);
 
-    });
+});
+    // Recalcular las opciones disponibles
+    // en los demás filtros
+    actualizarListasDependientes();
 
     actualizarResumenCategorias();
 

@@ -4,72 +4,282 @@
 // Númenes seleccionados
 let numenesSeleccionados = [];
 
+// ======================================
+// LISTA DE NÚMENES
+// ======================================
+
 function actualizarListaNumenes(categoria){
 
     const contenedor = document.getElementById("listaNumenes");
     if (!contenedor) return;
+
     contenedor.innerHTML = "";
 
-    let numenes = new Set();
+    // ======================================
+    // REGISTROS COMPATIBLES
+    // Ignoramos Númen porque estamos
+    // calculando las opciones de Númen.
+    // ======================================
 
-    aplicarFiltrosSinNumenes(mitologia).forEach(registro => {
+    const registrosCompatibles =
+        obtenerRegistrosCompatibles("numen");
 
-        // Todas las categorías
-        if(categoria === TODAS){
 
-            if(registro.numen && registro.numen.trim() !== ""){
-                numenes.add(registro.numen);
-            }
+    // ======================================
+    // TODOS LOS NÚMENES
+    // ======================================
 
-        }
+    const numenes = new Set();
 
-        // Categoría concreta
-        else{
+    mitologia.forEach(registro => {
 
-            if(
-                categoriasSeleccionadas.includes(registro.Categoria) &&
-                registro.numen &&
-                registro.numen.trim() !== ""
-            ){
-
-                numenes.add(registro.numen);
-
-            }
-
+        if(
+            registro.numen &&
+            registro.numen.trim() !== ""
+        ){
+            numenes.add(registro.numen);
         }
 
     });
 
-    // Orden alfabético
-let lista = [...numenes].sort();
 
-// Al cambiar de categoría, seleccionar todos los númenes
-if(numenesSeleccionados.length === 0){
-    numenesSeleccionados = [...lista];
-}
+    // ======================================
+    // NÚMENES COMPATIBLES
+    // ======================================
 
-lista.forEach(numen => {
+    const numenesCompatibles = new Set();
 
-    const linea = document.createElement("div");
+    registrosCompatibles.forEach(registro => {
 
-    linea.innerHTML = `
-<label>
-<input
-    type="checkbox"
-    value="${numen}"
-    ${numenesSeleccionados.includes(numen) ? "checked" : ""}
->
-${numen}
-</label>
-`;
+        if(
+            registro.numen &&
+            registro.numen.trim() !== ""
+        ){
+            numenesCompatibles.add(registro.numen);
+        }
 
-    contenedor.appendChild(linea);
+    });
+
+
+    /// ======================================
+// AGRUPAR NÚMENES POR CATEGORÍA
+// ======================================
+
+const categoriasOrdenadas = [
+    "Figuras mitológicas femeninas",
+    "Figuras mitológicas masculinas",
+    "Seres zoomorfos",
+    "Fenómenos y manifestaciones naturales",
+    "Otras entidades y motivos mitológicos"
+];
+
+
+// ======================================
+// ASIGNAR CADA NÚMEN A SU CATEGORÍA
+// ======================================
+
+const categoriaPorNumen = new Map();
+
+mitologia.forEach(registro => {
+
+    if(
+        registro.numen &&
+        registro.numen.trim() !== "" &&
+        registro.Categoria &&
+        registro.Categoria.trim() !== "" &&
+        !categoriaPorNumen.has(registro.numen)
+    ){
+
+        categoriaPorNumen.set(
+            registro.numen,
+            registro.Categoria
+        );
+
+    }
 
 });
 
 
+// ======================================
+// SEPARAR COMPATIBLES Y NO COMPATIBLES
+// ======================================
+
+const gruposCompatibles = {};
+const gruposNoCompatibles = {};
+
+categoriasOrdenadas.forEach(categoria => {
+
+    gruposCompatibles[categoria] = [];
+    gruposNoCompatibles[categoria] = [];
+
+});
+
+
+numenes.forEach(numen => {
+
+    const categoria =
+        categoriaPorNumen.get(numen);
+
+    // Si por algún motivo el númen no tiene
+    // categoría, no lo mostramos en los grupos.
+    if(!categoria || !categoriasOrdenadas.includes(categoria)){
+        return;
+    }
+
+    if(numenesCompatibles.has(numen)){
+
+        gruposCompatibles[categoria].push(numen);
+
+    }else{
+
+        gruposNoCompatibles[categoria].push(numen);
+
+    }
+
+});
+
+
+// ======================================
+// ORDEN ALFABÉTICO
+// ======================================
+
+categoriasOrdenadas.forEach(categoria => {
+
+    gruposCompatibles[categoria].sort((a, b) =>
+        a.localeCompare(b, idioma)
+    );
+
+    gruposNoCompatibles[categoria].sort((a, b) =>
+        a.localeCompare(b, idioma)
+    );
+
+});
+
+
+// ======================================
+// FUNCIÓN PARA CREAR UN NÚMEN
+// ======================================
+
+function crearNumen(numen, compatible){
+
+    const linea =
+        document.createElement("div");
+
+    const seleccionada =
+        numenesSeleccionados.includes(numen);
+
+    linea.innerHTML = `
+        <label>
+            <input
+                type="checkbox"
+                value="${numen}"
+                ${seleccionada ? "checked" : ""}
+                ${!compatible ? "disabled" : ""}
+            >
+            ${numen}
+        </label>
+    `;
+
+    contenedor.appendChild(linea);
 
 }
+
+
+// ======================================
+// 1. MOSTRAR COMPATIBLES
+// ======================================
+
+categoriasOrdenadas.forEach(categoria => {
+
+    const lista =
+        gruposCompatibles[categoria];
+
+    if(lista.length === 0){
+        return;
+    }
+
+
+    const titulo =
+        document.createElement("div");
+
+    titulo.className =
+        "grupo-categoria-numenes";
+
+    titulo.textContent =
+        traducirCategoria(categoria);
+
+    contenedor.appendChild(titulo);
+
+
+    lista.forEach(numen => {
+
+        crearNumen(numen, true);
+
+    });
+
+});
+
+
+// ======================================
+// SEPARADOR DE NO DISPONIBLES
+// ======================================
+
+const hayNoCompatibles =
+    categoriasOrdenadas.some(categoria =>
+        gruposNoCompatibles[categoria].length > 0
+    );
+
+
+if(hayNoCompatibles){
+
+    const separador =
+        document.createElement("div");
+
+    separador.className =
+        "separador-no-disponibles";
+
+    separador.textContent =
+    textos[idioma].noDisponiblesFiltros;
+    contenedor.appendChild(separador);
+
+}
+
+
+// ======================================
+// 2. MOSTRAR NO COMPATIBLES
+// ======================================
+
+categoriasOrdenadas.forEach(categoria => {
+
+    const lista =
+        gruposNoCompatibles[categoria];
+
+    if(lista.length === 0){
+        return;
+    }
+
+
+    const titulo =
+        document.createElement("div");
+
+    titulo.className =
+        "grupo-categoria-numenes no-disponibles";
+
+    titulo.textContent =
+        traducirCategoria(categoria);
+
+    contenedor.appendChild(titulo);
+
+
+    lista.forEach(numen => {
+
+        crearNumen(numen, false);
+
+    });
+
+});
+}
+
 function actualizarResumenNumenes(){
 
     const resumen = document.getElementById("textoNumenes");
@@ -190,25 +400,27 @@ document
 
 document
 .getElementById("cerrarNumenes")
-
 .addEventListener("click", function(){
+
     numenesSeleccionados = [];
 
     document
-    .querySelectorAll("#listaNumenes input[type='checkbox']:checked")
+    .querySelectorAll("#listaNumenes input[type='checkbox']:checked:not(:disabled)")
     .forEach(c => {
 
         numenesSeleccionados.push(c.value);
 
     });
 
+    // Recalcular las opciones disponibles
+    // en los demás filtros
+    actualizarListasDependientes("numen");;
 
-actualizarResumenNumenes();
+    actualizarResumenNumenes();
 
-actualizarMapa();
+    actualizarMapa();
 
-modalNumenes.classList.add("oculto");
-
+    modalNumenes.classList.add("oculto");
 
 });
 

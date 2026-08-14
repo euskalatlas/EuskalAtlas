@@ -7,59 +7,174 @@ function actualizarListaProvincias(){
 
     const contenedor = document.getElementById("listaProvincias");
     if (!contenedor) return;
+
     contenedor.innerHTML = "";
 
-    let provincias = new Set();
+    // ======================================
+    // REGISTROS COMPATIBLES
+    // Ignoramos Provincia porque estamos
+    // calculando las opciones de Provincia.
+    // ======================================
 
-mitologia.forEach(registro => {
+    const registrosCompatibles =
+        obtenerRegistrosCompatibles("provincia");
 
-    if (
-        registro.provincia &&
-        registro.provincia.trim() !== ""
-    ) {
-        provincias.add(registro.provincia);
-    }
+    
+    // ======================================
+    // TODAS LAS PROVINCIAS
+    // ======================================
 
-});
+    const provincias = new Set();
 
-    // Orden alfabético
-// Orden alfabético según el idioma mostrado
-let lista = [...provincias].sort((a, b) => {
+    mitologia.forEach(registro => {
 
-    const nombreA = textos[idioma].provinciasTraducidas[a] || a;
-    const nombreB = textos[idioma].provinciasTraducidas[b] || b;
+        if(
+            registro.provincia &&
+            registro.provincia.trim() !== ""
+        ){
+            provincias.add(registro.provincia);
+        }
+
+    });
+
+
+    // ======================================
+    // PROVINCIAS COMPATIBLES
+    // ======================================
+
+    const provinciasCompatibles = new Set();
+
+    registrosCompatibles.forEach(registro => {
+
+        if(
+            registro.provincia &&
+            registro.provincia.trim() !== ""
+        ){
+            provinciasCompatibles.add(registro.provincia);
+        }
+
+    });
+
+
+    // ======================================
+    // ORDEN ALFABÉTICO
+    // ======================================
+
+const lista = [...provincias].sort((a, b) => {
+
+    const compatibleA =
+        provinciasCompatibles.has(a);
+
+    const compatibleB =
+        provinciasCompatibles.has(b);
+
+    // Primero las compatibles
+    if (compatibleA && !compatibleB) return -1;
+    if (!compatibleA && compatibleB) return 1;
+
+    // Dentro de cada grupo, orden alfabético
+    const nombreA =
+        textos[idioma].provinciasTraducidas[a] || a;
+
+    const nombreB =
+        textos[idioma].provinciasTraducidas[b] || b;
 
     return nombreA.localeCompare(nombreB, idioma);
 
 });
 
-// Al cambiar de categoría, seleccionar todos los númenes
-if (provinciasSeleccionadas.length === 0) {
-    provinciasSeleccionadas = [...lista];
-}
 
-lista.forEach(provincia => {
+   // ======================================
+// CREAR OPCIÓN
+// ======================================
+
+function crearProvincia(provincia, compatible){
 
     const linea = document.createElement("div");
 
+    const seleccionada =
+        provinciasSeleccionadas.includes(provincia);
+
     linea.innerHTML = `
         <label>
-        <input
-            type="checkbox"
-            value="${provincia}"
-            ${provinciasSeleccionadas.includes(provincia) ? "checked" : ""}
-        >
-        ${textos[idioma].provinciasTraducidas[provincia] || provincia}
+            <input
+                type="checkbox"
+                value="${provincia}"
+                ${seleccionada ? "checked" : ""}
+                ${!compatible ? "disabled" : ""}
+            >
+            ${textos[idioma].provinciasTraducidas[provincia] || provincia}
         </label>
-        `;
-    
+    `;
+
     contenedor.appendChild(linea);
+
+}
+
+
+// ======================================
+// COMPATIBLES
+// ======================================
+
+const provinciasDisponibles =
+    lista.filter(provincia =>
+        provinciasCompatibles.has(provincia)
+    );
+
+
+// ======================================
+// NO COMPATIBLES
+// ======================================
+
+const provinciasNoDisponibles =
+    lista.filter(provincia =>
+        !provinciasCompatibles.has(provincia)
+    );
+
+
+// ======================================
+// MOSTRAR COMPATIBLES
+// ======================================
+
+provinciasDisponibles.forEach(provincia => {
+
+    crearProvincia(provincia, true);
 
 });
 
 
+// ======================================
+// SEPARADOR
+// ======================================
+
+if(provinciasNoDisponibles.length > 0){
+
+    const separador =
+        document.createElement("div");
+
+    separador.className =
+        "separador-no-disponibles";
+
+    separador.textContent =
+        textos[idioma].noDisponiblesFiltros;
+
+    contenedor.appendChild(separador);
 
 }
+
+
+// ======================================
+// MOSTRAR NO COMPATIBLES
+// ======================================
+
+provinciasNoDisponibles.forEach(provincia => {
+
+    crearProvincia(provincia, false);
+
+});
+
+}
+
 function actualizarResumenProvincias(){
 
     const resumen = document.getElementById("textoProvincias");
