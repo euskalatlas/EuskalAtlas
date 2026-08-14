@@ -239,17 +239,6 @@ function filtroEstaRestringido(seleccionados, campo){
 function actualizarListasDependientes(origen){
 
     // ======================================
-    // LIMPIAR SELECCIONES INCOMPATIBLES
-    // ======================================
-
-    if(origen !== "numen"){
-
-        limpiarSeleccionesIncompatibles();
-
-    }
-
-
-    // ======================================
     // RECONSTRUIR LISTAS
     // ======================================
 
@@ -266,6 +255,7 @@ function actualizarListasDependientes(origen){
     );
 
 }
+
 
 function aplicarFiltros(registros){
 
