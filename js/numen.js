@@ -1,6 +1,18 @@
 const parametros = new URLSearchParams(window.location.search);
 const nombreNumen = parametros.get("numen");
 
+
+function escaparHTML(texto) {
+    return String(texto).replace(/[&<>"']/g, caracter => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+    })[caracter]);
+}
+
+
 function cargarNumen() {
     // Esperar a que cargue el JSON
     if (
@@ -15,12 +27,20 @@ function cargarNumen() {
     }
 
     // Buscar el númen
-    const resultados = mitologia.filter(r =>
-        r.numen &&
-        r.numen.trim().toLowerCase() === nombreNumen.trim().toLowerCase()
-    );
+    
+const contenido = document.getElementById("contenido");
 
-    const contenido = document.getElementById("contenido");
+if (!nombreNumen || !nombreNumen.trim()) {
+    contenido.textContent = interfaz[idioma].numenNoEncontrado;
+    return;
+}
+
+const resultados = mitologia.filter(r =>
+    r.numen &&
+    r.numen.trim().toLowerCase() === nombreNumen.trim().toLowerCase()
+);
+
+
 
         // Si no existe
         if (resultados.length === 0) {
@@ -29,14 +49,14 @@ function cargarNumen() {
                 <div class="cabecera">
 
                     <a class="volver" href="javascript:history.back()">
-                        ${interfaz[idioma].volver}
+                        ${escaparHTML(interfaz[idioma].volver)}
                     </a>
 
                     <div class="cabecera-contenido">
 
-                        <h1>${nombreNumen}</h1>
+                        <h1>${escaparHTML(nombreNumen)}</h1>
 
-                        <h2>${interfaz[idioma].numenNoEncontrado}</h2>
+                        <h2>${escaparHTML(interfaz[idioma].numenNoEncontrado)}</h2>
 
                     </div>
 
@@ -119,7 +139,7 @@ function cargarNumen() {
 
     htmlMunicipios += `
         <div class="provincia">
-            ${nombreProvincia}
+            ${escaparHTML(nombreProvincia)}
         </div>
     `;
 
@@ -146,7 +166,7 @@ function cargarNumen() {
                         <a class="municipio-link"
                            href="municipio.html?municipio=${encodeURIComponent(municipio)}">
 
-                            ${municipio}
+                            ${escaparHTML(municipio)}
 
                         </a>
                     </li>
@@ -307,7 +327,7 @@ function cargarNumen() {
 
     <div class="textoDescripcion">
 
-        <p>${ficha.descripcion[idioma]}</p>
+        <p>${escaparHTML(ficha.descripcion[idioma])}</p>
 
     </div>
 
@@ -315,9 +335,12 @@ function cargarNumen() {
 
         <img
             id="imagenNumen"
-            src="${nombreImagen}"
+            
+            src="${escaparHTML(nombreImagen)}"
+
             class="imagenNumen"
-            alt="${interfaz[idioma].imagenNumenAlt.replace("{nombre}", ficha.nombre[idioma])}"
+
+            alt="${escaparHTML(interfaz[idioma].imagenNumenAlt.replace("{nombre}", ficha.nombre[idioma]))}"
         >
 
     </div>
@@ -359,7 +382,7 @@ function cargarNumen() {
                         <ul class="bibliografia">
 
                             ${fuentes.map(fuente => `
-                                <li>${fuente}</li>
+                                <li>${escaparHTML(fuente)}</li>
                             `).join("")}
 
                         </ul>
