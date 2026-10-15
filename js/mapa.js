@@ -6,13 +6,13 @@ const limites = L.latLngBounds(
 
     [41.9, -2.75],   // esquina suroeste
 
-    [43.65, -0.70]    // esquina noreste
+    [43.85, -0.70]    // esquina noreste
 
 );
 
 var mapa = L.map("mapa",{
-    minZoom:4,
-    maxZoom:15,
+    minZoom:7,
+    maxZoom:12,
     // maxBounds:limites,
     // maxBoundsViscosity:1.0,
     zoomAnimation:false,
@@ -42,6 +42,7 @@ window.addEventListener("load", () => {
 
 
 const leyenda = L.control({ position: "topright" });
+
 
 leyenda.onAdd = function () {
 
@@ -421,7 +422,7 @@ function actualizarLeyenda(categoria){
         if(categoria === TODAS){
 
         html = `
-        <h4>${textos[idioma].escala}</h4>
+        <h2>${textos[idioma].escala}</h2>
 
         <div aria-label="Sin registros">
             <span style="background:#efefef"></span>0
@@ -483,7 +484,7 @@ function actualizarLeyenda(categoria){
     }
 
     html = `
-    <h4>${textos[idioma].escala}</h4>
+    <h2>${textos[idioma].escala}</h2>
 
     <div aria-label="Sin registros">
         <span style="background:#e8e8e8"></span>0

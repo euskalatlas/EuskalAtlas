@@ -1,5 +1,10 @@
 let idioma = localStorage.getItem("idioma") || "eu";
 
+if (!["es", "eu", "en", "fr"].includes(idioma)) {
+    idioma = "eu";
+    localStorage.setItem("idioma", "eu");
+}
+
 const textos = {
     es: {
         provincias: "Provincias",
@@ -11,7 +16,11 @@ const textos = {
         seres: "Seres mitológicos",
         restablecer: "Restablecer filtros",
         subtitulo: "Atlas digital del patrimonio cultural vasco",
-
+        idiomasDisponibles: "Idiomas disponibles: euskera, español, inglés y francés.",
+        avisoMapaAccesible: "Aquí hay un mapa interactivo. Si no desea navegar por el mapa, puede pasar directamente al listado de municipios.",
+        saltarListadoMunicipios: "Saltar al resumen de resultados. Si no pulsa Enter, continuará hacia el mapa interactivo.",
+        resultadosActualizados: "Resultados actualizados.",
+        
         btnProvincias: "Seleccionar provincias",
         btnCategorias: "Seleccionar categorías",
         btnSeres: "Seleccionar seres mitológicos",
@@ -21,8 +30,8 @@ const textos = {
         abrirSer: "✨ Abrir ficha de ser mitológico",
 
         infoFiltros: "El mapa y el panel de resultados se actualizan automáticamente según los filtros seleccionados.",
-
-        ayudaMunicipios: "Haz clic en un municipio para verlo en detalle. El número entre paréntesis indica los seres mitológicos documentados.",
+        resumenResultados: "Resumen de resultados. Este resumen recoge la cantidad total de registros, el número de municipios y el número de seres mitológicos registrados. A continuación se muestra el listado de municipios con su respectiva cantidad de seres mitológicos.",
+        ayudaMunicipios: "Haz clic en un municipio para verlo en detalle en el mapa. El número entre paréntesis indica los seres mitológicos documentados.",
 
         sinResultados: "⚠ Sin resultados",
         sinResultadosTexto: "No se han encontrado registros con los filtros seleccionados.",
@@ -33,6 +42,16 @@ const textos = {
         modalBibliografia: "Seleccionar bibliografía",
         modalMunicipios: "Abrir ficha de municipio",
         modalFichaNumenes: "Seleccionar ser mitológico",
+
+        activarContraste: "Activar alto contraste",
+        desactivarContraste: "Desactivar alto contraste",
+        contrasteActivado: "Alto contraste activado",
+        contrasteDesactivado: "Alto contraste desactivado",
+        aumentarTexto: "Aumentar tamaño del texto",
+        restablecerTexto: "Restablecer tamaño del texto",
+        textoGrandeActivado: "Texto grande activado",
+        textoGrandeDesactivado: "Texto grande desactivado",
+
 
         seleccionarTodas: "Seleccionar todas",
         deseleccionarTodas: "Deseleccionar todas",
@@ -169,7 +188,11 @@ const textos = {
         seres: "Izaki mitologikoak",
         restablecer: "Filtroak berrezarri",
         subtitulo: "Euskal kultur ondarearen atlas digitala",
-
+        idiomasDisponibles: "Eskuragarri dauden hizkuntzak: euskara, gaztelania, ingelesa eta frantsesa.",
+        avisoMapaAccesible: "Hemen mapa interaktibo bat dago. Mapan nabigatu nahi ez baduzu, zuzenean emaitzen laburpenera joan zaitezke.",
+        saltarListadoMunicipios: "Emaitzen laburpenera joan. Enter sakatzen ez baduzu, mapa interaktibora jarraituko duzu.",
+        resultadosActualizados: "Emaitzak eguneratu dira.",
+        
         btnProvincias: "Probintziak hautatu",
         btnCategorias: "Kategoriak hautatu",
         btnSeres: "Izaki mitologikoak hautatu",
@@ -179,8 +202,8 @@ const textos = {
         abrirSer: "✨ Izaki mitologikoaren fitxa ireki",
 
         infoFiltros: "Mapa eta emaitzen panela automatikoki eguneratzen dira hautatutako filtroen arabera.",
-
-        ayudaMunicipios: "Aukeratu udalerri bat haren fitxa osoa ikusteko. Parentesi arteko zenbakiak dokumentatutako izaki mitologikoen kopurua adierazten du.",
+        resumenResultados: "Emaitzen laburpena. Laburpen honetan erregistroen kopuru osoa, udalerri kopurua eta dokumentatutako izaki mitologikoen kopurua jasotzen dira. Jarraian, udalerrien zerrenda eta bakoitzean dokumentatutako izaki mitologikoen kopurua erakusten dira.",
+        ayudaMunicipios: "Aukeratu udalerri bat mapan handitzeko. Parentesi arteko zenbakiak dokumentatutako izaki mitologikoen kopurua adierazten du.",
 
         sinResultados: "⚠ Emaitzarik ez",
         sinResultadosTexto: "Ez da erregistrorik aurkitu hautatutako filtroekin.",
@@ -191,6 +214,15 @@ const textos = {
         modalBibliografia: "Bibliografia hautatu",
         modalMunicipios: "Udalerria hautatu",
         modalFichaNumenes: "Izaki mitologikoa hautatu",
+
+        activarContraste: "Kontraste altua aktibatu",
+        desactivarContraste: "Kontraste altua desaktibatu",
+        contrasteActivado: "Kontraste altua aktibatuta",
+        contrasteDesactivado: "Kontraste altua desaktibatuta",
+        aumentarTexto: "Testuaren tamaina handitu",
+        restablecerTexto: "Testuaren tamaina berrezarri",
+        textoGrandeActivado: "Testuaren tamaina handiatuta",
+        textoGrandeDesactivado: "Testuaren tamaina berrezarrita",
 
         seleccionarTodas: "Denak hautatu",
         deseleccionarTodas: "Hautapena kendu",
@@ -304,8 +336,7 @@ const textos = {
         municipiosDocumentados: "Erreferentzia dokumentatuak dituzten udalerriak.",
 
         imagenNumenAlt:"{nombre} euskal mitologiaren araberako ilustrazioa",
-noDisponiblesFiltros:
-    "Une honetan hautatutako iragazkiekin erabilgarri ez daudenak",    
+        noDisponiblesFiltros:"Une honetan hautatutako iragazkiekin erabilgarri ez daudenak",    
     },   
     
     en: {
@@ -319,7 +350,11 @@ noDisponiblesFiltros:
         seres: "Mythological beings",
         restablecer: "Reset filters",
         subtitulo: "Digital atlas of Basque cultural heritage",
-
+        idiomasDisponibles: "Available languages: Basque, Spanish, English and French.",
+        avisoMapaAccesible: "This is an interactive map. If you do not want to navigate it, you can go directly to the results summary.",
+        saltarListadoMunicipios: "Skip to the results summary. If you do not press Enter, you can continue to the interactive map.",
+        resultadosActualizados: "Results updated.",
+        
         btnProvincias: "Select provinces",
         btnCategorias: "Select categories",
         btnSeres: "Select mythological beings",
@@ -329,8 +364,8 @@ noDisponiblesFiltros:
         abrirSer: "✨ Open mythological being profile",
 
         infoFiltros: "The map and results panel are automatically updated according to the selected filters.",
-
-        ayudaMunicipios: "Click on a town to view it in detail. The number in parentheses indicates the documented mythological beings.",
+        resumenResultados: "Results summary. This summary shows the total number of records, the number of towns and the number of documented mythological beings. The list of towns and their respective number of documented mythological beings is shown below.",
+        ayudaMunicipios: "Click on a town to view it in detail in the map. The number in parentheses indicates the documented mythological beings.",
 
         sinResultados: "⚠ No results",
         sinResultadosTexto: "No records were found with the selected filters.",
@@ -341,6 +376,15 @@ noDisponiblesFiltros:
         modalBibliografia: "Select bibliography",
         modalMunicipios: "Open town profile",
         modalFichaNumenes: "Select mythological being",
+
+        activarContraste: "Activate high contrast",
+        desactivarContraste: "Deactivate high contrast",
+        contrasteActivado: "High contrast activated",
+        contrasteDesactivado: "High contrast deactivated",
+        aumentarTexto: "Increase text size",
+        restablecerTexto: "Reset text size",
+        textoGrandeActivado: "Large text activated",
+        textoGrandeDesactivado: "Large text deactivated",
 
         seleccionarTodas: "Select all",
         deseleccionarTodas: "Deselect all",
@@ -472,6 +516,10 @@ noDisponiblesFiltros:
         seres: "Êtres mythologiques",
         restablecer: "Réinitialiser les filtres",
         subtitulo: "Atlas numérique du patrimoine culturel basque",
+        idiomasDisponibles: "Langues disponibles : basque, espagnol, anglais et français.",
+        avisoMapaAccesible: "Voici une carte interactive. Si vous ne souhaitez pas y naviguer, vous pouvez accéder directement au résumé des résultats.",
+        saltarListadoMunicipios: "Aller directement au résumé des résultats",
+        resultadosActualizados: "Résultats mis à jour.",
 
         btnProvincias: "Sélectionner les provinces",
         btnCategorias: "Sélectionner les catégories",
@@ -482,8 +530,8 @@ noDisponiblesFiltros:
         abrirSer: "✨ Ouvrir la fiche de l'être mythologique",
 
         infoFiltros: "La carte et le panneau de résultats sont automatiquement mis à jour selon les filtres sélectionnés.",
-
-        ayudaMunicipios: "Cliquez sur une commune pour voir sa fiche détaillée. Le nombre entre parenthèses indique les êtres mythologiques documentés.",
+        resumenResultados: "Résumé des résultats. Ce résumé présente le nombre total d'enregistrements, le nombre de communes et le nombre d'êtres mythologiques documentés. La liste des communes et leur nombre respectif d'êtres mythologiques documentés est présentée ci-dessous.",
+        ayudaMunicipios: "Cliquez sur une commune pour la voir en détail sur la carte. Le nombre entre parenthèses indique les êtres mythologiques documentés.",
 
         sinResultados: "⚠ Aucun résultat",
         sinResultadosTexto: "Aucun enregistrement ne correspond aux filtres sélectionnés.",
@@ -494,6 +542,15 @@ noDisponiblesFiltros:
         modalBibliografia: "Sélectionner la bibliographie",
         modalMunicipios: "Ouvrir la fiche de la commune",
         modalFichaNumenes: "Sélectionner un être mythologique",
+
+        activarContraste: "Activer le contraste élevé",
+        desactivarContraste: "Désactiver le contraste élevé",
+        contrasteActivado: "Contraste élevé activé",
+        contrasteDesactivado: "Contraste élevé désactivé",
+        aumentarTexto: "Augmenter la taille du texte",
+        restablecerTexto: "Réinitialiser la taille du texte",
+        textoGrandeActivado: "Testuaren tamaina handiatuta",
+        textoGrandeDesactivado: "Testuaren tamaina berrezarrita",
 
         seleccionarTodas: "Tout sélectionner",
         deseleccionarTodas: "Tout désélectionner",
@@ -1173,12 +1230,27 @@ function aplicarIdioma() {
 
     });
 
+    document.querySelectorAll("[data-i18n-aria-label]").forEach(elemento => {
+
+        const estaActivo = elemento.classList.contains("activo");
+
+        const clave = estaActivo
+            ? elemento.dataset.i18nAriaLabelActive
+            : elemento.dataset.i18nAriaLabel;
+
+        if (textos[idioma][clave]) {
+            elemento.setAttribute("aria-label", textos[idioma][clave]);
+        }
+
+    });
+
 }
 
 function cambiarIdioma(nuevoIdioma) {
 
     idioma = nuevoIdioma;
     localStorage.setItem("idioma", idioma);
+        document.documentElement.lang = idioma;
 
     actualizarBotones();
     aplicarIdioma();
@@ -1234,6 +1306,7 @@ actualizarBotones();
 document.addEventListener("DOMContentLoaded", function () {
 
     aplicarIdioma();
+    document.documentElement.lang = idioma;
 
     if (typeof actualizarTextosMapa === "function") {
         actualizarTextosMapa();

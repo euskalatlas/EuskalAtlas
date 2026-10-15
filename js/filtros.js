@@ -617,8 +617,7 @@ function actualizarResultados(){
         enlaceFicha.className = "sr-only";
 
         enlaceFicha.textContent =
-            `Abrir la ficha completa del municipio ${m.nombre}`;
-
+            `Abrir la ficha completa del municipio ${m.nombre}. Tiene ${m.registros} registros.`;
         fila.appendChild(enlaceFicha);
 
         lista.appendChild(fila);
@@ -635,9 +634,61 @@ function actualizarResultados(){
 
     });
 
-    document.getElementById("totalNumenes").textContent =
+        document.getElementById("totalNumenes").textContent =
         numenesVisibles.size;
+        const tarjetaRegistros = document.getElementById("tarjetaRegistros");
+        const tarjetaMunicipios = document.getElementById("tarjetaMunicipios");
+        const tarjetaNumenes = document.getElementById("tarjetaNumenes");
 
+        if(tarjetaRegistros){
+            tarjetaRegistros.setAttribute(
+                "aria-label",
+                `${totalRegistros} ${textos[idioma].registros}`
+            );
+        }
+
+        if(tarjetaMunicipios){
+            tarjetaMunicipios.setAttribute(
+                "aria-label",
+                `${municipios.length} ${textos[idioma].municipios}`
+            );
+        }
+
+        if(tarjetaNumenes){
+            tarjetaNumenes.setAttribute(
+                "aria-label",
+                `${numenesVisibles.size} ${textos[idioma].seres}`
+            );
+        }
+
+        const avisoResultados = document.getElementById("avisoResultados");
+
+        if (avisoResultados) {
+        avisoResultados.textContent =
+        `${textos[idioma].resultadosActualizados} ` +
+        `${totalRegistros} ${textos[idioma].registros}, ` +
+        `${municipios.length} ${textos[idioma].municipios}, ` +
+        `${numenesVisibles.size} ${textos[idioma].seres}.`;
+}
+const avisoSinResultados = document.getElementById("avisoSinResultados");
+
+if (avisoSinResultados) {
+
+    if (municipios.length === 0) {
+
+        avisoSinResultados.textContent =
+            `${textos[idioma].sinResultados} ` +
+            `${textos[idioma].sinResultadosTexto}`;
+
+    } else {
+
+        avisoSinResultados.textContent = "";
+
+    }
+
+}
+        
+    
 }
 
 

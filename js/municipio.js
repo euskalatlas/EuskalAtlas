@@ -15,9 +15,9 @@ function cargarMunicipio() {
 
     if (resultados.length === 0) {
 
-       document.getElementById("tituloCabecera").textContent = municipio;
-        document.getElementById("subtituloCabecera").textContent =provincia;
-
+        document.getElementById("tituloCabecera").textContent = municipio;
+        document.getElementById("subtituloCabecera").textContent = "";
+        
         document.querySelector(".volver").href = "index.html";
         document.querySelector(".volver").textContent = "← Volver";
 
@@ -68,6 +68,9 @@ function cargarMunicipio() {
     )].sort((a, b) => a.localeCompare(b, "es"));
     document.getElementById("tituloCabecera").textContent = municipio;
     document.getElementById("subtituloCabecera").textContent = provincia;
+    const tituloCabecera = document.getElementById("tituloCabecera");
+    tituloCabecera.setAttribute("tabindex", "-1");
+    
     // SEO dinámico
     document.title = `${municipio} | EuskalAtlas`;
 
@@ -170,7 +173,7 @@ function cargarMunicipio() {
 
     <div class="categoria-numenes">
 
-    <h4>${nombreCategoria}</h4>
+    <h3>${nombreCategoria}</h3>
 
 
         <div class="lista-numenes">

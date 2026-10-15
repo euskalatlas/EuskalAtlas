@@ -251,6 +251,7 @@ document.addEventListener("DOMContentLoaded", function(){
 // ======================================
 
 const modalProvincias = document.getElementById("modalProvincias");
+let provinciasAbiertoAntes = false;
 document
 .getElementById("cerrarProvinciasX")
 .addEventListener("click", function(){
@@ -258,9 +259,18 @@ document
     modalProvincias.classList.add("oculto");
 
 });
+
 document
 .getElementById("abrirProvincias")
 .addEventListener("click", function(){
+
+    if(!provinciasAbiertoAntes){
+
+        provinciasSeleccionadas = [];
+
+        provinciasAbiertoAntes = true;
+
+    }
 
     actualizarListaProvincias();
 

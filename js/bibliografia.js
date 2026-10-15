@@ -251,6 +251,7 @@ prepararBuscador(
 // ======================================
 
 const modalBibliografia = document.getElementById("modalBibliografia");
+let bibliografiaAbiertoAntes = false;
 
 document
 .getElementById("cerrarBibliografiaX")
@@ -263,6 +264,14 @@ document
 document
 .getElementById("abrirBibliografia")
 .addEventListener("click", function(){
+
+    if(!bibliografiaAbiertoAntes){
+
+    autoresSeleccionados = [];
+
+    bibliografiaAbiertoAntes = true;
+
+}
 
     actualizarListaBibliografias();
 

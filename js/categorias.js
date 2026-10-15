@@ -259,6 +259,8 @@ prepararBuscador(
 // ======================================
 
 const modalCategorias = document.getElementById("modalCategorias");
+let categoriasAbiertoAntes = false;
+
 document
 .getElementById("cerrarCategoriasX")
 .addEventListener("click", function(){
@@ -266,9 +268,18 @@ document
     modalCategorias.classList.add("oculto");
 
 });
+
 document
 .getElementById("abrirCategorias")
 .addEventListener("click", function(){
+
+    if(!categoriasAbiertoAntes){
+
+        categoriasSeleccionadas = [];
+
+        categoriasAbiertoAntes = true;
+
+    }
 
     actualizarListaCategorias();
 

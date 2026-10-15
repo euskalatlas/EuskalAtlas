@@ -432,7 +432,7 @@ header{
 
     position:absolute;
 
-    right:-50px;
+    right:0px;
 
     top:50%;
 
@@ -1252,4 +1252,37 @@ body.texto-grande .tarjeta{
 .contadorMunicipios{
     font-size:0.8em;
     font-weight:500;
+}
+
+/* ===========================
+   AJUSTES A+ — TEXTOS ADICIONALES
+=========================== */
+
+body.texto-grande .bloqueDescripcion p{
+    font-size:1.5rem;
+    line-height:1.9;
+}
+
+body.texto-grande .volver a{
+    font-size:25px;
+}
+
+body.texto-grande .bibliografia li{
+    font-size:25px;
+    line-height:1.6;
+}
+
+body.texto-grande .subtituloMapa{
+    font-size:1.5rem;
+    font-size:25px;
+}
+
+body.texto-grande .bloquePresencia p{
+    font-size:1.25rem;
+    line-height:1.6;
+}
+
+body.texto-grande .bloquePresencia > p{
+    font-size:1.5rem;
+    line-height:1.6;
 }

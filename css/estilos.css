@@ -463,7 +463,9 @@ header p{
 
 #contenedorMapa{
 
+    width:calc(100% - 30px);
     max-width:1400px;
+
     display:flex;
 
     gap:30px;
@@ -473,7 +475,6 @@ header p{
     margin:20px auto;
 
 }
-
 #listaMunicipios{
 
     margin-top:10px;
@@ -610,7 +611,12 @@ a:focus{
     outline-offset:3px;
 
 }
+.selectorCard:focus{
 
+    outline:3px solid #ffbf47;
+    outline-offset:3px;
+
+}
 #listaMunicipios button{
 
     width:100%;
@@ -951,7 +957,7 @@ transition:.25s;
 
     background:none;
 
-    color:rgba(255,255,255,.45);
+    color:white;
 
     border:none;
 
@@ -1106,13 +1112,14 @@ footer{
 .info.legend{
 
     background:white;
-    padding:12px;
+    padding:8px 10px;
     border-radius:14px;
     box-shadow:0 0 12px rgba(0,0,0,.25);
 
-    line-height:24px;
-    font-size:14px;
-    margin-bottom: 150px !important;
+    line-height:20px;
+    font-size:10px;
+    margin-bottom:150px !important;
+    margin-right:-5px;
 
 }
 
@@ -1864,7 +1871,7 @@ h3 small{
 
     gap:8px;
 
-    top:10px !important;
+    top:2px !important;
     right:10px !important;
 
     padding:8px 10px;
@@ -1874,7 +1881,7 @@ h3 small{
 .info.legend h4{
 
     margin:0;
-    font-size:15px;
+    font-size:12px;
 
 }
 
@@ -1891,10 +1898,16 @@ h3 small{
 
 .info.legend span{
 
+    display:inline-block;
+
     width:14px;
     height:14px;
 
-    margin-right:4px;
+    margin-right:5px;
+
+    border:1px solid #666;
+
+    vertical-align:middle;
 
 }
 
@@ -1983,6 +1996,11 @@ body.alto-contraste h2,
 body.alto-contraste h3{
 
     color:#000;
+
+}
+body.alto-contraste footer h3{
+
+    color:white;
 
 }
 
@@ -2138,164 +2156,295 @@ body.alto-contraste .info.legend span{
 
 
 /* ===========================
-   TEXTO GRANDE
+   TEXTO GRANDE — A+
 =========================== */
 
-body.texto-grande .selectorTitulo,
-body.texto-grande .accionTitulo{
-
-    font-size:13px;
-
+body.texto-grande .selectorResumen,
+body.texto-grande .accionSubtitulo{
+    font-size:28px;
+    line-height:1.2;
 }
 
+body.texto-grande .selectorResumen,
+body.texto-grande .accionSubtitulo{
+    font-size:28px;
+    line-height:1.2;
+}
 
 body.texto-grande .infoFiltros{
-
     font-size:17px;
-
 }
 
 body.texto-grande .tarjeta{
-
     min-height:120px;
-
 }
 
 body.texto-grande .tarjeta span{
-
     font-size:24px;
-
 }
 
 body.texto-grande .tarjeta small{
-
     font-size:14px;
-
 }
 
 body.texto-grande #listaMunicipios button{
-
-    font-size:18px;
-
-}
-
-body.texto-grande .popup-numen{
-
-    font-size:17px;
-
-}
-body.texto-grande .selectorResumen,
-body.texto-grande .accionSubtitulo{
-
     font-size:20px;
-
 }
 
-body.texto-grande #listaMunicipios button{
-
-    font-size:20px;
-
-}
-.selectorCard,
-.tarjetaAccion{
-
-    min-height:75px;
-    height:auto;
-
-}
 body.texto-grande .municipio-item{
-
     font-size:18px;
-
 }
-body.texto-grande #listaMunicipios div{
 
+body.texto-grande #listaMunicipios div{
     font-size:18px;
     line-height:1.6;
-    padding: 10px 0;
-
+    padding:10px 0;
 }
 
 body.texto-grande .popup-card{
-
     padding:12px;
     min-height:80px;
+}
 
+body.texto-grande .popup-titulo{
+    font-size:22px;
 }
 
 body.texto-grande .popup-provincia,
 body.texto-grande .popup-dato,
 body.texto-grande .popup-numen{
-
-    font-size:16px;
-
-}
-
-body.texto-grande .popup-ficha{
-
-    font-size:18px;
-
-}
-
-body.texto-grande .popup-titulo{
-
-    font-size:22px;
-
-}
-
-body.texto-grande .popup-provincia{
-
-    font-size:16px;
-
+    font-size:20px;
 }
 
 body.texto-grande .popup-numero{
-
-    font-size:26px;
-
+    font-size:29px;
 }
 
 body.texto-grande .popup-card small{
-
-    font-size:13px;
-
+    font-size:188px;
 }
 
 body.texto-grande .popup-subtitulo{
+    font-size:18px;
+}
+
+body.texto-grande .popup-ficha{
+    font-size:20px;
+}
+
+body.texto-grande .popup-estadisticas{
+    grid-template-columns:1fr;
+}
+
+/* ======================================
+   A+ — COMPORTAMIENTO RESPONSIVE 200 %
+====================================== */
+
+/* CABECERA */
+
+body.texto-grande .cabecera{
+
+    flex-direction:column;
+    text-align:center;
+
+    padding:15px;
+
+}
+
+body.texto-grande .cabeceraIzquierda{
+
+    flex-direction:column;
+    align-items:center;
+
+    gap:10px;
+
+}
+
+body.texto-grande .logo{
+
+    width:70px;
+    height:70px;
+
+}
+
+body.texto-grande header h1{
+
+    font-size:2rem;
+    line-height:1.05;
+
+}
+
+body.texto-grande header p{
+
+    font-size:.9rem;
+
+}
+
+/* IDIOMAS */
+
+body.texto-grande #accionesCabecera{
+
+    position:absolute;
+
+    top:9px;
+    right:12px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+
+    gap:5px;
+
+}
+
+body.texto-grande #selectorIdioma{
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+
+    gap:4px;
+
+    white-space:nowrap;
+
+}
+
+body.texto-grande .idioma{
+
+    min-width:30px;
+    padding:4px 5px;
+
+    font-size:40px;
+
+}
+
+body.texto-grande #selectorIdioma span{
 
     font-size:13px;
 
 }
 
-body.texto-grande .popup-numen{
+/* CAJAS DE FILTROS */
 
-    font-size:17px;
+body.texto-grande .panel{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(0,1fr));
+
+    gap:14px;
+
+    width:100%;
+    max-width:100%;
+
+    margin:0 auto;
 
 }
 
-body.texto-grande .popup-ficha{
+body.texto-grande .selectorCard,
+body.texto-grande .tarjetaAccion{
 
+    width:100%;
+    min-width:0;
+    max-width:none;
+
+}
+body.texto-grande .selectorCard,
+body.texto-grande .tarjetaAccion{
+
+    min-height:135px;
+    height:auto;
+
+    padding:16px 24px;
+
+}
+
+body.texto-grande .selectorIcono,
+body.texto-grande .accionIcono{
+
+    width:70px;
+    height:70px;
+
+}
+
+body.texto-grande .selectorIcono img,
+body.texto-grande .accionIcono img{
+
+    width:64px;
+    height:64px;
+
+}
+
+body.texto-grande .selectorFlecha,
+body.texto-grande .accionFlecha{
+
+    font-size:36px;
+
+}
+/* FICHA MUNICIPIO / SER MITOLÓGICO */
+
+body.texto-grande .explorarBotones{
+
+    max-width:100%;
+
+    grid-template-columns:repeat(2,minmax(0,1fr));
+
+}
+
+/* MUNICIPIOS */
+
+body.texto-grande #listaMunicipios{
+
+    font-size:20px;
+
+}
+
+body.texto-grande #listaMunicipios button,
+body.texto-grande #listaMunicipios a,
+body.texto-grande #listaMunicipios div,
+body.texto-grande #listaMunicipios .municipio-item{
+
+    font-size:20px !important;
+
+    line-height:1.5;
+
+}
+
+
+
+/* TARJETAS DE RESUMEN */
+
+body.texto-grande .resumen{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:8px;
+
+}
+
+body.texto-grande .tarjeta{
+
+    min-height:170px;
+
+    padding:20px 12px;
+
+}
+
+body.texto-grande .tarjetaIcono{
+
+    width: 48px;
+    height:48px;
+
+}
+body.texto-grande .tarjeta span{
+    font-size:32px;
+}
+
+body.texto-grande .tarjeta small{
     font-size:18px;
-
 }
-body.texto-grande .popup-estadisticas{
-
-    grid-template-columns:1fr;
-
-}
-.leaflet-popup-close-button{
-
-    top:12px !important;
-    right:12px !important;
-
-    font-size:22px !important;
-
-    color:#666 !important;
-
-    z-index:1000;
-
-}
-
 
 @media (max-width:768px){
 
@@ -2900,4 +3049,358 @@ body.texto-grande .popup-estadisticas{
     line-height: 1.2;
 
     text-align: center;
+}
+
+.skip-link{
+    position:absolute;
+    left:-9999px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+
+/* IDIOMAS — A+ */
+
+body.texto-grande #selectorIdioma .idioma{
+
+    min-width:38px;
+    padding:6px 8px;
+
+    font-size:18px;
+    line-height:1.2;
+
+}
+
+body.texto-grande #selectorIdioma span{
+
+    font-size:18px;
+
+}
+/* MUNICIPIOS — A+ */
+
+body.texto-grande #listaMunicipios .municipio-item,
+body.texto-grande #listaMunicipios a,
+body.texto-grande #listaMunicipios button,
+body.texto-grande #listaMunicipios div{
+
+    font-size:24px !important;
+    line-height:1.5;
+
+}
+
+/* ======================================
+   A+ — AMPLIACIÓN GENERAL
+====================================== */
+
+/* CABECERA */
+
+body.texto-grande header h1{
+    font-size:3.2rem;
+    line-height:1.1;
+}
+
+body.texto-grande header p{
+    font-size:1.25rem;
+}
+
+
+/* IDIOMAS */
+
+body.texto-grande #selectorIdioma .idioma{
+    min-width:42px;
+    padding:7px 9px;
+    font-size:20px;
+}
+
+body.texto-grande #selectorIdioma span{
+    font-size:20px;
+}
+
+
+/* TARJETAS DE FILTROS */
+
+body.texto-grande .selectorTitulo,
+body.texto-grande .accionTitulo{
+    font-size:30px;
+}
+
+body.texto-grande .selectorResumen,
+body.texto-grande .accionSubtitulo{
+    font-size:40px;
+    line-height:1.2;
+}
+
+
+/* CAJAS DE FILTROS */
+
+body.texto-grande .selectorCard,
+body.texto-grande .tarjetaAccion{
+    min-height:135px;
+    height:auto;
+    padding:16px 24px;
+}
+
+
+/* MENSAJE SOBRE EL MAPA */
+
+body.texto-grande .infoFiltros{
+    font-size:30px;
+    line-height:1.5;
+    padding:14px 20px;
+}
+
+
+/* PANEL DE RESULTADOS */
+
+body.texto-grande #panelResultados h2{
+    font-size:28px;
+    line-height:1.2;
+}
+
+body.texto-grande #panelResultados > p{
+    font-size:18px;
+    line-height:1.5;
+}
+
+
+/* TARJETAS 722 / 236 / 77 */
+
+body.texto-grande .tarjeta{
+    min-height:170px;
+    padding:20px 12px;
+}
+
+body.texto-grande .tarjetaIcono{
+    width:52px;
+    height:52px;
+}
+
+body.texto-grande .tarjeta span{
+    font-size:32px;
+}
+
+body.texto-grande .tarjeta small{
+    font-size:18px;
+    line-height:1.3;
+}
+
+
+/* MUNICIPIOS */
+
+body.texto-grande #listaMunicipios{
+    font-size:24px;
+}
+
+body.texto-grande #listaMunicipios .municipio-item,
+body.texto-grande #listaMunicipios a,
+body.texto-grande #listaMunicipios button,
+body.texto-grande #listaMunicipios div{
+    font-size:24px !important;
+    line-height:1.5;
+}
+
+
+/* BOTÓN RESTABLECER FILTROS */
+
+body.texto-grande #restablecerFiltros{
+    font-size:18px;
+    padding:15px;
+    min-height:52px;
+}
+
+
+/* AVISO "PROYECTO EN ACTUALIZACIÓN CONTINUA" */
+
+body.texto-grande .avisoActualizacion h3{
+    font-size:24px;
+}
+
+body.texto-grande .avisoActualizacion p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+
+/* POPUP DEL MAPA */
+
+body.texto-grande .popup-titulo{
+    font-size:24px;
+    line-height:1.2;
+}
+
+body.texto-grande .popup-provincia{
+    font-size:17px;
+}
+
+body.texto-grande .popup-numero{
+    font-size:30px;
+}
+
+body.texto-grande .popup-card small{
+    font-size:15px;
+}
+
+body.texto-grande .popup-numen{
+    font-size:18px;
+    line-height:1.5;
+}
+
+body.texto-grande .popup-subtitulo{
+    font-size:16px;
+}
+
+body.texto-grande .popup-ficha{
+    font-size:20px;
+    padding:13px;
+}
+
+
+/* PIE DE PÁGINA */
+
+body.texto-grande .footerContenido h3{
+    font-size:2.3rem;
+}
+
+body.texto-grande .footerContenido p{
+    font-size:18px;
+}
+
+body.texto-grande .footerContenido a{
+    font-size:18px;
+}
+
+/* ======================================
+   A+ — ELEMENTOS QUE FALTABAN
+====================================== */
+
+
+/* TÍTULO Y TEXTO DEL PANEL DE RESULTADOS */
+
+body.texto-grande #panelResultados h3{
+    font-size:28px !important;
+    line-height:1.2;
+}
+
+body.texto-grande #panelResultados p{
+    font-size:22px !important;
+    line-height:1.5;
+}
+
+
+/* TARJETAS DE FICHA */
+
+body.texto-grande .tarjetaAccion{
+    min-height:145px;
+    height:auto;
+}
+
+body.texto-grande .tarjetaAccion .accionTitulo{
+    font-size:30px !important;
+}
+
+body.texto-grande .tarjetaAccion .accionSubtitulo{
+    font-size:40px !important;
+    line-height:1.2;
+}
+
+
+/* ======================================
+   A+ — MODALES
+====================================== */
+
+body.texto-grande .modalContenido{
+    width:min(92vw,560px);
+    padding:20px;
+}
+
+body.texto-grande .modalTitulo{
+    gap:20px;
+}
+
+body.texto-grande .modalIcono{
+    width:72px;
+    height:72px;
+}
+
+body.texto-grande .modalTitulo h3{
+    font-size:32px !important;
+    line-height:1.2;
+}
+
+body.texto-grande .modalDescripcion{
+    font-size:20px !important;
+    line-height:1.5;
+}
+
+body.texto-grande .modalContenido input{
+    font-size:19px;
+    padding:16px 18px;
+}
+
+body.texto-grande #listaProvincias,
+body.texto-grande #listaCategorias,
+body.texto-grande #listaBibliografias,
+body.texto-grande #listaNumenes{
+    font-size:18px;
+}
+
+body.texto-grande #listaProvincias label,
+body.texto-grande #listaCategorias label,
+body.texto-grande #listaBibliografias label,
+body.texto-grande #listaNumenes label{
+    font-size:18px !important;
+    line-height:1.4;
+    padding:12px 16px;
+}
+
+body.texto-grande #listaProvincias input,
+body.texto-grande #listaCategorias input,
+body.texto-grande #listaBibliografias input,
+body.texto-grande #listaNumenes input{
+    width:24px;
+    height:24px;
+}
+
+body.texto-grande .modalBotones button{
+    font-size:17px;
+    min-height:44px;
+    height:auto;
+    padding:8px 14px;
+}
+
+
+/* BOTÓN DE CERRAR */
+
+body.texto-grande .cerrarModal{
+    font-size:34px;
+}
+body.texto-grande .modalBotones{
+    display:flex;
+    flex-wrap:nowrap;
+    gap:10px;
+}
+
+body.texto-grande .modalBotones button{
+    flex:1 1 0;
+    width:0;
+    min-width:0;
+    height:48px;
+    padding:8px 10px;
+    font-size:17px;
+}
+
+body.texto-grande #panelResultados h3 small{
+    font-size:22px !important;
+    line-height:1.5;
+}
+body.texto-grande #panelResultados h3 span{
+    font-size:32px !important;
+}
+
+body.texto-grande .accesibilidad{
+    width:48px;
+    height:40px;
+    font-size:30px;
 }

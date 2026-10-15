@@ -353,6 +353,7 @@ prepararBuscador(
 // ======================================
 
 const modalNumenes = document.getElementById("modalNumenes");
+let numenesAbiertoAntes = false;
 document
 .getElementById("cerrarNumenesX")
 .addEventListener("click", function(){
@@ -364,15 +365,24 @@ document
 .getElementById("abrirNumenes")
 .addEventListener("click", function(){
 
-if(categoriasSeleccionadas.length === 1){
+    if(!numenesAbiertoAntes){
 
-    actualizarListaNumenes(categoriasSeleccionadas[0]);
+        numenesSeleccionados = [];
 
-}else{
+        numenesAbiertoAntes = true;
 
-    actualizarListaNumenes("Todas las Categorias");
+    }
 
-}
+    if(categoriasSeleccionadas.length === 1){
+
+        actualizarListaNumenes(categoriasSeleccionadas[0]);
+
+    }else{
+
+        actualizarListaNumenes("Todas las Categorias");
+
+    }
+
     modalNumenes.classList.remove("oculto");
 
 });
