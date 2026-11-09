@@ -9511,101 +9511,1276 @@
     "autor": "Webster, Wentworth",
     "fuente": "Webster, W. (1989). Leyendas vascas. Miraguano."
   },
-
   {
-    "provincia": "Baja Navarra",
+    "provincia": "Bizkaia",
+    "municipio": "Abadiño",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Abaltzisketa",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Abaurregaina/Abaurrea Alta",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ahetze",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Aia",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Aincille",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Aldudes",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Alegia",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Allín/Allin",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Alos-Sibas-Abense",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Altsasu/Alsasua",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Alçay-Alçabéhéty-Sunharette",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Altzo",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Améscoa Baja",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Amorebieta-Etxano",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Amoroto",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Andoain",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Anglet",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Anue",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Añana",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Aoiz/Agoitz",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Aramaio",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Arantza",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Arbizu",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Areatza",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Areso",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Arguedas",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Arhansus",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Arraia-Maeztu",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Arcangues",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Arrigorriaga",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Asteasu",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ataun",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Atxondo",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Burguete",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ascain",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Azkoitia",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Azuelo",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Saint-Étienne-de-Baïgorry",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Bayonne",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Bakio",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Baliarrain",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Balmaseda",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Barakaldo",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Bargota",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Barcus",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Basaburua",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "La Bastide-Clairence",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Baztan",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Beasain",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Beizama",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Bera",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Berastegi",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Bergara",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Bermeo",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Bertizarana",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Bidarray",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Bidart",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Bidegoian",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Burgui/Burgi",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Cabredo",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Kanpezu",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Cascante",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Cizur",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Corella",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Deba",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Dima",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Donamaria",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
     "municipio": "Saint-Jean-le-Vieux",
-    "numen": "sorgin",
+    "numen": "Sorgin",
     "Categoria": "Otras entidades y motivos mitológicos",
-    "autor": "Azkue, Resurrección María de",
-    "fuente": "Azkue, R. M. de. (1935). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 1). Espasa-Calpe."
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
   },
   {
-    "provincia": "Gipuzkoa",
-    "municipio": "Hondarribia",
-    "numen": "sorgin",
+    "provincia": "",
+    "municipio": "Doneztebe/Santesteban",
+    "numen": "Sorgin",
     "Categoria": "Otras entidades y motivos mitológicos",
-    "autor": "Azkue, Resurrección María de",
-    "fuente": "Azkue, R. M. de. (1935). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 1). Espasa-Calpe."
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
   },
   {
-    "provincia": "Gipuzkoa",
-    "municipio": "Irun",
-    "numen": "sorgin",
+    "provincia": "",
+    "municipio": "Saint-Jean-Pied-de-Port",
+    "numen": "Sorgin",
     "Categoria": "Otras entidades y motivos mitológicos",
-    "autor": "Azkue, Resurrección María de",
-    "fuente": "Azkue, R. M. de. (1935). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 1). Espasa-Calpe."
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
   },
   {
-    "provincia": "Gipuzkoa",
-    "municipio": "Lezo",
-    "numen": "sorgin",
+    "provincia": "",
+    "municipio": "Saint-Jean-de-Luz",
+    "numen": "Sorgin",
     "Categoria": "Otras entidades y motivos mitológicos",
-    "autor": "Azkue, Resurrección María de",
-    "fuente": "Azkue, R. M. de. (1935). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 1). Espasa-Calpe."
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
   },
   {
-    "provincia": "Gipuzkoa",
-    "municipio": "Errenteria",
-    "numen": "sorgin",
+    "provincia": "",
+    "municipio": "Donostia-San Sebastian",
+    "numen": "Sorgin",
     "Categoria": "Otras entidades y motivos mitológicos",
-    "autor": "Azkue, Resurrección María de",
-    "fuente": "Azkue, R. M. de. (1935). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 1). Espasa-Calpe."
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
   },
   {
-    "provincia": "Gipuzkoa",
-    "municipio": "Pasaia",
-    "numen": "sorgin",
+    "provincia": "",
+    "municipio": "Durango",
+    "numen": "Sorgin",
     "Categoria": "Otras entidades y motivos mitológicos",
-    "autor": "Azkue, Resurrección María de",
-    "fuente": "Azkue, R. M. de. (1935). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 1). Espasa-Calpe."
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
   },
   {
-    "provincia": "Gipuzkoa",
-    "municipio": "Lezo",
-    "numen": "sorgin",
+    "provincia": "",
+    "municipio": "Eibar",
+    "numen": "Sorgin",
     "Categoria": "Otras entidades y motivos mitológicos",
-    "autor": "Azkue, Resurrección María de",
-    "fuente": "Azkue, R. M. de. (1945). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 3). Espasa-Calpe."
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
   },
   {
-    "provincia": "Gipuzkoa",
-    "municipio": "Segura",
-    "numen": "sorgin",
+    "provincia": "",
+    "municipio": "Saint-Michel",
+    "numen": "Sorgin",
     "Categoria": "Otras entidades y motivos mitológicos",
-    "autor": "Azkue, Resurrección María de",
-    "fuente": "Azkue, R. M. de. (1945). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 3). Espasa-Calpe."
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
   },
   {
-    "provincia": "Gipuzkoa",
-    "municipio": "Lazkao",
-    "numen": "sorgin",
-    "Categoria": "Otras entidades y motivos mitológicos",
-    "autor": "Azkue, Resurrección María de",
-    "fuente": "Azkue, R. M. de. (1945). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 3). Espasa-Calpe."
-  },
-  {
-    "provincia": "Bizkaia",
+    "provincia": "",
     "municipio": "Elantxobe",
-    "numen": "sorgin",
+    "numen": "Sorgin",
     "Categoria": "Otras entidades y motivos mitológicos",
-    "autor": "Azkue, Resurrección María de",
-    "fuente": "Azkue, R. M. de. (1945). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 3). Espasa-Calpe."
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
   },
   {
-    "provincia": "Bizkaia",
-    "municipio": "Mungia",
-    "numen": "sorgin",
+    "provincia": "",
+    "municipio": "Elburgo/Burgelu",
+    "numen": "Sorgin",
     "Categoria": "Otras entidades y motivos mitológicos",
-    "autor": "Azkue, Resurrección María de",
-    "fuente": "Azkue, R. M. de. (1945). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 3). Espasa-Calpe."
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
   },
   {
-    "provincia": "Navarra",
-    "municipio": "Iza/Itza",
-    "numen": "sorgin",
+    "provincia": "",
+    "municipio": "Elduain",
+    "numen": "Sorgin",
     "Categoria": "Otras entidades y motivos mitológicos",
-    "autor": "Azkue, Resurrección María de",
-    "fuente": "Azkue, R. M. de. (1945). Euskalerriaren yakintza: Literatura popular del País Vasco (Vol. 3). Espasa-Calpe."
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Elgeta",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Elgoibar",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Elorrio",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Elvillar / Bilar",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Erandio",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ereño",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Errenteria",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Eskoriatza",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Esparza de Salazar/Espartza Zaraitzu",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Estella-Lizarra",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Etxalar",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Echarri/Etxarri",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ezcabarte",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ezcároz/Ezkaroze",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ezkio-Itsaso",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ezkurra",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Estérençuby",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Gabat",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Gabiria",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Galar",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Galdakao-Usansolo",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Gallués/Galoze",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Camou-Cihigue",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Garaioa",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Garde",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Garris",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Gautegiz Arteaga",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Gernika-Lumo",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Getaria",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Getaria",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Gizaburuaga",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Goizueta",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Güeñes",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Guesálaz/Gesalatz",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Halsou",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Harana/Valle de Arana",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Hasparren",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Hendaya",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Hernani",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Hernialde",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Hiriberri/Villanueva de Aezkoa",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Hondarribia",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ibarrangelu",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Idiazabal",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Igantzi",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Igorre",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Iholdy",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ilharre",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Imotz",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Irun",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Isaba/Izaba",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ispaster",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Itxassou",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ituren",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Iurreta",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Juxue",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Urrugne",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Usurbil",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ustaritz",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Valdegovia / Gaubea",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Viana",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Vidángoz/Bidankoze",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Villabona",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Villava",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Vitoria-Gazteiz",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Zalla",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Zamudio",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Zarautz",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Zeanuri",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Zeberio",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Zegama",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Zerain",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Zestoa",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ciboure",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Zigoitia",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ziordia",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Ziortza-Bolibar",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Zubieta",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Zugarramurdi",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
+  },
+  {
+    "provincia": "",
+    "municipio": "Zumaia",
+    "numen": "Sorgin",
+    "Categoria": "Otras entidades y motivos mitológicos",
+    "autor": "Dueso, José",
+    "fuente": "Dueso, J. (2020). Nueva guía del Akelarre vasco."
   }
 ]
